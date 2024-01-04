@@ -1,0 +1,16 @@
+project:
+  title: "Slides"
+  output-dir: _output
+  execute-dir: project
+  render:
+    - "*.qmd"
+    - "!README.md"
+
+format: 
+  revealjs:
+    theme: simple
+    slide-level: 2
+    hash-type: number
+    embed-resources: true
+  pptx: default
+    
