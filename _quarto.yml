@@ -12,5 +12,6 @@ format:
     slide-level: 2
     hash-type: number
     embed-resources: true
+    mermaid-format: png
   pptx: default
     

@@ -105,7 +105,7 @@ I --> W;
 - Security Stack
   - Cisco firewalls w/ VPN
   - Defender for Endpoint
-  - Defender for Cloud
+  - Defender for Cloudhttps://rallly.co/invite/zkEqRngADDwq
   - Exchange Online
 
 ## Security Stack
