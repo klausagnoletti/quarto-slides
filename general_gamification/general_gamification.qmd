@@ -1,0 +1,115 @@
+---
+title: "Gamification"
+subtitle: "Why gamification, or game-based learning, is the didactic power tool you didn't know you need."
+---
+
+## Why game-based learning
+- When you have fun you learn better
+- Analogue games seems to have a better impact
+
+::: aside
+Article from '[Frontiers in Psychology](https://www.frontiersin.org/)' [Playing at the school table: Systematic literature review of board, tabletop, and other analog game-based learning approaches](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1160591/full)
+:::
+
+::: {.notes}
+- Brain wired for team-based learning
+- Playing 'strategy' games for C-level is already common. And more.
+:::
+
+## tidbit: Busting myths
+
+::: {.notes}
+- Games not serious
+- Fun != Serious
+- Games not seen as serious pedagogic and didactic tool.
+- A shame - huge potential!
+
+:::
+
+## Why role playing games?
+- When roles are played, it's different
+- People can be other roles than in real life
+
+::: {.notes}
+
+:::
+
+## tidbit: Going into character
+
+::: {.notes}
+Magic happens when people go into character
+Several phases
+- Awkwardness
+- When broken, people ease up and laugh a lot.
+And that's good. Laughing is good. Laughing is engagement.
+:::
+
+## Roleplaying is immersive
+Players invest and
+- Forget their egos
+- Forget to protect their turf
+- Forget to fight the scenario
+- Are more honest in general
+
+::: {.notes}
+Players laugh, enjoy themselves. 
+They relax and simply plays along better.
+:::
+
+## Bonus
+- Empathy
+- 'Lifelike' simulation
+
+::: {.notes}
+- Roleplays allows to make players see world from different perspective
+- Improves teamwork
+- It's a simulation so players get to be aware of obvious limitations (one person can't do it all)
+
+:::
+
+## Meet HackBack
+A general framework for simulating any situation
+
+::: {.notes}
+Wide application. 
+Chosen to use it for security (that's what we do)
+Mostly used for IR - for now.
+Talk about other ways of using it later.
+:::
+
+## Wide range of applications
+- De-abstractify
+- Teaching 'feelings'
+- Teaching teamwork
+- Marketing events
+- Team events
+- Simulating real events
+
+::: {.notes}
+- Abstractions, concepts: Why IAM? Why Zero Trust?
+- Teaching sales or marketing how it is to be in the middle of an incident, how a hacker thinks, etc
+- Teaching teamwork; How to handle an incident, how to work together as a team to hack the planet or whatever
+- Marketing: Create scenarios with a certain product or concept
+- Team events: Divide roles into groups so it scales better
+- Simulating real incidents
+  - Stuxnet
+
+:::
+
+## Meet HackBack IR edition
+- Rules
+- Characters
+- Rounds
+
+::: {.notes}
+
+:::
+
+## Forced to do compliance?
+Why not make it fun and engaging?
+
+::: {.notes}
+Literally nothing to loose.
+It's instructive, employees will appreciate it better - and compliance requirements are fulfilled.
+
+:::
