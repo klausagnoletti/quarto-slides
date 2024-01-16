@@ -1,24 +1,55 @@
 ---
-title: "Gamification"
+title: "The power of game-based learning"
 subtitle: "Why gamification, or game-based learning, is the didactic power tool you didn't know you need."
 ---
 
-## Why game-based learning
-- When you have fun you learn better
-- Analogue games seems to have a better impact
+## What's the problem with training?
+Very traditional approach
+
+- class-based
+- computer based
+
+or, specifically in IR:
+
+- tabletops
+
+::: {.notes}
+Either class-based learning (ass to seat)  
+or computer-based training  
+Different for IR training:  
+Tabletops are widely used and seen as 'the way' to teach this  
+And yes, it can be - depending on how it's done  
+In reality it's dull and not very realistic  
+Sitting around a table and talking about ficatious situations, mitigating procedures is not very realistic  
+In a real incident unforeseen things happen  
+Reality comes crushing and shows weaknessess  
+Like personal dependencies; one person can't do everything. Not enough bandwith  
+State of security is as it is in reality  
+Not nescessarily like the picture the person responsible painted when pressured by their boss during the excercise  
+Honesty is crucial  
+Sometimes ego and pride conflicts with that  
+Leaves you with a fake picture of reality  
+You don't want that  
+Luckily I have a proposal for a solution:  
+:::
+
+## Game-based learning
+It's fun playing games  
+Fun is serious business  
 
 ::: aside
 Article from '[Frontiers in Psychology](https://www.frontiersin.org/)' [Playing at the school table: Systematic literature review of board, tabletop, and other analog game-based learning approaches](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1160591/full)
 :::
 
 ::: {.notes}
-- Brain wired for team-based learning
+
 - Playing 'strategy' games for C-level is already common. And more.
 :::
 
 ## tidbit: Busting myths
 
 ::: {.notes}
+
 - Games not serious
 - Fun != Serious
 - Games not seen as serious pedagogic and didactic tool.
@@ -26,7 +57,19 @@ Article from '[Frontiers in Psychology](https://www.frontiersin.org/)' [Playing 
 
 :::
 
+## Your brain is wired for learning with others
+Many ways to do this  
+We've chosen to combine game-based and team-based learning  
+
+::: {.notes}
+
+- Brain wired for team-based learning  
+Makes sense and there's many ways to do this  
+We've chosen role playing games to combine two great things into something even better  
+:::
+
 ## Why role playing games?
+
 - When roles are played, it's different
 - People can be other roles than in real life
 
@@ -37,8 +80,9 @@ Article from '[Frontiers in Psychology](https://www.frontiersin.org/)' [Playing 
 ## tidbit: Going into character
 
 ::: {.notes}
-Magic happens when people go into character
+Magic happens when people go into character  
 Several phases
+
 - Awkwardness
 - When broken, people ease up and laugh a lot.
 And that's good. Laughing is good. Laughing is engagement.
@@ -46,21 +90,24 @@ And that's good. Laughing is good. Laughing is engagement.
 
 ## Roleplaying is immersive
 Players invest and
+
 - Forget their egos
 - Forget to protect their turf
 - Forget to fight the scenario
 - Are more honest in general
 
 ::: {.notes}
-Players laugh, enjoy themselves. 
-They relax and simply plays along better.
+Players laugh, enjoy themselves  
+They relax and simply plays along better  
 :::
 
 ## Bonus
+
 - Empathy
 - 'Lifelike' simulation
 
 ::: {.notes}
+
 - Roleplays allows to make players see world from different perspective
 - Improves teamwork
 - It's a simulation so players get to be aware of obvious limitations (one person can't do it all)
@@ -71,13 +118,14 @@ They relax and simply plays along better.
 A general framework for simulating any situation
 
 ::: {.notes}
-Wide application. 
-Chosen to use it for security (that's what we do)
-Mostly used for IR - for now.
-Talk about other ways of using it later.
+Wide application   
+Chosen to use it for security (that's what we do)  
+Mostly used for IR - for now  
+Talk about other ways of using it later  
 :::
 
 ## Wide range of applications
+
 - De-abstractify
 - Teaching 'feelings'
 - Teaching teamwork
@@ -97,6 +145,7 @@ Talk about other ways of using it later.
 :::
 
 ## Meet HackBack IR edition
+
 - Rules
 - Characters
 - Rounds
@@ -105,11 +154,17 @@ Talk about other ways of using it later.
 
 :::
 
-## Forced to do compliance?
+## Doing compliance?
 Why not make it fun and engaging?
 
 ::: {.notes}
-Literally nothing to loose.
-It's instructive, employees will appreciate it better - and compliance requirements are fulfilled.
+Nobody does compliance for fun  
+Oftentimes it's not vey fun or interesting for most people involved  
+Here's a tool to make it fun, interesting and engaging  
+What's to loose?
+
+- Participants will learn
+- Employees will appreciate it
+- .. and compliance requirements are fulfilled.
 
 :::
