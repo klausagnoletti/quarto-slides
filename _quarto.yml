@@ -14,3 +14,5 @@ format:
     embed-resources: true
     show-notes: true
   pptx: default
+  docx:
+    toc: false
