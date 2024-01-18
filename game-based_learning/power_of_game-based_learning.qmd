@@ -91,7 +91,7 @@ Fast forward to 2023 when I started out as a freelance consultant and was remind
 --->
 
 ## Why role playing games?
-> Dungeons & Dragons, and other narrative role playing games of its kind, provide many opportunities for learning,” said Simkins. “Participation in narrative role play can open up interests in topics such as mathematics, science, history, culture, ethics, critical reading, and media production. When D&D and its cousins are played in an inviting, encouraging, compassionate, and intellectually engaged environment, play opens the door to truly amazing possibilities for learning.
+> When Dungeons & Dragons and its cousins are played in an inviting, encouraging, compassionate, and intellectually engaged environment, play opens the door to truly amazing possibilities for learning.
 
 ::: aside
 Article quoting David Simkins, a professor at the Rochester Institute of Technology, who is an expert on games and learning: [How 'Dungeons & Dragons' Primes Students for Interdisciplinary Learning, Including STEM](https://www.kqed.org/mindshift/51790/how-dungeons-dragons-primes-students-for-interdisciplinary-learning-including-stem)
@@ -100,7 +100,7 @@ Article quoting David Simkins, a professor at the Rochester Institute of Technol
 ::: {.notes}
 **Script:**  
 *note: Read quote*  
-So according to this, there's not reason to think that D&D-derivates can't be used to do effect3ive IR training. 
+So according to this, there's not reason to think that D&D-derivates can't be used to do effective IR training. 
 And guess what: our results from real world backs this up. 
 
 :::
