@@ -14,26 +14,23 @@ or, specifically in IR:
 - tabletops
 
 ::: {.notes}
-Either class-based learning (ass to seat)  
-or computer-based training  
-Different for IR training:  
-Tabletops are widely used and seen as 'the way' to teach this  
-And yes, it can be - depending on how it's done  
-In reality it's dull and not very realistic  
-Sitting around a table and talking about ficatious situations, mitigating procedures is not very realistic  
-In a real incident unforeseen things happen  
-Reality comes crushing and shows weaknessess  
-Like personal dependencies; one person can't do everything. Not enough bandwith  
-State of security is as it is in reality  
-Not nescessarily like the picture the person responsible painted when pressured by their boss during the excercise  
-Honesty is crucial  
-Sometimes ego and pride conflicts with that  
-Leaves you with a fake picture of reality  
-You don't want that  
+**Script:**  
+A traditional approach is either class-based or computer-based training.  
+But in IR training it's different.    
+Tabletops are widely used and seen as 'the way' to teach this. And yes, it can be - depending on how it's done.  
+Oftentime it's dull and not very realistic in that it consists of people around a table and talking about ficatious situations and which mitigating procedures are available.
+In a real incident unforeseen things happen so without that (or injects as they're called) reality comes crushing and shows uncomfortable weaknessess in your defence.  
+Another example is personal dependencies; one person can't do everything. They don't have enough badwidth. And what if that person got run over by a bus? You're screwed!   
+You want to know the state of security is as it really is. That is not nescessarily the same picture the person responsible painted when pressured by their boss during the excercise.  
+In tabletops honesty is crucial.  
+Sometimes ego and pride conflicts with that.  
+The worst part is that it leaves you with a fake picture of reality with potentially fatal consequences.
 Luckily I have a proposal for a solution:  
 :::
 
 ## Game-based learning
+> Most studies in the sample reported analog GBL as an effective pedagogical tool with an impact on the learning, cognitive, and psychological levels.
+
 It's fun playing games  
 Fun is serious business  
 
@@ -42,44 +39,85 @@ Article from '[Frontiers in Psychology](https://www.frontiersin.org/)' [Playing 
 :::
 
 ::: {.notes}
-
-- Playing 'strategy' games for C-level is already common. And more.
+**Script:**  
+To me it has always made sense that combining games with learning makes sense and provides a better result. Fortunately science agrees. Here's a quote from the article I reference. The article is a metastudy of board, tabletop, and other analog game-based learning approaches.  
+Playing games is fun - while learning  
+Contrary to what some believe, fun can be serious business.  
+You *can* spend you time wisely and productively while having fun - believe it or not.  
 :::
 
+<!----
 ## tidbit: Busting myths
 
 ::: {.notes}
-
-- Games not serious
-- Fun != Serious
-- Games not seen as serious pedagogic and didactic tool.
-- A shame - huge potential!
+**Script:**  
+It's a myth that games are not serious.  
+In the same way as it's a myth you can't be serious while having fun.  
+Those two are not contradictions.
+Games are not seen as a serious pedagogic and didactic tool.
+Heonstly I think it's a big shame. 
+A lot of lost potential there.  
+As I see it, playing games has a lot of **serious** potential.  
 
 :::
+--->
 
 ## Your brain is wired for learning with others
-Many ways to do this  
-We've chosen to combine game-based and team-based learning  
+Many ways to do this in practice 
+Chosen to implement team-based learning as role-playing games
+Because of real life experience after trying it
+and  
+Because we like games and believe in their (serious) potential  
 
 ::: {.notes}
+**Script:** 
+There's an infinite way of implementing 'learning together as a team' To us it made best sense to do it as a role-playing game because of real-life experience with both incident response (IR) tabletops as well as Dungeons & Dragons
 
 - Brain wired for team-based learning  
 Makes sense and there's many ways to do this  
 We've chosen role playing games to combine two great things into something even better  
 :::
 
-## Why role playing games?
+<!----
+## tidbit: Story of HackBack
 
+::: {.notes}
+**Script:**  
+So at one time we came up with combining IR tabletobs with Dungeons & Dragons. More precisely it happened to me in Vegas in 2018 when I heard the then CISO of Expel, Bruce Potter talk about how he and his son Bobby, an avid D&D player, had turned D&D into IR training. What stuck with me from that experience is that they said that since they started doing the perception of IR training had shifted from being something nobody wanted to partake in, into an event that was sought out and requested. To me that was mindblowing since in reality this is what we want as mindful security professionals. And here was a tool that provided that.
+Fast forward to 2023 when I started out as a freelance consultant and was reminded of this. I started investigating what happened since that talk in Vegas and found HackBack Gaming, an American company founded by Andy Kaplan who had taken Bruce's game, simplified it a bit and turned it into a company with a product. I reached out to him to ask if he would teach me the game. He agreed, or rather, he said he couldn't because of a conflicting full-time job he had taken after the COVID pandemic. Instead he referred me to his friend Glen from the American company Cyber Risk Opportunities. We found a common passion in HackBack and started developing it further. Glen's company has since then bought Andy's company and together with him I am working on making it open-source and build a community around it, heavily inspired by Jason Blanchard and the other wonderful folks at Black Hills Infosec and their work on Backdoors & Breaches, a more technically focused IR training card game.
+
+:::
+
+--->
+
+## Why role playing games?
+> Dungeons & Dragons, and other narrative role playing games of its kind, provide many opportunities for learning,” said Simkins. “Participation in narrative role play can open up interests in topics such as mathematics, science, history, culture, ethics, critical reading, and media production. When D&D and its cousins are played in an inviting, encouraging, compassionate, and intellectually engaged environment, play opens the door to truly amazing possibilities for learning.
+
+::: aside
+Article quoting David Simkins, a professor at the Rochester Institute of Technology, who is an expert on games and learning: [How 'Dungeons & Dragons' Primes Students for Interdisciplinary Learning, Including STEM](https://www.kqed.org/mindshift/51790/how-dungeons-dragons-primes-students-for-interdisciplinary-learning-including-stem)
+:::
+
+::: {.notes}
+**Script:**  
+*note: Read quote*  
+So according to this, there's not reason to think that D&D-derivates can't be used to do effect3ive IR training. 
+And guess what: our results from real world backs this up. 
+
+:::
+
+# In layman's terms
 - When roles are played, it's different
 - People can be other roles than in real life
 
 ::: {.notes}
+**Script:**  
 
 :::
 
 ## tidbit: Going into character
 
 ::: {.notes}
+**Script:**  
 Magic happens when people go into character  
 Several phases
 
@@ -97,6 +135,7 @@ Players invest and
 - Are more honest in general
 
 ::: {.notes}
+**Script:**  
 Players laugh, enjoy themselves  
 They relax and simply plays along better  
 :::
@@ -107,6 +146,7 @@ They relax and simply plays along better
 - 'Lifelike' simulation
 
 ::: {.notes}
+**Script:**  
 
 - Roleplays allows to make players see world from different perspective
 - Improves teamwork
@@ -118,6 +158,7 @@ They relax and simply plays along better
 A general framework for simulating any situation
 
 ::: {.notes}
+**Script:**  
 Wide application   
 Chosen to use it for security (that's what we do)  
 Mostly used for IR - for now  
@@ -134,6 +175,8 @@ Talk about other ways of using it later
 - Simulating real events
 
 ::: {.notes}
+**Script:**  
+
 - Abstractions, concepts: Why IAM? Why Zero Trust?
 - Teaching sales or marketing how it is to be in the middle of an incident, how a hacker thinks, etc
 - Teaching teamwork; How to handle an incident, how to work together as a team to hack the planet or whatever
@@ -151,13 +194,14 @@ Talk about other ways of using it later
 - Rounds
 
 ::: {.notes}
-
+**Script:**  
 :::
 
 ## Doing compliance?
 Why not make it fun and engaging?
 
 ::: {.notes}
+**Script:**  
 Nobody does compliance for fun  
 Oftentimes it's not vey fun or interesting for most people involved  
 Here's a tool to make it fun, interesting and engaging  
