@@ -62,21 +62,119 @@ As I see it, playing games has a lot of **serious** potential.
 :::
 --->
 
-## Your brain is wired for learning with others
+## Your brain is wired for learning with others (1/2)
+> Human minds are plug-and-play devices; they’re not meant to be used alone. They’re meant to be used in networks.” Games allow us to do that – they allow us to use “collective intelligence.” Collectively, we’re not so stupid.
+
+::: aside
+Article summing up panel debate at Stanford Graduate School of Education, quoting James Gee, an Arizona State University: [Playing to learn: Panelists at Stanford discussion say using games as an educational tool provides opportunities for deeper learning](https://news.stanford.edu/2013/03/01/games-education-tool-030113/).
+:::
+
+::: {.notes}
+**Script:** 
+*note: Read quote*  
+*change slide*
+:::
+
+
+## Your brain is wired for learning with others (2/2)
 Many ways to do this in practice 
 Chosen to implement team-based learning as role-playing games
 Because of real life experience after trying it
-and  
+*and*  
 Because we like games and believe in their (serious) potential  
 
 ::: {.notes}
 **Script:** 
-There's an infinite way of implementing 'learning together as a team' To us it made best sense to do it as a role-playing game because of real-life experience with both incident response (IR) tabletops as well as Dungeons & Dragons
-
-- Brain wired for team-based learning  
-Makes sense and there's many ways to do this  
-We've chosen role playing games to combine two great things into something even better  
+Makes sense and there's many ways of implementing 'learning together as a team'.  
+To us it made best sense to do it as a role-playing game because of real-life experience with both incident response (IR) tabletops as well as Dungeons & Dragons.  
+Luckily, science agrees that it's a good idea:  
+*next slide*  
 :::
+
+## Why role playing games?
+> When Dungeons & Dragons and its cousins are played in an inviting, encouraging, compassionate, and intellectually engaged environment, play opens the door to truly amazing possibilities for learning.
+
+::: aside
+Article quoting David Simkins, a professor at the Rochester Institute of Technology, who is an expert on games and learning: [How 'Dungeons & Dragons' Primes Students for Interdisciplinary Learning, Including STEM](https://www.kqed.org/mindshift/51790/how-dungeons-dragons-primes-students-for-interdisciplinary-learning-including-stem)
+:::
+
+::: {.notes}
+**Script:**  
+*note: Read quote*  
+So according to this, there's not reason to think that D&D-derivates can't be used to do effective IR training.  
+And guess what: our results from real world backs this up. 
+
+:::
+
+<!----
+## tidbit: Going into character
+
+::: {.notes}
+**Script:**  
+Magic happens when people go into character  
+Several phases
+
+- Awkwardness
+- When broken, people ease up and laugh a lot.
+And that's good. Laughing is good. Laughing is engagement.
+:::
+--->
+
+## Roleplaying is immersive
+Players invest and
+
+- Forget their egos
+- Forget to protect their turf
+- Forget to fight the scenario
+- Are more honest in general
+
+::: {.notes}
+**Script:**  
+When playing, players laugh a lot and enjoy themselves. Because of this they invest and forget their egos, to protect their turf, forget to fight the scenario and are more honest in general. 
+And as I talked about before, honesty is crucial in testing IR.
+:::
+
+## Bonus
+
+- Empathy
+- 'Lifelike' simulation
+
+::: {.notes}
+**Script:**  
+As a bonus you get advantages you simply can't have in an ordinary tabletop exercise, such as empathy and a more likelike simulation. Let me explain. 
+Roleplays allows to make players see world from different perspective. So a very technical person being put in the role of head of communications might suddenly realize how important stakeholder management is during an incident which in turn improves teamwork.
+And since it's a simulation of real life it means that players get to be aware of obvious limitations such as personal dependencies; one person can't do it all and what if that person gets run down by a bus?  
+So that's a lot of talk about how role playing games can be used in IR training. Luckily that's not all.
+
+:::
+
+## Meet HackBack
+A general framework for simulating any situation
+
+..also it's open-source
+
+::: {.notes}
+**Script:**  
+It has a wide application and can be used for many things. I see it as the security tool you didn't know you needed.   
+HackBack can be used as an alternative to that class- or computer-based training we talked about in the beginning which is great now that science doesn't think it works anyway.
+We've chosen to chosen to use it for security because that's what we do.  
+But in reality it could be anything.  
+Also it's open-source as we want to spread the word about it ad make it open-source. 
+For now we mostly use it for IR training.   
+We plan to change that.
+*next slide*
+:::
+
+<!----
+## tidbit: Why open-source
+
+::: {.notes}
+**Script:** 
+It might seem counter intuitive to give something away you want to sell. Actually it's not. 
+Talking to Jason Blanchard from Black Hills Infosec we realized that the more you give away and the more you make companies able to play for free, the more they want to hire you to do it. Obviously it takes a lot of training to develop scenarios and run games so even though rules, characters, scenarios and everything else needed is available for free, it still takes skills to run a game. And to companies time is money so even though they do have employees that *could* run the game, it's usually cheaper for them not to.
+So yes, it ios possible to earn money on open-source. Also when it's a role playing game.
+
+--->
 
 <!----
 ## tidbit: Story of HackBack
@@ -90,111 +188,51 @@ Fast forward to 2023 when I started out as a freelance consultant and was remind
 
 --->
 
-## Why role playing games?
-> When Dungeons & Dragons and its cousins are played in an inviting, encouraging, compassionate, and intellectually engaged environment, play opens the door to truly amazing possibilities for learning.
-
-::: aside
-Article quoting David Simkins, a professor at the Rochester Institute of Technology, who is an expert on games and learning: [How 'Dungeons & Dragons' Primes Students for Interdisciplinary Learning, Including STEM](https://www.kqed.org/mindshift/51790/how-dungeons-dragons-primes-students-for-interdisciplinary-learning-including-stem)
-:::
-
-::: {.notes}
-**Script:**  
-*note: Read quote*  
-So according to this, there's not reason to think that D&D-derivates can't be used to do effective IR training. 
-And guess what: our results from real world backs this up. 
-
-:::
-
-# In layman's terms
-- When roles are played, it's different
-- People can be other roles than in real life
-
-::: {.notes}
-**Script:**  
-
-:::
-
-## tidbit: Going into character
-
-::: {.notes}
-**Script:**  
-Magic happens when people go into character  
-Several phases
-
-- Awkwardness
-- When broken, people ease up and laugh a lot.
-And that's good. Laughing is good. Laughing is engagement.
-:::
-
-## Roleplaying is immersive
-Players invest and
-
-- Forget their egos
-- Forget to protect their turf
-- Forget to fight the scenario
-- Are more honest in general
-
-::: {.notes}
-**Script:**  
-Players laugh, enjoy themselves  
-They relax and simply plays along better  
-:::
-
-## Bonus
-
-- Empathy
-- 'Lifelike' simulation
-
-::: {.notes}
-**Script:**  
-
-- Roleplays allows to make players see world from different perspective
-- Improves teamwork
-- It's a simulation so players get to be aware of obvious limitations (one person can't do it all)
-
-:::
-
-## Meet HackBack
-A general framework for simulating any situation
-
-::: {.notes}
-**Script:**  
-Wide application   
-Chosen to use it for security (that's what we do)  
-Mostly used for IR - for now  
-Talk about other ways of using it later  
-:::
-
 ## Wide range of applications
 
 - De-abstractify
 - Teaching 'feelings'
 - Teaching teamwork
+- Expanding Purple Team assignment
 - Marketing events
 - Team events
 - Simulating real events
 
 ::: {.notes}
 **Script:**  
-
-- Abstractions, concepts: Why IAM? Why Zero Trust?
-- Teaching sales or marketing how it is to be in the middle of an incident, how a hacker thinks, etc
-- Teaching teamwork; How to handle an incident, how to work together as a team to hack the planet or whatever
-- Marketing: Create scenarios with a certain product or concept
-- Team events: Divide roles into groups so it scales better
-- Simulating real incidents
-  - Stuxnet
-
+Since HackBack can simulate any situation there's no reason not to use it outside of IR training.  
+Here's a few examples:
+Can be used to make abstract concepts more concrete. For instance, why does IAM matter? What's Zero Trust really (now that it's not a fancy product you can buy).  
+HackBack can be used to teach sales and marketing how it feels to be in the middle of an incident, how a hacker thinks, etc. That gives them a better understanding so they're better at their job.
+HackBack can be used to teach teamwork; How to handle an incident, how to work together as a team to hack or whatever you can think of.
+HackBack can be used to expand the scope of a purple team assignment so that instead of making it purely technical, HackBack can provide a layer of crisis management training on top, making it even more realistic.
+In marketing HackBack can be used to give players an understanding of how your product or concept works in real life.
+HackBack can scale and be used in a team event where you generically wants to improve player's awareness. Instead of one character playing a role, a team plays that role. Depending on the purpose of the game, your internal security team could be divided between the teams so that teams end up having more of those qualified discussions there they actually learn.
+Since HackBAck can simulate real events, it can be used to teach employees, customers or other stakeholders how your company work on your red team assignments or used to make customers or partners understand exactly how you managed to handle that dire incident which was threatening the entire company or country's infrastructure.  
+The possibilities are literally vast. It's just a matter of getting the right idea.
 :::
 
 ## Meet HackBack IR edition
+Rules
 
-- Rules
 - Characters
 - Rounds
+- Decisions and die
+- Open-ended scenarios
 
 ::: {.notes}
-**Script:**  
+**Script:** 
+As I said before, HackBack is currently mostly used as incident training. So let me briefly go through the rules.  
+Each game is run by an Incident Master. They are the ultimate authority and storyteller, meaning they decide everything going on in the game, the story, what a player can and can't do and what the consequences are.
+Each player or team plays a character such as a Microsoft System Administrator or a Level 1 supporter. Part of the fun is that these characters are all very stereotypical, meaning that the Microsoft System Arcitect wants to make everything Windows and Azure, thinks Linux is a failed experiment and that the Lumia phone only failed because it was ahead of its time. As in D&D characters have modifiers outlining their talents and personality. The Microsoft System Architect has -2 in likeability because everyone find them really annoying. Similarly the Level 1 supporter is very outgoing and likeable, very eager to learn about anything going on in the company. Obviously they have a +2 in likeability, meaning that whoever from the company they call is more likely to pick up the phone in an emergency because the person in the other end finds them nice and likes them.
+Each game usually consists of three rounds taking place within the same scenario but on different points in time. Games usually starts on a Friday afternoon since incidents usually happen at the worst time imaginable.
+Each character does two actions in each round. When they've decided on what they want to do, they roll a 20-sided dice and depending on how difficult the IM deems it to be, they have to roll over 5, 10 or 15. And if any modifiers are in place they will be added or subtracted. 
+Dice is there to emulate real life; during an incident the team can do everything right; still for some reason, it doesn't work. 
+It's also the job of the IM to make sure players maximize learning and gets through the entire scenario (as opposed to rolling low and not getting anywhere). That's how players learn; by having those discussions during the game where they find out how to act.  
+Similarly, players doesn't get optimal learning if they roll high all the time and everything's a breeze. Everybody in Incident Response knows that's not very realistic.  
+So the role of the IM is to adjust the level of the game to this.
+In HackBack, scenarios are always very open-ended. This requires a skillful IM; not only will they need to be able to have a very broad understanding of cyvber security but they also need to be able to think on their feet, depending on where the game takes them. So it's definitely an advantage for an IM to have experience as a Dungeon Master in D&D - but not a requirement. 
+
 :::
 
 ## Doing compliance?
@@ -202,13 +240,14 @@ Why not make it fun and engaging?
 
 ::: {.notes}
 **Script:**  
-Nobody does compliance for fun  
-Oftentimes it's not vey fun or interesting for most people involved  
-Here's a tool to make it fun, interesting and engaging  
-What's to loose?
+When doing compliance there's usually a requirement for incident response training. This means that you *have* to train incident response. Obviously nobody does compliance for fun.  
+Oftentimes compliance in general is not vey fun or interesting for most people involved.  
+HAckBack is a tool you can use to make it fun, interesting and engaging.  
+As I see it there's nothing to loose:
 
-- Participants will learn
-- Employees will appreciate it
+- Participants will learn - and have fun
 - .. and compliance requirements are fulfilled.
+
+Voilá!
 
 :::
