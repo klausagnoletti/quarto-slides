@@ -12,7 +12,7 @@ format:
     slide-level: 2
     hash-type: number
     embed-resources: true
-    show-notes: true
+    show-notes: separate-page
   pptx: default
   docx:
     toc: false
