@@ -20,7 +20,7 @@ or, specifically in IR:
 A traditional approach is either class-based or computer-based training.  
 But in IR training it's different.    
 Tabletops are widely used and seen as 'the way' to teach this. And yes, it can be - depending on how it's done.  
-Oftentime it's dull and not very realistic in that it consists of people around a table and talking about ficatious situations and which mitigating procedures are available.
+Oftentimes it's dull and not very realistic in that it consists of people around a table and talking about ficatious situations and which mitigating procedures are available.
 In a real incident unforeseen things happen so without that (or injects as they're called) reality comes crushing and shows uncomfortable weaknessess in your defence.  
 Another example is personal dependencies; one person can't do everything. They don't have enough badwidth. And what if that person got run over by a bus? You're screwed!   
 You want to know the state of security is as it really is. That is not nescessarily the same picture the person responsible painted when pressured by their boss during the excercise.  
@@ -263,7 +263,7 @@ When doing compliance there's usually a requirement for incident response traini
 This means that you *have* to train incident response.  
 Obviously nobody does compliance for fun.  
 Oftentimes compliance in general is not vey fun or interesting for most people involved.  
-HAckBack is a tool you can use to make it fun, interesting and engaging.  
+HackBack is a tool you can use to make it fun, interesting and engaging.  
 As I see it there's nothing to loose: 
 
 - Participants will learn - and have fun
