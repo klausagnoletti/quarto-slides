@@ -22,7 +22,7 @@ But in IR training it's different.
 Tabletops are widely used and seen as 'the way' to teach this. And yes, it can be - depending on how it's done.  
 Oftentimes it's dull and not very realistic in that it consists of people around a table and talking about ficatious situations and which mitigating procedures are available.
 In a real incident unforeseen things happen so without that (or injects as they're called) reality comes crushing and shows uncomfortable weaknessess in your defence.  
-Another example is personal dependencies; one person can't do everything. They don't have enough badwidth. And what if that person got run over by a bus? You're screwed!   
+Another example is personal dependencies; one person can't do everything. They don't have enough bandwidth. And what if that person got run over by a bus? You're screwed!   
 So, what is the state of your security really? You might show things differently to a colleague, a partner and a boss.  
 Ego, pride and consequences to employment can conflict with honesty.
 The worst part is that it leaves you with a fake picture of reality with potentially fatal consequences. 
@@ -46,10 +46,9 @@ To me, it’s obvious that you learn better, when you’re having fun.
 Fortunately science agrees. The article is a metastudy of board, tabletop, and other analog game-based learning approaches.  
 Playing games is fun - while learning  
 Contrary to what some believe, fun can be serious business.  
-You *can* spend you time wisely and productively while having fun - believe it or not.  
+You *can* spend your time wisely and productively while having fun - believe it or not.  
 :::
 
-<!----
 ## tidbit: Busting myths
 
 ::: {.notes}
@@ -63,7 +62,6 @@ A lot of lost potential there.
 As I see it, playing games has a lot of **serious** potential.  
 
 :::
---->
 
 ## Your brain is wired for learning with others (1/2)
 > I think we’re all impressed by how stupid humans are. It reaches almost epic proportions. We’re stupid in dozens and dozens of ways but human minds are plug-and-play devices; they’re not meant to be used alone. They’re meant to be used in networks. Games allow us to do that – they allow us to use *collective intelligence*. Collectively, we’re not so stupid.
@@ -75,7 +73,6 @@ Article summing up panel debate at Stanford Graduate School of Education, quotin
 ::: {.notes}
 **Script:** 
 *note: Read quote*  
-*change slide*
 :::
 
 
@@ -109,17 +106,17 @@ And guess what: our experience from the real world backs this up. Hence this tal
 
 :::
 
-<!----
 ## tidbit: Going into character
 
 ::: {.notes}
 **Script:**  
 Magic happens when people go into character  
-Several phases
+There's several phases of this:
 
 - Awkwardness
 - When broken, people ease up and laugh a lot.
-And that's good. Laughing is good. Laughing is engagement.
+And that's good. Laughing is good. Laughing is engagement.  
+Put on edge I think that this is a core reason why role playing games works so well for this.  
 :::
 --->
 
@@ -147,10 +144,11 @@ And as I talked about before, honesty is crucial in testing IR.
 
 ::: {.notes}
 **Script:**  
-As a bonus you get advantages you simply can't have in an ordinary tabletop exercise, such as empathy and a more likelike simulation.  
+As a bonus you get advantages you simply can't have in an ordinary tabletop exercise, such as empathy and a more lifelike simulation.  
 Let me explain.  
 Roleplaying allows players see the world from a different perspective.  
-Imagine putting a very technical and logical person in the role of 'head of communications'. They might suddenly realize how important stakeholder management is during an incident. This in turn improves teamwork - along with other players rotating roles as well.  
+Imagine putting a very technical and logical person in the role of 'head of communications'. They might suddenly realize how important stakeholder management is during an incident.  
+This in turn improves teamwork - along with other players rotating roles as well.  
 Since it's a simulation it means that players get to be aware of obvious limitations such as personal dependencies.  
 One person can't do it all at one.  
 And what if that person gets run down by a bus?  
@@ -179,7 +177,6 @@ We plan to change that focus from IR to a more general focus.
 *next slide*  
 :::
 
-<!----
 ## tidbit: Why open-source
 
 ::: {.notes}
@@ -188,19 +185,15 @@ It might seem counter intuitive to give something away you want to sell. Actuall
 Talking to Jason Blanchard from Black Hills Infosec we realized that the more you give away and the more you make companies able to play for free, the more they want to hire you to do it. Obviously it takes a lot of training to develop scenarios and run games so even though rules, characters, scenarios and everything else needed is available for free, it still takes skills to run a game. And to companies time is money so even though they do have employees that *could* run the game, it's usually cheaper for them not to.
 So yes, it ios possible to earn money on open-source. Also when it's a role playing game.
 
---->
 
-<!----
 ## tidbit: Story of HackBack
 
 ::: {.notes}
 **Script:**  
-So at one time we came up with combining IR tabletobs with Dungeons & Dragons. More precisely it happened to me in Vegas in 2018 when I heard the then CISO of Expel, Bruce Potter talk about how he and his son Bobby, an avid D&D player, had turned D&D into IR training. What stuck with me from that experience is that they said that since they started doing the perception of IR training had shifted from being something nobody wanted to partake in, into an event that was sought out and requested. To me that was mindblowing since in reality this is what we want as mindful security professionals. And here was a tool that provided that.
+So at one time we came up with combining IR tabletobs with Dungeons & Dragons. More precisely it happened to me in Vegas in 2018 when I heard the then CISO of Expel, Bruce Potter, talk about how he and his son Bobby, an avid D&D player, had turned D&D into IR training. What stuck with me from that experience is that Bruce said that since they started doing this, the perception of IR training had shifted from being something nobody wanted to partake in, into an event that was sought out and requested. To me that was mindblowing since in reality this is what we want as security professionals. And here was a tool that provided that.
 Fast forward to 2023 when I started out as a freelance consultant and was reminded of this. I started investigating what happened since that talk in Vegas and found HackBack Gaming, an American company founded by Andy Kaplan who had taken Bruce's game, simplified it a bit and turned it into a company with a product. I reached out to him to ask if he would teach me the game. He agreed, or rather, he said he couldn't because of a conflicting full-time job he had taken after the COVID pandemic. Instead he referred me to his friend Glen from the American company Cyber Risk Opportunities. We found a common passion in HackBack and started developing it further. Glen's company has since then bought Andy's company and together with him I am working on making it open-source and build a community around it, heavily inspired by Jason Blanchard and the other wonderful folks at Black Hills Infosec and their work on Backdoors & Breaches, a more technically focused IR training card game.
 
 :::
-
---->
 
 ## Wide range of applications
 
@@ -222,7 +215,7 @@ HackBack can be used to teach teamwork; How to handle an incident, how to work t
 HackBack can be used to expand the scope of a purple team assignment so that instead of making it purely technical, HackBack can provide a layer of crisis management training on top, making it even more realistic.  
 In marketing HackBack can be used to give players an understanding of how your product or concept works in real life.  
 HackBack can be scaled up and down to improve general awareness, or something super specific. Instead of one character playing a role, a team plays that role. Depending on the purpose of the game, your internal security team could be divided so that teams end up having more of those quality discussions where they actually learn.  
-Since HackBack can simulate real events, it can be used to teach employees, customers or other stakeholders how your company work on your red team assignments or used to make customers or partners understand exactly how you managed to handle that dire incident which was threatening the entire company or country's infrastructure.  
+Since HackBack can simulate real events, it can be used to teach employees, customers or other stakeholders how your company work on your red team assignments or use it to make customers or partners understand exactly how you managed to handle that dire incident which was threatening the entire company or country's infrastructure.  
 The possibilities are endless. It's just a matter of getting the right idea...
 :::
 
@@ -236,25 +229,25 @@ Rules
 
 ::: {.notes}
 **Script:** 
-As I said before, HackBack is currently mostly used as incident training. So let me briefly go through the rules to give you a better understaind of how it works.    
+As I said before, HackBack is currently mostly used as incident response training. So let me briefly go through the rules to give you a better understaind of how it works.    
 Each game is run by an Incident Master. They are the ultimate authority and storyteller, meaning they decide everything going on in the game, the story, what a player can and can't do and what the consequences are.  
 Each player or team plays a character such as a Microsoft System Administrator or a Level 1 supporter. Part of the fun is that these characters are all very stereotypical, meaning that the Microsoft System Arcitect wants to make everything Windows and Azure, thinks Linux is a failed experiment and that the Lumia phone only failed because it was ahead of its time.  
 Just as in D&D characters have modifiers outlining their talents and personality. The Microsoft System Architect has -2 in likeability because everyone find them really annoying.  
 Similarly the Level 1 supporter is very outgoing and likeable, very eager to learn about anything going on in the company.  
-Obviously they have a +2 in likeability, meaning that when they call someone, the person on the receiving end actually want to pick up phone to talk to them.  
+Obviously they have a +2 in likeability, meaning that when they call someone, the person on the receiving end actually want to pick up the phone to talk to them.  
 Each game usually consists of three rounds taking place within the same scenario but on different points in time. Games often start on a Friday afternoon since incidents usually happen at the worst time imaginable.  
 Each character has two actions in each round. An action is anything they actively do in the game.  
-This means that going out of character, talking internally among players in what to do is not an action and can always be done at any time in the game.  
-When the player decided on what they want to do, they roll a 20-sided dice and depending on how difficult the IM deems it to be (easy, medium or high), they have to roll over 5, 10 or 15. And if any modifiers are in place they will be added or subtracted.  
+This means that going out of character, talking internally among players on what to do is not an action and can always be done at any time in the game.  
+When the player decide on what they want to do, they roll a 20-sided dice and depending on how difficult the IM deems it to be (easy, medium or high), they have to roll over 5, 10 or 15. And if any modifiers are in place they will be added or subtracted.  
 The dice is there to emulate real life; during an incident the team can do everything right; still for some reason, it doesn't work. This means that an important part of being in an incident is to come up with alternative plans on your feet.  
 In other words; simulating this is an important part of IR training.  
 It's also the job of the IM to balance this and make sure players maximize learning and gets through the entire scenario (as opposed to rolling low and not getting anywhere).  
 As we see it this is how players learn; by having those discussions during the game where they find out how to act.  
-Similarly, players doesn't get optimal learning if they roll high all the time and everything's a breeze.  
-Everybody in Incident Response knows that it's never that easy.   
+Similarly, players don't get optimal learning if they roll high all the time and everything's a breeze.  
+Everybody in Incident Response know that it's never that easy.   
 The role of the IM is to adjust the level of the game to that sweet spot.
 In HackBack, scenarios are always very open-ended. This requires a skillful IM; not only will they need to be able to have a very broad understanding of cyber security but they also need to be able to think on their feet, depending on where the game takes them.  
-It's definitely an advantage for an IM to have experience as a Dungeon Master in D&D - but not a requirement. 
+It's definitely an advantage for an IM to have experience as a Dungeon Master in D&D - but it's not a requirement. 
 
 :::
 
@@ -265,7 +258,7 @@ Why not make it fun and engaging?
 **Script:**  
 When doing compliance there's usually a requirement for incident response training.  
 This means that you *have* to train incident response.   
-Oftentimes compliance in general is not vey fun or interesting for most people involved.  
+Oftentimes compliance in general is not very fun or interesting for most people involved.  
 HackBack is a tool you can use to make it fun, interesting and engaging.  
 As I see it there's nothing to loose: 
 
