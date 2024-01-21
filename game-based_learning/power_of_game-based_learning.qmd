@@ -31,13 +31,13 @@ Luckily I have a proposal for a solution:
 :::
 
 ## Game-based learning
-> Most studies in the sample reported analog GBL as an effective pedagogical tool with an impact on the learning, cognitive, and psychological levels.
+> Most studies in the sample reported analog GBL as an effective pedagogical tool with an impact on the learning, cognitive, and psychological levels.  
 
 It's fun playing games  
 Fun is serious business  
 
 ::: aside
-Article from '[Frontiers in Psychology](https://www.frontiersin.org/)' [Playing at the school table: Systematic literature review of board, tabletop, and other analog game-based learning approaches](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1160591/full)
+Article from the media [Frontiers in Psychology](https://www.frontiersin.org/): [Playing at the school table: Systematic literature review of board, tabletop, and other analog game-based learning approaches](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1160591/full)
 :::
 
 ::: {.notes}
@@ -64,7 +64,7 @@ As I see it, playing games has a lot of **serious** potential.
 :::
 
 ## Your brain is wired for learning with others (1/2)
-> I think we’re all impressed by how stupid humans are. It reaches almost epic proportions. We’re stupid in dozens and dozens of ways but human minds are plug-and-play devices; they’re not meant to be used alone. They’re meant to be used in networks. Games allow us to do that – they allow us to use *collective intelligence*. Collectively, we’re not so stupid.
+> I think we’re all impressed by how stupid humans are. It reaches almost epic proportions. We’re stupid in dozens and dozens of ways but human minds are plug-and-play devices; they’re not meant to be used alone. They’re meant to be used in networks. Games allow us to do that – they allow us to use *collective intelligence*. Collectively, we’re not so stupid.  
 
 ::: aside
 Article summing up panel debate at Stanford Graduate School of Education, quoting James Gee, an Arizona State University: [Playing to learn: Panelists at Stanford discussion say using games as an educational tool provides opportunities for deeper learning](https://news.stanford.edu/2013/03/01/games-education-tool-030113/).
@@ -92,7 +92,7 @@ Luckily, science, again, agrees with us:
 :::
 
 ## Why role playing games?
-> When Dungeons & Dragons and its cousins are played in an inviting, encouraging, compassionate, and intellectually engaged environment, play opens the door to truly amazing possibilities for learning.
+> When Dungeons & Dragons and its cousins are played in an inviting, encouraging, compassionate, and intellectually engaged environment, play opens the door to truly amazing possibilities for learning.  
 
 ::: aside
 Article quoting David Simkins, a professor at the Rochester Institute of Technology, who is an expert on games and learning: [How 'Dungeons & Dragons' Primes Students for Interdisciplinary Learning, Including STEM](https://www.kqed.org/mindshift/51790/how-dungeons-dragons-primes-students-for-interdisciplinary-learning-including-stem)
@@ -118,7 +118,6 @@ There's several phases of this:
 And that's good. Laughing is good. Laughing is engagement.  
 Put on edge I think that this is a core reason why role playing games works so well for this.  
 :::
---->
 
 ## Roleplaying is immersive
 When players are immersed, they
@@ -159,7 +158,7 @@ I'll talk about that now.
 :::
 
 ## Meet HackBack
-A general framework for simulating *any* situation
+A general framework for simulating *any* situation  
 
 
 ..also it's open-source
@@ -174,7 +173,6 @@ Also it's open-source as we want to spread the word about it and make it open-so
 This means that all characters, scenarios and guidance on planning and running games is available on GitHub as markdown. 
 For now we mostly use it for IR training, hence that is why I've primarily talked about that until now.  
 We plan to change that focus from IR to a more general focus.  
-*next slide*  
 :::
 
 ## tidbit: Why open-source
@@ -183,16 +181,15 @@ We plan to change that focus from IR to a more general focus.
 **Script:** 
 It might seem counter intuitive to give something away you want to sell. Actually it's not. 
 Talking to Jason Blanchard from Black Hills Infosec we realized that the more you give away and the more you make companies able to play for free, the more they want to hire you to do it. Obviously it takes a lot of training to develop scenarios and run games so even though rules, characters, scenarios and everything else needed is available for free, it still takes skills to run a game. And to companies time is money so even though they do have employees that *could* run the game, it's usually cheaper for them not to.
-So yes, it ios possible to earn money on open-source. Also when it's a role playing game.
-
+So yes, it is possible to earn money on open-source. Also when it's a role playing game.
+:::
 
 ## tidbit: Story of HackBack
 
 ::: {.notes}
 **Script:**  
-So at one time we came up with combining IR tabletobs with Dungeons & Dragons. More precisely it happened to me in Vegas in 2018 when I heard the then CISO of Expel, Bruce Potter, talk about how he and his son Bobby, an avid D&D player, had turned D&D into IR training. What stuck with me from that experience is that Bruce said that since they started doing this, the perception of IR training had shifted from being something nobody wanted to partake in, into an event that was sought out and requested. To me that was mindblowing since in reality this is what we want as security professionals. And here was a tool that provided that.
+So at one time we came up with combining IR tabletops with Dungeons & Dragons. More precisely it happened to me in Vegas in 2018 when I heard the then CISO of Expel, Bruce Potter, talk about how he and his son Bobby, an avid D&D player, had turned D&D into IR training. What stuck with me from that experience is that Bruce said that since they started doing this, the perception of IR training had shifted from being something nobody wanted to partake in, into an event that was sought out and requested. To me that was mindblowing since in reality this is what we want as security professionals. And here was a tool that provided that.
 Fast forward to 2023 when I started out as a freelance consultant and was reminded of this. I started investigating what happened since that talk in Vegas and found HackBack Gaming, an American company founded by Andy Kaplan who had taken Bruce's game, simplified it a bit and turned it into a company with a product. I reached out to him to ask if he would teach me the game. He agreed, or rather, he said he couldn't because of a conflicting full-time job he had taken after the COVID pandemic. Instead he referred me to his friend Glen from the American company Cyber Risk Opportunities. We found a common passion in HackBack and started developing it further. Glen's company has since then bought Andy's company and together with him I am working on making it open-source and build a community around it, heavily inspired by Jason Blanchard and the other wonderful folks at Black Hills Infosec and their work on Backdoors & Breaches, a more technically focused IR training card game.
-
 :::
 
 ## Wide range of applications

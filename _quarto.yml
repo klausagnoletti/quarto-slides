@@ -13,6 +13,9 @@ format:
     hash-type: number
     embed-resources: true
     show-notes: separate-page
+    transition: slide
+    transition-speed: fast
+    multiplex: true
   pptx: default
   docx:
     toc: false
