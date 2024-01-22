@@ -12,9 +12,8 @@ format:
     slide-level: 2
     hash-type: number
     embed-resources: true
-    show-notes: separate-page
-    transition: slide
-    transition-speed: fast
+    transition: fade
+    transition-speed: default
     multiplex: true
   pptx: default
   docx:

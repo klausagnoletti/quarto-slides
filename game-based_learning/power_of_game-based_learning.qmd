@@ -33,6 +33,7 @@ Luckily I have a proposal for a solution:
 ## Game-based learning
 > Most studies in the sample reported analog GBL as an effective pedagogical tool with an impact on the learning, cognitive, and psychological levels.  
 
+
 It's fun playing games  
 Fun is serious business  
 
@@ -49,7 +50,7 @@ Contrary to what some believe, fun can be serious business.
 You *can* spend your time wisely and productively while having fun - believe it or not.  
 :::
 
-## tidbit: Busting myths
+## tidbit: Busting Myths
 
 ::: {.notes}
 **Script:**  
@@ -63,7 +64,7 @@ As I see it, playing games has a lot of **serious** potential.
 
 :::
 
-## Your brain is wired for learning with others (1/2)
+## Your brain is wired for learning with others (1/2) {.smaller}
 > I think we’re all impressed by how stupid humans are. It reaches almost epic proportions. We’re stupid in dozens and dozens of ways but human minds are plug-and-play devices; they’re not meant to be used alone. They’re meant to be used in networks. Games allow us to do that – they allow us to use *collective intelligence*. Collectively, we’re not so stupid.  
 
 ::: aside
