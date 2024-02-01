@@ -18,9 +18,9 @@ or, specifically in IR:
 ::: {.notes}
 **Script:**  
 A traditional approach is either class-based or computer-based training.  
-But in IR training it's different.    
-Tabletops are widely used and seen as 'the way' to teach this. And yes, it can be - depending on how it's done.  
-Oftentimes it's dull and not very realistic in that it consists of people around a table and talking about ficatious situations and which mitigating procedures are available.
+But in incident response training it's different.    
+Tabletops are widely used and can be seen as 'the way' to teach this. And yes, it can be - depending on how it's done.  
+Oftentimes it's dull and not very realistic in that it consists of people sitting around a table and talking about ficatious situations and which mitigating procedures are available.
 In a real incident unforeseen things happen so without that (or injects as they're called) reality comes crushing and shows uncomfortable weaknessess in your defence.  
 Another example is personal dependencies; one person can't do everything. They don't have enough bandwidth. And what if that person got run over by a bus? You're screwed!   
 So, what is the state of your security really? You might show things differently to a colleague, a partner and a boss.  
@@ -207,7 +207,7 @@ Fast forward to 2023 when I started out as a freelance consultant and was remind
 **Script:**  
 Since HackBack can simulate any situation there's no reason not to use it outside of IR training.  
 Here's a few examples:  
-It can be used to make abstract concepts more concrete. For instance, why does IAM matter? And what's Zero Trust **really** (now that it's not a fancy product you can buy).  
+It can be used to make abstract concepts more concrete. For instance, why does IAM matter? And what's Zero Trust **really** about (now that it's not a fancy product you can buy).  
 HackBack can be used to teach sales and marketing how it feels to be in the middle of an incident or how a hacker thinks. That gives them a better understanding so they're better at their job.  
 HackBack can be used to teach teamwork; How to handle an incident, how to work together as a team to hack or whatever you can think of.  
 HackBack can be used to expand the scope of a purple team assignment so that instead of making it purely technical, HackBack can provide a layer of crisis management training on top, making it even more realistic.  
@@ -230,13 +230,13 @@ Rules
 As I said before, HackBack is currently mostly used as incident response training. So let me briefly go through the rules to give you a better understanding of how it works.    
 Each game is run by an Incident Master. They are the ultimate authority and storyteller, meaning they decide everything going on in the game, the story, what a player can and can't do and what the consequences are.  
 Each player or team plays a character such as a Microsoft System Administrator or a Level 1 supporter. Part of the fun is that these characters are all very stereotypical, meaning that the Microsoft System Arcitect wants to make everything Windows and Azure, thinks Linux is a failed experiment and that the Lumia phone only failed because it was ahead of its time.  
-Just as in D&D, characters have modifiers outlining their talents and personality. The Microsoft System Architect has -2 in likeability because everyone find them really annoying.  
+Just as in Dungeons & Dragons, characters have modifiers outlining their talents and personality. The Microsoft System Architect has -2 in likeability because everyone find them really annoying.  
 Similarly the Level 1 supporter is very outgoing and likeable, very eager to learn about anything going on in the company.  
 Obviously they have a +2 in likeability, meaning that when they call someone, the person on the receiving end actually want to pick up the phone to talk to them.  
 Each game usually consists of three rounds taking place within the same scenario but on different points in time. Games often start on a Friday afternoon since incidents usually happen at the worst time imaginable.  
 Each character has two actions in each round. An action is anything they actively do in the game.  
 This means that going out of character, talking internally among players on what to do is not an action and can always be done at any time in the game.  
-When the player decide on what they want to do, they roll a 20-sided dice and depending on how difficult the IM deems it to be (easy, medium or high), they have to roll over 5, 10 or 15. And if any modifiers are in place they will be added or subtracted.  
+When the player decided on what they do, they roll a 20-sided dice and depending on how difficult the IM deems it to be (easy, medium or high), they have to roll over 5, 10 or 15. And if any modifiers are in place they will be added or subtracted.  
 The dice is there to emulate real life; during an incident the team can do everything right; still for some reason, it doesn't work. This means that an important part of being in an incident is to come up with alternative plans on your feet.  
 In other words; simulating this is an important part of IR training.  
 It's also the job of the IM to balance this and make sure players maximize learning and gets through the entire scenario (as opposed to rolling low and not getting anywhere).  
@@ -245,7 +245,7 @@ Similarly, players don't get optimal learning if they roll high all the time and
 Everybody in Incident Response know that it's never that easy.   
 The role of the IM is to adjust the level of the game to that sweet spot.
 In HackBack, scenarios are always very open-ended. This requires a skillful IM; not only will they need to be able to have a very broad understanding of cyber security but they also need to be able to think on their feet, depending on where the game takes them.  
-It's definitely an advantage for an IM to have experience as a Dungeon Master in D&D - but it's not a requirement. 
+It's definitely an advantage for an IM to have experience as a Dungeon Master in Dungeons & Dragons - but it's not a requirement. 
 
 :::
 
