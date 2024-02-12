@@ -241,7 +241,7 @@ Each game is run by an Incident Master. They are the ultimate authority and stor
 Each player or team plays a character such as a Microsoft System Administrator or a Level 1 supporter. Part of the fun is that these characters are all very stereotypical, meaning that the Microsoft System Arcitect wants to make everything Windows and Azure, thinks Linux is a failed experiment and that the Lumia phone only failed because it was ahead of its time.  
 Just as in Dungeons & Dragons, characters have modifiers outlining their talents and personality. The Microsoft System Architect has -2 in likeability because everyone find them really annoying.  
 Similarly the Level 1 supporter is very outgoing and likeable, very eager to learn about anything going on in the company.  
-Obviously they have a +2 in likeability, meaning that when they call someone, the person on the receiving end actually want to pick up the phone to talk to them.  
+Obviously they have a +2 in likeability, meaning that when they call someone, the person on the receiving end actually want to pick up the phone and talk to them.  
 Each game usually consists of three rounds taking place within the same scenario but on different points in time. Games often start on a Friday afternoon since incidents usually happen at the worst time imaginable.  
 Each character has two actions in each round. An action is anything they actively do in the game.  
 This means that going out of character, talking internally among players on what to do is not an action and can always be done at any time in the game.  
