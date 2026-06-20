@@ -2,3 +2,4 @@
 /.quarto/
 *.html
 *.png
+**/*.quarto_ipynb
