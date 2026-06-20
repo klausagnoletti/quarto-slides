@@ -1,0 +1,80 @@
+name: Build and publish slides
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.qmd'
+      - '**/*.scss'
+      - '**/images/**'
+      - '**/fonts/**'
+      - '.github/workflows/build-slides.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render every deck to self-contained HTML
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          mkdir -p public
+          built=0
+          for dir in */ ; do
+            qmds=("$dir"[!_]*.qmd)
+            [ ${#qmds[@]} -eq 1 ] || continue   # exactly one deck file per directory
+            qmd="${qmds[0]}"
+            name="$(basename "$dir")"
+            echo "::group::Rendering $qmd"
+            quarto render "$qmd" --to revealjs
+            out="$(find _output -name "$(basename "${qmd%.qmd}").html" | head -1)"
+            cp "$out" "public/$name.html"
+            built=$((built+1))
+            echo "::endgroup::"
+          done
+          echo "Built $built deck(s):"
+          ls -la public
+          [ "$built" -gt 0 ]
+
+      - name: Upload built decks as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: slides
+          path: public/
+          if-no-files-found: error
+
+      - name: Check deploy config
+        id: cfg
+        env:
+          H: ${{ secrets.SLIDES_SSH_HOST }}
+        run: echo "ready=$([ -n "$H" ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy to relationsec.net over SSH
+        if: steps.cfg.outputs.ready == 'true'
+        env:
+          SSH_KEY: ${{ secrets.SLIDES_SSH_KEY }}
+          SSH_HOST: ${{ secrets.SLIDES_SSH_HOST }}
+          SSH_USER: ${{ secrets.SLIDES_SSH_USER }}
+          SSH_PORT: ${{ secrets.SLIDES_SSH_PORT }}
+          DEPLOY_PATH: ${{ secrets.SLIDES_DEPLOY_PATH }}
+        run: |
+          set -euo pipefail
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy
+          chmod 600 ~/.ssh/deploy
+          PORT="${SSH_PORT:-22}"
+          OPTS="-i $HOME/.ssh/deploy -o StrictHostKeyChecking=accept-new"
+          # ensure the target directory exists (ignore if the shell restricts mkdir)
+          ssh $OPTS -p "$PORT" "$SSH_USER@$SSH_HOST" "mkdir -p '$DEPLOY_PATH'" || true
+          # copy decks; no --delete, so a misconfigured path can never wipe the site
+          scp $OPTS -P "$PORT" public/*.html "$SSH_USER@$SSH_HOST:$DEPLOY_PATH/"
+          echo "Deployed $(ls public/*.html | wc -l) deck(s) to $SSH_HOST:$DEPLOY_PATH"
