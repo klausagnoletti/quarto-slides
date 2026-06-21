@@ -1,24 +1,13 @@
 /*-- scss:defaults --*/
-// Light textured backgrounds carry dark text, matching the original deck.
-$body-bg: #f4f1ea;
-$body-color: #1a1a1a;
-$link-color: #6b3fa0;
-$presentation-heading-color: #2a1a4a;
-$presentation-heading-font: "Inter", system-ui, sans-serif;
+// Original deck font is Proxima Nova (commercial, not embeddable). Montserrat is
+// the closest free stand-in; swap during the SlideCraft/Designer beautify pass.
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
+$font-family-sans-serif: "Montserrat", system-ui, sans-serif;
 $presentation-font-size-root: 30px;
 
 /*-- scss:rules --*/
+// 1:1 mode: every element is absolutely positioned with its own inline style.
+// Keep the stage neutral so per-element styles render as authored.
 .reveal .slides section { text-align: left; }
-.reveal h2 {
-  text-transform: none;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-}
-// Empty-heading (full-bleed composed image) slides: hide the heading entirely.
-.reveal .slides section.center > h2:empty { display: none; }
-// Readability halo so dark text survives over the busy light texture.
-.reveal h2, .reveal li, .reveal p {
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.85);
-}
-.reveal ul { margin-left: 0.2em; }
-.reveal li { margin-bottom: 0.35em; }
+.reveal .absolute p { margin: 0; }
+.reveal .absolute { line-height: 1.2; }

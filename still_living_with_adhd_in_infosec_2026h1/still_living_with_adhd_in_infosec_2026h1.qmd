@@ -10,7 +10,7 @@ format:
     transition: fade
 ---
 
-##  {background-image="images/s01_0.png" background-size="cover" .center}
+## {background-image="images/s01_0.png" background-size="cover"}
 
 ::: {.notes}
 Welcome to my talk on living with ADHD in infosec
@@ -34,7 +34,7 @@ Yours is not the same. Maybe you can recognize elements. Maybe something I say c
 I hope so.
 :::
 
-##  {background-image="images/s02_0.png" background-size="cover" .center}
+## {background-image="images/bg-texture.png" background-size="cover"}
 
 ::: {.notes}
 Anyone here has black pets? Then you know the challenge
@@ -52,13 +52,17 @@ also teaching them to use the infosec community as a marketing channel both to b
 No need to take photos of slides since QR code to download is on the last page.
 :::
 
-## But first let’s talk about games {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/bg-texture.png" background-size="cover"}
 
-- malwareandmonsters.com
+:::{.absolute style="top:37px;left:72px;width:906px;font-size:58px;color:#3c78d8;font-weight:700;text-align:left;line-height:1.2;"}
+But first let’s talk about games
+:::
 
-![](images/s03_0.png){.absolute top=189 left=95 width=420}
+![](images/s03_1.png){.absolute top=194 left=98 width=426}
 
-![](images/s03_1.png){.absolute top=189 left=630 width=294}
+:::{.absolute style="top:483px;left:59px;width:500px;font-size:20px;color:#1a1a1a;font-weight:400;text-align:left;line-height:1.2;"}
+malwareandmonsters.com
+:::
 
 ::: {.notes}
 I’m a big advocate for mixing fun and learning - especially games and learning
@@ -72,7 +76,7 @@ Get stickers!
 Now let’s get on to the serious part!
 :::
 
-##  {background-image="images/s04_0.png" background-size="cover" .center}
+## {background-image="images/s04_0.png" background-size="cover"}
 
 ::: {.notes}
 I was fired twice in the two last years as normal employee.
@@ -83,13 +87,19 @@ You see, I may look relatively normal.
 But looks deceive..
 :::
 
-## I have ADHD.. and it’s ok {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/bg-texture.png" background-size="cover"}
 
-- Was diagnosed 6 years ago, aged 45
-- That explained a lot to me..
-- Increasingly harder to find a job I cared about
-- Many short employments
-- Something had to change
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:58px;color:#3c78d8;font-weight:700;text-align:left;line-height:1.2;"}
+I have ADHD.. and it’s ok
+:::
+
+:::{.absolute style="top:171px;left:36px;width:835px;font-size:41px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+Was diagnosed 6 years ago, aged 45  
+That explained a lot to me..  
+Increasingly harder to find a job I cared about  
+Many short employments  
+Something had to change
+:::
 
 ::: {.notes}
 Was diagnosed 6 years ago
@@ -104,9 +114,9 @@ Started to burden me (and my wife).
 So something just had to change..
 :::
 
-##  {background-image="images/s06_1.png" background-size="cover" .center}
+## {background-image="images/s06_1.png" background-size="cover"}
 
-![](images/s06_0.png){.absolute top=126 left=420 width=242}
+![](images/s06_0.png){.absolute top=130 left=420 width=247}
 
 ::: {.notes}
 But first: let me tell you a bit about ADHD
@@ -114,13 +124,19 @@ I didn’t know anything about ADHD before I was diagnosed.
 So I assume you don’t either
 :::
 
-## ADHD? ADD? {background-image="images/s07_0.png" background-size="cover"}
+## {background-image="images/s07_0.png" background-size="cover"}
 
-- AD/HD
-- Attention Deficit /
-- Hyperactivity Disorder
-- Can have both or just one
-- Attention Deficit alone = ADD
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:58px;color:#ff9900;font-weight:700;text-align:left;line-height:1.2;"}
+ADHD? ADD?
+:::
+
+:::{.absolute style="top:167px;left:36px;width:978px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+AD/HD  
+Attention Deficit /  
+Hyperactivity Disorder  
+Can have both or just one  
+Attention Deficit alone = ADD
+:::
 
 ::: {.notes}
 Welcome to ADHD 101
@@ -139,11 +155,15 @@ All of a sudden there was an explanation to many of those shortcomings
 That had all just been there always
 :::
 
-## The ADHD iceberg {background-image="images/s08_0.png" background-size="cover"}
+## {background-image="images/s08_0.png" background-size="cover"}
 
-- @finuccinalfredo
+:::{.absolute style="top:678px;left:103px;width:344px;font-size:61px;color:#feae08;font-weight:700;text-align:right;line-height:1.2;"}
+The ADHD iceberg
+:::
 
-![](images/s08_1.png){.absolute top=0 left=378 width=609}
+:::{.absolute style="top:0px;left:846px;width:204px;font-size:20px;color:#ff0000;font-weight:700;text-align:left;line-height:1.2;"}
+@finuccinalfredo
+:::
 
 ::: {.notes}
 Enter the ADHD Iceberg of common misperceptions
@@ -168,9 +188,9 @@ Chronic Unemployment. Ok, not THAT bad but I see a trend in my challenges and ov
 Looking at this I feel incredibly lucky. Things could have been a lot harder.
 :::
 
-##  {background-image="images/s09_1.png" background-size="cover" .center}
+## {background-image="images/s09_1.png" background-size="cover"}
 
-![](images/s09_0.png){.absolute top=105 left=567 width=399}
+![](images/s09_0.png){.absolute top=109 left=568 width=406}
 
 ::: {.notes}
 Overview from before is taken from ASRS
@@ -182,7 +202,7 @@ Suddenly there was reasoning for and connection between
 many of those seamlessly stupid and unexplainable things I did
 :::
 
-##  {background-image="images/s10_0.png" background-size="cover" .center}
+## {background-image="images/s10_0.png" background-size="cover"}
 
 ::: {.notes}
 Important thing to say:
@@ -195,18 +215,29 @@ Know yourself
 So you can mitigate
 :::
 
-## Mitigating {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/bg-texture.png" background-size="cover"}
 
-- Medicine
-- Elvanse, Vyvanse, Aduvanz (same thing)
-- Headphones with ‘ADHD focus music’ or binaural beats
-- Nootropics
-- L-Theanine, L-Tyrosine, Multi vitamin, Lithium Orotate
-- Loop earplugs (model ‘switch’)
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#212121;font-weight:700;text-align:left;line-height:1.2;"}
+Mitigating
+:::
 
-![](images/s11_0.png){.absolute top=427 left=504 width=515}
+:::{.absolute style="top:167px;left:44px;width:710px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+Medicine  
+Elvanse, Vyvanse, Aduvanz (same thing)
+:::
 
-![](images/s11_1.png){.absolute top=336 left=536 width=273}
+:::{.absolute style="top:379px;left:44px;width:936px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+Headphones with ‘ADHD focus music’ or binaural beats
+:::
+
+:::{.absolute style="top:273px;left:44px;width:908px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+Nootropics  
+L-Theanine, L-Tyrosine, Multi vitamin, Lithium Orotate
+:::
+
+:::{.absolute style="top:432px;left:44px;width:562px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+Loop earplugs (model ‘switch’)
+:::
 
 ::: {.notes}
 <DON’T CLICK>
@@ -230,18 +261,29 @@ Focus music makes my brain not fighting concentration
 Loop earplugs. A life savior at DEF CON!
 :::
 
-## Mitigating (cont’d) {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/bg-texture.png" background-size="cover"}
 
-- Breathing exercises
-- Art of Living / Breathe Smart
-- Job situation
-- Airtag all the things!
-- AI
-- PAI by Daniel Miessler
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#212121;font-weight:700;text-align:left;line-height:1.2;"}
+Mitigating (cont’d)
+:::
 
-![](images/s12_0.png){.absolute top=294 left=777 width=200}
+:::{.absolute style="top:226px;left:36px;width:606px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+Breathing exercises  
+Art of Living / Breathe Smart
+:::
 
-![](images/s12_1.jpg){.absolute top=49 left=567 width=284}
+:::{.absolute style="top:466px;left:51px;width:344px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+Job situation
+:::
+
+:::{.absolute style="top:149px;left:36px;width:438px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+Airtag all the things!
+:::
+
+:::{.absolute style="top:342px;left:44px;width:510px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+AI  
+PAI by Daniel Miessler
+:::
 
 ::: {.notes}
 <CLICK>
@@ -260,15 +302,22 @@ PAI
 And job.. Yes.. What to do with that?
 :::
 
-## Why getting fired was a good thing {background-image="images/s13_0.png" background-size="cover"}
+## {background-image="images/s13_0.png" background-size="cover"}
 
-- Working towards what I am good at and requires:
-- Diversity in tasks
-- Only accept tasks I want
-- Flexibility in working (when, how)
-- Need for things to be simpler to be motivating
-- Conclusion:
-- I’m going freelance!
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#212121;font-weight:700;text-align:left;line-height:1.2;"}
+Why getting fired was a good thing
+:::
+
+:::{.absolute style="top:149px;left:36px;width:978px;font-size:34px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+Working towards what I am good at and requires:  
+Diversity in tasks  
+Only accept tasks I want  
+Flexibility in working (when, how)  
+Need for things to be simpler to be motivating  
+  
+Conclusion:  
+I’m going freelance!
+:::
 
 ::: {.notes}
 So back to why getting fired was good for me
@@ -284,19 +333,25 @@ That’s very easy for even my brain to understand.
 That’s motivating!
 :::
 
-##  {background-image="images/s14_0.png" background-size="cover" .center}
+## {background-image="images/s14_0.png" background-size="cover"}
 
 ::: {.notes}
 Here’s an overview of things I learned along the way
 Maybe that can help you out if you’re in a similar situation
 :::
 
-## Lessons learned {background-image="images/s15_0.png" background-size="cover"}
+## {background-image="images/s15_0.png" background-size="cover"}
 
-- No problem? Don’t try to fix it then!
-- ADHD is ‘normal’ to have. Nothing to be ashamed about
-- Find your weaknesses/super powers.
-- Mitigate weaknesses - enhance super powers
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#ff9900;font-weight:700;text-align:left;line-height:1.2;"}
+Lessons learned
+:::
+
+:::{.absolute style="top:167px;left:36px;width:978px;font-size:36px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+No problem? Don’t try to fix it then!  
+ADHD is ‘normal’ to have. Nothing to be ashamed about  
+Find your weaknesses/super powers.  
+Mitigate weaknesses - enhance super powers
+:::
 
 ::: {.notes}
 Don’t get a diagnosis if you don’t have a problem
@@ -311,11 +366,15 @@ Find your super powers - find out which ADHD trait makes you excel
 Turn your career towards that if needed
 :::
 
-## Talking about Super powers {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/bg-texture.png" background-size="cover"}
 
-- Talking about Super powers
+:::{.absolute style="top:180px;left:149px;width:641px;font-size:98px;color:#3c78d8;font-weight:700;text-align:left;line-height:1.2;"}
+Talking about Super powers
+:::
 
-![](images/s16_0.png){.absolute top=21 left=42 width=578}
+:::{.absolute style="top:69px;left:1005px;width:344px;font-size:61px;color:#3c78d8;font-weight:700;text-align:left;line-height:1.2;"}
+Talking about Super powers
+:::
 
 ::: {.notes}
 Talking about super powers and icebergs: Meet the ADHD Strengths iceberg
@@ -327,11 +386,17 @@ Optimism/stupidity. ‘What can go wrong with this freelancing thing?’
 And yes, I’m incredibly funny. At least I think so myself.
 :::
 
-## Lessons learned (cont’d) {background-image="images/s17_0.png" background-size="cover"}
+## {background-image="images/s17_0.png" background-size="cover"}
 
-- When people know they can better understand; spouse, friends, employer.
-- If you’ve met one person with ADHD..
-- This is my ADHD. Not anyone else’s
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#ff9900;font-weight:700;text-align:left;line-height:1.2;"}
+Lessons learned (cont’d)
+:::
+
+:::{.absolute style="top:167px;left:36px;width:978px;font-size:36px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+When people know they can better understand; spouse, friends, employer.  
+If you’ve met one person with ADHD..  
+This is my ADHD. Not anyone else’s
+:::
 
 ::: {.notes}
 Sorry, got rabbitholed a bit there. Know that?
@@ -343,21 +408,29 @@ When you met one person with ADHD you’ve met one person with ADHD.
 Today I have described my ADHD. Not yours or anyone else’s
 :::
 
-## I asked a friend.. {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/bg-texture.png" background-size="cover"}
+
+:::{.absolute style="top:295px;left:268px;width:515px;font-size:61px;color:#ffffff;font-weight:700;text-align:left;line-height:1.2;"}
+I asked a friend..
+:::
 
 ::: {.notes}
 So now you’ve heard my story
 This time around I brought in the life story of a friend. You might have seen him before.
 :::
 
-## I asked my friend John Strand, CEO of Black Hills Information Security.. {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/bg-texture.png" background-size="cover"}
+
+:::{.absolute style="top:220px;left:171px;width:709px;font-size:61px;color:#ffffff;font-weight:700;text-align:left;line-height:1.2;"}
+I asked my friend John Strand, CEO of Black Hills Information Security..
+:::
 
 ::: {.notes}
 So now you’ve heard my story
 This time around I brought in the life story of my friend John Strand
 :::
 
-##  {background-image="images/s20_0.jpg" background-size="cover" .center}
+## {background-image="images/s20_0.jpg" background-size="cover"}
 
 ::: {.notes}
 Transcription:So I wanted to talk a little bit about what I've dealt with insofar as ADHD and some of my history.
@@ -442,11 +515,21 @@ And I'm not going to lie, it is hard.
 But in this field, if you can learn how to tune it properly, you're going to do fantastic.
 :::
 
-## You might wonder.. {background-image="images/s21_0.png" background-size="cover"}
+## {background-image="images/s21_0.png" background-size="cover"}
 
-- Neurodivergence is over-represented in
-- cyber security.
-- Why is that?
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#ff0000;font-weight:700;text-align:left;line-height:1.2;"}
+You might wonder..
+:::
+
+:::{.absolute style="top:162px;left:36px;width:978px;font-size:39px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+Neurodivergence is over-represented in  
+cyber security.  
+  
+Why is that?  
+  
+  
+
+:::
 
 ::: {.notes}
 Sorry, video became a little cheesy there. Blame my video guy (which is not me)
@@ -467,7 +550,7 @@ Is flexible seating really that important?
 Not to my boss. Flexible seating may be company policy. But…
 :::
 
-##  {background-image="images/s22_0.png" background-size="cover" .center}
+## {background-image="images/s22_0.png" background-size="cover"}
 
 ::: {.notes}
 You’re not drunk or having a severe case of amnesia.
@@ -476,13 +559,20 @@ Also, this is not so much about ADHD but more about that people are different
 And that we all have different needs.
 :::
 
-## Advice for Employers {background-image="images/s23_0.png" background-size="cover"}
+## {background-image="images/s23_0.png" background-size="cover"}
 
-- What is important to you?
-- People all have different needs
-- Be open to supporting that
-- Don’t ask ‘what can I do to help you’
-- Avoid letting people go is literally a win-win
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#3c78d8;font-weight:700;text-align:left;line-height:1.2;"}
+Advice for Employers
+:::
+
+:::{.absolute style="top:149px;left:36px;width:978px;font-size:35px;color:#666666;font-weight:400;text-align:left;line-height:1.2;"}
+What is important to you?  
+People all have different needs  
+Be open to supporting that  
+Don’t ask ‘what can I do to help you’  
+  
+Avoid letting people go is literally a win-win
+:::
 
 ::: {.notes}
 Disclaimer: Never been an employer - but have seem them screw up enough to be somewhat qualified
@@ -504,16 +594,22 @@ Instead say ‘would it help if..’. People don’t know what they can ask.
 Being more accepting and focusing on helping employees succeed is literally a win-win. For everybody.
 :::
 
-## One thing is what I think.. {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/bg-texture.png" background-size="cover"}
 
-- So I asked my friend John again..
+:::{.absolute style="top:235px;left:78px;width:866px;font-size:53px;color:#ff9900;font-weight:700;text-align:left;line-height:1.2;"}
+One thing is what I think..
+:::
+
+:::{.absolute style="top:377px;left:197px;width:655px;font-size:39px;color:#ff9900;font-weight:400;text-align:left;line-height:1.2;"}
+So I asked my friend John again..
+:::
 
 ::: {.notes}
 One thing is what I think - I’m not an employer and probably will never be.
 So I asked John again
 :::
 
-##  {background-image="images/s25_0.jpg" background-size="cover" .center}
+## {background-image="images/s25_0.jpg" background-size="cover"}
 
 ::: {.notes}
 Transcription:
@@ -546,11 +642,17 @@ deal with the superpower that you have so you can channel it appropriately and l
 wield it in a way that makes you a better person.
 :::
 
-## Final Words {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/bg-texture.png" background-size="cover"}
 
-- I started doing this to help others out
-- I’m happy to have done this many times already
-- I hope to have done the same here today
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#3c78d8;font-weight:700;text-align:left;line-height:1.2;"}
+Final Words
+:::
+
+:::{.absolute style="top:210px;left:48px;width:818px;font-size:38px;color:#000000;font-weight:400;text-align:center;line-height:1.2;"}
+I started doing this to help others out  
+I’m happy to have done this many times already  
+I hope to have done the same here today
+:::
 
 ::: {.notes}
 I started doing this to help others out. Spread awareness.
@@ -562,27 +664,29 @@ I hope to have made a difference to someone in the room today.
 That makes it all worth it.
 :::
 
-## I am always there to help {background-image="images/s27_0.png" background-size="cover"}
+## {background-image="images/s27_0.png" background-size="cover"}
 
-- @klausagnoletti@infosec.exchange
-- @klausagnoletti.bsky.social
-- https://www.linkedin.com/in/agnoletti
-- klaus@relationsec.net
-- https://relationsec.net/
-- Opinions (I have a lot of those)
-- Whatever else I can help with (btw, I am freelance consultant)
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#212121;font-weight:700;text-align:left;line-height:1.2;"}
+I am always there to help
+:::
 
-![](images/s27_1.png){.absolute top=161 left=32 width=32}
+:::{.absolute style="top:157px;left:75px;width:579px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+@klausagnoletti@infosec.exchange  
+@klausagnoletti.bsky.social  
+https://www.linkedin.com/in/agnoletti  
+klaus@relationsec.net  
+https://relationsec.net/  
+Opinions (I have a lot of those)  
+Whatever else I can help with (btw, I am freelance consultant)
+:::
 
-![](images/s27_2.png){.absolute top=280 left=32 width=32}
+![](images/s27_3.png){.absolute top=164 left=39 width=33}
 
-![](images/s27_3.png){.absolute top=329 left=32 width=32}
+![](images/s27_4.png){.absolute top=282 left=36 width=33}
 
-![](images/s27_4.png){.absolute top=385 left=32 width=32}
+![](images/s27_5.png){.absolute top=331 left=32 width=40}
 
-![](images/s27_5.png){.absolute top=140 left=651 width=357}
-
-![](images/s27_6.png){.absolute top=217 left=32 width=32}
+![](images/s27_6.png){.absolute top=392 left=32 width=40}
 
 ::: {.notes}
 Reach out to me
@@ -590,11 +694,11 @@ Reach out to me
 But before we end I just want the opportunity to spread totally irrelevant messages now that I have a crowd.
 :::
 
-##  {background-image="images/s28_0.png" background-size="cover" .center}
+## {background-image="images/s28_0.png" background-size="cover"}
 
-##  {background-image="images/s29_0.png" background-size="cover" .center}
+## {background-image="images/s29_0.png" background-size="cover"}
 
-![](images/s29_1.png){.absolute top=35 left=504 width=525}
+![](images/s29_1.png){.absolute top=38 left=512 width=526}
 
 ::: {.notes}
 Thanks for your time
