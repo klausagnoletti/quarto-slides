@@ -1,0 +1,11 @@
+/*-- scss:defaults --*/
+// Background colours and text colours are resolved per-element from the deck's
+// own theme palette, so the stage stays neutral. Font is tuned in the beautify pass.
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
+$font-family-sans-serif: "Montserrat", system-ui, sans-serif;
+$presentation-font-size-root: 30px;
+
+/*-- scss:rules --*/
+.reveal .slides section { text-align: left; }
+.reveal .absolute p { margin: 0; }
+.reveal .absolute { line-height: 1.2; }
