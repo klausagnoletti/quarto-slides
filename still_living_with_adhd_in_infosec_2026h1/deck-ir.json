@@ -1,0 +1,543 @@
+[
+  {
+    "n": 1,
+    "objectId": "p1",
+    "texts": [],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": 0,
+        "role": "bg"
+      }
+    ],
+    "notes": "Welcome to my talk on living with ADHD in infosec\nIt’s called ‘still’ because there used to be a previous version and I had to make changes to not do the same talk all over again :-)\nMet a lot of ADHDers since I started talking about ADHD 4 years ago\nConclusion: Everybody has something! \nSo we need to talk more about it. \nHence this talk\n\nGraphics by my friends in Black Rabbit (made Project 2030 with Trend Micro).\nDone this pro bono. So give them love!\nObviously it’s a very personal talk\nI do it to \nraise awareness about what ADHD also is\nbreak down taboos \nhopefully inspire others to break the taboo, get a diagnosis or just get a better life.\nIllustration. Very accurate, big mess inside my head, prevent concentration\n\nMy story is my story\nYours is not the same. Maybe you can recognize elements. Maybe something I say can help you. \nI hope so. \n"
+  },
+  {
+    "n": 2,
+    "objectId": "p2",
+    "texts": [],
+    "images": [
+      {
+        "wpct": 101,
+        "hpct": 101,
+        "xpct": -2,
+        "ypct": -2,
+        "role": "bg"
+      }
+    ],
+    "notes": "Anyone here has black pets? Then you know the challenge\nWorst thing about black cats is.. \nI’m Klaus, aged 50 and live in Copenhagen with my wife and our two shelter cats (yes, they’re brother and sister)\nBeen in infosec since 2004\nDuring that time I’ve gained experience with many areas of security\nFunny enough I’ve always wanted to try new things all the time.\nSo I’ve done everything from source code reviews and vulnerability scanning to security training, governance, risk, compliance (GRC), maturity assessments and used to work as a security architect at a few companies before my career took a turn.\nInvolved in local OWASP chapter since 2008 and co-founded BSides Copenhagen in 2019\nUsed to be head of community at CrowdSec.\nCombination of a technical role with marketing and communications until december 2022.\nAfter this I went freelance aiming to help companies both get more secure but \nalso teaching them to use the infosec community as a marketing channel both to bring business and talent.\nNo need to take photos of slides since QR code to download is on the last page. \n\n\n"
+  },
+  {
+    "n": 3,
+    "objectId": "p3",
+    "texts": [
+      "But first let’s talk about games\n",
+      "malwareandmonsters.com\n"
+    ],
+    "images": [
+      {
+        "wpct": 40,
+        "hpct": 36,
+        "xpct": 9,
+        "ypct": 27,
+        "role": "element"
+      },
+      {
+        "wpct": 28,
+        "hpct": 49,
+        "xpct": 60,
+        "ypct": 27,
+        "role": "element"
+      }
+    ],
+    "notes": "I’m a big advocate for mixing fun and learning - especially games and learning\nIt makes learning fun = engagement\nMalware & Monsters is old school analogue game IR\nFocus for now on malware containment\nFree to use - easy to get started\nZero prep scenarios\nGet stickers!\n\nNow let’s get on to the serious part!\n"
+  },
+  {
+    "n": 4,
+    "objectId": "p4",
+    "texts": [],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": -4,
+        "role": "bg"
+      }
+    ],
+    "notes": "I was fired twice in the two last years as normal employee.\nBest thing that happened..\nGood opportunity to stop and reflect over my situation\nLet me start from the beginning\nYou see, I may look relatively normal. \nBut looks deceive..\n"
+  },
+  {
+    "n": 5,
+    "objectId": "p5",
+    "texts": [
+      "I have ADHD.. and it’s ok\n",
+      "Was diagnosed 6 years ago, aged 45\nThat explained a lot to me..\nIncreasingly harder to find a job I cared about\nMany short employments\nSomething had to change\n"
+    ],
+    "images": [],
+    "notes": "Was diagnosed 6 years ago\nNot unusual with ADD (no hyperactivity) - no telltale signs\nThat explained a lot to me \nincreasing problems concentrating for approx 15 years without having a clue why.\nIncreasingly harder to get a job I cared about\nAmong other things led to me not being very effective.\nDefinitely one reason (of many) to me having short employments and getting fired\nOver and over\nStarted to burden me (and my wife). \nSo something just had to change..\n\n"
+  },
+  {
+    "n": 6,
+    "objectId": "p6",
+    "texts": [],
+    "images": [
+      {
+        "wpct": 23,
+        "hpct": 44,
+        "xpct": 40,
+        "ypct": 18,
+        "role": "element"
+      },
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": -1,
+        "role": "bg"
+      }
+    ],
+    "notes": "But first: let me tell you a bit about ADHD\nI didn’t know anything about ADHD before I was diagnosed. \nSo I assume you don’t either\n"
+  },
+  {
+    "n": 7,
+    "objectId": "p7",
+    "texts": [
+      "ADHD? ADD?\n",
+      "AD/HD\nAttention Deficit /\nHyperactivity Disorder\nCan have both or just one\nAttention Deficit alone = ADD\n"
+    ],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": 0,
+        "role": "bg"
+      }
+    ],
+    "notes": "Welcome to ADHD 101\nAttention Deficit /Hyperactivity Disorder\nCan have one or both. Still ADHD.\nSo much more than that annoying kid who can’t sit still in school.\n\nWithout hyperactivity it’s sometimes called ADD.\nThe chaos is ‘just’ inside your brain\nGetting a diagnosis late in life is quite normal \n(especially being my age. ADHD didn’t exist in the eighties)\nADHD can take many shapes and forms\nYet many things can be in common and connected. \nAnd when I found that out it was groundbreaking. \nAll of a sudden there was an explanation to many of those shortcomings\nThat had all just been there always\n"
+  },
+  {
+    "n": 8,
+    "objectId": "p8",
+    "texts": [
+      "The ADHD iceberg\n",
+      "@finuccinalfredo\n"
+    ],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 100,
+        "xpct": 0,
+        "ypct": -1,
+        "role": "bg"
+      },
+      {
+        "wpct": 58,
+        "hpct": 99,
+        "xpct": 36,
+        "ypct": 0,
+        "role": "large"
+      }
+    ],
+    "notes": "Enter the ADHD Iceberg of common misperceptions\nI came across this looking for a way to illustrate what ADHD is as well \nas common misperceptions\n\nMy challenges:\nFirst primary: \nFocus. I usually can’t concentrate (although things have gotten better with my own mitigations)\nSecond primary: \nSensory Processing Disorder (had to look that one up). Rarely feel any mood swings. At all. Both good and bad.\nPoor sense of time. I’m a lousy planner. Really. \nTrouble recalling common words. Really annoying. \nDifficulty switching tasks\nChoice Paralysis: I hate Netflix. Too much to watch. Makes me dizzy.\nPoor impulse control: When I get the thought or impulse of something I want to eat, hard to let go. Hello future obesity. \nForgetting thoughts. Also bad at remembering names (don’t take it personal) as well as movies and TV shows I’ve seen (Not necessarily a bad since I can rewatch The Mandalorian when I get bored of the other Star Wars spin offs)\nAll or nothing: If a customer won’t do security properly but wants to cut corners, they can kiss my butt (Is what I want to say.. but I don’t. Speaking of thing you learn along the way from own experience)\nExecutive Dysfunctions: Sometimes I just say stuff. Sometimes that’s a really bad idea. \nDifficulty Following and maintaining conversations: Not so bad - unless I meet someone with the same ADHD type. Wow. Impossible to keep track of any kind of direction.\nChronic Unemployment. Ok, not THAT bad but I see a trend in my challenges and overall statistics. \nLooking at this I feel incredibly lucky. Things could have been a lot harder.\n"
+  },
+  {
+    "n": 9,
+    "objectId": "p9",
+    "texts": [],
+    "images": [
+      {
+        "wpct": 38,
+        "hpct": 68,
+        "xpct": 54,
+        "ypct": 15,
+        "role": "large"
+      },
+      {
+        "wpct": 101,
+        "hpct": 101,
+        "xpct": 0,
+        "ypct": 0,
+        "role": "bg"
+      }
+    ],
+    "notes": "Overview from before is taken from ASRS\nAdult ADHD Self-Report scale (ASRS). \nMade by WHO\nTest yourself for ADHD (later, not now :-)\nFirst time I saw this, it blew me away\nSuddenly there was reasoning for and connection between \nmany of those seamlessly stupid and unexplainable things I did\n"
+  },
+  {
+    "n": 10,
+    "objectId": "p10",
+    "texts": [],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": -1,
+        "role": "bg"
+      }
+    ],
+    "notes": "Important thing to say:\nYou are not ADHD - you HAVE ADHD\nMeaning:\nYou have challenges. They can be overcome.\nKey is knowledge:\nKnow about ADHD\nKnow yourself\nSo you can mitigate\n"
+  },
+  {
+    "n": 11,
+    "objectId": "p11",
+    "texts": [
+      "Mitigating\n",
+      "Medicine\nElvanse, Vyvanse, Aduvanz (same thing)\n",
+      "Headphones with ‘ADHD focus music’ or binaural beats\n",
+      "Nootropics\nL-Theanine, L-Tyrosine, Multi vitamin, Lithium Orotate\n",
+      "Loop earplugs (model ‘switch’)\n"
+    ],
+    "images": [
+      {
+        "wpct": 49,
+        "hpct": 32,
+        "xpct": 48,
+        "ypct": 61,
+        "role": "element"
+      },
+      {
+        "wpct": 26,
+        "hpct": 52,
+        "xpct": 51,
+        "ypct": 48,
+        "role": "large"
+      }
+    ],
+    "notes": "<DON’T CLICK>\nHere’s a list of things I’ve done to cope better\nMaybe it can help you too\nUnderstanding your ADHD is vital so you can mitigate\n<CLICK>\nMedicine made a huge difference to me. Considered not driving car anymore\nBetter at deep conversations with wife and board games (which we love)\nThree names, one drug: Lisdexamfetamine\n<CLICK>\nI recommend googling ‘nootropics adhd stack’ for inspiration\nThis is what works for me\nL-Theanine, L-Tyrosine are amino acids \nHelps me concentrate\nTake 30 mins before breakfast\nLithium Orotate helps brain get energy (fat, getting older)\n<CLICK>\nFocus music makes my brain not fighting concentration\n<CLICK>\nLoop earplugs. A life savior at DEF CON!\n\n"
+  },
+  {
+    "n": 12,
+    "objectId": "p12",
+    "texts": [
+      "Mitigating (cont’d)\n",
+      "Breathing exercises\nArt of Living / Breathe Smart\n",
+      "Job situation\n",
+      "Airtag all the things!\n",
+      "AI\nPAI by Daniel Miessler\n"
+    ],
+    "images": [
+      {
+        "wpct": 19,
+        "hpct": 53,
+        "xpct": 74,
+        "ypct": 42,
+        "role": "large"
+      },
+      {
+        "wpct": 27,
+        "hpct": 54,
+        "xpct": 54,
+        "ypct": 7,
+        "role": "large"
+      }
+    ],
+    "notes": "\n<CLICK>\nAirtag everything you can - bags, bottles, bicycle etc\n<CLICK>\nRemember the noise in my head? Breathing exercises makes them go away.\nI don’t understand how exercises work. But they do.\nThis happy Indian guy: Art of Living. Available everywhere\nSeems like a bit of a cult though\nBut exercises work so I don’t care\n<CLICK>\nAI takes away cognitive load - literally a gamechanger\nMake AI your digital assistant. It does all the things I hate\nPAI\n\nAnd job.. Yes.. What to do with that?\n\n"
+  },
+  {
+    "n": 13,
+    "objectId": "p13",
+    "texts": [
+      "Why getting fired was a good thing\n",
+      "Working towards what I am good at and requires:\nDiversity in tasks\nOnly accept tasks I want\nFlexibility in working (when, how)\nNeed for things to be simpler to be motivating\n\nConclusion:\nI’m going freelance! \n"
+    ],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": 0,
+        "role": "bg"
+      }
+    ],
+    "notes": "So back to why getting fired was good for me\nFirst time fired: First change in career path: marketing and community. Not quite there\nSecond time fired: Experience with new career path, Inspired to do last adjustments and go freelance\nGetting fired all the time means insecurity. I don’t want that anymore\nBest way for that is to be your own boss and go freelance. \n\nDiversity in task - I get to do different things, fun things\nWork when my brain works\nNeed for things to be simpler, meaning, if I don’t do a good job I won’t have any money. \nThat’s very easy for even my brain to understand. \nThat’s motivating!\n\n"
+  },
+  {
+    "n": 14,
+    "objectId": "p14",
+    "texts": [],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": -3,
+        "role": "bg"
+      }
+    ],
+    "notes": "Here’s an overview of things I learned along the way\nMaybe that can help you out if you’re in a similar situation\n"
+  },
+  {
+    "n": 15,
+    "objectId": "p15",
+    "texts": [
+      "Lessons learned\n",
+      "No problem? Don’t try to fix it then!\nADHD is ‘normal’ to have. Nothing to be ashamed about\nFind your weaknesses/super powers. \nMitigate weaknesses - enhance super powers\n"
+    ],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": -1,
+        "role": "bg"
+      }
+    ],
+    "notes": "Don’t get a diagnosis if you don’t have a problem\nOnce you’re diagnosed, there’s no turning back\nLife insurance issues..\nADHD is normal (at least in our line of business)\nFind your strengths and your weaknesses\nWhat if you were shortsighted. Wouldn’t you try to compensate?\nSame thing with ADHD\nEmbrace and accept your weaknesses - find out what helps you mitigate them. \nFind your super powers - find out which ADHD trait makes you excel\nTurn your career towards that if needed\n"
+  },
+  {
+    "n": 16,
+    "objectId": "p16",
+    "texts": [
+      "Talking about Super powers\n",
+      "Talking about Super powers\n"
+    ],
+    "images": [
+      {
+        "wpct": 55,
+        "hpct": 92,
+        "xpct": 4,
+        "ypct": 3,
+        "role": "large"
+      }
+    ],
+    "notes": "Talking about super powers and icebergs: Meet the ADHD Strengths iceberg\nLearn about my strenghts too as a bonus!\nLiterally anything interesting: Anyone recognize this? I do :-)\nAuthenticity: WYSIWYG. Luckily, where I come from, that is (mostly) a strength\nBrainstorming/creativity: Good at continue thinking upon other’s ideas \nOptimism/stupidity. ‘What can go wrong with this freelancing thing?’\nAnd yes, I’m incredibly funny. At least I think so myself.\n"
+  },
+  {
+    "n": 17,
+    "objectId": "p17",
+    "texts": [
+      "Lessons learned (cont’d)\n",
+      "When people know they can better understand; spouse, friends, employer.\nIf you’ve met one person with ADHD.. \nThis is my ADHD. Not anyone else’s\n"
+    ],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": -1,
+        "role": "bg"
+      }
+    ],
+    "notes": "Sorry, got rabbitholed a bit there. Know that?\nBack on track!\n\nWhen people know that you’re not neurotypical they can better understand. It’s hard for them to be mad at you.\nGoes for everybody in your life: spouse, friends - even employers.\nWhen you met one person with ADHD you’ve met one person with ADHD. \nToday I have described my ADHD. Not yours or anyone else’s\n"
+  },
+  {
+    "n": 18,
+    "objectId": "p18",
+    "texts": [
+      "I asked a friend..\n"
+    ],
+    "images": [],
+    "notes": "So now you’ve heard my story\nThis time around I brought in the life story of a friend. You might have seen him before.\n"
+  },
+  {
+    "n": 19,
+    "objectId": "p19",
+    "texts": [
+      "I asked my friend John Strand, CEO of Black Hills Information Security..\n"
+    ],
+    "images": [],
+    "notes": "So now you’ve heard my story\nThis time around I brought in the life story of my friend John Strand\n"
+  },
+  {
+    "n": 20,
+    "objectId": "p20",
+    "texts": [],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": 0,
+        "role": "bg"
+      }
+    ],
+    "notes": "Transcription:\u000b\u000bSo I wanted to talk a little bit about what I've dealt with insofar as ADHD and some of my history.\nOne of the things that I'm very lucky about is I was diagnosed very early on in grade school.\nSo that was great. They understood that there was an issue because I couldn't sit still in a classroom.\nI couldn't focus on the task at hand for any period of time.\nAnd my teachers recognized the problem. My parents recognized the problem.\nAnd I was able to get access to some help in coming up with strategies at a very young age\nto deal with it.\nNow first I want to talk about the drugs.\nI was very early in the drug scheme back in the mid 80s, late 80s, 90s.\nSo a lot of the drugs I was taking were Omipramine, Desipramine, Ritalin.\nA lot of the drugs that they don't use so much anymore.\nAnd I was on ridiculous amounts.\nBecause the problem was if John still is disruptive, if John still isn't sitting in his desk,\ngive him more drugs was the solution.\nSo they kept upping things until I was relatively stoned most of the time in my class.\nAfter a while I cut those drugs off because they were creating issues for me.\nAnd I developed a number of ways to try to deal with ADHD in an effective way.\nAnd those really didn't get sharpened to the point where I feel I'm good at it until I was in college.\nSo some of the strategies that I have which are absolutely different from what other people may come down with strategies\nis to stop trying to force myself to be normal.\nStop trying to force myself to sit at a desk for eight hours.\nStop trying to force myself to basically learn the way that other people learn.\nSo some of the strategies that I employed was number one, sit in the back of rooms.\nBecause it'll allow me to stand up, move around, leave the room in such a way that's not disruptive to the people around me.\nNumber two, I learned very, very, very early on due to some teachers that were fantastic that I needed to shut up and listen.\nIt's very difficult for people with ADHD to do effectively.\nBut I have to keep telling myself most of the time no one wants to hear what I have to contribute unless you're the presenter.\nThe final thing that I did is I learned that if I can only learn and process in about 15 to 20 minute chunks, don't fight it.\nSo work in one thing for 15 to 20 to 25 to 30 minute chunks and then switch to a completely different thing.\nSo that way my ADHD is constantly being fed something different.\nThe final thing that I do with my ADHD that I think helps is if I'm working on something\nand I'm coming up against that 15, 30 minute or hour window and I'm still interested, keep going.\nTake advantage of your time because ADHD people definitely have difficulty kind of keeping attention on something.\nBut when we do, we obsess over it.\nAnd I was lucky enough to get into computer security, which allowed me to be obsessed about a topic that was able to feed my family and become a career.\nGetting diagnosed is the first step to, of course, to realizing you have a problem and coming up with strategies to deal with it.\nBecause it's not that there's anything wrong with you.\nYou're just different.\nBut you do have to learn how to deal with that.\nAnd it doesn't have to be a disability.\nIt can be an asset to you.\nIt can be asset to your career.\nBut you have to understand, OK, I think this way.\nI need to change my patterns of behavior to more align with something that is socially acceptable.\nI'm not saying be like everybody else.\nI'm not saying strive to be like everyone that you work with.\nBut you need to find ways to take those sharp edges that come with neurodivergence and grind them down a little bit so they aren't so sharp.\nWhenever you're working with ADHD, you'll not go in a straight line of thought.\nYou'll get into a bunch of weird tangents going into a number of different places.\nAnd I think that that creates a really cool diversity of thought as long as you can keep rolling towards the specific objective of the problem that you're trying to solve.\nSo you tend to see a lot of people with very heavy ADHD, they tend to be some of the best penetration testers in the world because they think about problems in nonstandard ways.\nAnd they come at solutions from angles that normal people just wouldn't come up with.\nI think in some ways it makes me different.\nAnd different can be interesting.\nDifferent can be fun.\nDifferent means that there's more experiences that we tend to jump around if we can get into a good career field.\nSo I value and I cherish all of those things.\nWhen you're looking at computer security, it's not like one thing.\nLike if I was doing engineering, let's say structural engineering, that's a very diverse topic.\nBut it tends to be a very well-trod topic, right?\nAnd if you look at computer security, you can be web application security, you can be operating system security, architecture, you can do cloud security.\nThere's so many different things that you can get into that normal people, I think, look at that huge spread and it's terrifying.\nFor someone who has ADHD, they're like, this is my home.\nBecause you can focus on this, then this is going to be a problem that takes your attention.\nThen this is a problem that takes your attention.\nThe biggest thing that you need to do if you have ADHD is really, really focus on completion.\nTake your tasks, and instead of focusing on the biggest task, take small tasks, finish small tasks, and then work your way up.\nSo trying to get that across for people that have ADHD and with myself is really, really, really important.\nBecause this is such a dynamic field, and it's so diverse in all the things that we have, you can lose yourself in it.\nSo it requires you to try to tune yourself in little small areas so that you can confront computer security, you can confront meetings,\nyou can confront the things that you're dealing with in such a way where you can be effective.\nEven now, looking at this camera without my eyes, looking at the person that's over there or what's up there,\nor the leaf that just moved, or the purple on those particular shirts, and not having my eyes go everywhere,\nis an absolutely strenuous amount of effort for me to just stay focused on one spot.\nBut that's a learned behavior.\nSo if you have ADHD, you can use it as a superpower.\nBut just like any superhero, whenever they first get their power, they need to learn how to control that power properly.\nAnd that takes time, perseverance, and education.\nAnd I'm not going to lie, it is hard.\nBut in this field, if you can learn how to tune it properly, you're going to do fantastic.\n\n"
+  },
+  {
+    "n": 21,
+    "objectId": "p21",
+    "texts": [
+      "You might wonder..\n",
+      "Neurodivergence is over-represented in \ncyber security.\n\nWhy is that?\n\n\n\n"
+    ],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": -1,
+        "role": "bg"
+      }
+    ],
+    "notes": "Sorry, video became a little cheesy there. Blame my video guy (which is not me)\n\n20 years of working with ADHD in infosec, getting the diagnosis, \nworking with myself, getting fired and much more told me this.\nJohn mentions this too. I think he has a point\nRegardless of what this is how it is. Everyone has something\nBecause the upsides are actual advantages in many of the thighs we do.\nThat security analyst who found signs of an intruder in the log and falls into a deep hole of hyperfocus until they’ve know for sure.\nThat’s ADHD or autism right there. Diagnosed or not. Doesn’t matter.\nAnd that’s totally fine.\nBut guess what: there’s a flipside. A person with needs that may differ from others to be happy.\nUsed to work at a customer in Copenhagen who needed help with CIS Control. \nFlexible seating.\nCurrent boss told me of one guy on the team who spends three weeks getting used to a new seat every time he’s forced to change.\nIs flexible seating really that important?\nNot to my boss. Flexible seating may be company policy. But… \n\n"
+  },
+  {
+    "n": 22,
+    "objectId": "p22",
+    "texts": [],
+    "images": [
+      {
+        "wpct": 101,
+        "hpct": 101,
+        "xpct": 0,
+        "ypct": 0,
+        "role": "bg"
+      }
+    ],
+    "notes": "You’re not drunk or having a severe case of amnesia.\nThis is not the front page you’re seeing again. One significant difference.\nAlso, this is not so much about ADHD but more about that people are different\nAnd that we all have different needs.\n"
+  },
+  {
+    "n": 23,
+    "objectId": "p23",
+    "texts": [
+      "Advice for Employers\n",
+      "What is important to you?\nPeople all have different needs\nBe open to supporting that\nDon’t ask ‘what can I do to help you’\n\nAvoid letting people go is literally a win-win\n"
+    ],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": -1,
+        "role": "bg"
+      }
+    ],
+    "notes": "Disclaimer: Never been an employer - but have seem them screw up enough to be somewhat qualified\nAn an employer you need to focus\nFocus on what really matters and what doesn’t.\nThink more flexible: if a certain task is solved at an agreed upon time \ndoes it really matter what time of day and from where?\n\nDifferent people has different needs\nSome can’t function in open office space\nsome need help planning daily\nsome need to work on weird hours \nor whatever it can be.\nSupport those needs. Make clear to yourself what’s important from this employee\nFocus on that.\n\nDon’t ask ‘what can I do to help you’. \nInstead say ‘would it help if..’. People don’t know what they can ask.\nBeing more accepting and focusing on helping employees succeed is literally a win-win. For everybody.\n\n"
+  },
+  {
+    "n": 24,
+    "objectId": "p24",
+    "texts": [
+      "One thing is what I think..\n",
+      "So I asked my friend John again..\n"
+    ],
+    "images": [],
+    "notes": "One thing is what I think - I’m not an employer and probably will never be.\nSo I asked John again\n"
+  },
+  {
+    "n": 25,
+    "objectId": "p25",
+    "texts": [],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": 0,
+        "role": "bg"
+      }
+    ],
+    "notes": "Transcription:\n\nOne of the recommendations that I would make for employers is to find a way to give constructive\nfeedback to people that are neurodivergent without it blowing up to the point to where\nit becomes a personal attack on them. And that's tough. That's a really tough line to not cross,\nright? So one of the things I recommend is if you have someone that's neurodivergent\nright at the beginning, I think number one, give that feedback in a very timely fashion.\nDon't wait two to three weeks. Don't wait a month until you have 150 instances of all these ways\nthat they're not doing their meetings. Give that feedback to somebody immediately. Number one,\ndo it in such a way that's not a direct personal attack. Like you can say, hey,\nin that last meeting, um, you were kind of talking over some people. Could you do me a favor? Let\nother people talk, take a breath and then respond. Let's practice that. Okay. If you have somebody\nthat's not paying attention in meetings, ask them what they need to be able to be effective in those\nmeetings and say, you want to sit in the back of the room so you can step out, take a quick pace\nfor a couple minutes and then come back and refocus and ask them what they need and be open\nto what they say. Anybody hates constructive feedback and it's worse the longer it goes,\nbecause if you give it a month, two months, three months, it turns into a personal attack by\ndefault. I've been very blessed early on in my career where a lot of my negative ticks for ADHD\nwere picked up and recognized by a couple of managers that I worked with.\nAnd they were very quick in their feedback. They were very timely in their feedback.\nAnd they gave me alternative ways of dealing with it. And it was life-changing for me simply because\nI had a manager who was willing to talk to me. Don't ever expect the whole world to bend over\nbackwards to meet you where you are. You need to understand that there's going to have to be some\nthings that you're going to have to change and you're still going to be different. You're still\ngoing to be unique, but you can be wonderfully unique. It doesn't have to be something that is\npainfully unique around the people that are around you. So embrace who you are, kind of learn how to\ndeal with the superpower that you have so you can channel it appropriately and learn how to\nwield it in a way that makes you a better person.\n\n"
+  },
+  {
+    "n": 26,
+    "objectId": "p26",
+    "texts": [
+      "Final Words\n",
+      "I started doing this to help others out\nI’m happy to have done this many times already\nI hope to have done the same here today\n"
+    ],
+    "images": [],
+    "notes": "I started doing this to help others out. Spread awareness.\nDone that many times already\nTurns out people need a role model\nMore than one person told me I’ve been the reason why they dare to be open. Dare to tell their employer.\nFor that I feel incredibly privileged.\nI hope to have made a difference to someone in the room today.\nThat makes it all worth it.\n"
+  },
+  {
+    "n": 27,
+    "objectId": "p27",
+    "texts": [
+      "I am always there to help\n",
+      "@klausagnoletti@infosec.exchange\n@klausagnoletti.bsky.social\nhttps://www.linkedin.com/in/agnoletti\nklaus@relationsec.net\nhttps://relationsec.net/\nOpinions (I have a lot of those)\nWhatever else I can help with (btw, I am freelance consultant)\n"
+    ],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": 0,
+        "ypct": 0,
+        "role": "bg"
+      },
+      {
+        "wpct": 3,
+        "hpct": 6,
+        "xpct": 3,
+        "ypct": 23,
+        "role": "element"
+      },
+      {
+        "wpct": 3,
+        "hpct": 5,
+        "xpct": 3,
+        "ypct": 40,
+        "role": "element"
+      },
+      {
+        "wpct": 3,
+        "hpct": 6,
+        "xpct": 3,
+        "ypct": 47,
+        "role": "element"
+      },
+      {
+        "wpct": 3,
+        "hpct": 6,
+        "xpct": 3,
+        "ypct": 55,
+        "role": "element"
+      },
+      {
+        "wpct": 34,
+        "hpct": 61,
+        "xpct": 62,
+        "ypct": 20,
+        "role": "large"
+      },
+      {
+        "wpct": 3,
+        "hpct": 4,
+        "xpct": 3,
+        "ypct": 31,
+        "role": "element"
+      }
+    ],
+    "notes": "Reach out to me\n\nBut before we end I just want the opportunity to spread totally irrelevant messages now that I have a crowd.\n\n\n\n"
+  },
+  {
+    "n": 28,
+    "objectId": "p28",
+    "texts": [],
+    "images": [
+      {
+        "wpct": 99,
+        "hpct": 99,
+        "xpct": -12,
+        "ypct": -1,
+        "role": "bg"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "n": 29,
+    "objectId": "p29",
+    "texts": [],
+    "images": [
+      {
+        "wpct": 100,
+        "hpct": 100,
+        "xpct": 0,
+        "ypct": 0,
+        "role": "bg"
+      },
+      {
+        "wpct": 50,
+        "hpct": 89,
+        "xpct": 48,
+        "ypct": 5,
+        "role": "large"
+      }
+    ],
+    "notes": "Thanks for your time\nScan QR code for slides\n"
+  }
+]
