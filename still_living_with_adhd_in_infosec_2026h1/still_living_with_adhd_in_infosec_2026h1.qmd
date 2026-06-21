@@ -34,7 +34,7 @@ Yours is not the same. Maybe you can recognize elements. Maybe something I say c
 I hope so.
 :::
 
-## {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/s02_0.png" background-size="cover"}
 
 ::: {.notes}
 Anyone here has black pets? Then you know the challenge
@@ -58,7 +58,9 @@ No need to take photos of slides since QR code to download is on the last page.
 But first let’s talk about games
 :::
 
-![](images/s03_1.png){.absolute top=194 left=98 width=426}
+![](images/s03_0.png){.absolute top=194 left=98 width=426}
+
+![](images/s03_1.png){.absolute top=194 left=630 width=295}
 
 :::{.absolute style="top:483px;left:59px;width:500px;font-size:20px;color:#1a1a1a;font-weight:400;text-align:left;line-height:1.2;"}
 malwareandmonsters.com
@@ -116,8 +118,6 @@ So something just had to change..
 
 ## {background-image="images/s06_1.png" background-size="cover"}
 
-![](images/s06_0.png){.absolute top=130 left=420 width=247}
-
 ::: {.notes}
 But first: let me tell you a bit about ADHD
 I didn’t know anything about ADHD before I was diagnosed. 
@@ -160,6 +160,8 @@ That had all just been there always
 :::{.absolute style="top:678px;left:103px;width:344px;font-size:61px;color:#feae08;font-weight:700;text-align:right;line-height:1.2;"}
 The ADHD iceberg
 :::
+
+![](images/s08_1.png){.absolute top=0 left=379 width=616}
 
 :::{.absolute style="top:0px;left:846px;width:204px;font-size:20px;color:#ff0000;font-weight:700;text-align:left;line-height:1.2;"}
 @finuccinalfredo
@@ -230,10 +232,14 @@ Elvanse, Vyvanse, Aduvanz (same thing)
 Headphones with ‘ADHD focus music’ or binaural beats
 :::
 
+![](images/s11_0.png){.absolute top=432 left=510 width=524}
+
 :::{.absolute style="top:273px;left:44px;width:908px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
 Nootropics  
 L-Theanine, L-Tyrosine, Multi vitamin, Lithium Orotate
 :::
+
+![](images/s11_1.png){.absolute top=341 left=541 width=278}
 
 :::{.absolute style="top:432px;left:44px;width:562px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
 Loop earplugs (model ‘switch’)
@@ -276,9 +282,13 @@ Art of Living / Breathe Smart
 Job situation
 :::
 
+![](images/s12_0.png){.absolute top=296 left=786 width=209}
+
 :::{.absolute style="top:149px;left:36px;width:438px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
 Airtag all the things!
 :::
+
+![](images/s12_1.jpg){.absolute top=50 left=567 width=289}
 
 :::{.absolute style="top:342px;left:44px;width:510px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
 AI  
@@ -376,6 +386,8 @@ Talking about Super powers
 Talking about Super powers
 :::
 
+![](images/s16_0.png){.absolute top=27 left=51 width=587}
+
 ::: {.notes}
 Talking about super powers and icebergs: Meet the ADHD Strengths iceberg
 Learn about my strenghts too as a bonus!
@@ -408,7 +420,7 @@ When you met one person with ADHD you’ve met one person with ADHD.
 Today I have described my ADHD. Not yours or anyone else’s
 :::
 
-## {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/s18_bg.png" background-size="cover"}
 
 :::{.absolute style="top:295px;left:268px;width:515px;font-size:61px;color:#ffffff;font-weight:700;text-align:left;line-height:1.2;"}
 I asked a friend..
@@ -419,7 +431,7 @@ So now you’ve heard my story
 This time around I brought in the life story of a friend. You might have seen him before.
 :::
 
-## {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/s19_bg.png" background-size="cover"}
 
 :::{.absolute style="top:220px;left:171px;width:709px;font-size:61px;color:#ffffff;font-weight:700;text-align:left;line-height:1.2;"}
 I asked my friend John Strand, CEO of Black Hills Information Security..
@@ -430,7 +442,9 @@ So now you’ve heard my story
 This time around I brought in the life story of my friend John Strand
 :::
 
-## {background-image="images/s20_0.jpg" background-size="cover"}
+## {background-image="images/s20_bg.png" background-size="cover"}
+
+![](images/s20_0.jpg){.absolute top=0 left=0 width=1050}
 
 ::: {.notes}
 Transcription:So I wanted to talk a little bit about what I've dealt with insofar as ADHD and some of my history.
@@ -594,7 +608,7 @@ Instead say ‘would it help if..’. People don’t know what they can ask.
 Being more accepting and focusing on helping employees succeed is literally a win-win. For everybody.
 :::
 
-## {background-image="images/bg-texture.png" background-size="cover"}
+## {background-image="images/s24_bg.png" background-size="cover"}
 
 :::{.absolute style="top:235px;left:78px;width:866px;font-size:53px;color:#ff9900;font-weight:700;text-align:left;line-height:1.2;"}
 One thing is what I think..
@@ -609,7 +623,9 @@ One thing is what I think - I’m not an employer and probably will never be.
 So I asked John again
 :::
 
-## {background-image="images/s25_0.jpg" background-size="cover"}
+## {background-image="images/s25_bg.png" background-size="cover"}
+
+![](images/s25_0.jpg){.absolute top=0 left=0 width=1050}
 
 ::: {.notes}
 Transcription:
@@ -680,13 +696,17 @@ Opinions (I have a lot of those)
 Whatever else I can help with (btw, I am freelance consultant)
 :::
 
-![](images/s27_3.png){.absolute top=164 left=39 width=33}
+![](images/s27_1.png){.absolute top=164 left=39 width=33}
 
-![](images/s27_4.png){.absolute top=282 left=36 width=33}
+![](images/s27_2.png){.absolute top=282 left=36 width=33}
 
-![](images/s27_5.png){.absolute top=331 left=32 width=40}
+![](images/s27_3.png){.absolute top=331 left=32 width=40}
 
-![](images/s27_6.png){.absolute top=392 left=32 width=40}
+![](images/s27_4.png){.absolute top=392 left=32 width=40}
+
+![](images/s27_5.png){.absolute top=144 left=654 width=363}
+
+![](images/s27_6.png){.absolute top=223 left=36 width=33}
 
 ::: {.notes}
 Reach out to me
