@@ -3,3 +3,7 @@
 *.html
 *.png
 **/*.quarto_ipynb
+
+# vendored extension sources + skin head files are SOURCE, not rendered output
+!**/_extensions/**
+!**/*-skin.html

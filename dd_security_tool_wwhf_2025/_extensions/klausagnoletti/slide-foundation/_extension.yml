@@ -1,0 +1,13 @@
+title: Slide Foundation
+author: Klaus Agnoletti
+version: 0.2.4
+contributes:
+  shortcodes:
+    - icon.lua
+  formats:
+    revealjs:
+      embed-resources: true
+      include-in-header:
+        - token-helper.html
+      css:
+        - foundation.css

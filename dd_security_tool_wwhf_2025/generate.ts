@@ -35,6 +35,18 @@ function colorHex(color: any): string | null {
   return rgb ? rgbHex(rgb) : null;
 }
 
+// --- Slide Foundation retrofit ------------------------------------------------
+// This deck's identity is two colours: a navy stage and parchment text. Map
+// those onto the foundation's role tokens so the deck is centrally reskinnable
+// (dd-skin.html sets :root) while 1:1 layout is preserved. The navy SURFACE is
+// painted by the foundation (we omit per-slide background-color for it); parchment
+// text becomes var(--ink). Deliberate off-palette colours (pure white/grey
+// highlights, the one inverted parchment-background slide) stay literal.
+const SURFACE = "#1a2735"; // foundation --surface
+const INK = "#e2dfd3";     // foundation --ink
+const eq = (a: string | null, b: string) => (a ?? "").toLowerCase() === b.toLowerCase();
+const inkCss = (hex: string) => (eq(hex, INK) ? "var(--ink)" : hex);
+
 // background fill resolution through slide -> layout -> master
 const layoutById: Record<string, any> = {};
 for (const l of deck.layouts ?? []) layoutById[l.objectId] = l;
@@ -72,13 +84,14 @@ function box(el: any) {
 let out = `---
 pagetitle: "${TITLE}"
 format:
-  revealjs:
-    theme: [default, dd-theme.scss]
+  klausagnoletti/slide-foundation-revealjs:
+    theme: dd-theme.scss
     embed-resources: true
     slide-number: true
     width: ${CANVAS_W}
     height: ${CANVAS_H}
     transition: fade
+    include-in-header: dd-skin.html
 ---
 
 `;
@@ -94,7 +107,9 @@ for (const [i, slide] of deck.slides.entries()) {
   const head: string[] = [];
   let bgElK = -1;
   const bg = slideBg(slide);
-  if (bg.kind === "color") head.push(`background-color="${bg.hex}"`);
+  // navy surface is painted by the foundation (--surface); only emit OFF-surface
+  // colours (e.g. the inverted parchment-background slide) as explicit per-slide bg
+  if (bg.kind === "color") { if (!eq(bg.hex, SURFACE)) head.push(`background-color="${bg.hex}"`); }
   else if (bg.kind === "pic") { const f = bgFile(n); if (f) head.push(`background-image="images/${f}"`, `background-size="cover"`); }
   // full-bleed element image overrides as background if no page fill picture
   if (!head.some((h) => h.startsWith("background-image"))) {
@@ -105,9 +120,8 @@ for (const [i, slide] of deck.slides.entries()) {
       else bgElK = -1;
     }
   }
-  if (head.length === 0) head.push(`background-color="${theme.DARK1 ?? "#1a2735"}"`);
-
-  out += `## {${head.join(" ")}}\n\n`;
+  // no explicit background -> the foundation's --surface token paints the stage
+  out += head.length ? `## {${head.join(" ")}}\n\n` : `##\n\n`;
 
   els.forEach((el, k) => {
     const b = box(el);
@@ -130,7 +144,7 @@ for (const [i, slide] of deck.slides.entries()) {
       const color = colorHex(st.foregroundColor) ?? theme.LIGHT1 ?? "#1a1a1a";
       const weight = st.bold ? 700 : 400;
       const style = `top:${b.top}px;left:${b.left}px;width:${b.width}px;` +
-        `font-size:${fontPx}px;color:${color};font-weight:${weight};text-align:${alignCss(pm.alignment)};line-height:1.2;`;
+        `font-size:${fontPx}px;color:${inkCss(color)};font-weight:${weight};text-align:${alignCss(pm.alignment)};line-height:1.2;`;
       const body = text.replace(/\r/g, "").split("\n").map((l) => l.trimEnd())
         .filter((l, idx, arr) => !(l === "" && idx === arr.length - 1)).join("  \n");
       out += `:::{.absolute style="${style}"}\n${body}\n:::\n\n`;

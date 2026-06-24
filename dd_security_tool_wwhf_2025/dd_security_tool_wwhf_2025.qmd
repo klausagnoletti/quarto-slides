@@ -1,22 +1,23 @@
 ---
 pagetitle: "D&D: The Security Tool You Didn't Know You Needed"
 format:
-  revealjs:
-    theme: [default, dd-theme.scss]
+  klausagnoletti/slide-foundation-revealjs:
+    theme: dd-theme.scss
     embed-resources: true
     slide-number: true
     width: 1050
     height: 700
     transition: fade
+    include-in-header: dd-skin.html
 ---
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:185px;left:260px;width:523px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:185px;left:260px;width:523px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Dungeons & Dragons
 :::
 
-:::{.absolute style="top:317px;left:274px;width:502px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:317px;left:274px;width:502px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
   
 The Security Power Tool You Didn’t Know You Needed  
   
@@ -37,7 +38,7 @@ Last slide will be a QR
 
 ## {background-color="#e2dfd3"}
 
-:::{.absolute style="top:283px;left:265px;width:520px;font-size:64px;color:#e2dfd3;font-weight:400;text-align:center;line-height:1.2;"}
+:::{.absolute style="top:283px;left:265px;width:520px;font-size:64px;color:var(--ink);font-weight:400;text-align:center;line-height:1.2;"}
 Who are we?
 :::
 
@@ -61,16 +62,16 @@ Am here to convince you to do the same
 
 ## {background-image="images/s04_bg.png" background-size="cover"}
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:171px;left:208px;width:692px;font-size:29px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:171px;left:208px;width:692px;font-size:29px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 The problem with traditional training  
 Your brain is wired for games and social learning  
 Role playing games create immersive, engaging experiences  
 Meet HackBack: Security training that doesn’t suck
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Agenda
 :::
 
@@ -89,15 +90,15 @@ Free to use - I’ll tell you how to get started!
 But first, let’s talk about game-based learning in general
 :::
 
-## {background-color="#1a2735"}
+##
 
 ![](images/s06_0.png){.absolute top=147 left=183 width=716}
 
-:::{.absolute style="top:270px;left:262px;width:526px;font-size:51px;color:#e2dfd3;font-weight:400;text-align:center;line-height:1.2;"}
+:::{.absolute style="top:270px;left:262px;width:526px;font-size:51px;color:var(--ink);font-weight:400;text-align:center;line-height:1.2;"}
 Not gamification
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:53px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:53px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Game-based Learning 101
 :::
 
@@ -119,13 +120,13 @@ So in other words:
 Will not be talking about gamification today
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 What’s the problem with training?
 :::
 
-:::{.absolute style="top:178px;left:82px;width:632px;font-size:36px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:178px;left:82px;width:632px;font-size:36px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Traditional approaches:  
 Class-based  
 Computer-based  
@@ -134,7 +135,7 @@ Specifically for IR:
 Tabletop exercises
 :::
 
-:::{.absolute style="top:321px;left:91px;width:463px;font-size:36px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:321px;left:91px;width:463px;font-size:36px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Problem: Often really dull
 :::
 
@@ -157,13 +158,13 @@ I mean: people are present - physically, at least
 Now, let’s talk more about tabletops in general
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Tabletops 101: What and why?
 :::
 
-:::{.absolute style="top:178px;left:82px;width:466px;font-size:41px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:178px;left:82px;width:466px;font-size:41px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Build ‘muscle memory’ on incident handling  
   
 Tabletops (TTX)  
@@ -185,14 +186,14 @@ Goal = preparedness, coordination
 But... what's the problem with how we do them?
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Ye traditional IR TTX  
 (and why they can suck..)
 :::
 
-:::{.absolute style="top:167px;left:83px;width:475px;font-size:29px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:167px;left:83px;width:475px;font-size:29px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Generally speaking:  
 Participants don't open up  
 Egos clashing  
@@ -204,11 +205,11 @@ No focus on engaging participants
 'Fun' is taboo
 :::
 
-:::{.absolute style="top:619px;left:-249px;width:344px;font-size:29px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:619px;left:-249px;width:344px;font-size:29px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Result: Dull → No engagement → No learning
 :::
 
-:::{.absolute style="top:234px;left:119px;width:344px;font-size:29px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:234px;left:119px;width:344px;font-size:29px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Result:  
 Dull →  
 No engagement →  
@@ -243,17 +244,17 @@ Funny you should ask: YES!
 Let’s talk about that now - and why it works.
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Game-Based Learning
 :::
 
-:::{.absolute style="top:214px;left:97px;width:856px;font-size:35px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:214px;left:97px;width:856px;font-size:35px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Most studies in the sample reported analog GBL as an effective pedagogical tool with an impact on the learning, cognitive, and psychological levels.
 :::
 
-:::{.absolute style="top:506px;left:126px;width:792px;font-size:20px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:506px;left:126px;width:792px;font-size:20px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Article from the media Frontiers in Psychology: Playing at the school table: Systematic literature review of board, tabletop, and other analog game-based learning approaches
 :::
 
@@ -269,13 +270,13 @@ So that’s GBL. Why exactly does it work?
 Let’s look into that.
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:178px;left:82px;width:866px;font-size:31px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:178px;left:82px;width:866px;font-size:31px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 I think we’re all impressed by how stupid humans are. It reaches almost epic proportions. We’re stupid in dozens and dozens of ways but human minds are plug-and-play devices; they’re not meant to be used alone. They’re meant to be used in networks. Games allow us to do that – they allow us to use collective intelligence. Collectively, we’re not so stupid.
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:34px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:34px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Your Brain is Wired for Learning With Others
 :::
 
@@ -300,13 +301,13 @@ Real life experience with both IR and D&D
 Luckily science backs us up here too
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:178px;left:112px;width:827px;font-size:38px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:178px;left:112px;width:827px;font-size:38px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 When Dungeons & Dragons and its cousins are played in an inviting, encouraging, compassionate, and intellectually engaged environment, play opens the door to truly amazing possibilities for learning.
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Why Role Playing Games?
 :::
 
@@ -314,7 +315,7 @@ Why Role Playing Games?
 Article quoting David Simkins, a professor at the Rochester Institute of Technology, who is an expert on games and learning: How ‘Dungeons & Dragons’ Primes Students for Interdisciplinary Learning, Including STEM
 :::
 
-:::{.absolute style="top:233px;left:161px;width:728px;font-size:45px;color:#e2dfd3;font-weight:400;text-align:center;line-height:1.2;"}
+:::{.absolute style="top:233px;left:161px;width:728px;font-size:45px;color:var(--ink);font-weight:400;text-align:center;line-height:1.2;"}
 We’re geeks.  
 So we’ll take any excuse to do D&D as part of our grown-up jobs  
 You probably will too
@@ -333,9 +334,9 @@ Let’s be honest: You’ll probably want that too
 I mean why else would you be here? :-D
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:177px;left:92px;width:496px;font-size:31px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:177px;left:92px;width:496px;font-size:31px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Players laugh. A lot!  
   
 When players are immersed, they  
@@ -345,7 +346,7 @@ Forget to fight the scenario
 Are more honest in general
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Roleplaying is immersive
 :::
 
@@ -377,16 +378,16 @@ Enough chitter-chatter. Let’s get down to business.
 Let’s talk about out game and how you can get to play it yourself!
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:178px;left:82px;width:541px;font-size:36px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:178px;left:82px;width:541px;font-size:36px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Stories create emotional investment  
 Context bridges theory and practice  
 The IM as narrative guide  
 When players say "I need to" instead of "we should"
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 The Role of Storytelling
 :::
 
@@ -401,14 +402,14 @@ Magic moment: when story pulls players in, real learning happens
 Players stop being observers, become participants in unfolding events
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:312px;left:265px;width:535px;font-size:58px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:312px;left:265px;width:535px;font-size:58px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 HackBack  
 Tabletop Exercises. The fun kind.
 :::
 
-:::{.absolute style="top:434px;left:232px;width:615px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:434px;left:232px;width:615px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 https://www.hackbackgaming.com/  
 https://www.linkedin.com/company/hack-back-gaming/  
   
@@ -426,7 +427,7 @@ QR code for LinkedIn if too small to sww
 Now let’s talk about what it actually is
 :::
 
-## {background-color="#1a2735"}
+##
 
 :::{.absolute style="top:178px;left:82px;width:463px;font-size:36px;color:#eeeeee;font-weight:400;text-align:left;line-height:1.2;"}
 A general framework for simulating any situation  
@@ -435,7 +436,7 @@ A general framework for simulating any situation
 
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Meet HackBack
 :::
 
@@ -454,9 +455,9 @@ Let’s talk about what it can be used for
 Before I tell you how to engage and get access to our github repo
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:203px;left:67px;width:468px;font-size:35px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:203px;left:67px;width:468px;font-size:35px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 De-abstractify  
 Teaching non-techies  
 Teaching teamwork  
@@ -465,7 +466,7 @@ Team events
 Simulating real events
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Wide range of applications
 :::
 
@@ -488,13 +489,13 @@ Real events: show stakeholders how you handled past crises
 Possibilities are literally endless, just need right idea
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Scenario Types and Structures
 :::
 
-:::{.absolute style="top:161px;left:83px;width:483px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:161px;left:83px;width:483px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Incident Response (IR):  
 Classic defensive response to ongoing attacks  
 Offensive Security:  
@@ -523,9 +524,9 @@ Imagination is the only limit
 Example: Malware & Monsters - next slide
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:185px;left:69px;width:540px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:center;line-height:1.2;"}
+:::{.absolute style="top:185px;left:69px;width:540px;font-size:26px;color:var(--ink);font-weight:400;text-align:center;line-height:1.2;"}
 Real malware families.  
 Creature-collection mechanics.  
 Actual IR skills.  
@@ -534,19 +535,19 @@ Master  incident response through gameplay.
 Where cybersecurity training meets adventure.
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Malware & Monsters
 :::
 
 ![](images/s19_0.png){.absolute top=246 left=639 width=343}
 
-:::{.absolute style="top:588px;left:118px;width:813px;font-size:42px;color:#e2dfd3;font-weight:400;text-align:center;line-height:1.2;"}
+:::{.absolute style="top:588px;left:118px;width:813px;font-size:42px;color:var(--ink);font-weight:400;text-align:center;line-height:1.2;"}
 https://malmons.world/games
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:205px;left:73px;width:497px;font-size:31px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:205px;left:73px;width:497px;font-size:31px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Run by Incident Master (IM)  
 Team with broad skills  
 Each player plays a character  
@@ -554,7 +555,7 @@ Actions = roll die
 Open-ended scenarios
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Meet HackBack IR Edition
 :::
 
@@ -578,9 +579,9 @@ Little information to start, team investigates
 Like real life
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:186px;left:83px;width:530px;font-size:41px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:186px;left:83px;width:530px;font-size:41px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Modifiers  
 Stereotypic, relatable characters  
 Getting into character  
@@ -588,7 +589,7 @@ Can be challenging
 Real magic happens!
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Characters
 :::
 
@@ -607,9 +608,9 @@ This is where magic happens
 People laugh, immerse, forget to fight scenario
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:151px;left:83px;width:552px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:151px;left:83px;width:552px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Entire IT infrastructure is in MS Azure  
 It’s 16:50, Friday (because…)  
 Alert from Microsoft DART  
@@ -620,7 +621,7 @@ What do you do?
 Suggestions?
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Example scenario
 :::
 
@@ -641,11 +642,11 @@ Next player takes turn
 This is how the game flows
 :::
 
-## {background-color="#1a2735"}
+##
 
 ![](images/s23_0.png){.absolute top=178 left=558 width=458}
 
-:::{.absolute style="top:178px;left:82px;width:476px;font-size:28px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:178px;left:82px;width:476px;font-size:28px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Everything is (soon) open source  
 mostly Quarto Markdown  
   
@@ -654,7 +655,7 @@ Join our Discord server if you want to help out
 Sharing is caring
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:42px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:42px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Let’s all join the same guild on this!
 :::
 
@@ -670,9 +671,9 @@ Community-driven development
 Sharing is caring philosophy
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:139px;left:74px;width:454px;font-size:29px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:139px;left:74px;width:454px;font-size:29px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 We had plans..  
   
 Premade characters  
@@ -685,7 +686,7 @@ IM handbook (in the works)
 Ready for use! (...with a bit of help..)
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 State of HackBack
 :::
 
@@ -704,15 +705,15 @@ Started filling gaps and improving with Claude Code
 Please help out - long list of issues to collaborate on
 :::
 
-## {background-color="#1a2735"}
+##
 
 ![](images/s25_0.png){.absolute top=142 left=183 width=644}
 
-:::{.absolute style="top:349px;left:83px;width:885px;font-size:54px;color:#e2dfd3;font-weight:400;text-align:center;line-height:1.2;"}
+:::{.absolute style="top:349px;left:83px;width:885px;font-size:54px;color:var(--ink);font-weight:400;text-align:center;line-height:1.2;"}
 Why not make it fun and engaging?
 :::
 
-:::{.absolute style="top:61px;left:83px;width:885px;font-size:50px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:83px;width:885px;font-size:50px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Doing NIS2 (like anyone else)?
 :::
 
@@ -728,11 +729,11 @@ Make users love compliance (well, sort of)
 (also if you do this, your colleagues don’t hate you)
 :::
 
-## {background-color="#1a2735"}
+##
 
 ![](images/s26_0.png){.absolute top=180 left=257 width=537}
 
-:::{.absolute style="top:267px;left:194px;width:633px;font-size:51px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:267px;left:194px;width:633px;font-size:51px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Remember:  
 Have fun and learn!
 :::
@@ -749,11 +750,11 @@ Community contribution welcome
 Looking forward to receiving your PRs (pull requests)
 :::
 
-## {background-color="#1a2735"}
+##
 
 ![](images/s27_0.png){.absolute top=73 left=252 width=556}
 
-:::{.absolute style="top:227px;left:125px;width:800px;font-size:54px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:227px;left:125px;width:800px;font-size:54px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Who's ready to turn their next security drill into an adventure?  
   
 Awesome! Get in touch!  
@@ -772,26 +773,26 @@ If not, get in touch anyway
 Happy to help convince your boss
 :::
 
-## {background-color="#1a2735"}
+##
 
-:::{.absolute style="top:61px;left:293px;width:477px;font-size:26px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:61px;left:293px;width:477px;font-size:26px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Thanks!
 :::
 
 ![](images/s28_0.png){.absolute top=569 left=150 width=44}
 
-:::{.absolute style="top:553px;left:190px;width:407px;font-size:20px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:553px;left:190px;width:407px;font-size:20px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 https://www.linkedin.com/in/agnoletti/  
 https://www.linkedin.com/in/glen-sorensen/
 :::
 
 ![](images/s28_1.png){.absolute top=569 left=618 width=58}
 
-:::{.absolute style="top:44px;left:277px;width:509px;font-size:80px;color:#e2dfd3;font-weight:400;text-align:center;line-height:1.2;"}
+:::{.absolute style="top:44px;left:277px;width:509px;font-size:80px;color:var(--ink);font-weight:400;text-align:center;line-height:1.2;"}
 Questions?
 :::
 
-:::{.absolute style="top:553px;left:671px;width:325px;font-size:20px;color:#e2dfd3;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:553px;left:671px;width:325px;font-size:20px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 klaus@relationssec.net  
 glen.sorensen@protonmail.com
 :::

@@ -1,0 +1,28 @@
+<script>
+/* Slide Foundation: shared token-reading helper. JS consumers (charts, Lottie
+   recolour, motion libs) cannot read var(--token) internally, so they call this
+   to resolve a role token to a usable value/colour. One helper for all of them. */
+window.SlideFoundation = window.SlideFoundation || (function () {
+  function token(name, el) {
+    return getComputedStyle(el || document.documentElement)
+      .getPropertyValue(name).trim();
+  }
+  // resolve a token (may itself be a var or hex) to a concrete rgb(a) string
+  function tokenColor(name, el) {
+    var probe = document.createElement('span');
+    probe.style.color = token(name, el) || '#000';
+    probe.style.display = 'none';
+    document.body.appendChild(probe);
+    var c = getComputedStyle(probe).color;
+    probe.remove();
+    return c;
+  }
+  // duration token (e.g. "0.4s") -> milliseconds for JS animation libs
+  function tokenMs(name, el) {
+    var v = token(name, el);
+    if (!v) return 0;
+    return v.indexOf('ms') > -1 ? parseFloat(v) : parseFloat(v) * 1000;
+  }
+  return { token: token, tokenColor: tokenColor, tokenMs: tokenMs };
+})();
+</script>
