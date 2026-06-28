@@ -1,0 +1,154 @@
+/* L0 CONTRACT: role tokens (colour + TREATMENT) with fallback defaults */
+:root{
+  --surface:#15131f; --ink:#efeafd; --accent:#d6b25a; --muted:#9a93b5;
+  --radius:6px; --edge:3px; --shadow:none; --pad:0.7em 1em; --gap:0.8em;
+  --motion-dur:0.4s; --motion-ease:ease;
+  /* typographic weight scale: centralised so emphasis is consistent across every
+     element AND tunable per skin (was scattered 800/700/600 literals). */
+  --weight-strong:800; --weight-bold:700; --weight-mid:600;
+  /* Mermaid bridge: Quarto reads these --mermaid-* vars off :root and themes
+     the diagram live. Point them at role tokens so diagrams reskin with the deck.
+     (Use base mermaid.theme: neutral, the most overridable.) */
+  --mermaid-bg-color:var(--surface);
+  --mermaid-fg-color:var(--ink);
+  --mermaid-node-bg-color:var(--surface);
+  --mermaid-node-fg-color:var(--ink);
+  --mermaid-edge-color:var(--muted);
+  --mermaid-label-bg-color:var(--surface);
+  --mermaid-fg-color--lighter:var(--muted);
+  --mermaid-fg-color--lightest:var(--muted);
+}
+/* deck-level background: reveal's default --r-background-color is #fff, which
+   leaves the viewport/body white behind slides (esp. the title slide). Theme
+   the whole backdrop from the surface token, not just per-section. */
+.reveal-viewport,.reveal .backgrounds{ background:var(--surface); }
+/* Paint the section surface ONLY when the slide sets no background of its own, so
+   converted decks with per-slide background-image/-color/-video/-gradient (gslides
+   1:1 exports, PPT/ODP imports) keep their backgrounds instead of being covered.
+   Text colour is always safe to set. */
+.reveal .slides section:not([data-background-image]):not([data-background-color]):not([data-background-video]):not([data-background-gradient]){ background:var(--surface); }
+.reveal .slides section{ color:var(--ink); }
+.reveal h1,.reveal h2,.reveal h3{ color:var(--ink); }
+
+/* title slide: reveal/Quarto leave its text unstyled; bind it to role tokens. */
+#title-slide .title,.reveal section.title-slide .title{ color:var(--ink); }
+#title-slide .subtitle,#title-slide .author,#title-slide .date,#title-slide .quarto-title-authors,#title-slide .institute,.reveal section.title-slide .subtitle{ color:var(--muted); }
+
+/* L1 ELEMENTS — consume ONLY role tokens */
+.reveal .card{ background:var(--surface); color:var(--ink); border:var(--edge) solid var(--accent); border-radius:var(--radius); box-shadow:var(--shadow); padding:var(--pad); }
+
+.reveal .bignum{ font-size:4.2em; font-weight:var(--weight-strong); color:var(--accent); line-height:1; }
+.reveal .bignum-label{ color:var(--muted); text-transform:uppercase; letter-spacing:.16em; font-size:.85em; }
+
+.reveal .divider{ display:flex; align-items:center; gap:.7em; color:var(--accent); font-weight:var(--weight-bold); }
+.reveal .divider::before,.reveal .divider::after{ content:""; flex:1; height:var(--edge); min-height:2px; background:var(--accent); border-radius:99px; }
+
+/* feature-grid: class sits on Quarto's wrapping div; target the inner ul/li */
+.reveal .feature-grid > ul{ display:grid; grid-template-columns:repeat(3,1fr); gap:var(--gap); list-style:none; margin:0; padding:0; }
+.reveal .feature-grid > ul > li{ background:var(--surface); border:var(--edge) solid var(--accent); border-radius:var(--radius); box-shadow:var(--shadow); padding:var(--pad); }
+
+/* quote: accent bar + oversized text */
+.reveal .quote{ border-left:calc(var(--edge) * 2) solid var(--accent); padding:.2em 0 .2em .8em; font-size:1.5em; font-style:italic; color:var(--ink); }
+.reveal .quote-attr{ color:var(--muted); font-size:.6em; font-style:normal; text-transform:uppercase; letter-spacing:.12em; }
+
+/* callout: accent-tinted note */
+.reveal .callout{ background:color-mix(in srgb, var(--accent) 14%, var(--surface)); border:var(--edge) solid var(--accent); border-radius:var(--radius); padding:var(--pad); }
+
+/* title-lockup */
+.reveal .lockup .title{ font-size:2.6em; font-weight:var(--weight-strong); color:var(--ink); line-height:1.05; }
+.reveal .lockup .subtitle{ color:var(--accent); font-weight:var(--weight-mid); letter-spacing:.04em; }
+.reveal .lockup::after{ content:""; display:block; width:3em; height:calc(var(--edge) * 2); background:var(--accent); border-radius:99px; margin-top:.5em; }
+
+/* timeline: nodes on a connector line (class on wrapping div; target inner ul/li) */
+.reveal .timeline > ul{ display:flex; justify-content:space-between; align-items:flex-start; gap:var(--gap); position:relative; list-style:none; padding:1.4em 0 0; margin:0; }
+.reveal .timeline > ul::before{ content:""; position:absolute; top:1.55em; left:0; right:0; height:var(--edge); min-height:2px; background:var(--accent); border-radius:99px; }
+.reveal .timeline > ul > li{ flex:1; text-align:center; position:relative; }
+.reveal .timeline > ul > li::before{ content:""; display:block; width:.7em; height:.7em; border-radius:50%; background:var(--accent); margin:0 auto .5em; position:relative; }
+.reveal .timeline .t-label{ color:var(--muted); font-size:.7em; }
+
+/* icon-slot: inline SVG wrapper. Default INHERITS the surrounding text colour
+   (currentColor), so an inline icon matches its text; the `{{< icon >}}`
+   shortcode binds role=accent|muted|ink explicitly when emphasis is wanted. */
+.reveal .icon-slot{ display:inline-flex; vertical-align:middle; }
+.reveal .icon-slot svg{ width:1.4em; height:1.4em; }
+
+/* fx: token-driven reveal fragment. The element's MOTION (duration + easing)
+   comes from treatment role tokens, so a skin restyles the animation, not just
+   colour. Reveal toggles .visible on step; the transition reads --motion-*. */
+.reveal .fragment.fx{ opacity:0; transform:translateY(0.6em) scale(.96); transition:opacity var(--motion-dur) var(--motion-ease), transform var(--motion-dur) var(--motion-ease); }
+.reveal .fragment.fx.visible{ opacity:1; transform:none; }
+
+/* emblem: MULTI-FILL SVG — each part binds a DIFFERENT role token, so a token
+   flip recolours every part independently (not just one currentColor). */
+.reveal .emblem svg{ width:9em; height:9em; }
+.reveal .emblem .e-bg{ fill:var(--surface); }
+.reveal .emblem .e-ring{ fill:none; stroke:var(--accent); stroke-width:5; }
+.reveal .emblem .e-body{ fill:var(--accent); }
+.reveal .emblem .e-inner{ fill:var(--surface); }
+.reveal .emblem .e-dot{ fill:var(--muted); }
+.reveal .emblem .e-bar{ fill:var(--ink); }
+
+/* Graphviz (Quarto `dot`): renders inline SVG with literal fill/stroke attrs
+   that beat selectors, so recolour from role tokens needs !important. Scope to
+   g.graph so we never touch Mermaid or element SVGs. */
+.reveal g.graph > polygon{ fill:transparent !important; stroke:transparent !important; }
+.reveal g.graph g.node ellipse,
+.reveal g.graph g.node polygon{ fill:var(--surface) !important; stroke:var(--accent) !important; }
+.reveal g.graph g.node text{ fill:var(--ink) !important; }
+.reveal g.graph g.edge path{ stroke:var(--muted) !important; }
+.reveal g.graph g.edge polygon{ fill:var(--muted) !important; stroke:var(--muted) !important; }
+.reveal g.graph g.edge text{ fill:var(--muted) !important; }
+
+/* Mermaid labels (rendered client-side at load): the --mermaid-* vars theme node
+   backgrounds + edges, but label TEXT and edge-label backgrounds leak the base
+   theme. Bind them to role tokens. (Mermaid theme must NOT be forced to a baked
+   preset like neutral, or node bg ignores the vars.) */
+.reveal .nodeLabel,.reveal .nodeLabel *{ color:var(--ink) !important; }
+.reveal .edgeLabel,.reveal .edgeLabel *{ color:var(--muted) !important; }
+.reveal .edgeLabel .labelBkg{ background:var(--surface) !important; }
+.reveal .cluster rect{ fill:var(--surface) !important; stroke:var(--accent) !important; }
+
+/* rows: vertical counterpart to Quarto's built-in .columns — stack equal-height
+   horizontal tracks. Clean-room (the community `rows` extension ships no license).
+   Nested fenced divs (::: {.rows} > ::: {.row}) nest directly, so .rows > .row. */
+.reveal .rows{ display:flex; flex-direction:column; gap:var(--gap); height:100%; }
+.reveal .rows > .row{ display:flex; gap:var(--gap); flex:1 1 0; align-items:stretch; }
+.reveal .rows > .row > *{ flex:1; }
+
+/* attribution (rschmehl plugin, MIT): image-credit text -> muted role. */
+.reveal .attribution{ color:var(--muted) !important; }
+
+/* code-window (mcanouil/quarto-code-window, MIT): it builds on the `Canvas`
+   system colour, so on a themed slide it would show OS white. Rebind its surface,
+   text, border and titlebar to role tokens. (Consumer composes via quarto add.) */
+.reveal .code-with-filename{ background-color:var(--surface) !important; color:var(--ink) !important; border-color:var(--accent) !important; border-radius:var(--radius) !important; }
+.reveal .code-with-filename .code-with-filename-file{ background-color:color-mix(in srgb, var(--accent) 10%, var(--surface)) !important; border-bottom-color:var(--accent) !important; color:var(--muted) !important; }
+.reveal .code-with-filename .code-with-filename-lines{ color:var(--muted) !important; background-color:color-mix(in srgb, var(--accent) 8%, var(--surface)) !important; }
+
+/* vcenter: opt-in per-slide vertical centring (`## Title {.vcenter}`) for sparse
+   slides that would otherwise leave bottom whitespace. reveal's non-center layout
+   ignores justify-content, so centre via auto-margins around the content block.
+   Flow content only — do NOT combine with floated images. */
+.reveal section.vcenter{ display:flex !important; flex-direction:column; min-height:100%; box-sizing:border-box; }
+.reveal section.vcenter > *:first-child{ margin-top:auto !important; }
+.reveal section.vcenter::after{ content:""; margin-top:auto; }
+
+/* Diagram line WEIGHT harmony: Mermaid/Graphviz default to ~1px strokes, which
+   read thin and weak next to text and the deck's bordered elements. Bind diagram
+   stroke widths to the deck's --edge treatment so lines match the overall weight. */
+.reveal .flowchart-link,.reveal .edgePath path{ stroke-width:var(--edge) !important; }
+.reveal .node rect,.reveal .node circle,.reveal .node polygon,.reveal .node path{ stroke-width:var(--edge) !important; }
+.reveal g.graph g.node ellipse,.reveal g.graph g.node polygon,.reveal g.graph g.edge path,.reveal g.graph g.edge polygon{ stroke-width:var(--edge) !important; }
+/* cross-diagram consistency: Mermaid outlines nodes in --ink by default while
+   Graphviz uses --accent; align Mermaid node borders to --accent so both engines
+   read the same (accent-outlined surface nodes, ink text, muted edges). */
+.reveal .node rect,.reveal .node circle,.reveal .node polygon,.reveal .node path{ stroke:var(--accent) !important; }
+
+/* Diagram TYPOGRAPHY harmony: Mermaid/Graphviz default to their own fonts
+   (trebuchet/Times), which clash with the deck. The foundation defines no font
+   (that's the deck's concern), so diagram text INHERITS the deck font by default
+   — a conscious choice to make diagrams read as part of the slide. A skin can
+   override these selectors for distinct diagram type. Size stays the tool's own
+   layout size (diagram labels are intentionally a touch smaller than body text). */
+.reveal .nodeLabel,.reveal .nodeLabel *,.reveal .edgeLabel,.reveal .edgeLabel *,.reveal .cluster span{ font-family:inherit !important; }
+.reveal g.graph text{ font-family:inherit !important; }

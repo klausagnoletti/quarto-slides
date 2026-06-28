@@ -1,13 +1,14 @@
 ---
 pagetitle: "Still Living with AD(H)D in Infosec"
 format:
-  revealjs:
-    theme: [default, adhd-theme.scss]
+  klausagnoletti/slide-foundation-revealjs:
+    theme: adhd-theme.scss
     embed-resources: true
     slide-number: true
     width: 1050
     height: 700
     transition: fade
+    include-in-header: adhd-skin.html
 ---
 
 ## {background-image="images/s01_0.png" background-size="cover"}
@@ -95,7 +96,7 @@ But looks deceive..
 I have ADHD.. and it’s ok
 :::
 
-:::{.absolute style="top:171px;left:36px;width:835px;font-size:41px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:171px;left:36px;width:835px;font-size:41px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Was diagnosed 6 years ago, aged 45  
 That explained a lot to me..  
 Increasingly harder to find a job I cared about  
@@ -130,7 +131,7 @@ So I assume you don’t either
 ADHD? ADD?
 :::
 
-:::{.absolute style="top:167px;left:36px;width:978px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:167px;left:36px;width:978px;font-size:32px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 AD/HD  
 Attention Deficit /  
 Hyperactivity Disorder  
@@ -219,29 +220,29 @@ So you can mitigate
 
 ## {background-image="images/bg-texture.png" background-size="cover"}
 
-:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#212121;font-weight:700;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:var(--ink);font-weight:700;text-align:left;line-height:1.2;"}
 Mitigating
 :::
 
-:::{.absolute style="top:167px;left:44px;width:710px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:167px;left:44px;width:710px;font-size:32px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Medicine  
 Elvanse, Vyvanse, Aduvanz (same thing)
 :::
 
-:::{.absolute style="top:379px;left:44px;width:936px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:379px;left:44px;width:936px;font-size:32px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Headphones with ‘ADHD focus music’ or binaural beats
 :::
 
 ![](images/s11_0.png){.absolute top=432 left=510 width=524}
 
-:::{.absolute style="top:273px;left:44px;width:908px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:273px;left:44px;width:908px;font-size:32px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Nootropics  
 L-Theanine, L-Tyrosine, Multi vitamin, Lithium Orotate
 :::
 
 ![](images/s11_1.png){.absolute top=341 left=541 width=278}
 
-:::{.absolute style="top:432px;left:44px;width:562px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:432px;left:44px;width:562px;font-size:32px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Loop earplugs (model ‘switch’)
 :::
 
@@ -269,28 +270,28 @@ Loop earplugs. A life savior at DEF CON!
 
 ## {background-image="images/bg-texture.png" background-size="cover"}
 
-:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#212121;font-weight:700;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:var(--ink);font-weight:700;text-align:left;line-height:1.2;"}
 Mitigating (cont’d)
 :::
 
-:::{.absolute style="top:226px;left:36px;width:606px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:226px;left:36px;width:606px;font-size:32px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Breathing exercises  
 Art of Living / Breathe Smart
 :::
 
-:::{.absolute style="top:466px;left:51px;width:344px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:466px;left:51px;width:344px;font-size:32px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Job situation
 :::
 
 ![](images/s12_0.png){.absolute top=296 left=786 width=209}
 
-:::{.absolute style="top:149px;left:36px;width:438px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:149px;left:36px;width:438px;font-size:32px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Airtag all the things!
 :::
 
 ![](images/s12_1.jpg){.absolute top=50 left=567 width=289}
 
-:::{.absolute style="top:342px;left:44px;width:510px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:342px;left:44px;width:510px;font-size:32px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 AI  
 PAI by Daniel Miessler
 :::
@@ -314,11 +315,11 @@ And job.. Yes.. What to do with that?
 
 ## {background-image="images/s13_0.png" background-size="cover"}
 
-:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#212121;font-weight:700;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:var(--ink);font-weight:700;text-align:left;line-height:1.2;"}
 Why getting fired was a good thing
 :::
 
-:::{.absolute style="top:149px;left:36px;width:978px;font-size:34px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:149px;left:36px;width:978px;font-size:34px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Working towards what I am good at and requires:  
 Diversity in tasks  
 Only accept tasks I want  
@@ -356,7 +357,7 @@ Maybe that can help you out if you’re in a similar situation
 Lessons learned
 :::
 
-:::{.absolute style="top:167px;left:36px;width:978px;font-size:36px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:167px;left:36px;width:978px;font-size:36px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 No problem? Don’t try to fix it then!  
 ADHD is ‘normal’ to have. Nothing to be ashamed about  
 Find your weaknesses/super powers.  
@@ -404,7 +405,7 @@ And yes, I’m incredibly funny. At least I think so myself.
 Lessons learned (cont’d)
 :::
 
-:::{.absolute style="top:167px;left:36px;width:978px;font-size:36px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:167px;left:36px;width:978px;font-size:36px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 When people know they can better understand; spouse, friends, employer.  
 If you’ve met one person with ADHD..  
 This is my ADHD. Not anyone else’s
@@ -535,7 +536,7 @@ But in this field, if you can learn how to tune it properly, you're going to do 
 You might wonder..
 :::
 
-:::{.absolute style="top:162px;left:36px;width:978px;font-size:39px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:162px;left:36px;width:978px;font-size:39px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 Neurodivergence is over-represented in  
 cyber security.  
   
@@ -682,11 +683,11 @@ That makes it all worth it.
 
 ## {background-image="images/s27_0.png" background-size="cover"}
 
-:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:#212121;font-weight:700;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:40px;left:36px;width:978px;font-size:61px;color:var(--ink);font-weight:700;text-align:left;line-height:1.2;"}
 I am always there to help
 :::
 
-:::{.absolute style="top:157px;left:75px;width:579px;font-size:32px;color:#212121;font-weight:400;text-align:left;line-height:1.2;"}
+:::{.absolute style="top:157px;left:75px;width:579px;font-size:32px;color:var(--ink);font-weight:400;text-align:left;line-height:1.2;"}
 @klausagnoletti@infosec.exchange  
 @klausagnoletti.bsky.social  
 https://www.linkedin.com/in/agnoletti  
