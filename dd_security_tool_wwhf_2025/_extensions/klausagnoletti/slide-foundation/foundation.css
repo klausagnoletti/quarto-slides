@@ -22,7 +22,12 @@
    leaves the viewport/body white behind slides (esp. the title slide). Theme
    the whole backdrop from the surface token, not just per-section. */
 .reveal-viewport,.reveal .backgrounds{ background:var(--surface); }
-.reveal .slides section{ background:var(--surface); color:var(--ink); }
+/* Paint the section surface ONLY when the slide sets no background of its own, so
+   converted decks with per-slide background-image/-color/-video/-gradient (gslides
+   1:1 exports, PPT/ODP imports) keep their backgrounds instead of being covered.
+   Text colour is always safe to set. */
+.reveal .slides section:not([data-background-image]):not([data-background-color]):not([data-background-video]):not([data-background-gradient]){ background:var(--surface); }
+.reveal .slides section{ color:var(--ink); }
 .reveal h1,.reveal h2,.reveal h3{ color:var(--ink); }
 
 /* title slide: reveal/Quarto leave its text unstyled; bind it to role tokens. */
