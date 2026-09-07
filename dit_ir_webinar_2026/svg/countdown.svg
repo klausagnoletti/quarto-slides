@@ -1,0 +1,13 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="30 sekunders nedtælling">
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#F8F8FA" stroke-width="2" opacity="0.2" />
+  <!-- tick marks at 20s, 10s, 5s remaining (i.e. 33%, 66%, 83% of the sweep) -->
+  <line x1="60" y1="10" x2="60" y2="18" stroke="#CCCCCC" stroke-width="2" transform="rotate(120 60 60)" />
+  <line x1="60" y1="10" x2="60" y2="18" stroke="#CCCCCC" stroke-width="2" transform="rotate(240 60 60)" />
+  <line x1="60" y1="10" x2="60" y2="18" stroke="#CCCCCC" stroke-width="2" transform="rotate(300 60 60)" />
+  <circle id="countdownRing" cx="60" cy="60" r="50" fill="none" stroke="#FFC800" stroke-width="4"
+          stroke-linecap="round" transform="rotate(-90 60 60)"
+          pathLength="100" stroke-dasharray="100" stroke-dashoffset="0">
+    <animate id="countdownAnim" attributeName="stroke-dashoffset" from="0" to="100" dur="30s"
+             begin="indefinite" fill="freeze" />
+  </circle>
+</svg>

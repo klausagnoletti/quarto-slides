@@ -1,0 +1,63 @@
+---
+pagetitle: "RelationSec document template — element demo"
+format:
+  klausagnoletti/slide-foundation-revealjs:
+    theme: theme-light.scss
+    include-in-header:
+      - fonts.html
+      - skin-light.html
+    logo: assets/relationsec-navy-logo.png
+    embed-resources: true
+    slide-number: false
+    width: 1050
+    height: 700
+    transition: fade
+---
+
+## {.vcenter}
+
+<!-- Light/document template demo. ALL content is placeholder; no real rates. -->
+
+::: {.lockup}
+[Sample [rate card]{.accent}]{.title}
+
+[The document design family as a deck]{.subtitle}
+:::
+
+## The exercises [demo content]{.kicker}
+
+| Exercise | For / outcome | Floor |
+|---|---|---|
+| Readiness Exercise | Exercises the IR plan, produces an evidence pack | [€X,000]{.price} |
+| Cross-Function Exercise | Common language across GRC and IT-ops | [€X,000]{.price} |
+| Board Crisis Simulation | Governance decisions under pressure | [€X,000]{.price} |
+
+::: {.tint}
+**Placeholder note.** Partner floors in EUR; every price built bottom-up from delivery hours. This tint callout is the rate card's note device.
+:::
+
+## Engagement blocks
+
+### What an engagement includes
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.card-light}
+**Discovery & scoping** [€350/hr]{.price}
+
+Capped envelope; overage bills hourly.
+:::
+:::
+::: {.column width="50%"}
+::: {.card-light}
+**Second facilitator** [€2,500]{.price}
+
+Required for groups of 9 or more.
+:::
+:::
+::::
+
+::: {.band-callout}
+[How we frame compliance]{.callout-title}
+An exercise **evidences** that you exercised your plan. It supports your posture; it does not *prove* or *satisfy* compliance.
+:::

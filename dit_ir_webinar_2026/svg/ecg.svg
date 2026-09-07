@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EKG-linje, konstant løb">
+  <path id="ecgLine" d="M0 40 L60 40 L75 40 L85 10 L95 70 L105 20 L115 40 L160 40 L400 40"
+        fill="none" stroke="#FFC800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.4s" repeatCount="indefinite" />
+  </path>
+</svg>

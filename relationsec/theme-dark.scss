@@ -1,0 +1,73 @@
+/*-- scss:defaults --*/
+// RelationSec identity typography: Bebas Neue (display) + Source Sans (body),
+// same family as the typst document templates. Font FILES load via
+// relationsec/fonts.html (include-in-header); Quarto's scss pipeline drops
+// @import url(...) so it cannot live here.
+$font-family-sans-serif: "Source Sans 3", "Source Sans Pro", "Liberation Sans", sans-serif;
+$presentation-heading-font: "Bebas Neue", sans-serif;
+
+/*-- scss:rules --*/
+// Explicit body-font rule: $font-family-sans-serif -> --r-main-font sets the
+// variable but no rule applies it in this format (probed 03-09-2026).
+.reveal,
+.reveal .slides {
+  font-family: "Source Sans 3", "Source Sans Pro", "Liberation Sans", sans-serif;
+}
+
+.reveal h1,
+.reveal h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+// Title lockup is display type: Bebas like every heading (the extension's
+// .title span is not an hN, so the heading font does not cascade to it).
+.reveal .lockup .title {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+// Two-tone display device from the document family (rate-card masthead:
+// "HACKBACK" white + "IR TABLETOP EXERCISES" yellow). Wrap the accent part:
+// ## Incident response[-træning]{.accent}
+.reveal h1 .accent,
+.reveal h2 .accent,
+.reveal .lockup .title .accent {
+  color: var(--accent);
+}
+
+// Kicker: the small tracked Bebas label from the document header bands.
+.reveal .kicker {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.5em;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+// Heading-less slides (## {.vcenter}) must not leak an orphan rule.
+.reveal .slides section > h2:empty::after {
+  display: none;
+}
+
+// --fg-cols variable feature-grid column override now lives in the
+// foundation's own foundation.css (single source of truth for this element).
+
+// The identity signature, now matching the DOCUMENT measure-rule exactly:
+// a short Mikado head with a neutral tail running the full measure
+// (typst: 12mm yellow rect + 1fr neutral rect, 1.5pt high).
+.reveal .slides section > h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.09em;
+  background: linear-gradient(
+    to right,
+    var(--accent) 0,
+    var(--accent) 2.4em,
+    var(--rule-tail) 2.4em,
+    var(--rule-tail) 100%
+  );
+  margin-top: 0.12em;
+}

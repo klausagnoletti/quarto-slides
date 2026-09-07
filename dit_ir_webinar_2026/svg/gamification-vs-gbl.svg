@@ -1,0 +1,51 @@
+<!-- Two-panel contrast for the GBL vs gamification slide. Left (muted): gamification props,
+     trophy + badge + cake slice. Right (Mikado-lit): a table seen from above with a d20, cards
+     and four hands at the edge. Same outline line-art register as the other hand-authored SVGs. -->
+<svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gamification props versus a game table">
+  <!-- LEFT PANEL: gamification -->
+  <g stroke="#CCCCCC" stroke-width="2.5" fill="none" opacity="0.45" stroke-linejoin="round" stroke-linecap="round">
+    <!-- trophy -->
+    <path d="M60,60 h60 v30 a30,30 0 0 1 -60,0 z" />
+    <path d="M60,68 h-14 a14,14 0 0 0 14,20" />
+    <path d="M120,68 h14 a14,14 0 0 1 -14,20" />
+    <path d="M90,120 v18" />
+    <path d="M70,138 h40 v10 h-40 z" />
+    <!-- badge (star in circle) -->
+    <circle cx="190" cy="80" r="26" />
+    <path d="M190,62 l6,12 13,2 -9,9 2,13 -12,-6 -12,6 2,-13 -9,-9 13,-2 z" />
+    <path d="M178,102 l-6,30 18,-10 18,10 -6,-30" />
+    <!-- cake slice -->
+    <path d="M250,140 l50,-50 l0,60 z" />
+    <path d="M250,140 l50,10" />
+    <path d="M300,90 l0,60" />
+    <path d="M262,128 q6,-8 12,0" />
+    <path d="M280,110 q6,-8 12,0" />
+  </g>
+
+  <!-- divider -->
+  <line x1="320" y1="30" x2="320" y2="190" stroke="#CCCCCC" stroke-width="1.5" opacity="0.25" stroke-dasharray="4 6" />
+
+  <!-- RIGHT PANEL: the game table -->
+  <g stroke="#F8F8FA" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="480" cy="110" rx="105" ry="62" />
+  </g>
+  <!-- hands at the table edge -->
+  <g stroke="#FFC800" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M480,38 v14 m-8,-12 v12 m16,-12 v12" />
+    <path d="M480,182 v-14 m-8,12 v-12 m16,12 v-12" />
+    <path d="M370,110 h14 m-12,-8 h12 m-12,16 h12" />
+    <path d="M590,110 h-14 m12,-8 h-12 m12,16 h-12" />
+  </g>
+  <!-- cards on the table -->
+  <g stroke="#CCCCCC" stroke-width="2" fill="none" stroke-linejoin="round">
+    <rect x="412" y="88" width="30" height="42" rx="3" transform="rotate(-12 427 109)" />
+    <rect x="440" y="84" width="30" height="42" rx="3" transform="rotate(4 455 105)" />
+  </g>
+  <!-- d20 -->
+  <g stroke="#FFC800" stroke-width="2.5" fill="none" stroke-linejoin="round" transform="translate(495 88) scale(0.42)">
+    <polygon points="60,8 104,34 104,86 60,112 16,86 16,34" />
+    <polygon points="60,8 104,34 60,60 16,34" opacity="0.6" />
+    <polygon points="60,60 104,34 104,86 60,112" opacity="0.6" />
+    <polygon points="60,60 16,34 16,86 60,112" opacity="0.6" />
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<!-- Static d20 outline settled on a non-committal face (11). The "tumble" motion is a CSS
+     keyframe animation applied to the wrapping element in the qmd (class toggled on fragment
+     show via the shared trigger script), not baked into this SVG. -->
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tyvesidet terning, viser 11">
+  <polygon points="60,8 104,34 104,86 60,112 16,86 16,34"
+           fill="none" stroke="#F8F8FA" stroke-width="3" />
+  <polygon points="60,8 104,34 60,60 16,34" fill="none" stroke="#CCCCCC" stroke-width="1.5" opacity="0.6" />
+  <polygon points="60,60 104,34 104,86 60,112" fill="none" stroke="#CCCCCC" stroke-width="1.5" opacity="0.6" />
+  <polygon points="60,60 16,34 16,86 60,112" fill="none" stroke="#CCCCCC" stroke-width="1.5" opacity="0.6" />
+  <text x="60" y="72" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-size="26"
+        font-weight="700" fill="#FFC800">11</text>
+</svg>

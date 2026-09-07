@@ -1,0 +1,32 @@
+<!-- Hand-authored replacement for the generated "kids around a table" hero (slide 18), which
+     failed twice on the no-rendered-faces requirement. Flat silhouette shapes only — no facial
+     geometry exists to render, so the AI-face risk is eliminated by construction. -->
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Silhuetter omkring et bord med terninger og kort, varmt lys fra midten">
+  <defs>
+    <radialGradient id="tableGlow" cx="50%" cy="60%" r="45%">
+      <stop offset="0%" stop-color="#FFC800" stop-opacity="0.9" />
+      <stop offset="45%" stop-color="#FFC800" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#FFC800" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="#111B2A" />
+  <ellipse cx="400" cy="300" rx="300" ry="170" fill="url(#tableGlow)" />
+  <ellipse cx="400" cy="330" rx="230" ry="55" fill="none" stroke="#FFC800" stroke-width="1.5" opacity="0.5" />
+
+  <!-- seated silhouettes, solid dark shapes, no facial detail — overlap the front table edge -->
+  <g fill="#05070c" stroke="#111B2A" stroke-width="2">
+    <path d="M110 350 q10 -95 75 -100 q65 5 75 100 q-75 26 -150 0 z" />
+    <path d="M270 365 q8 -105 82 -110 q74 5 82 110 q-82 28 -164 0 z" />
+    <path d="M460 368 q8 -108 86 -113 q78 5 86 113 q-86 30 -172 0 z" />
+    <path d="M630 352 q9 -98 78 -103 q69 5 78 103 q-78 27 -156 0 z" />
+  </g>
+
+  <!-- dice + card glyphs on the near table edge, drawn AFTER (on top of) the seated
+       figures and below their lowest point so nothing occludes them -->
+  <g fill="#FFC800">
+    <rect x="355" y="392" width="24" height="24" rx="3" />
+    <rect x="405" y="400" width="22" height="22" rx="3" />
+    <rect x="300" y="398" width="38" height="26" rx="2" opacity="0.9" />
+  </g>
+</svg>

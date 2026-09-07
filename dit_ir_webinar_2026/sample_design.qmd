@@ -1,0 +1,52 @@
+---
+pagetitle: "Design sample — Dansk IT webinar"
+format:
+  klausagnoletti/slide-foundation-revealjs:
+    theme: ../relationsec/theme-dark.scss
+    include-in-header:
+      - ../relationsec/fonts.html
+      - ../relationsec/skin-dark.html
+    logo: ../relationsec/assets/relationsec-yellow-logo.png
+    embed-resources: true
+    slide-number: false
+    width: 1050
+    height: 700
+    transition: fade
+---
+
+## {.vcenter}
+
+<!-- Design sample only: title / normal / thanks. Copy is the expert-signed v1.2 text. -->
+
+::: {.lockup}
+[Incident [response-træning]{.accent}]{.title}
+
+[Fra beredskabsplan til rygmarv]{.subtitle}
+:::
+
+::: {style="margin-top:2.2em; color:var(--muted); font-size:0.62em; letter-spacing:0.08em; text-transform:uppercase;"}
+Klaus Agnoletti · Dansk IT · 9. september 2026
+:::
+
+## NIS2 · ISO 27001: I skal øve. Formen er fri.
+
+::: {.feature-grid}
+- Folk åbner ikke op
+- Egoer clasher
+- "Det kan ikke ske hos os"
+- Sjov er tabu
+:::
+
+## {.vcenter}
+
+::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
+[Sjov er ikke useriøst. Det er effektivt.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em; letter-spacing:0.03em;"}
+
+<div style="background:#F8F8FA; border-radius:var(--radius); width:190px; margin:0.9em auto 0.5em; padding:8px; box-shadow:var(--shadow);"><img src="qr.svg" width="174" style="display:block;"/></div>
+
+[malwareandmonsters.com]{style="color:var(--accent); font-weight:var(--weight-mid);"}
+:::
+
+::: {style="margin-top:1.4em; color:var(--muted); font-size:0.55em; text-align:center;"}
+Planlægger I en IR-øvelse i denne NIS2/ISO-cyklus og vil have en faciliteret session? Svar til Dansk IT, så følger jeg op.
+:::

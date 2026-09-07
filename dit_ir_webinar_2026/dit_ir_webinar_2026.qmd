@@ -1,0 +1,508 @@
+---
+pagetitle: "Incident Response Training — Dansk IT Webinar"
+format:
+  klausagnoletti/slide-foundation-revealjs:
+    theme: ../relationsec/theme-dark.scss
+    include-in-header:
+      - ../relationsec/fonts.html
+      - ../relationsec/skin-dark.html
+      - local-style.html
+    include-after-body:
+      - local-script.html
+    logo: ../relationsec/assets/relationsec-yellow-logo.png
+    embed-resources: true
+    slide-number: true
+    width: 1050
+    height: 700
+    transition: fade
+    transition-speed: slow
+    auto-animate-easing: ease-in-out
+    auto-animate-duration: 0.8
+---
+
+## {.lockup .bg-drift}
+
+[Incident [Response Training]{.accent}]{.title}
+
+[From response plan to muscle memory]{.subtitle}
+
+::: {style="margin-top:2.2em; color:var(--muted); font-size:0.62em; letter-spacing:0.08em; text-transform:uppercase;"}
+Klaus Agnoletti · Dansk IT · 9 September 2026
+:::
+
+::: {.notes}
+- Silent, on camera. Carlos runs welcome + scripted intro (his card, anonymized clients)
+- Nod at TV2 / DEF CON mentions, nothing more
+- Never "30 years in infosec"
+:::
+
+## {background-image="images/klaus-cats.jpg" background-size="cover" background-position="center"}
+
+::: {.notes}
+- 30-45s max, icebreaker tone, before anything else starts
+- Chat: "If you have black cats or dogs at home, put it in the chat."
+- Copenhagen; wife + two cats, we took in off the street, siblings, both black
+- 20 years in IT security
+- Short on the career: consultant in vulnerability management, advisory, and incident response → founder of KbhSEC → creator of Malware & Monsters
+- Bridge straight into the cold open, no "and now for today's topic"
+:::
+
+## {background-image="images/hero-december-desk.jpg" background-opacity="0.4" background-size="cover" auto-animate="true"}
+
+[December. An email from the butcher.]{.hero-line data-id="cold"}
+
+::: {.notes}
+- Memorized 90s, in medias res, no "back when I made a documentary"-preamble
+- Beats: municipality · cheap Christmas meat · Christmas gift-basket raffle · people click
+- The link is DEAD → they troubleshoot it, ask colleagues, try again
+- Slow down on: they troubleshoot the attacker's link FOR him
+:::
+
+## {.vcenter auto-animate="true"}
+
+[Everyone clicks. The question is what happens after.]{.hero-line style="font-size:2.4em;" data-id="cold"}
+
+::: {.notes}
+- Pause before advancing, let it sit 2s
+- This is the frame for the entire hour
+- It's not realistic to expect that anyone always spots a phishing attempt. Not even me. And especially not now, when AI makes it cheap to run large-scale targeted phishing.
+:::
+
+## When did you last PRACTICE your incident response plan? {.vcenter}
+
+::: {.feature-grid style="--fg-cols:4;"}
+- A: Under 1 year
+- B: 1–3 years
+- C: Over 3 years
+- D: Honestly, I don't know
+:::
+
+::: {.chip-note .pulse-cue}
+Type A, B, C or D in the chat
+:::
+
+::: {.notes}
+- Carlos reads split aloud
+- React unscripted, ONE sentence, whatever the result
+- D is the honest answer for most rooms, say so warmly if D wins
+- Fallback if it lands oddly: "What goes wrong in an incident is rarely that people don't know enough. It's that they're certain of something wrong, and manage to act on it."
+:::
+
+## {.vcenter}
+
+::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
+[SAY ≠ DO]{style="font-family:'Bebas Neue',sans-serif; font-size:2em; letter-spacing:0.03em; color:var(--accent);"}
+:::
+
+::: {.notes}
+- Verbatim: "Surveys tell you what people SAY they'd do. An exercise shows you what they DO. That's what this hour is about."
+- Callback target for slide 31, say it cleanly
+:::
+
+## An exercise can also end up as SAY.
+
+::: {.card}
+Not WHETHER you practice. HOW.
+:::
+
+::: {.dial-wrap}
+![](svg/dial.svg)
+[3%]{.dial-readout .fragment .fx style="opacity:1;"}
+[30%]{.dial-readout .fragment .fx}
+:::
+
+::: {.notes}
+- So the question isn't whether you practice, it's whether the exercise changes what people DO. And the number most people look at is the click rate from the phishing test.
+- Whoever runs the phishing test decides how hard it is. The click rate is a dial you can turn. Not a measurement. And it's what decides who "failed".
+- Trust cost: "…and afterward, hardly anyone feels good about being told they fell for it."
+- It takes ONE click to compromise the entire organization. So a low number proves nothing.
+- ~50-55s total, don't linger
+:::
+
+## IT is not a cost. IT is a precondition.
+
+::: {.notes}
+- Verbatim: "Many organizations don't see themselves as IT companies. They see IT as a cost to be kept down, not as the precondition for everything else they do. So leadership aims for the lowest possible security. Right up until the first ransomware attack."
+- Beat of pause after "ransomware attack", then straight into compliance: the cost mindset is WHY orgs do the NIS2 minimum
+- ~45s
+:::
+
+## NIS2 · ISO 27001: Practice is MANDATORY. The format isn't. {.vcenter}
+
+::: {.feature-grid style="--fg-cols:4;"}
+- People don't open up
+- Egos clash
+- "It can't happen here"
+- Fun is taboo
+:::
+
+::: {.notes}
+- Compliance as diagnosis, ONCE, here, never again
+- Chain: boring → no engagement → no learning → no point
+- Payoff, flat, unsold: people who hate exercises spend all their energy finding fault with the exercise; make it engaging and they forget to resist
+- The duty creates the obligation; the game turns the obligation into competence
+:::
+
+## The plan only lives on paper. {background-image="images/hero-dead-document.jpg" background-opacity="0.35" background-size="cover"}
+
+::: {.notes}
+- Response plan from five years ago, lives in SharePoint
+- Ransomware hits, there's no SharePoint
+- "You shouldn't throw the plan out. The exercise is what gets the plan living in people's heads instead of in SharePoint."
+:::
+
+## {.vcenter}
+
+::: {.bignum}
+Pulse 200. IQ&nbsp;50.
+:::
+
+::: {style="max-width:640px; margin:0 auto;"}
+![](svg/ecg.svg){style="width:100%; height:auto; display:block;"}
+:::
+
+::: {.notes}
+- In the middle of an incident, your pulse shoots up to 200, and your IQ crashes to 50.
+- What you've PRACTICED is all you've got.
+- That's not the moment to invent a new process from scratch.
+- It takes two things: that you've trained for it, and that you have a playbook that actually works.
+- Few words. Clear images. Not twenty dense pages.
+- It needs to be skimmable at three in the morning, when it's on fire.
+- That's why the plan needs to be PRACTICED, not read.
+:::
+
+## Recognize this?
+
+::: {.feature-grid style="--fg-cols:4; font-size:0.65em;"}
+- An IR plan in SharePoint. Last opened two years ago.
+- An exercise you only run because NIS2 requires it.
+- A slideshow, read aloud. Box ticked.
+- Only IT sits at the table. Everyone else shows up when it's already too late.
+:::
+
+::: {.divider .fragment .fx}
+WHY IS THIS TRAINING DIFFERENT?
+:::
+
+::: {.notes}
+- Breathe here, closes the whole training-theater critique section
+:::
+
+## {.vcenter}
+
+::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
+[INSTINCT.]{style="font-family:'Bebas Neue',sans-serif; font-size:2em;"} [Not information.]{style="font-family:'Bebas Neue',sans-serif; font-size:2em; color:var(--muted);"}
+:::
+
+::: {.notes}
+- A format that can't produce instinct isn't training. It's information.
+- You don't learn security by reading about it. You learn it by making decisions under pressure. Games, stories, simulation.
+- Callback: "What you've PRACTICED is all you've got" (slide 11), this slide names WHY that's true
+- Forward-plants slide 21's information-drop beat
+- Bridge: "And that's why the FORMAT matters. Not gamification. Game-based learning."
+:::
+
+## {.feature-grid .vcenter style="--fg-cols:2;"}
+
+- Gamification: points, badges, cake
+- Game-based learning: the game IS the learning
+
+::: {style="max-width:560px; margin:0.8em auto 0;"}
+![](svg/gamification-vs-gbl.svg){style="width:100%; height:auto; display:block;"}
+:::
+
+::: {.notes}
+- Verbatim: "This isn't gamification: points, badges, and 'first team done gets cake'. Motivation theater. The game itself is what teaches you something."
+- No citation on the slide; Gee/Simkins stay pocketed for Q&A
+- Must land BEFORE any mechanics are shown
+:::
+
+## An incident has many seats
+
+::: {.seat-diagram}
+![](svg/table-seats.svg)
+[]{.seat-dot .s1 .fragment .fx}
+[]{.seat-dot .s2 .fragment .fx}
+[]{.seat-dot .s3 .fragment .fx}
+[]{.seat-dot .s4 .fragment .fx}
+[]{.seat-dot .s5 .fragment .fx}
+[]{.seat-dot .s6 .fragment .fx}
+:::
+
+::: {.notes}
+- The six M&M roles, one click each: Detective, Protector, Tracker, Communicator, Crisis Manager, Threat Hunter
+- Technical people overlook the soft seats (Communicator, Crisis Manager), they decide whether the organization keeps a level head
+- Non-technical welcome: a method, not a specialty
+- Many of you KNOW what needs doing; the hard part is translating that for leadership
+- Rhetorical, answer it yourself: "How many roles does your plan have? For most of you, two. IT, and whoever signs. An incident has six."
+- Straight into "Think with a head that isn't yours"
+:::
+
+## Think with a head that isn't yours {.vcenter}
+
+::: {.feature-grid style="--fg-cols:2;"}
+- The attacker's
+- Your colleague's
+:::
+
+::: {.notes}
+- Attacker clause kept light, one sentence
+- The technician plays comms chief → empathy for that seat under pressure
+- Resilience: what if the person who always takes X is out sick that day? That's why roles rotate
+:::
+
+## If kids can play it … {background-color="#111B2A"}
+
+::: {style="max-width:700px; margin:0.4em auto;"}
+![](svg/kids-table-silhouette.svg){style="width:100%; height:auto; display:block;"}
+:::
+
+::: {.notes}
+- A nonprofit in Seattle trains kids on my framework, summer camp, beginner scenario
+- Reassurance: if kids can, so can most adults; it's just about tuning the scenario
+- Punchline IS the pivot
+:::
+
+## {.vcenter}
+
+::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
+[NOW WE DO IT. TWO ROUNDS. THEN IT'S YOU.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em;"}
+:::
+
+::: {.notes}
+- To rounds shown narrated (Klaus plays all seats), so everyone sees the shape once
+- Round 3 is real: the room decides live
+- Don't try to track every rule, watch for confidence vs evidence
+:::
+
+## MALWARE & MONSTERS
+
+::: {.feature-grid style="--fg-cols:2;"}
+- Analog · 3–8 players + one Incident Master
+- Round 1: What are we looking at? · Round 2: How bad is it? · Round 3: Containment
+:::
+
+::: {style="max-width:260px; margin:0.8em auto 0;"}
+![](images/gaboongrabber-art.png){style="width:100%; height:auto; display:block;"}
+:::
+
+::: {.notes}
+- The IM isn't a player; the IM runs the scenario
+- Malmons (~25s): malware "personified" as creatures, makes something abstract concrete
+- Containment, NEVER "and then we fix it"
+- Forward-pointer: "…and if there are fifteen of you, there's a variant of the same game. I'll come back to that."
+:::
+
+## {.vcenter background-color="#05070c"}
+
+::: {.bignum}
+03:20
+:::
+
+::: {.feature-grid style="--fg-cols:3;"}
+- 3 alerts in 40 min
+- 1 call about a strange screen
+- 2 of the 3 things you "know" are wrong
+:::
+
+::: {.notes}
+- Read as IM, in character: "You're the Communicator. It's 03:20. Monitoring has sent three alerts in 40 minutes. One user has called in about a strange screen. You know three things, and two of them are wrong. You just don't know which two."
+- Never a clean "it's ransomware" label
+:::
+
+## {.feature-grid .vcenter style="--fg-cols:2;"}
+
+- Tracker: firewall logs, NOW
+- Communicator: wake leadership … or wait?
+
+::: {.notes}
+- Both real decisions, only ONE involves a die
+- Character-color line (~10s, cut-first if running long): the characters are deliberately stereotyped; the intro round is where strangers stop performing competence
+:::
+
+## Deliberation is free. Action costs a dice roll.
+
+::: {.feature-grid style="--fg-cols:4;"}
+- In doubt? → d20
+- Success: cleaner trail
+- Failure: muddier trail
+- The die NEVER reveals the answer
+:::
+
+::: {style="max-width:130px; margin:0.6em auto 0;"}
+![](svg/d20.svg){style="width:100%; height:auto; display:block;"}
+:::
+
+::: {.notes}
+- Open with the thesis: "Deliberation is free. Action costs a dice roll. And what you did beforehand loads the die."
+- Free doesn't mean irrelevant. The deliberation is exactly what you're scored on. The die only decides how clean the trail ends up.
+- Doubt-first: no doubt = it just succeeds, no roll
+- Success example: "the log shows a certificate error and encrypted traffic to an unknown IP", cleaner, still incomplete
+- NEVER CUT this beat
+:::
+
+## THE PRESUMPTION DECK
+
+::: {.presumption-cards}
+![](images/type-ransomware.png){.fragment .fx}
+![](images/confidence-confident.png){.fragment .fx}
+![](images/readiness-ready.png){.fragment .fx}
+:::
+
+::: {.notes}
+- Round 1 ends: each card is placed FACE DOWN, what do I think this is, and how confident am I?
+- Cards are flipped SIMULTANEOUSLY
+- Agreement + high confidence: play continues. A split table, or one person confident and wrong: the game STOPS, what did you SEE, what did you ASSUME?
+- Then next slide. Do not talk over the flip.
+:::
+
+## {.vcenter}
+
+::: {.card style="text-align:center; max-width:700px; margin:0 auto;"}
+[Totally confident. About something wrong. And everyone follows along.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em;"}
+:::
+
+::: {.notes}
+- ONE beat of silence AFTER the line only, hold 3s, brief Carlos not to fill chat
+- Verbatim, slow: "The worst thing that can happen is being totally confident about something that's wrong, and everyone else following along, because you seem sure."
+- Seattle callback (~15s): even the kids spent their first energy on finding WHO clicked, instead of solving the incident
+- Culture bridge: "What you should take home isn't just 'be less certain'. It's: create a space where it's safe to say 'I'm not sure' out loud, before reality forces you to."
+:::
+
+## A wrong theory doesn't lose the game. It costs time.
+
+::: {.notes}
+- The table's conclusion, right or wrong, IS the working theory in round 2
+- Exactly like reality
+- Bridge: "That was round 1. Now it's you."
+:::
+
+## Monday 08:40 {.vcenter}
+
+::: {.feature-grid style="--fg-cols:5; font-size:0.5em;"}
+- Encrypted files on the shared drive
+- Backup: unverified
+- The password to the backup system is on parental leave
+- Citizen services opens 09:00
+- The mayor has already called
+:::
+
+::: {.notes}
+- 45s read, stakes language, the mayor, not the server
+- Straight into the poll, no meta-talk
+:::
+
+## What do you do NOW?
+
+::: {.feature-grid style="--fg-cols:3;"}
+- A: Pull the network cable
+- B: Keep systems up while you investigate
+- C: Call leadership first
+:::
+
+::: {.chip-note .pulse-cue}
+Type A, B or C in the chat · 30 seconds
+:::
+
+::: {style="max-width:140px; margin:0.6em auto 0;"}
+[]{.fragment data-anim-start="true"}
+![](svg/countdown.svg){style="width:100%; height:auto; display:block;"}
+:::
+
+::: {.notes}
+- 30s: Carlos counts down live at 20/10/5s with a participant count, "fifty percent have voted, ten seconds"
+- Carlos reads the split
+- Reveal, anonymized composite: across the sessions I've run, tables split roughly like this, and each choice cost something later in the game [KLAUS: fill your real split + costs]
+- Landing line: "Everyone here formed an opinion in thirty seconds. At a real table you have to defend it out loud. To the citizens standing in Citizen Services at nine o'clock."
+:::
+
+## You're scored on your reasoning. Not on the right answer.
+
+::: {.notes}
+- Scored on REASONING under incomplete information, not on guessing the true state
+- One clause of design framing, max
+- Starter guide: free, malwareandmonsters.com, full CTA waits till the end
+:::
+
+## {background-iframe="https://malwareandmonsters.com" background-interactive="true"}
+
+::: {.notes}
+- Navigate live, ~60-90s: homepage → starter guide → a scenario card
+- This starter guide is what the QR code at the end points to, free, no email gate
+- Focus gotcha: mouse clicks go to the SITE, use keyboard to advance slides, click the slide edge first if arrows stop responding
+- Site shows a first-visit welcome popup ("New to Malware & Monsters?") — dismiss it (X or "Leave me alone") the instant it appears, before narrating
+- REHEARSE this transition, including the popup dismiss
+:::
+
+## {.vcenter visibility="uncounted"}
+
+::: {style="width:120px; margin:0 auto 1em;"}
+![](images/malmon-logo.png){style="width:100%; height:auto; display:block;"}
+:::
+
+::: {.feature-grid style="--fg-cols:3;"}
+- Free starter guide
+- Scenario cards for your level
+- Get started in 90 minutes
+:::
+
+::: {.notes}
+- FALLBACK ONLY, jump here if the live iframe misbehaves
+- One clause on the scenario-card library, 58 cards across 14 malmon families (verify count at showtime)
+:::
+
+## QUESTIONS? {.bg-drift}
+
+::: {style="text-align:center; color:var(--accent); font-family:'Bebas Neue',sans-serif; font-size:1.2em;"}
+malwareandmonsters.com
+:::
+
+::: {.notes}
+- Carlos runs it, seeded order:
+- (1) NIS2/ISO fit → the duty already exists; this is the format that turns duty into competence
+- (2) how technical do you need to be → a method, not a specialty
+- (3) does it scale? → repeated small tables OR a large-group format (12-15 across three teams), anonymized example, never session content
+- For those caught between GRC and operations: I've also made a small card deck, the Risk Deck, that gives technically-minded security people a language for risk, business impact, and business jargon. One breath.
+- Self-answered: "How do you get started?" → free starter guide, 3-8 colleagues, 90 minutes. CTA-priming: "…and if you'd rather have a facilitated first session than build the exercise yourselves, that exists too."
+- Pocket answers: wrong guess in round 1 · key person absent (role-keyed clues) · evidence (Frontiers + Gee + Simkins) · "can it test our REAL plan?" (a different format, against your BCP)
+- Carlos cuts at 14:58 no matter what
+:::
+
+## {.vcenter}
+
+::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
+[SHOULD ≠ DO]{style="font-family:'Bebas Neue',sans-serif; font-size:2em; letter-spacing:0.03em; color:var(--accent);"}
+:::
+
+::: {.notes}
+- Verbatim: "Surveys don't tell you what people DO in a situation. They tell you what people SHOULD do. And that's not the same thing."
+- Short pause. "You saw the difference yourselves. Right there, in the vote."
+:::
+
+## MONDAY MORNING {.vcenter}
+
+::: {.feature-grid style="--fg-cols:3;"}
+- 1: Run the free starter guide, 3–8 colleagues, 90 min
+- 2: Run it with your REAL crisis team
+- 3: Put it in the annual exercise plan
+:::
+
+::: {.notes}
+- Transfer check, verbatim: "And write one more thing: did what you just saw make you think 'WE should fix this', or 'I need to fix this'? That difference is the whole point."
+- Rung 3 = pure commitment, NO scale claim here (lives in seeded Q3)
+:::
+
+## {.vcenter}
+
+::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
+[Fun isn't unserious. It's effective.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em; letter-spacing:0.03em;"}
+
+<div style="background:#F8F8FA; border-radius:var(--radius); width:190px; margin:0.9em auto 0.5em; padding:8px; box-shadow:var(--shadow);"><img src="qr.svg" width="174" style="display:block;"/></div>
+
+[malwareandmonsters.com]{style="color:var(--accent); font-weight:var(--weight-mid);"}
+:::
+
+::: {.notes}
+- Final spoken line, then stop: "…And one last thing: fun isn't unserious. It's effective."
+- Slide stays up through goodbye
+:::

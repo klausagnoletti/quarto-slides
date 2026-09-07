@@ -1,0 +1,178 @@
+/*-- scss:defaults --*/
+// RelationSec LIGHT / document template: the typst rate-card grammar as a deck.
+$font-family-sans-serif: "Source Sans 3", "Source Sans Pro", "Liberation Sans", sans-serif;
+$presentation-heading-font: "Bebas Neue", sans-serif;
+
+/*-- scss:rules --*/
+.reveal,
+.reveal .slides {
+  font-family: "Source Sans 3", "Source Sans Pro", "Liberation Sans", sans-serif;
+  color: var(--ink);
+}
+
+// ---------------------------------------------------------------- masthead
+// The title lockup IS the document masthead: a Rich Black band carrying the
+// two-tone Bebas display line and the Mikado role line (rate-card grammar).
+// Yellow is legal here because it sits on the band, never on the light surface.
+.reveal .lockup {
+  background: var(--band);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.1em 1.2em 1.2em;
+}
+.reveal .lockup .title {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  // !important: the extension styles .title with the skin's --ink (dark on
+  // the light skin), which would vanish on this band; the masthead overrides.
+  color: var(--band-ink) !important;
+}
+.reveal .lockup .title .accent { color: var(--accent); }
+.reveal .lockup .subtitle {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+// ---------------------------------------------------------------- bands
+// Slide title = the document header band: full-width Rich Black, white Bebas,
+// optional [label]{.kicker} floated right in tracked Mikado Bebas.
+.reveal .slides section > h2 {
+  background: var(--band);
+  color: var(--band-ink);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.32em 0.55em;
+  margin-left: calc(-1 * 0.55em);
+  margin-right: calc(-1 * 0.55em);
+  border-radius: var(--radius);
+}
+
+.reveal .slides section > h2:empty {
+  display: none; // heading-less slides: no empty band
+}
+
+.reveal h2 .accent { color: var(--accent); }
+
+.reveal .kicker {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.42em;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  float: right;
+  margin-top: 0.55em;
+}
+
+// ---------------------------------------------------------------- section heads
+// h3 = the Label Rail section header: Bebas Rich Black + the measure-rule
+// (12mm Mikado head, neutral tail, 1.5pt) straight from the CV template.
+.reveal .slides section h3 {
+  color: var(--band);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85em;
+}
+
+.reveal .slides section h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.11em;
+  background: linear-gradient(
+    to right,
+    var(--accent) 0,
+    var(--accent) 2.4em,
+    var(--rule-tail) 2.4em,
+    var(--rule-tail) 100%
+  );
+  margin-top: 0.14em;
+}
+
+// ---------------------------------------------------------------- tables
+// The rate-card striped table: Rich Black header row, white/zebra body rows,
+// no vertical strokes.
+.reveal table {
+  border-collapse: collapse;
+  border: none;
+  font-size: 0.65em;
+}
+.reveal table th {
+  background: var(--band);
+  color: var(--band-ink);
+  font-weight: var(--weight-bold);
+  border: none;
+  padding: 0.55em 0.8em;
+  text-align: left;
+}
+.reveal table td {
+  border: none;
+  padding: 0.55em 0.8em;
+}
+.reveal table tbody tr:nth-child(odd) td { background: #FFFFFF; }
+.reveal table tbody tr:nth-child(even) td { background: var(--zebra); }
+
+// Bebas price/number cell device: [€12,000]{.price}
+.reveal .price {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.35em;
+  color: var(--band);
+  letter-spacing: 0.02em;
+}
+
+// ---------------------------------------------------------------- callouts
+// Yellow-tint note with Mikado left edge (rate-card "partner floors" note).
+.reveal .tint {
+  background: var(--tint);
+  border-left: var(--edge) solid var(--accent);
+  border-radius: var(--radius);
+  padding: var(--pad);
+  font-size: 0.7em;
+  margin-right: 3.2em; // keep clear of the bottom-right slide logo
+}
+
+// Rich Black callout with Mikado Bebas heading (the "READ THIS" block).
+.reveal .band-callout {
+  background: var(--band);
+  color: var(--band-ink);
+  border-radius: var(--radius);
+  padding: var(--pad);
+  font-size: 0.78em;
+}
+.reveal .band-callout .callout-title {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.35em;
+}
+
+// ---------------------------------------------------------------- cards
+// White hairline card with a Bebas figure (second-facilitator / discovery
+// cards from the rate card).
+.reveal .card-light {
+  background: #FFFFFF;
+  border: 0.5px solid var(--hairline);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--pad);
+  font-size: 0.78em;
+}
+
+// ---------------------------------------------------------------- misc
+// Mikado is never text on the light surface; links are ink with a Mikado line.
+.reveal a {
+  color: var(--ink);
+  font-weight: var(--weight-mid);
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent);
+}
+
+.reveal .muted { color: var(--muted); }
+
+// No painted footer band: Quarto emits a whitespace-only .footer div even
+// with no footer configured, and any background rule on it renders as a
+// stray strip that also displaces the slide logo. Style footers per-deck
+// only if a deck actually sets footer text.
