@@ -416,7 +416,11 @@ Type A, B or C in the chat · 30 seconds
 ::: {.notes}
 - 30s: Carlos counts down live at 20/10/5s with a participant count, "fifty percent have voted, ten seconds"
 - Carlos reads the split
-- Reveal, anonymized composite: across the sessions I've run, tables split roughly like this, and each choice cost something later in the game [KLAUS: fill your real split + costs]
+- Reveal, react to the room's split in one sentence, then the price of each, these are scenario facts not session data:
+- A pulled the cable: encryption stops, so does the forensic trail. Round 2 you don't know how they got in, so you can't say whether they're still in.
+- B kept systems up: the trail is intact. Round 2 the file server is encrypted too, and citizen services opens on time with nothing to open.
+- C called leadership first: the decision now has a signature. Round 2 it's 09:25, the mayor has an opinion, and the drive has been encrypting for 45 minutes.
+- Landing: "All three are defensible. None is free. Whoever chose A has to say it out loud to whoever chose B."
 - Landing line: "Everyone here formed an opinion in thirty seconds. At a real table you have to defend it out loud. To the citizens standing in Citizen Services at nine o'clock."
 - Callback: "And remember, you're scored on the reasoning. Not on the letter."
 :::
