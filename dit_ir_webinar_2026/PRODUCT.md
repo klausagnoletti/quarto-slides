@@ -72,8 +72,8 @@ useriøst, det er effektivt" (fun isn't unserious, it's effective).
 - Real-time constraints: cameras-off audience, so Q&A is seeded (pre-planted
   questions) rather than relying on live audience engagement; roughly 45 to
   60 spoken minutes at Danish pace.
-- Language: Danish on every slide and every verbatim spoken line; all
-  internal planning documents and communication are English.
+- Language: deck source, on-slide text and speaker notes are English (since
+  07-09-2026). Klaus delivers live in Danish, translating on the fly.
 
 ## Capabilities and Constraints
 
@@ -89,12 +89,8 @@ useriøst, det er effektivt" (fun isn't unserious, it's effective).
 - No AI-generated rendered human faces anywhere in the deck. One hero image
   was hand-authored as an inline SVG silhouette scene instead, after two
   generation attempts failed this constraint.
-- Nothing is committed or pushed to the `quarto-slides` git remote (it
-  auto-deploys on push) without Klaus's explicit approval. All slide work
-  stays local and uncommitted until he says otherwise.
-- Every Danish string must pass an expert verification pass
-  (source-checked against DDO, Sprognaevnet, KL, digst.dk) before Klaus
-  sees it.
+- Local commits to `quarto-slides` are fine; nothing is pushed without
+  Klaus's explicit word. The remote does not auto-deploy.
 
 ## Brand Commitments
 
@@ -146,9 +142,8 @@ RelationSec.
 4. Brand consistency is enforced at the shared template layer
    (`foundation.css`, `theme-dark.scss`), not per slide. A fix defaults to
    that reusable layer unless it is genuinely deck-local content.
-5. Nothing ships to the live audience, in Danish text or in a rendering
-   defect, without a verification gate: Danish content is expert-signed,
-   rendered slides are screenshot-reviewed against a 4-point layout gate.
+5. Nothing ships to the live audience with a rendering defect: rendered
+   slides are screenshot-reviewed against a 4-point layout gate.
 
 ## Accessibility & Inclusion
 

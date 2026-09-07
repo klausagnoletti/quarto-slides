@@ -86,6 +86,7 @@ Type A, B, C or D in the chat
 - React unscripted, ONE sentence, whatever the result
 - D is the honest answer for most rooms, say so warmly if D wins
 - Fallback if it lands oddly: "What goes wrong in an incident is rarely that people don't know enough. It's that they're certain of something wrong, and manage to act on it."
+- Bridge into the spine, name what just happened: "Notice what I just did. I asked what you'd SAY. The butcher's email showed what people DO."
 :::
 
 ## {.vcenter}
@@ -96,27 +97,19 @@ Type A, B, C or D in the chat
 
 ::: {.notes}
 - Verbatim: "Surveys tell you what people SAY they'd do. An exercise shows you what they DO. That's what this hour is about."
-- Callback target for slide 31, say it cleanly
+- Callback target for the SAY ≠ DO close after Q&A, identical words
 :::
 
-## An exercise can also end up as SAY.
+## An exercise can also end up as SAY. {.vcenter}
 
-::: {.card}
+::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
 Not WHETHER you practice. HOW.
 :::
 
-::: {.dial-wrap}
-![](svg/dial.svg)
-[3%]{.dial-readout .fragment .fx style="opacity:1;"}
-[30%]{.dial-readout .fragment .fx}
-:::
-
 ::: {.notes}
-- So the question isn't whether you practice, it's whether the exercise changes what people DO. And the number most people look at is the click rate from the phishing test.
-- Whoever runs the phishing test decides how hard it is. The click rate is a dial you can turn. Not a measurement. And it's what decides who "failed".
-- Trust cost: "…and afterward, hardly anyone feels good about being told they fell for it."
-- It takes ONE click to compromise the entire organization. So a low number proves nothing.
-- ~50-55s total, don't linger
+- So the question isn't whether you practice. It's whether the exercise changes what people DO.
+- A slideshow read aloud with a signature at the end is SAY with extra steps.
+- ~25s, master frame for the next ten minutes
 :::
 
 ## IT is not a cost. IT is a precondition.
@@ -171,21 +164,15 @@ Pulse 200. IQ&nbsp;50.
 - That's why the plan needs to be PRACTICED, not read.
 :::
 
-## Recognize this?
+## {.vcenter}
 
-::: {.feature-grid style="--fg-cols:4; font-size:0.65em;"}
-- An IR plan in SharePoint. Last opened two years ago.
-- An exercise you only run because NIS2 requires it.
-- A slideshow, read aloud. Box ticked.
-- Only IT sits at the table. Everyone else shows up when it's already too late.
-:::
-
-::: {.divider .fragment .fx}
+::: {.divider}
 WHY IS THIS TRAINING DIFFERENT?
 :::
 
 ::: {.notes}
 - Breathe here, closes the whole training-theater critique section
+- Nothing to say on this slide, let the question sit 2s and advance
 :::
 
 ## {.vcenter}
@@ -197,8 +184,8 @@ WHY IS THIS TRAINING DIFFERENT?
 ::: {.notes}
 - A format that can't produce instinct isn't training. It's information.
 - You don't learn security by reading about it. You learn it by making decisions under pressure. Games, stories, simulation.
-- Callback: "What you've PRACTICED is all you've got" (slide 11), this slide names WHY that's true
-- Forward-plants slide 21's information-drop beat
+- Callback: "What you've PRACTICED is all you've got" (the Pulse 200 slide), this slide names WHY that's true
+- Plant the closer here, verbatim: "Engagement isn't decoration. It's the mechanism. A format nobody engages with teaches nothing. That's why fun matters, and I'll come back to that."
 - Bridge: "And that's why the FORMAT matters. Not gamification. Game-based learning."
 :::
 
@@ -215,6 +202,14 @@ WHY IS THIS TRAINING DIFFERENT?
 - Verbatim: "This isn't gamification: points, badges, and 'first team done gets cake'. Motivation theater. The game itself is what teaches you something."
 - No citation on the slide; Gee/Simkins stay pocketed for Q&A
 - Must land BEFORE any mechanics are shown
+:::
+
+## You're scored on your reasoning. Not on the right answer. {.vcenter}
+
+::: {.notes}
+- The promise before any mechanics: nobody is graded on guessing the true state. You're graded on how you reasoned with what you had.
+- One clause, max. This is what makes it safe to be wrong at the table, and safe to say "I'm not sure" out loud.
+- Callback target for the live vote later
 :::
 
 ## An incident has many seats
@@ -247,7 +242,7 @@ WHY IS THIS TRAINING DIFFERENT?
 
 ::: {.notes}
 - Attacker clause kept light, one sentence
-- The technician plays comms chief → empathy for that seat under pressure
+- The technician plays Communicator → empathy for that seat under pressure
 - Resilience: what if the person who always takes X is out sick that day? That's why roles rotate
 :::
 
@@ -266,12 +261,12 @@ WHY IS THIS TRAINING DIFFERENT?
 ## {.vcenter}
 
 ::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
-[NOW WE DO IT. TWO ROUNDS. THEN IT'S YOU.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em;"}
+[NOW WE DO IT. ONE ROUND. THEN IT'S YOU.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em;"}
 :::
 
 ::: {.notes}
-- To rounds shown narrated (Klaus plays all seats), so everyone sees the shape once
-- Round 3 is real: the room decides live
+- One round narrated (Klaus plays all seats), so everyone sees the shape once
+- Then the room decides live, on a new incident
 - Don't try to track every rule, watch for confidence vs evidence
 :::
 
@@ -329,6 +324,12 @@ WHY IS THIS TRAINING DIFFERENT?
 - The die NEVER reveals the answer
 :::
 
+::: {.feature-grid .fragment .fx style="--fg-cols:3; font-size:0.6em; margin-top:0.4em;"}
+- Easy: 5+
+- Medium: 10+
+- Hard: 15+
+:::
+
 ::: {style="max-width:130px; margin:0.6em auto 0;"}
 ![](svg/d20.svg){style="width:100%; height:auto; display:block;"}
 :::
@@ -337,6 +338,7 @@ WHY IS THIS TRAINING DIFFERENT?
 - Open with the thesis: "Deliberation is free. Action costs a dice roll. And what you did beforehand loads the die."
 - Free doesn't mean irrelevant. The deliberation is exactly what you're scored on. The die only decides how clean the trail ends up.
 - Doubt-first: no doubt = it just succeeds, no roll
+- Bands on click: "Easy needs 5 or more, medium 10, hard 15. Ask a good question first and the IM drops it a band. That's how what you did beforehand loads the die."
 - Success example: "the log shows a certificate error and encrypted traffic to an unknown IP", cleaner, still incomplete
 - NEVER CUT this beat
 :::
@@ -353,6 +355,7 @@ WHY IS THIS TRAINING DIFFERENT?
 - Round 1 ends: each card is placed FACE DOWN, what do I think this is, and how confident am I?
 - Cards are flipped SIMULTANEOUSLY
 - Agreement + high confidence: play continues. A split table, or one person confident and wrong: the game STOPS, what did you SEE, what did you ASSUME?
+- Say it out loud, this is the pairing: "That confidence card is the number your questionnaire is trying to measure. Here it's measured against what actually happened."
 - Then next slide. Do not talk over the flip.
 :::
 
@@ -372,9 +375,10 @@ WHY IS THIS TRAINING DIFFERENT?
 ## A wrong theory doesn't lose the game. It costs time.
 
 ::: {.notes}
+- Close the round with the consequence, concrete: "This table played Ransomware, Confident. It was credential theft. Round 2 they spent twenty minutes restoring backups while the attacker still had the domain admin account."
 - The table's conclusion, right or wrong, IS the working theory in round 2
 - Exactly like reality
-- Bridge: "That was round 1. Now it's you."
+- Bridge: "That was one round. Now it's you."
 :::
 
 ## Monday 08:40 {.vcenter}
@@ -414,27 +418,27 @@ Type A, B or C in the chat · 30 seconds
 - Carlos reads the split
 - Reveal, anonymized composite: across the sessions I've run, tables split roughly like this, and each choice cost something later in the game [KLAUS: fill your real split + costs]
 - Landing line: "Everyone here formed an opinion in thirty seconds. At a real table you have to defend it out loud. To the citizens standing in Citizen Services at nine o'clock."
+- Callback: "And remember, you're scored on the reasoning. Not on the letter."
 :::
 
-## You're scored on your reasoning. Not on the right answer.
+## What an exercise measures. A questionnaire can't. {.vcenter}
+
+::: {.feature-grid style="--fg-cols:4;"}
+- Time to escalate
+- Who actually got called
+- Decisions made on half the facts
+- Confidence vs what happened
+:::
 
 ::: {.notes}
-- Scored on REASONING under incomplete information, not on guessing the true state
-- One clause of design framing, max
+- This is the replacement evidence, the thing you hand leadership INSTEAD of the questionnaire
+- Each one is observed, not stated: a clock, a phone log, a card on the table
+- The last one is the presumption card, they've just seen it
+- Structured debrief, 5 to 20 minutes, is where these get written down. That's the artifact.
 - Starter guide: free, malwareandmonsters.com, full CTA waits till the end
 :::
 
-## {background-iframe="https://malwareandmonsters.com" background-interactive="true"}
-
-::: {.notes}
-- Navigate live, ~60-90s: homepage → starter guide → a scenario card
-- This starter guide is what the QR code at the end points to, free, no email gate
-- Focus gotcha: mouse clicks go to the SITE, use keyboard to advance slides, click the slide edge first if arrows stop responding
-- Site shows a first-visit welcome popup ("New to Malware & Monsters?") — dismiss it (X or "Leave me alone") the instant it appears, before narrating
-- REHEARSE this transition, including the popup dismiss
-:::
-
-## {.vcenter visibility="uncounted"}
+## {.vcenter}
 
 ::: {style="width:120px; margin:0 auto 1em;"}
 ![](images/malmon-logo.png){style="width:100%; height:auto; display:block;"}
@@ -447,8 +451,18 @@ Type A, B or C in the chat · 30 seconds
 :::
 
 ::: {.notes}
-- FALLBACK ONLY, jump here if the live iframe misbehaves
 - One clause on the scenario-card library, 58 cards across 14 malmon families (verify count at showtime)
+- This starter guide is what the QR code at the end points to, free, no email gate
+- OPTIONAL: if time and screen-share are behaving, advance to the live site (next slide, uncounted). If not, skip straight to Q&A.
+:::
+
+## {background-iframe="https://malwareandmonsters.com" background-interactive="true" visibility="uncounted"}
+
+::: {.notes}
+- OPTIONAL live tour, ~60-90s: homepage → starter guide → a scenario card. Skip if anything is flaky.
+- Focus gotcha: mouse clicks go to the SITE, use keyboard to advance slides, click the slide edge first if arrows stop responding
+- Site shows a first-visit welcome popup ("New to Malware & Monsters?") — dismiss it (X or "Leave me alone") the instant it appears, before narrating
+- REHEARSE this transition, including the popup dismiss
 :::
 
 ## QUESTIONS? {.bg-drift}
@@ -471,12 +485,12 @@ malwareandmonsters.com
 ## {.vcenter}
 
 ::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
-[SHOULD ≠ DO]{style="font-family:'Bebas Neue',sans-serif; font-size:2em; letter-spacing:0.03em; color:var(--accent);"}
+[SAY ≠ DO]{style="font-family:'Bebas Neue',sans-serif; font-size:2em; letter-spacing:0.03em; color:var(--accent);"}
 :::
 
 ::: {.notes}
-- Verbatim: "Surveys don't tell you what people DO in a situation. They tell you what people SHOULD do. And that's not the same thing."
-- Short pause. "You saw the difference yourselves. Right there, in the vote."
+- Verbatim, identical to the opening: "Surveys tell you what people SAY they'd do. An exercise shows you what they DO."
+- Short pause. "You saw the difference yourselves. Right there, in the vote. Thirty seconds, half the facts, and an opinion."
 :::
 
 ## MONDAY MORNING {.vcenter}
@@ -488,6 +502,7 @@ malwareandmonsters.com
 :::
 
 ::: {.notes}
+- First ask: "Type 1, 2 or 3 in the chat. Which one are you doing Monday?" Carlos reads the spread.
 - Transfer check, verbatim: "And write one more thing: did what you just saw make you think 'WE should fix this', or 'I need to fix this'? That difference is the whole point."
 - Rung 3 = pure commitment, NO scale claim here (lives in seeded Q3)
 :::
