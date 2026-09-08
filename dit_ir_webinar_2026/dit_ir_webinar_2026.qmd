@@ -348,19 +348,19 @@ Analog · 3–8 players + one Incident Master
 
 ::: {.notes}
 - Both real decisions, only ONE involves a die
-- Why: pulling logs is an action in the world, so it can fail: roll. Deciding whether to call is deliberation: free. That distinction is the next slide.
+- Why: pulling logs is an action in the world, so it can fail: roll. Deciding whether to call is talking: free. That distinction is the next slide.
 - Character-color line (~10s, cut-first if running long): the characters are deliberately stereotyped; the intro round is where strangers stop performing competence
 :::
 
-## Deliberation is free. Action costs a dice roll. {.vcenter}
+## Talking is free. Acting costs a roll. {.vcenter}
 
 :::: {.columns}
 ::: {.column width="60%"}
 ::: {.feature-grid style="--fg-cols:2;"}
-- In doubt? → d20
+- Doubt? Roll
 - Success: cleaner trail
 - Failure: muddier trail
-- The die NEVER reveals the answer
+- Never the answer
 :::
 
 ::: {.feature-grid .fragment .fx style="--fg-cols:3; font-size:0.55em; margin-top:0.2em;"}
@@ -375,8 +375,8 @@ Analog · 3–8 players + one Incident Master
 ::::
 
 ::: {.notes}
-- Open with the thesis: "Deliberation is free. Action costs a dice roll. And what you did beforehand loads the die."
-- Free doesn't mean irrelevant. The deliberation is exactly what you're scored on. The die only decides how clean the trail ends up.
+- Open with the thesis: "Talking is free. Acting costs a dice roll. And what you did beforehand loads the die."
+- Free doesn't mean irrelevant. The talking is exactly what you're scored on. The die only decides how clean the trail ends up.
 - Doubt-first: no doubt = it just succeeds, no roll
 - Bands on click: "Easy needs 5 or more, medium 10, hard 15. Ask a good question first and the IM drops it a band. That's how what you did beforehand loads the die."
 - Success example: "the log shows a certificate error and encrypted traffic to an unknown IP", cleaner, still incomplete
