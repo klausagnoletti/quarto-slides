@@ -402,13 +402,13 @@ Analog · 3–8 players + one Incident Master
 ## {.vcenter}
 
 ::: {.card style="text-align:center; max-width:700px; margin:0 auto;"}
-[Totally confident. About something wrong. And everyone follows along.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em;"}
+[Confident. Wrong. Followed.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em;"}
 :::
 
 {{< include illus/gauge.qmd >}}
 
 ::: {.notes}
-- ONE beat of silence AFTER the line only, hold 3s, brief Carlos not to fill chat
+- [SILENCE 3s] after the line, nobody fills it
 - Verbatim, slow: "The worst thing that can happen is being totally confident about something that's wrong, and everyone else following along, because you seem sure."
 - Seattle callback (~15s): even the kids spent their first energy on finding WHO clicked, instead of solving the incident
 - Culture bridge: "What you should take home isn't just 'be less certain'. It's: create a space where it's safe to say 'I'm not sure' out loud, before reality forces you to."
