@@ -1,5 +1,5 @@
 ```{=html}
-<div class="illus w-sm">
+<div class="illus" style="max-width:400px">
 <svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An hourglass with the sand running out">
 <g class="settle">
 <rect class="ink fill-surf2" x="50" y="20" width="200" height="22" rx="6"/>

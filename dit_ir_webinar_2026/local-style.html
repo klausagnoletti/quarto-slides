@@ -7,7 +7,8 @@
 <style>
 /* Bookend slow gradient drift for the title + Q&A holding slides. */
 .reveal .slides section.bg-drift {
-  background: linear-gradient(120deg, #111B2A, #0d1522, #111B2A);
+  /* translucent so a background-image on the same slide still shows through */
+  background: linear-gradient(120deg, rgba(17,27,42,.55), rgba(13,21,34,.75), rgba(17,27,42,.55));
   background-size: 400% 400%;
   animation: bgdrift 20s ease infinite;
 }

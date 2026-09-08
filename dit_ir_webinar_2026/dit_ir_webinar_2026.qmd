@@ -49,7 +49,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 - Bridge straight into the cold open, no "and now for today's topic"
 :::
 
-## {background-image="images/hero-december-desk.jpg" background-opacity="0.4" background-size="cover"}
+## {.vcenter background-image="images/hero-december-desk.jpg" background-opacity="0.4" background-size="cover"}
 
 [December. An email from the butcher.]{.hero-line}
 
@@ -229,7 +229,7 @@ WHY IS THIS TRAINING DIFFERENT?
 - Callback target for the live vote later
 :::
 
-## An incident has many seats
+## An incident has many seats {.vcenter}
 
 {{< include illus/seat-table.qmd >}}
 
@@ -257,9 +257,9 @@ WHY IS THIS TRAINING DIFFERENT?
 - Resilience: what if the person who always takes X is out sick that day? That's why roles rotate
 :::
 
-## If kids can play it … {background-color="#111B2A"}
+## If kids can play it … {.vcenter background-color="#111B2A"}
 
-::: {style="max-width:700px; margin:0.4em auto;"}
+::: {style="width:100%; max-width:760px; margin:0.4em auto;"}
 ![](svg/kids-table-silhouette.svg){style="width:100%; height:auto; display:block;"}
 :::
 
@@ -284,7 +284,7 @@ WHY IS THIS TRAINING DIFFERENT?
 - Don't try to track every rule, watch for confidence vs evidence
 :::
 
-## MALWARE & MONSTERS
+## MALWARE & MONSTERS {.vcenter}
 
 ::: {.kicker}
 malwareandmonsters.com
@@ -414,11 +414,12 @@ Analog · 3–8 players + one Incident Master
 - Culture bridge: "What you should take home isn't just 'be less certain'. It's: create a space where it's safe to say 'I'm not sure' out loud, before reality forces you to."
 :::
 
-## A wrong theory doesn't lose the game. It costs time. {.vcenter}
+## A wrong theory costs time. {.vcenter}
 
 {{< include illus/hourglass.qmd >}}
 
 ::: {.notes}
+- Setup, verbatim: "A wrong theory doesn't lose the game. It costs time."
 - Close the round with the consequence, concrete: "This table played Ransomware, Confident. It was credential theft. Round 2 they spent twenty minutes restoring backups while the attacker still had the domain admin account."
 - The table's conclusion, right or wrong, IS the working theory in round 2
 - Exactly like reality
@@ -442,7 +443,7 @@ Analog · 3–8 players + one Incident Master
 - Straight into the poll, no meta-talk
 :::
 
-## What do you do NOW?
+## What do you do NOW? {.vcenter}
 
 ::: {.feature-grid style="--fg-cols:3;"}
 - A: Pull the network cable
@@ -508,7 +509,7 @@ Type A, B or C in the chat · 30 seconds
 - OPTIONAL: if time and screen-share are behaving, advance to the live site (next slide, uncounted). If not, skip straight to Q&A.
 :::
 
-## The free starter guide, live {visibility="uncounted"}
+## The free starter guide, live {.vcenter visibility="uncounted"}
 
 ```{=html}
 <div class="browser">
@@ -531,7 +532,7 @@ The actual site, not a mockup. Free, no email gate.
 - REHEARSE this transition, including the popup dismiss
 :::
 
-## QUESTIONS? {.bg-drift background-image="images/hero-december-desk.jpg" background-opacity="0.14" background-size="cover"}
+## QUESTIONS? {.vcenter background-image="images/hero-december-desk.jpg" background-opacity="0.14" background-size="cover"}
 
 ::: {style="text-align:center; color:var(--accent); font-family:'Bebas Neue',sans-serif; font-size:1.2em;"}
 malwareandmonsters.com
