@@ -110,7 +110,8 @@
 .browser__url { flex: 1; height: 22px; border-radius: 11px; background: #111B2A; color: #CCCCCC;
   font-family: "Source Sans 3", sans-serif; font-size: 13px; line-height: 22px; text-align: center; margin-left: 10px; }
 .browser__body { position: relative; width: 900px; height: 470px; background: #fff url("images/mm-site-fallback.png") top center / 100% auto no-repeat; }
-.browser__body iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #fff; }
+/* transparent so the fallback screenshot shows until the live page paints */
+.browser__body iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: transparent; }
 
 /* Seat table (slide 16, 19): inline SVG with six chairs, lit by fragments. */
 .seat-table { width: 100%; max-width: 920px; margin: 0.2em auto 0; }

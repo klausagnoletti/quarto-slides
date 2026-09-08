@@ -518,12 +518,12 @@ Type A, B or C in the chat · 30 seconds
 ```
 
 ::: {.chip-note}
-The actual site, not a mockup. Free, no email gate.
+The actual site, not a mockup.
 :::
 
 ::: {.notes}
 - [30 SEC MAX] Tab is pre-warmed. One sentence, cursor to the nav, click straight to the starter guide, then back. No general scrolling.
-- Say: "This is the actual site. The starter guide is free, no email gate, 3 to 8 colleagues, 90 minutes."
+- Say: "This is the actual site. Starter guide, 3 to 8 colleagues, 90 minutes."
 - Fallback if the page is slow or dead: "Trust me, it's live, the link's in chat." Carlos pastes the URL. No troubleshooting on stream.
 - OPTIONAL live tour, ~60-90s: homepage → starter guide → a scenario card. Skip if anything is flaky.
 - Focus gotcha: mouse clicks go to the SITE, use keyboard to advance slides, click the slide edge first if arrows stop responding
