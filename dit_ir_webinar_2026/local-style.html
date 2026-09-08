@@ -17,6 +17,26 @@
   100% { background-position: 0% 50%; }
 }
 
+/* Cover slide: title lockup centered in the frame, byline pinned to the
+   bottom edge. Same min-height flex trick as the foundation's .vcenter. */
+.reveal .slides section.cover {
+  display: flex !important;
+  flex-direction: column;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+/* two auto margins split the free space equally: the lockup lands
+   centered between the top edge and the byline */
+.reveal section.cover > h2:first-child { margin-top: auto !important; }
+.reveal section.cover .byline {
+  margin-top: auto;
+  padding-bottom: 0.6em;
+  color: var(--muted);
+  font-size: 0.62em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 /* Large centered statement line for slides with a dimmed hero photo behind
    them (cold open, dead-document). Drop shadow keeps it legible over the
    image at any brightness. */

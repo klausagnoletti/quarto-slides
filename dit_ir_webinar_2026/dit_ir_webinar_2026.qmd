@@ -20,13 +20,15 @@ format:
     auto-animate-duration: 0.8
 ---
 
-## {.lockup .bg-drift}
+## {.cover .bg-drift}
 
+::: {.lockup}
 [Incident [Response Training]{.accent}]{.title}
 
 [From response plan to muscle memory]{.subtitle}
+:::
 
-::: {style="margin-top:2.2em; color:var(--muted); font-size:0.62em; letter-spacing:0.08em; text-transform:uppercase;"}
+::: {.byline}
 Klaus Agnoletti · Dansk IT · 9 September 2026
 :::
 
