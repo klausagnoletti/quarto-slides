@@ -469,18 +469,19 @@ Type A, B or C in the chat · 30 seconds
 - Callback: "And remember, you're scored on the reasoning. Not on the letter."
 :::
 
-## What an exercise measures. A questionnaire can't. {.vcenter}
+## What an exercise measures. {.vcenter}
 
-::: {.feature-grid style="--fg-cols:4;"}
+::: {.feature-grid style="--fg-cols:2;"}
 - Time to escalate
-- Who actually got called
-- Decisions made on half the facts
-- Confidence vs what happened
+- Who got called
+- Decisions on half the facts
+- Confidence vs outcome
 :::
 
 {{< include illus/form.qmd >}}
 
 ::: {.notes}
+- Verbatim: "This is what an exercise measures. A questionnaire can't."
 - This is the replacement evidence, the thing you hand leadership INSTEAD of the questionnaire
 - Each one is observed, not stated: a clock, a phone log, a card on the table
 - The last one is the presumption card, they've just seen it
