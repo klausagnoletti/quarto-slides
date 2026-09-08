@@ -290,9 +290,14 @@ WHY IS THIS TRAINING DIFFERENT?
 malwareandmonsters.com
 :::
 
-::: {.feature-grid style="--fg-cols:2;"}
-- Analog · 3–8 players + one Incident Master
-- Round 1: What are we looking at? · Round 2: How bad is it? · Round 3: Containment
+::: {.chip-note}
+Analog · 3–8 players + one Incident Master
+:::
+
+::: {.feature-grid style="--fg-cols:3;"}
+- 1 · What is it?
+- 2 · How bad?
+- 3 · Contain
 :::
 
 ::: {style="width:100%; max-width:260px; margin:0.8em auto 0;"}
@@ -300,8 +305,9 @@ malwareandmonsters.com
 :::
 
 ::: {.notes}
-- [CARLOS: drop malwareandmonsters.com in the chat now, first of three]
+- Three rounds, verbatim: "What are we looking at? How bad is it? Containment."
 - The IM isn't a player; the IM runs the scenario
+- [POINT] "This one is GaboonGrabber, the first malmon ever. A trojan that dresses up as a legitimate software update."
 - Malmons (~25s): malware "personified" as creatures, makes something abstract concrete
 - Containment, NEVER "and then we fix it"
 - Forward-pointer: "…and if there are fifteen of you, there's a variant of the same game. I'll come back to that."
