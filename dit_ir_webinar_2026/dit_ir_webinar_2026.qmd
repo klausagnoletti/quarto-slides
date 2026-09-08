@@ -344,10 +344,11 @@ Analog · 3–8 players + one Incident Master
 - Communicator: wake leadership … or wait?
 :::
 
-{{< include illus/terminal.qmd >}}
+{{< include illus/two-decisions.qmd >}}
 
 ::: {.notes}
 - Both real decisions, only ONE involves a die
+- Why: pulling logs is an action in the world, so it can fail: roll. Deciding whether to call is deliberation: free. That distinction is the next slide.
 - Character-color line (~10s, cut-first if running long): the characters are deliberately stereotyped; the intro round is where strangers stop performing competence
 :::
 

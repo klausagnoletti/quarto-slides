@@ -1,0 +1,13 @@
+```{=html}
+<div class="illus w-lg">
+<svg viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A d20 under the action, a speech bubble under the deliberation">
+<g transform="translate(225,120) scale(0.7)"><g class="d20 rock">
+<polygon class="fill-surf2 acc hair" points="0.0,-70.5 -129.9,-75.0 0.0,-150.0 129.9,-75.0"/><polygon class="fill-surf2 acc hair" points="-61.1,35.3 -129.9,-75.0 -129.9,75.0 -0.0,150.0"/><polygon class="fill-surf2 acc hair" points="61.1,35.3 -0.0,150.0 129.9,75.0 129.9,-75.0"/><polygon class="fill-surf acc hair" points="0.0,-70.5 -61.1,35.3 -129.9,-75.0"/><polygon class="fill-surf acc hair" points="-61.1,35.3 61.1,35.3 -0.0,150.0"/><polygon class="fill-surf acc hair" points="61.1,35.3 0.0,-70.5 129.9,-75.0"/><polygon class="fill-acc acc hair" points="0.0,-70.5 -61.1,35.3 61.1,35.3"/><text class="disp" x="0" y="22" text-anchor="middle" font-size="62" fill="#111B2A">20</text>
+</g></g>
+<g transform="translate(520,40)"><g class="settle d2">
+<path class="ink fill-surf2" d="M0,0 h300 a16,16 0 0 1 16,16 v110 a16,16 0 0 1 -16,16 h-200 l-44,40 v-40 h-40 a16,16 0 0 1 -16,-16 v-110 a16,16 0 0 1 16,-16 z"/>
+<circle class="fill-ink" cx="100" cy="71" r="10"/><circle class="fill-ink" cx="158" cy="71" r="10"/><circle class="fill-ink" cx="216" cy="71" r="10"/>
+</g></g>
+</svg>
+</div>
+```
