@@ -383,12 +383,12 @@ Analog · 3–8 players + one Incident Master
 - NEVER CUT this beat
 :::
 
-## THE PRESUMPTION DECK
+## THE PRESUMPTION DECK {.vcenter}
 
 ::: {.presumption-cards}
 ![](images/type-ransomware.png){.fragment .fx}
 ![](images/confidence-confident.png){.fragment .fx}
-![](images/readiness-ready.png){.fragment .fx}
+![](images/readiness-investigating.png){.fragment .fx}
 :::
 
 ::: {.notes}

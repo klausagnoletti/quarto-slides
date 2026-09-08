@@ -164,21 +164,21 @@
 /* Presumption Deck: three real card images, staggered fragment entry,
    rotated/overlapped exactly like cards laid on a table. */
 .presumption-cards {
-  position: relative;
-  height: 380px;
-  max-width: 620px;
-  margin: 1.2em auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  max-width: 900px;
+  margin: 0.6em auto 0;
 }
 .presumption-cards img {
-  position: absolute;
-  width: 220px;
+  width: 270px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  top: 40px;
 }
-.presumption-cards img:nth-child(1) { left: 40px;  transform: rotate(-6deg); }
-.presumption-cards img:nth-child(2) { left: 200px; transform: rotate(2deg); top: 20px; }
-.presumption-cards img:nth-child(3) { left: 360px; transform: rotate(-2deg); }
+.presumption-cards img:nth-child(1) { transform: rotate(-4deg); }
+.presumption-cards img:nth-child(2) { transform: translateY(-14px); }
+.presumption-cards img:nth-child(3) { transform: rotate(4deg); }
 
 /* Slide 19 (pivot): the same table, one seat lit, no fragments. */
 .reveal section.spotlight .seat-table { max-width: 640px; margin-top: 0.8em; }
