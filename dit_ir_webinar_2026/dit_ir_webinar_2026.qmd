@@ -489,21 +489,22 @@ Type A, B or C in the chat · 30 seconds
 - Starter guide: free, malwareandmonsters.com, full CTA waits till the end
 :::
 
-## {.vcenter}
+## Free. No email gate. {.vcenter}
 
-::: {style="width:100%; max-width:300px; margin:0 auto 1em;"}
+::: {style="width:100%; max-width:260px; margin:0 auto 0.8em;"}
 ![](images/malmon-logo.png){style="width:100%; height:auto; display:block;"}
 :::
 
 ::: {.feature-grid style="--fg-cols:3;"}
-- Free starter guide
-- Scenario cards for your level
-- Get started in 90 minutes
+- Starter guide
+- Scenario cards, your level
+- Ready in 90 minutes
 :::
 
 ::: {.notes}
-- One clause on the scenario-card library, 58 cards across 14 malmon families (verify count at showtime)
-- This starter guide is what the QR code at the end points to, free, no email gate
+- Verbatim: "Free. No email gate. You can run the first round next week."
+- 58 scenario cards across 14 malmon families
+- This starter guide is what the QR code at the end points to
 - OPTIONAL: if time and screen-share are behaving, advance to the live site (next slide, uncounted). If not, skip straight to Q&A.
 :::
 
