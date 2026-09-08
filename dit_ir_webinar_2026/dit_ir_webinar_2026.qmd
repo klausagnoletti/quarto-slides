@@ -265,20 +265,21 @@ WHY IS THIS TRAINING DIFFERENT?
 
 ::: {.notes}
 - A nonprofit in Seattle trains kids on my framework, summer camp, beginner scenario
-- Reassurance: if kids can, so can most adults; it's just about tuning the scenario
-- Punchline IS the pivot
+- Reassurance: if kids can, so can your crisis team; it's just about tuning the scenario
+- Punchline IS the pivot, verbatim: "… so can your crisis team. Now we do it."
 :::
 
 ## {.vcenter .spotlight}
 
 ::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
-[NOW WE DO IT. ONE ROUND. THEN IT'S YOU.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em;"}
+[ONE ROUND. THEN IT'S YOU.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em;"}
 :::
 
 {{< include illus/seat-table-static.qmd >}}
 
 ::: {.notes}
 - One round narrated (Klaus plays all seats), so everyone sees the shape once
+- [POINT] Detective first, doubt-first d20 on the first claim
 - Then the room decides live, on a new incident
 - Don't try to track every rule, watch for confidence vs evidence
 :::
