@@ -315,14 +315,21 @@ Analog · 3–8 players + one Incident Master
 
 ## {.vcenter background-color="#05070c"}
 
+:::: {.columns style="align-items:center;"}
+::: {.column width="55%"}
 ::: {.bignum}
 03:20
 :::
+:::
+::: {.column width="45%"}
+{{< include illus/clock-0320.qmd >}}
+:::
+::::
 
 ::: {.feature-grid style="--fg-cols:3;"}
-- 3 alerts in 40 min
-- 1 call about a strange screen
-- 2 of the 3 things you "know" are wrong
+- 3 alerts
+- 1 strange screen
+- 2 of 3 wrong
 :::
 
 ::: {.notes}
