@@ -1,0 +1,16 @@
+```{=html}
+<div class="illus w-md">
+<svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two figures facing each other, a hooded attacker and a colleague">
+<g class="settle">
+<circle class="mut fill-surf" cx="190" cy="110" r="46"/>
+<path class="mut fill-surf" d="M70,250 C80,190 130,170 190,172 C250,170 300,190 310,250 Z"/>
+<path class="mut" d="M132,150 C118,70 160,40 200,44 C240,48 262,80 264,110"/>
+</g>
+<line class="mut hair" stroke-dasharray="6 10" x1="320" y1="40" x2="320" y2="230"/>
+<g class="settle d2">
+<circle class="acc fill-surf2" cx="450" cy="110" r="46"/>
+<path class="acc fill-surf2" d="M330,250 C340,190 390,170 450,172 C510,170 560,190 570,250 Z"/>
+</g>
+</svg>
+</div>
+```

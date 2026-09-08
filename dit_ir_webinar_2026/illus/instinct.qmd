@@ -1,0 +1,20 @@
+```{=html}
+<div class="illus w-md">
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A stack of documents on the left, a lightning bolt on the right">
+<g class="settle">
+<rect class="mut fill-surf" x="80" y="60" width="130" height="150" rx="6"/>
+<rect class="mut fill-surf" x="66" y="46" width="130" height="150" rx="6"/>
+<rect class="ink fill-surf2" x="52" y="32" width="130" height="150" rx="6"/>
+<line class="mut" x1="76" y1="66" x2="156" y2="66"/><line class="mut" x1="76" y1="94" x2="146" y2="94"/><line class="mut" x1="76" y1="122" x2="160" y2="122"/><line class="mut" x1="76" y1="150" x2="136" y2="150"/>
+</g>
+<g class="settle d2">
+<line class="mut" stroke-dasharray="8 10" x1="240" y1="120" x2="380" y2="120"/>
+<polyline class="mut" points="362,102 384,120 362,138"/>
+</g>
+<g class="settle d3">
+<polygon class="acc fill-acc" points="500,20 430,130 486,130 464,210 560,90 502,90"/>
+<g class="spark"><line class="acc" x1="590" y1="60" x2="610" y2="44"/><line class="acc" x1="600" y1="110" x2="624" y2="110"/><line class="acc" x1="410" y1="60" x2="392" y2="44"/></g>
+</g>
+</svg>
+</div>
+```

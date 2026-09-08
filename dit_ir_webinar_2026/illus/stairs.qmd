@@ -1,0 +1,10 @@
+```{=html}
+<div class="illus w-sm">
+<svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three rising steps numbered one to three">
+<g class="settle"><rect class="ink fill-surf2" x="60" y="160" width="170" height="60" rx="4"/><text class="disp" x="145" y="202" font-size="34" text-anchor="middle" fill="#F8F8FA">1</text></g>
+<g class="settle d2"><rect class="ink fill-surf2" x="230" y="100" width="170" height="120" rx="4"/><text class="disp" x="315" y="172" font-size="34" text-anchor="middle" fill="#F8F8FA">2</text></g>
+<g class="settle d3"><rect class="acc fill-surf2" x="400" y="40" width="170" height="180" rx="4"/><text class="disp" x="485" y="142" font-size="34" text-anchor="middle" fill="#FFC800">3</text></g>
+<line class="mut" x1="30" y1="226" x2="610" y2="226"/>
+</svg>
+</div>
+```

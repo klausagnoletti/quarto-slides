@@ -1,0 +1,16 @@
+```{=html}
+<div class="illus w-md">
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A building standing on a single highlighted foundation block">
+<g class="settle d2">
+<rect class="ink fill-surf2" x="200" y="70" width="240" height="180" rx="4"/>
+<polygon class="ink fill-surf2" points="185,70 320,22 455,70"/>
+<rect class="ink fill-surf" x="232" y="100" width="40" height="34"/><rect class="ink fill-surf" x="300" y="100" width="40" height="34"/><rect class="ink fill-surf" x="368" y="100" width="40" height="34"/>
+<rect class="ink fill-surf" x="232" y="160" width="40" height="34"/><rect class="ink fill-surf" x="300" y="160" width="40" height="90"/><rect class="ink fill-surf" x="368" y="160" width="40" height="34"/>
+</g>
+<g class="settle">
+<rect class="acc fill-acc" x="150" y="250" width="340" height="30" rx="4"/>
+<line class="mut" x1="60" y1="292" x2="580" y2="292"/>
+</g>
+</svg>
+</div>
+```

@@ -60,7 +60,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 - Slow down on: they troubleshoot the attacker's link FOR him
 :::
 
-## {.vcenter}
+## {.vcenter background-image="images/hero-december-desk.jpg" background-opacity="0.18" background-size="cover"}
 
 [Everyone clicks. The question is what happens after.]{.hero-line style="font-size:2.4em;"}
 
@@ -79,6 +79,8 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 - D: Honestly, I don't know
 :::
 
+{{< include illus/poll-bars.qmd >}}
+
 ::: {.chip-note .pulse-cue}
 Type A, B, C or D in the chat
 :::
@@ -91,7 +93,7 @@ Type A, B, C or D in the chat
 - Bridge into the spine, name what just happened: "Notice what I just did. I asked what you'd SAY. The butcher's email showed what people DO."
 :::
 
-## {.vcenter}
+## {.vcenter .lattice}
 
 ::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
 [SAY ≠ DO]{style="font-family:'Bebas Neue',sans-serif; font-size:2em; letter-spacing:0.03em; color:var(--accent);"}
@@ -108,13 +110,17 @@ Type A, B, C or D in the chat
 Not WHETHER you practice. HOW.
 :::
 
+{{< include illus/bubbles.qmd >}}
+
 ::: {.notes}
 - So the question isn't whether you practice. It's whether the exercise changes what people DO.
 - A slideshow read aloud with a signature at the end is SAY with extra steps.
 - ~25s, master frame for the next ten minutes
 :::
 
-## IT is not a cost. IT is a precondition.
+## IT is not a cost. IT is a precondition. {.vcenter}
+
+{{< include illus/foundation.qmd >}}
 
 ::: {.notes}
 - Verbatim: "Many organizations don't see themselves as IT companies. They see IT as a cost to be kept down, not as the precondition for everything else they do. So leadership aims for the lowest possible security. Right up until the first ransomware attack."
@@ -131,6 +137,8 @@ Not WHETHER you practice. HOW.
 - Fun is taboo
 :::
 
+{{< include illus/stamp.qmd >}}
+
 ::: {.notes}
 - Compliance as diagnosis, ONCE, here, never again
 - Chain: boring → no engagement → no learning → no point
@@ -138,7 +146,7 @@ Not WHETHER you practice. HOW.
 - The duty creates the obligation; the game turns the obligation into competence
 :::
 
-## The plan only lives on paper. {background-image="images/hero-dead-document.jpg" background-opacity="0.35" background-size="cover"}
+## The plan only lives on paper. {.vcenter background-image="images/hero-dead-document.jpg" background-opacity="0.35" background-size="cover"}
 
 ::: {.notes}
 - Response plan from five years ago, lives in SharePoint
@@ -152,9 +160,7 @@ Not WHETHER you practice. HOW.
 Pulse 200. IQ&nbsp;50.
 :::
 
-::: {style="max-width:640px; margin:0 auto;"}
-![](svg/ecg.svg){style="width:100%; height:auto; display:block;"}
-:::
+{{< include illus/ecg.qmd >}}
 
 ::: {.notes}
 - In the middle of an incident, your pulse shoots up to 200, and your IQ crashes to 50.
@@ -166,7 +172,7 @@ Pulse 200. IQ&nbsp;50.
 - That's why the plan needs to be PRACTICED, not read.
 :::
 
-## {.vcenter}
+## {.vcenter .lattice}
 
 ::: {.divider}
 WHY IS THIS TRAINING DIFFERENT?
@@ -183,6 +189,8 @@ WHY IS THIS TRAINING DIFFERENT?
 [INSTINCT.]{style="font-family:'Bebas Neue',sans-serif; font-size:2em;"} [Not information.]{style="font-family:'Bebas Neue',sans-serif; font-size:2em; color:var(--muted);"}
 :::
 
+{{< include illus/instinct.qmd >}}
+
 ::: {.notes}
 - A format that can't produce instinct isn't training. It's information.
 - You don't learn security by reading about it. You learn it by making decisions under pressure. Games, stories, simulation.
@@ -198,8 +206,8 @@ WHY IS THIS TRAINING DIFFERENT?
 - Game-based learning: the game IS the learning
 :::
 
-::: {style="width:100%; max-width:760px; margin:0.8em auto 0;"}
-![](svg/gamification-vs-gbl.svg){style="width:100%; height:auto; display:block;"}
+::: {style="width:100%; max-width:940px; margin:0.7em auto 0;"}
+![](images/gbl-diptych.jpg){style="width:100%; height:auto; display:block; border-radius:var(--radius); box-shadow:var(--shadow);"}
 :::
 
 ::: {.notes}
@@ -210,6 +218,8 @@ WHY IS THIS TRAINING DIFFERENT?
 
 ## You're scored on your reasoning. Not on the right answer. {.vcenter}
 
+{{< include illus/path.qmd >}}
+
 ::: {.notes}
 - The promise before any mechanics: nobody is graded on guessing the true state. You're graded on how you reasoned with what you had.
 - One clause, max. This is what makes it safe to be wrong at the table, and safe to say "I'm not sure" out loud.
@@ -218,15 +228,7 @@ WHY IS THIS TRAINING DIFFERENT?
 
 ## An incident has many seats
 
-::: {.seat-diagram}
-![](svg/table-seats.svg)
-[]{.seat-dot .s1 .fragment .fx}
-[]{.seat-dot .s2 .fragment .fx}
-[]{.seat-dot .s3 .fragment .fx}
-[]{.seat-dot .s4 .fragment .fx}
-[]{.seat-dot .s5 .fragment .fx}
-[]{.seat-dot .s6 .fragment .fx}
-:::
+{{< include illus/seat-table.qmd >}}
 
 ::: {.notes}
 - The six M&M roles, one click each: Detective, Protector, Tracker, Communicator, Crisis Manager, Threat Hunter
@@ -244,9 +246,7 @@ WHY IS THIS TRAINING DIFFERENT?
 - Your colleague's
 :::
 
-::: {style="width:100%; max-width:520px; margin:0.6em auto 0;"}
-![](svg/two-heads.svg){style="width:100%; height:auto; display:block;"}
-:::
+{{< include illus/two-heads.qmd >}}
 
 ::: {.notes}
 - Attacker clause kept light, one sentence
@@ -266,11 +266,13 @@ WHY IS THIS TRAINING DIFFERENT?
 - Punchline IS the pivot
 :::
 
-## {.vcenter}
+## {.vcenter .spotlight}
 
 ::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
 [NOW WE DO IT. ONE ROUND. THEN IT'S YOU.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em;"}
 :::
+
+{{< include illus/seat-table-static.qmd >}}
 
 ::: {.notes}
 - One round narrated (Klaus plays all seats), so everyone sees the shape once
@@ -280,16 +282,21 @@ WHY IS THIS TRAINING DIFFERENT?
 
 ## MALWARE & MONSTERS
 
+::: {.kicker}
+malwareandmonsters.com
+:::
+
 ::: {.feature-grid style="--fg-cols:2;"}
 - Analog · 3–8 players + one Incident Master
 - Round 1: What are we looking at? · Round 2: How bad is it? · Round 3: Containment
 :::
 
-::: {style="max-width:260px; margin:0.8em auto 0;"}
+::: {style="width:100%; max-width:260px; margin:0.8em auto 0;"}
 ![](images/gaboongrabber-art.png){style="width:100%; height:auto; display:block;"}
 :::
 
 ::: {.notes}
+- [CARLOS: drop malwareandmonsters.com in the chat now, first of three]
 - The IM isn't a player; the IM runs the scenario
 - Malmons (~25s): malware "personified" as creatures, makes something abstract concrete
 - Containment, NEVER "and then we fix it"
@@ -313,34 +320,41 @@ WHY IS THIS TRAINING DIFFERENT?
 - Never a clean "it's ransomware" label
 :::
 
-## {.feature-grid .vcenter style="--fg-cols:2;"}
+## {.vcenter}
 
+::: {.feature-grid style="--fg-cols:2;"}
 - Tracker: firewall logs, NOW
 - Communicator: wake leadership … or wait?
+:::
+
+{{< include illus/terminal.qmd >}}
 
 ::: {.notes}
 - Both real decisions, only ONE involves a die
 - Character-color line (~10s, cut-first if running long): the characters are deliberately stereotyped; the intro round is where strangers stop performing competence
 :::
 
-## Deliberation is free. Action costs a dice roll.
+## Deliberation is free. Action costs a dice roll. {.vcenter}
 
-::: {.feature-grid style="--fg-cols:4;"}
+:::: {.columns}
+::: {.column width="60%"}
+::: {.feature-grid style="--fg-cols:2;"}
 - In doubt? → d20
 - Success: cleaner trail
 - Failure: muddier trail
 - The die NEVER reveals the answer
 :::
 
-::: {.feature-grid .fragment .fx style="--fg-cols:3; font-size:0.6em; margin-top:0.4em;"}
+::: {.feature-grid .fragment .fx style="--fg-cols:3; font-size:0.55em; margin-top:0.2em;"}
 - Easy: 5+
 - Medium: 10+
 - Hard: 15+
 :::
-
-::: {style="max-width:130px; margin:0.6em auto 0;"}
-![](svg/d20.svg){style="width:100%; height:auto; display:block;"}
 :::
+::: {.column width="40%"}
+{{< include illus/d20.qmd >}}
+:::
+::::
 
 ::: {.notes}
 - Open with the thesis: "Deliberation is free. Action costs a dice roll. And what you did beforehand loads the die."
@@ -373,6 +387,8 @@ WHY IS THIS TRAINING DIFFERENT?
 [Totally confident. About something wrong. And everyone follows along.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em;"}
 :::
 
+{{< include illus/gauge.qmd >}}
+
 ::: {.notes}
 - ONE beat of silence AFTER the line only, hold 3s, brief Carlos not to fill chat
 - Verbatim, slow: "The worst thing that can happen is being totally confident about something that's wrong, and everyone else following along, because you seem sure."
@@ -380,7 +396,9 @@ WHY IS THIS TRAINING DIFFERENT?
 - Culture bridge: "What you should take home isn't just 'be less certain'. It's: create a space where it's safe to say 'I'm not sure' out loud, before reality forces you to."
 :::
 
-## A wrong theory doesn't lose the game. It costs time.
+## A wrong theory doesn't lose the game. It costs time. {.vcenter}
+
+{{< include illus/hourglass.qmd >}}
 
 ::: {.notes}
 - Close the round with the consequence, concrete: "This table played Ransomware, Confident. It was credential theft. Round 2 they spent twenty minutes restoring backups while the attacker still had the domain admin account."
@@ -398,6 +416,8 @@ WHY IS THIS TRAINING DIFFERENT?
 - Citizen services opens 09:00
 - The mayor has already called
 :::
+
+{{< include illus/clock.qmd >}}
 
 ::: {.notes}
 - 45s read, stakes language, the mayor, not the server
@@ -442,6 +462,8 @@ Type A, B or C in the chat · 30 seconds
 - Confidence vs what happened
 :::
 
+{{< include illus/form.qmd >}}
+
 ::: {.notes}
 - This is the replacement evidence, the thing you hand leadership INSTEAD of the questionnaire
 - Each one is observed, not stated: a clock, a phone log, a card on the table
@@ -452,7 +474,7 @@ Type A, B or C in the chat · 30 seconds
 
 ## {.vcenter}
 
-::: {style="width:120px; margin:0 auto 1em;"}
+::: {style="width:100%; max-width:300px; margin:0 auto 1em;"}
 ![](images/malmon-logo.png){style="width:100%; height:auto; display:block;"}
 :::
 
@@ -468,16 +490,30 @@ Type A, B or C in the chat · 30 seconds
 - OPTIONAL: if time and screen-share are behaving, advance to the live site (next slide, uncounted). If not, skip straight to Q&A.
 :::
 
-## {background-iframe="https://malwareandmonsters.com" background-interactive="true" visibility="uncounted"}
+## The free starter guide, live {visibility="uncounted"}
+
+```{=html}
+<div class="browser">
+<div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__url">https://malwareandmonsters.com</span></div>
+<div class="browser__body"><iframe data-src="https://malwareandmonsters.com" title="malwareandmonsters.com"></iframe></div>
+</div>
+```
+
+::: {.chip-note}
+The actual site, not a mockup. Free, no email gate.
+:::
 
 ::: {.notes}
+- [30 SEC MAX] Tab is pre-warmed. One sentence, cursor to the nav, click straight to the starter guide, then back. No general scrolling.
+- Say: "This is the actual site. The starter guide is free, no email gate, 3 to 8 colleagues, 90 minutes."
+- Fallback if the page is slow or dead: "Trust me, it's live, the link's in chat." Carlos pastes the URL. No troubleshooting on stream.
 - OPTIONAL live tour, ~60-90s: homepage → starter guide → a scenario card. Skip if anything is flaky.
 - Focus gotcha: mouse clicks go to the SITE, use keyboard to advance slides, click the slide edge first if arrows stop responding
 - Site shows a first-visit welcome popup ("New to Malware & Monsters?") — dismiss it (X or "Leave me alone") the instant it appears, before narrating
 - REHEARSE this transition, including the popup dismiss
 :::
 
-## QUESTIONS? {.bg-drift}
+## QUESTIONS? {.bg-drift background-image="images/hero-december-desk.jpg" background-opacity="0.14" background-size="cover"}
 
 ::: {style="text-align:center; color:var(--accent); font-family:'Bebas Neue',sans-serif; font-size:1.2em;"}
 malwareandmonsters.com
@@ -494,7 +530,7 @@ malwareandmonsters.com
 - Carlos cuts at 14:58 no matter what
 :::
 
-## {.vcenter}
+## {.vcenter .lattice}
 
 ::: {.card style="text-align:center; max-width:640px; margin:0 auto;"}
 [SAY ≠ DO]{style="font-family:'Bebas Neue',sans-serif; font-size:2em; letter-spacing:0.03em; color:var(--accent);"}
@@ -512,6 +548,8 @@ malwareandmonsters.com
 - 2: Run it with your REAL crisis team
 - 3: Put it in the annual exercise plan
 :::
+
+{{< include illus/stairs.qmd >}}
 
 ::: {.notes}
 - First ask: "Type 1, 2 or 3 in the chat. Which one are you doing Monday?" Carlos reads the spread.

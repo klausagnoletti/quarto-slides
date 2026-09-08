@@ -1,0 +1,20 @@
+```{=html}
+<div class="illus w-md">
+<svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A confidence gauge pegged at maximum above a wrong answer">
+<g class="settle">
+<path class="ink thick" d="M120,200 A200,200 0 0 1 520,200"/>
+<line class="mut" x1="120" y1="200" x2="150" y2="200"/><line class="mut" x1="320" y1="0" x2="320" y2="30"/><line class="mut" x1="520" y1="200" x2="490" y2="200"/>
+<line class="mut" x1="179" y1="59" x2="200" y2="80"/><line class="mut" x1="461" y1="59" x2="440" y2="80"/>
+<text class="disp" x="110" y="240" font-size="26" fill="#8A97AD">doubt</text>
+<text class="disp" x="440" y="240" font-size="26" fill="#FFC800">certain</text>
+</g>
+<g class="rock">
+<line class="acc thick" x1="320" y1="200" x2="490" y2="90"/>
+<circle class="acc fill-acc" cx="320" cy="200" r="14"/>
+</g>
+<g class="settle d4">
+<line class="mut thick" x1="296" y1="120" x2="344" y2="168"/><line class="mut thick" x1="344" y1="120" x2="296" y2="168"/>
+</g>
+</svg>
+</div>
+```

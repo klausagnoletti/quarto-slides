@@ -37,6 +37,91 @@
   text-transform: uppercase;
 }
 
+/* ---- Illustration system (panel 08-09-2026) ----
+   Vector rule: 3px+ strokes, ink primary, one Mikado accent, marks fill
+   their box, always anchored. Motion rule: one-shot settle when the slide
+   becomes .present, never a perpetual loop behind spoken text. Inline SVGs
+   (via {{< include illus/*.qmd >}}) so page fonts and .present cues apply. */
+.illus { width: 100%; margin: 0.6em auto 0; }
+.illus svg { display: block; width: 100%; height: auto; }
+.illus.w-sm { max-width: 320px; }
+.illus.w-md { max-width: 640px; }
+.illus.w-lg { max-width: 860px; }
+.illus.w-xl { max-width: 900px; }
+.illus text { font-family: "Source Sans 3", sans-serif; }
+.illus .disp { font-family: "Bebas Neue", sans-serif; }
+.illus .ink { stroke: #F8F8FA; }
+.illus .acc { stroke: #FFC800; }
+.illus .mut { stroke: #CCCCCC; opacity: .55; }
+.illus .fill-acc { fill: #FFC800; }
+.illus .fill-ink { fill: #F8F8FA; }
+.illus .fill-surf { fill: #16243A; }
+.illus .fill-surf2 { fill: #1C2B42; }
+.illus :is(path, polygon, polyline, line, circle, rect, ellipse) { fill: none; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.illus .fill-acc { fill: #FFC800; } .illus .fill-ink { fill: #F8F8FA; }
+.illus .fill-surf { fill: #16243A; } .illus .fill-surf2 { fill: #1C2B42; }
+.illus .hair { stroke-width: 2.5; }
+.illus .thick { stroke-width: 6; }
+
+/* one-shot motion, keyed to reveal's .present */
+@keyframes settle { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes drawline { to { stroke-dashoffset: 0; } }
+@keyframes rock { 0% { transform: rotate(-14deg) scale(.86); opacity: 0; } 60% { transform: rotate(5deg) scale(1.03); opacity: 1; } 100% { transform: none; opacity: 1; } }
+@keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes stamp { 0% { transform: scale(2.2) rotate(-12deg); opacity: 0; } 70% { transform: scale(.95) rotate(-12deg); opacity: 1; } 100% { transform: scale(1) rotate(-12deg); opacity: 1; } }
+@keyframes spark { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+@keyframes sand { from { transform: scaleY(1); } to { transform: scaleY(.15); } }
+@keyframes sandup { from { transform: scaleY(.1); } to { transform: scaleY(1); } }
+.reveal section .settle, .reveal section .draw, .reveal section .rock,
+.reveal section .grow, .reveal section .stamp { opacity: 0; }
+.reveal section.present .settle { animation: settle 700ms cubic-bezier(.22,.61,.36,1) both; }
+.reveal section.present .settle.d2 { animation-delay: 180ms; }
+.reveal section.present .settle.d3 { animation-delay: 360ms; }
+.reveal section.present .settle.d4 { animation-delay: 540ms; }
+.reveal section.present .draw { opacity: 1; stroke-dasharray: 1600; stroke-dashoffset: 1600; animation: drawline 1100ms cubic-bezier(.22,.61,.36,1) forwards; }
+.reveal section.present .rock { animation: rock 900ms cubic-bezier(.22,.61,.36,1) both; transform-origin: center; transform-box: fill-box; }
+.reveal section.present .grow { opacity: 1; transform-origin: bottom; transform-box: fill-box; animation: grow 800ms cubic-bezier(.22,.61,.36,1) both; }
+.reveal section.present .grow.d2 { animation-delay: 150ms; }
+.reveal section.present .grow.d3 { animation-delay: 300ms; }
+.reveal section.present .grow.d4 { animation-delay: 450ms; }
+.reveal section.present .stamp { animation: stamp 700ms cubic-bezier(.22,.61,.36,1) 500ms both; transform-origin: center; transform-box: fill-box; }
+.reveal section.present .spark { animation: spark 2.6s ease-in-out infinite; }
+.reveal section.present .sand-top { transform-origin: bottom; transform-box: fill-box; animation: sand 6s linear 400ms forwards; }
+.reveal section.present .sand-bot { transform-origin: bottom; transform-box: fill-box; animation: sandup 6s linear 400ms forwards; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal section .settle, .reveal section .draw, .reveal section .rock,
+  .reveal section .grow, .reveal section .stamp { opacity: 1; animation: none !important; stroke-dashoffset: 0; transform: none; }
+}
+
+/* Divider slides: a faint Mikado dot lattice so the single word still sits
+   on an image, without anything competing with it. */
+.reveal .slides section.lattice {
+  background-image: radial-gradient(circle, rgba(255,200,0,.16) 1.6px, transparent 2px);
+  background-size: 34px 34px;
+  background-position: center;
+}
+
+/* Browser window for the live M&M site (slide 31). */
+.browser { width: 900px; margin: 0.4em auto 0; border-radius: 10px; overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,.55); border: 1px solid #2A3A55; background: #fff; }
+.browser__bar { height: 38px; background: #1B2942; display: flex; align-items: center; gap: 8px; padding: 0 14px; }
+.browser__dot { width: 11px; height: 11px; border-radius: 50%; background: #3E4E68; }
+.browser__url { flex: 1; height: 22px; border-radius: 11px; background: #111B2A; color: #CCCCCC;
+  font-family: "Source Sans 3", sans-serif; font-size: 13px; line-height: 22px; text-align: center; margin-left: 10px; }
+.browser__body { position: relative; width: 900px; height: 470px; background: #fff url("images/mm-site-fallback.png") top center / 100% auto no-repeat; }
+.browser__body iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #fff; }
+
+/* Seat table (slide 16, 19): inline SVG with six chairs, lit by fragments. */
+.seat-table { width: 100%; max-width: 920px; margin: 0.2em auto 0; }
+.seat-table svg { display: block; width: 100%; height: auto; }
+.seat-table .chair { fill: #16243A; stroke: #56657D; stroke-width: 3; transition: all 240ms ease-out; }
+.seat-table .icon { fill: none; stroke: #8A97AD; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; transition: stroke 240ms ease-out; }
+.seat-table .lbl { fill: #8A97AD; font-family: "Source Sans 3", sans-serif; font-weight: 600; font-size: 17px; text-anchor: middle; transition: fill 240ms ease-out; }
+.seat-table .seat.lit .chair, .seat-table .seat.visible .chair { stroke: #FFC800; fill: rgba(255,200,0,.12); }
+.seat-table .seat.lit .icon, .seat-table .seat.visible .icon { stroke: #FFC800; }
+.seat-table .seat.lit .lbl, .seat-table .seat.visible .lbl { fill: #F8F8FA; }
+.seat-table .seat.fragment { opacity: 1 !important; visibility: visible !important; }
+
 /* Large centered statement line for slides with a dimmed hero photo behind
    them (cold open, dead-document). Drop shadow keeps it legible over the
    image at any brightness. */
@@ -95,35 +180,9 @@
 .presumption-cards img:nth-child(2) { left: 200px; transform: rotate(2deg); top: 20px; }
 .presumption-cards img:nth-child(3) { left: 360px; transform: rotate(-2deg); }
 
-/* Table-seats diagram (slide 15): 5 highlight dots positioned over the base
-   SVG's ghost seat coordinates (viewBox 300x220, scaled to the rendered
-   width below), each a plain reveal .fragment so they light up one per
-   spoken role with no custom JS. */
-.seat-diagram { position: relative; width: 660px; margin: 0.6em auto; }
-.seat-diagram img { display: block; width: 100%; }
-.seat-diagram .seat-dot {
-  position: absolute;
-  width: 44px; height: 44px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 14px rgba(255,200,0,.6);
-  transform: translate(-50%, -50%);
-}
-/* percentages of the 440x240 viewBox, so the diagram can be resized freely */
-.seat-diagram .seat-dot.s1 { left: 50.0%; top: 18.75%; } /* Detective */
-.seat-diagram .seat-dot.s2 { left: 70.7%; top: 35.4%; }  /* Protector */
-.seat-diagram .seat-dot.s3 { left: 70.7%; top: 64.6%; }  /* Tracker */
-.seat-diagram .seat-dot.s4 { left: 50.0%; top: 81.25%; } /* Communicator */
-.seat-diagram .seat-dot.s5 { left: 29.3%; top: 64.6%; }  /* Crisis Manager */
-.seat-diagram .seat-dot.s6 { left: 29.3%; top: 35.4%; }  /* Threat Hunter */
-
-/* Two-state dial readout (slide 7): static needle art swapped via fragment
-   visibility, no SMIL/animation-timeline risk for a live talk. */
-.dial-wrap { position: relative; width: 200px; margin: 0.4em auto; }
-.dial-wrap img { display: block; width: 100%; }
-.dial-readout {
-  position: absolute; left: 0; right: 0; top: 58%;
-  text-align: center; font-family: "Bebas Neue", sans-serif;
-  font-size: 1.6em; color: var(--accent);
-}
+/* Slide 19 (pivot): the same table, one seat lit, no fragments. */
+.reveal section.spotlight .seat-table { max-width: 640px; margin-top: 0.8em; }
+.reveal section.spotlight .seat-table .s1 .chair { stroke: #FFC800; fill: rgba(255,200,0,.12); }
+.reveal section.spotlight .seat-table .s1 .icon { stroke: #FFC800; }
+.reveal section.spotlight .seat-table .s1 .lbl { fill: #F8F8FA; }
 </style>

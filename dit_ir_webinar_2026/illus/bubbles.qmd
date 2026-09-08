@@ -1,0 +1,14 @@
+```{=html}
+<div class="illus w-md">
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A solid speech bubble and a hollow dashed one">
+<g class="settle">
+<path class="ink fill-surf2" d="M40,40 h230 a16,16 0 0 1 16,16 v100 a16,16 0 0 1 -16,16 h-150 l-40,38 v-38 h-40 a16,16 0 0 1 -16,-16 v-100 a16,16 0 0 1 16,-16 z"/>
+<line class="ink" x1="80" y1="86" x2="230" y2="86"/><line class="ink" x1="80" y1="122" x2="200" y2="122"/>
+</g>
+<g class="settle d2">
+<path class="acc fill-surf" stroke-dasharray="12 10" d="M354,40 h230 a16,16 0 0 1 16,16 v100 a16,16 0 0 1 -16,16 h-40 v38 l-40,-38 h-150 a16,16 0 0 1 -16,-16 v-100 a16,16 0 0 1 16,-16 z"/>
+<line class="mut" stroke-dasharray="6 8" x1="394" y1="86" x2="544" y2="86"/><line class="mut" stroke-dasharray="6 8" x1="394" y1="122" x2="514" y2="122"/>
+</g>
+</svg>
+</div>
+```

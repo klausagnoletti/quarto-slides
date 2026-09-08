@@ -1,0 +1,23 @@
+```{=html}
+<div class="illus w-lg">
+<svg viewBox="0 0 720 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A reasoning path with two branches, both scored, one ending in a grey wrong answer">
+<path class="acc draw" d="M60,120 H200 C260,120 260,60 320,60 H460"/>
+<path class="acc draw" d="M200,120 C260,120 260,180 320,180 H460"/>
+<g class="settle">
+<circle class="acc fill-surf2" cx="60" cy="120" r="18"/>
+</g>
+<g class="settle d2">
+<circle class="acc fill-acc" cx="320" cy="60" r="18"/><polyline class="hair" stroke="#111B2A" stroke-width="3" fill="none" points="311,61 318,68 330,53"/>
+<circle class="acc fill-acc" cx="320" cy="180" r="18"/><polyline class="hair" stroke="#111B2A" stroke-width="3" fill="none" points="311,181 318,188 330,173"/>
+</g>
+<g class="settle d3">
+<circle class="acc fill-acc" cx="480" cy="60" r="18"/><polyline class="hair" stroke="#111B2A" stroke-width="3" fill="none" points="471,61 478,68 490,53"/>
+<circle class="mut fill-surf" cx="480" cy="180" r="18"/><line class="mut" x1="470" y1="170" x2="490" y2="190"/><line class="mut" x1="490" y1="170" x2="470" y2="190"/>
+</g>
+<g class="settle d4">
+<text class="disp" x="530" y="70" font-size="26" fill="#FFC800">right answer</text>
+<text class="disp" x="530" y="190" font-size="26" fill="#8A97AD">wrong answer</text>
+</g>
+</svg>
+</div>
+```

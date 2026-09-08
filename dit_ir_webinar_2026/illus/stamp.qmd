@@ -1,0 +1,17 @@
+```{=html}
+<div class="illus w-md">
+<svg viewBox="0 0 640 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A stack of compliance sheets with a stamp landing on the top one">
+<g class="settle">
+<rect class="mut fill-surf" x="260" y="70" width="230" height="170" rx="6"/>
+<rect class="mut fill-surf" x="240" y="55" width="230" height="170" rx="6"/>
+<rect class="ink fill-surf2" x="220" y="40" width="230" height="170" rx="6"/>
+<line class="mut" x1="250" y1="80" x2="400" y2="80"/><line class="mut" x1="250" y1="110" x2="420" y2="110"/><line class="mut" x1="250" y1="140" x2="380" y2="140"/><line class="mut" x1="250" y1="170" x2="410" y2="170"/>
+</g>
+<g class="stamp">
+<circle class="acc thick" cx="400" cy="150" r="56"/>
+<circle class="acc hair" cx="400" cy="150" r="44"/>
+<polyline class="acc thick" points="372,152 392,172 430,128"/>
+</g>
+</svg>
+</div>
+```

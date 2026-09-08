@@ -1,0 +1,8 @@
+```{=html}
+<div class="illus w-xl">
+<svg viewBox="0 0 900 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A racing heartbeat line">
+<line class="mut hair" x1="20" y1="100" x2="880" y2="100"/>
+<polyline class="acc thick draw" points="20,100 120,100 150,100 165,70 180,130 195,100 260,100 285,100 300,40 318,160 336,100 400,100 430,100 445,80 460,120 475,100 540,100 560,100 575,30 596,170 616,100 700,100 730,100 745,72 760,128 775,100 880,100"/>
+</svg>
+</div>
+```
