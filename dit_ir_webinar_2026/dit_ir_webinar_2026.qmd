@@ -446,19 +446,16 @@ Analog · 3–8 players + one Incident Master
 ## What do you do NOW? {.vcenter}
 
 ::: {.feature-grid style="--fg-cols:3;"}
-- A: Pull the network cable
-- B: Keep systems up while you investigate
-- C: Call leadership first
+- A: Pull the cable
+- B: Keep systems up
+- C: Call leadership
 :::
 
 ::: {.chip-note .pulse-cue}
 Type A, B or C in the chat · 30 seconds
 :::
 
-::: {style="max-width:140px; margin:0.6em auto 0;"}
-[]{.fragment data-anim-start="true"}
-![](svg/countdown.svg){style="width:100%; height:auto; display:block;"}
-:::
+{{< include illus/countdown.qmd >}}
 
 ::: {.notes}
 - 30s: Carlos counts down live at 20/10/5s with a participant count, "fifty percent have voted, ten seconds"
