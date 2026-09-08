@@ -563,7 +563,7 @@ malwareandmonsters.com
 ## MONDAY MORNING {.vcenter}
 
 ::: {.feature-grid style="--fg-cols:3;"}
-- 1: Run the free starter guide, 3–8 colleagues, 90 min
+- 1: Starter guide, this month
 - 2: Run it with your REAL crisis team
 - 3: Put it in the annual exercise plan
 :::
