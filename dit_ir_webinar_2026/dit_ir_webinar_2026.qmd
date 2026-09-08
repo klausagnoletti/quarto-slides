@@ -49,9 +49,9 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 - Bridge straight into the cold open, no "and now for today's topic"
 :::
 
-## {background-image="images/hero-december-desk.jpg" background-opacity="0.4" background-size="cover" auto-animate="true"}
+## {background-image="images/hero-december-desk.jpg" background-opacity="0.4" background-size="cover"}
 
-[December. An email from the butcher.]{.hero-line data-id="cold"}
+[December. An email from the butcher.]{.hero-line}
 
 ::: {.notes}
 - Memorized 90s, in medias res, no "back when I made a documentary"-preamble
@@ -60,9 +60,9 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 - Slow down on: they troubleshoot the attacker's link FOR him
 :::
 
-## {.vcenter auto-animate="true"}
+## {.vcenter}
 
-[Everyone clicks. The question is what happens after.]{.hero-line style="font-size:2.4em;" data-id="cold"}
+[Everyone clicks. The question is what happens after.]{.hero-line style="font-size:2.4em;"}
 
 ::: {.notes}
 - Pause before advancing, let it sit 2s
