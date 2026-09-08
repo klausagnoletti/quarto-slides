@@ -79,21 +79,23 @@
    SVG's ghost seat coordinates (viewBox 300x220, scaled to the rendered
    width below), each a plain reveal .fragment so they light up one per
    spoken role with no custom JS. */
-.seat-diagram { position: relative; width: 360px; margin: 0.6em auto; }
+.seat-diagram { position: relative; width: 660px; margin: 0.6em auto; }
 .seat-diagram img { display: block; width: 100%; }
 .seat-diagram .seat-dot {
   position: absolute;
-  width: 28px; height: 28px;
+  width: 44px; height: 44px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 10px rgba(255,200,0,.6);
+  box-shadow: 0 0 14px rgba(255,200,0,.6);
+  transform: translate(-50%, -50%);
 }
-.seat-diagram .seat-dot.s1 { left: 166px; top: 31px; }  /* Detective */
-.seat-diagram .seat-dot.s2 { left: 257px; top: 71px; }  /* Protector */
-.seat-diagram .seat-dot.s3 { left: 257px; top: 141px; } /* Tracker */
-.seat-diagram .seat-dot.s4 { left: 166px; top: 181px; } /* Communicator */
-.seat-diagram .seat-dot.s5 { left: 75px;  top: 141px; } /* Crisis Manager */
-.seat-diagram .seat-dot.s6 { left: 75px;  top: 71px; }  /* Threat Hunter */
+/* percentages of the 440x240 viewBox, so the diagram can be resized freely */
+.seat-diagram .seat-dot.s1 { left: 50.0%; top: 18.75%; } /* Detective */
+.seat-diagram .seat-dot.s2 { left: 70.7%; top: 35.4%; }  /* Protector */
+.seat-diagram .seat-dot.s3 { left: 70.7%; top: 64.6%; }  /* Tracker */
+.seat-diagram .seat-dot.s4 { left: 50.0%; top: 81.25%; } /* Communicator */
+.seat-diagram .seat-dot.s5 { left: 29.3%; top: 64.6%; }  /* Crisis Manager */
+.seat-diagram .seat-dot.s6 { left: 29.3%; top: 35.4%; }  /* Threat Hunter */
 
 /* Two-state dial readout (slide 7): static needle art swapped via fragment
    visibility, no SMIL/animation-timeline risk for a live talk. */

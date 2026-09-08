@@ -1,0 +1,21 @@
+<!-- Two figures facing each other for "Think with a head that isn't yours".
+     Left (muted): the attacker, hooded. Right (Mikado): the colleague.
+     Geometric primitives only. -->
+<svg viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two figures facing each other, a hooded attacker and a colleague">
+  <!-- LEFT: attacker, head + shoulders + hood -->
+  <g fill="none" stroke="#CCCCCC" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" opacity="0.5">
+    <circle cx="150" cy="100" r="34" />
+    <path d="M60,200 Q100,160 150,162 Q200,160 240,200" />
+    <!-- hood: peaked line over the head, open at the face side -->
+    <path d="M104,130 Q96,60 150,50 Q190,44 200,80" />
+  </g>
+
+  <!-- centre gap -->
+  <line x1="260" y1="40" x2="260" y2="180" stroke="#CCCCCC" stroke-width="1.5" opacity="0.2" stroke-dasharray="4 6" />
+
+  <!-- RIGHT: colleague, head + shoulders, in accent -->
+  <g fill="none" stroke="#FFC800" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="370" cy="100" r="34" />
+    <path d="M280,200 Q320,160 370,162 Q420,160 460,200" />
+  </g>
+</svg>
