@@ -101,6 +101,7 @@ Type A, B, C or D in the chat
 
 ::: {.notes}
 - Verbatim: "Surveys tell you what people SAY they'd do. An exercise shows you what they DO. That's what this hour is about."
+- One observable, so the survey point is never bare: "DO is something you can time. How many minutes from the first strange call to the moment someone with a mandate is on the line."
 - Callback target for the SAY ≠ DO close after Q&A, identical words
 :::
 
@@ -115,7 +116,9 @@ Not WHETHER you practice. HOW.
 ::: {.notes}
 - So the question isn't whether you practice. It's whether the exercise changes what people DO.
 - A slideshow read aloud with a signature at the end is SAY with extra steps.
-- ~25s, master frame for the next ten minutes
+- Same trap in phishing tests: the click rate is a dial. Whoever writes the test sets the difficulty, so the number measures the tester, not the staff.
+- Gotcha tests cost trust, and one click is enough anyway. Back to the butcher: the interesting part starts AFTER the click.
+- ~35s, master frame for the next ten minutes
 :::
 
 ## IT is not a cost. IT is a precondition. {.vcenter}
@@ -555,6 +558,7 @@ malwareandmonsters.com
 - First ask: "Type 1, 2 or 3 in the chat. Which one are you doing Monday?" Carlos reads the spread.
 - Transfer check, verbatim: "And write one more thing: did what you just saw make you think 'WE should fix this', or 'I need to fix this'? That difference is the whole point."
 - Rung 3 = pure commitment, NO scale claim here (lives in seeded Q3)
+- Budget angle, one line on rung 2: "Run it once with the real team and leadership sees the gap themselves. That does more for next year's budget than any report."
 :::
 
 ## {.vcenter}
