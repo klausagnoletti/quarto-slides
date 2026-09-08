@@ -545,7 +545,7 @@ malwareandmonsters.com
 - For those caught between GRC and operations: I've also made a small card deck, the Risk Deck, that gives technically-minded security people a language for risk, business impact, and business jargon. One breath.
 - Self-answered: "How do you get started?" → free starter guide, 3-8 colleagues, 90 minutes. CTA-priming: "…and if you'd rather have a facilitated first session than build the exercise yourselves, that exists too."
 - Pocket answers: wrong guess in round 1 · key person absent (role-keyed clues) · evidence (Frontiers + Gee + Simkins) · "can it test our REAL plan?" (a different format, against your BCP)
-- Carlos cuts at 14:58 no matter what
+- Carlos cuts Q&A at 14:54 no matter what: the three closing slides plus the Monday chat ask need five minutes
 :::
 
 ## {.vcenter .lattice}
