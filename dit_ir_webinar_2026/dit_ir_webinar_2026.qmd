@@ -102,6 +102,7 @@ Type A, B, C or D in the chat
 ::: {.notes}
 - Verbatim: "Surveys tell you what people SAY they'd do. An exercise shows you what they DO. That's what this hour is about."
 - One observable, so the survey point is never bare: "DO is something you can time. How many minutes from the first strange call to the moment someone with a mandate is on the line."
+- Contract, what they get, not what we cover: "You'll play one round yourselves, vote on a real decision, and leave with a free guide you can run with your own team next week."
 - Callback target for the SAY ≠ DO close after Q&A, identical words
 :::
 
