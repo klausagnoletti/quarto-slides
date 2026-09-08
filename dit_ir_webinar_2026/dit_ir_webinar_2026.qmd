@@ -76,7 +76,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 - A: Under 1 year
 - B: 1–3 years
 - C: Over 3 years
-- D: Honestly, I don't know
+- D: Don't know
 :::
 
 {{< include illus/poll-bars.qmd >}}
@@ -301,7 +301,7 @@ Analog · 3–8 players + one Incident Master
 - 3 · Contain
 :::
 
-::: {style="width:100%; max-width:260px; margin:0.8em auto 0;"}
+::: {style="width:100%; max-width:310px; margin:0.4em auto 0;"}
 ![](images/gaboongrabber-art.png){style="width:100%; height:auto; display:block;"}
 :::
 
@@ -432,7 +432,7 @@ Analog · 3–8 players + one Incident Master
 ::: {.feature-grid style="--fg-cols:5; font-size:0.5em;"}
 - Encrypted files on the shared drive
 - Backup: unverified
-- The password to the backup system is on parental leave
+- Backup admin on parental leave
 - Citizen services opens 09:00
 - The mayor has already called
 :::
@@ -514,7 +514,7 @@ Type A, B or C in the chat · 30 seconds
 ```{=html}
 <div class="browser">
 <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__url">https://malwareandmonsters.com</span></div>
-<div class="browser__body"><iframe data-src="https://malwareandmonsters.com" title="malwareandmonsters.com"></iframe></div>
+<div class="browser__body"><iframe data-src="https://malwareandmonsters.com" title="malwareandmonsters.com" style="opacity:0; transition:opacity .3s;" onload="this.style.background='#fff';this.style.opacity=1"></iframe></div>
 </div>
 ```
 
@@ -580,7 +580,7 @@ malwareandmonsters.com
 
 ## {.vcenter}
 
-::: {.hero-line style="max-width:900px;"}
+::: {.hero-line style="max-width:900px; text-shadow:none;"}
 Fun isn't unserious. It's effective.
 :::
 

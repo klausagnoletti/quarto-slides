@@ -15,7 +15,7 @@
   <ellipse cx="400" cy="330" rx="230" ry="55" fill="none" stroke="#FFC800" stroke-width="1.5" opacity="0.5" />
 
   <!-- seated silhouettes, solid dark shapes, no facial detail — overlap the front table edge -->
-  <g fill="#05070c" stroke="#111B2A" stroke-width="2">
+  <g fill="#1C2B42" stroke="#3A4C68" stroke-width="2">
     <path d="M110 350 q10 -95 75 -100 q65 5 75 100 q-75 26 -150 0 z" />
     <path d="M270 365 q8 -105 82 -110 q74 5 82 110 q-82 28 -164 0 z" />
     <path d="M460 368 q8 -108 86 -113 q78 5 86 113 q-86 30 -172 0 z" />

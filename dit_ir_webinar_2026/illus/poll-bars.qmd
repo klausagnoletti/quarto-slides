@@ -1,5 +1,5 @@
 ```{=html}
-<div class="illus w-md">
+<div class="illus" style="max-width:500px">
 <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four poll bars rising">
 <line class="mut" x1="40" y1="196" x2="600" y2="196"/>
 <rect class="grow fill-surf2 acc" x="70" y="126" width="100" height="70" rx="6"/>
