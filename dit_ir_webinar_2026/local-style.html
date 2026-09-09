@@ -119,9 +119,15 @@
 .join__code { display: flex; flex-direction: column; line-height: 1; }
 .join__url { font-family: "Source Sans 3", sans-serif; font-size: 0.7em; color: var(--muted); letter-spacing: 0.06em; margin-bottom: 0.25em; }
 .join__key { font-family: "Bebas Neue", sans-serif; font-size: 3.2em; color: var(--accent); letter-spacing: 0.08em; }
-.poll-frame { width: 960px; height: 560px; margin: 0 auto; border-radius: 10px; overflow: hidden;
-  box-shadow: 0 24px 60px rgba(0,0,0,.55); border: 1px solid #2A3A55; background: #fff; }
-.poll-frame iframe { width: 100%; height: 100%; border: 0; background: #fff; }
+/* Plan B is built in: the box shows the code + a cue, the iframe sits on top
+   transparent. When Wooclap loads it paints its own white page over the cue;
+   if it never loads, the room sees the code and Klaus alt-tabs. */
+.poll-frame { position: relative; width: 960px; height: 560px; margin: 0 auto; border-radius: 10px; overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,.55); border: 1px solid #2A3A55; background: #16243A;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.3em; }
+.poll-frame::before { content: "wooclap.com"; font-family: "Source Sans 3", sans-serif; font-size: 0.7em; color: var(--muted); letter-spacing: 0.06em; }
+.poll-frame::after { content: "SRCIDYA"; font-family: "Bebas Neue", sans-serif; font-size: 3.2em; color: var(--accent); letter-spacing: 0.08em; line-height: 1; }
+.poll-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: transparent; }
 
 /* Seat table (slide 16, 19): inline SVG with six chairs, lit by fragments. */
 .seat-table { width: 100%; max-width: 920px; margin: 0.2em auto 0; }
