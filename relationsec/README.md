@@ -13,6 +13,7 @@ logos vendored in `assets/` so nothing depends on files outside this repo.
 | `fonts.html` | Google Fonts link (Bebas Neue + Source Sans 3). Always FIRST in include-in-header; Quarto's scss pipeline silently drops `@import url(...)`. |
 | `skin-dark.html` | Dark deck tokens: Rich Black surface, Seasalt ink, Mikado accent. For talk decks. |
 | `skin-light.html` | Light / document tokens: Seasalt surface, ink text, Rich Black bands. For document-style decks (pricing, offers, briefs). |
+| `chrome.html` | Logo, slide number and menu button re-parented into the scaled slide box and pinned in slide coordinates, so they keep the same size and place relative to the content on every screen resolution and aspect ratio. Skin-agnostic; include after the skin. |
 | `theme-dark.scss` | Dark theme: Bebas headings, two-tone `[x]{.accent}` display device, `.kicker`, measure-rule (Mikado head + neutral tail) under every h2. |
 | `theme-light.scss` | Document grammar as a deck: h2 = Rich Black band, h3 = Label Rail section head + measure-rule, zebra tables with band header row, `.tint` and `.band-callout` callouts, `.card-light`, `.price` Bebas figures. |
 | `assets/relationsec-yellow-logo.png` | Logo for DARK surfaces (use with skin-dark). |
@@ -28,6 +29,7 @@ format:
     include-in-header:
       - ../relationsec/fonts.html             # fonts FIRST
       - ../relationsec/skin-dark.html         # or skin-light.html
+      - ../relationsec/chrome.html            # chrome scales with the slide
     logo: ../relationsec/assets/relationsec-yellow-logo.png   # navy on light
     embed-resources: true
     width: 1050

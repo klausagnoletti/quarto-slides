@@ -1,0 +1,23 @@
+<!-- RelationSec deck chrome: logo, slide number and menu button scale with
+     the slide. Quarto/reveal lay these three out in SCREEN pixels outside the
+     scaled .slides box, so their size relative to the content and their
+     distance from the slide edge change with every screen resolution and
+     aspect ratio (4:3 screens push them into the letterbox). Found on the
+     Dansk IT deck 09-09-2026. Skin-agnostic: include after skin-dark.html or
+     skin-light.html. Positions assume the 1050x700 slide in README. -->
+<style>
+.reveal .slides > .slide-logo { position: absolute; left: auto; top: auto; right: 0; bottom: 0; height: 26px; max-height: none; width: auto; z-index: 20; }
+.reveal .slides > .slide-number { position: absolute; left: auto; bottom: auto; top: 6px; right: 0; font-size: 9px; padding: 4px 6px; z-index: 20; }
+.reveal .slides > .slide-menu-button { position: absolute; right: auto; top: auto; left: 0; bottom: 0; font-size: 18px; z-index: 20; }
+</style>
+<script>
+window.addEventListener('load', function () {
+  if (typeof Reveal === 'undefined') return;
+  var slidesBox = document.querySelector('.reveal .slides');
+  if (!slidesBox) return;
+  ['.slide-logo', '.slide-number', '.slide-menu-button'].forEach(function (sel) {
+    var el = document.querySelector('.reveal > ' + sel);
+    if (el) slidesBox.appendChild(el);
+  });
+});
+</script>

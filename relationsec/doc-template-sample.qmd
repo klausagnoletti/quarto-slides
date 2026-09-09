@@ -6,6 +6,7 @@ format:
     include-in-header:
       - fonts.html
       - skin-light.html
+      - chrome.html
     logo: assets/relationsec-navy-logo.png
     embed-resources: true
     slide-number: false

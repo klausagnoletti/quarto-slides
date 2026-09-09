@@ -6,6 +6,7 @@ format:
     include-in-header:
       - ../relationsec/fonts.html
       - ../relationsec/skin-dark.html
+      - ../relationsec/chrome.html
     logo: ../relationsec/assets/relationsec-yellow-logo.png
     embed-resources: true
     slide-number: false
