@@ -86,7 +86,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 ::: {.notes}
 - Say the code twice, slowly: "wooclap dot com, S R C I D Y A". Leave it up a full 30s, the stream runs 20 to 60s behind you.
 - BEFORE 14:00: deck opened via `bash dit_ir_webinar_2026/serve.sh` at http://localhost:8765 (NOT the file, the Wooclap frames are blank from file://). Logged in to Wooclap in this browser, "Start event" clicked once, the projected screen (QR + code) open in its own tab. Early joiners see "no vote in progress", fine.
-- When this slide is up: push question 1 to their phones, arrow right in the Wooclap tab. Answers stay hidden: "display answers automatically" is off.
+- When this slide is up: push question 1 to their phones, arrow right in the Wooclap tab. Phones show no tally; the chart appears on the next slide by itself ("display answers automatically" is ON).
 - Next slide shows the result. React unscripted, ONE sentence, whatever it is.
 - ABORT: if the join page is not live, this becomes a rhetorical question: "Hands up in your own head. Most rooms land on D."
 - D is the honest answer for most rooms, say so warmly if D wins
@@ -100,7 +100,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 ```
 
 ::: {.notes}
-- Question 1 live in this frame. If it shows a login instead, log in inside the frame once (Wooclap's documented flow). Reveal: the diagram button at the top (show answers). Frame blank = alt-tab to the Wooclap tab, same button there.
+- Question 1 chart, live. If it shows a login, log in inside the frame once (done in the pre-show test, holds for the day). Code showing instead of a chart = alt-tab to the Wooclap tab.
 - D is the honest answer for most rooms, say so warmly if D wins
 - Bridge into the spine, name what just happened: "Notice what I just did. I asked what you'd SAY. The butcher's email showed what people DO."
 :::
@@ -484,7 +484,7 @@ wooclap.com · SRCIDYA · 30 seconds
 ```
 
 ::: {.notes}
-- Question 2 live in this frame. Reveal with the diagram button (show answers). Blank frame = alt-tab to the Wooclap tab.
+- Question 2 chart, live. Code showing instead of a chart = alt-tab to the Wooclap tab.
 - Reveal, react to the room's split in one sentence, then the price of each, these are scenario facts not session data:
 - A pulled the cable: encryption stops on that host. You keep the disk and the logs. What you lose is the live picture, so in round 2 you can't say whether they're still inside anywhere else.
 - B isolated the file server: you contained the spread, not the source. Round 2 you still don't know how they got in, and someone tells citizen services at 09:00 anyway.
