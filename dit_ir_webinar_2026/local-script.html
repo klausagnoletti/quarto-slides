@@ -13,6 +13,17 @@
    to load. */
 window.addEventListener('load', function () {
   if (typeof Reveal === 'undefined') return;
+  /* Logo, slide number and menu button are laid out by Quarto/reveal in
+     SCREEN pixels outside the scaled .slides box, so their size relative to
+     the content and their distance from the slide edge changed with every
+     screen resolution and aspect ratio (found 09-09-2026). Re-parent them
+     into .slides so reveal's scale applies; local-style.html pins them in
+     slide coordinates. */
+  var slidesBox = document.querySelector('.reveal .slides');
+  ['.slide-logo', '.slide-number', '.slide-menu-button'].forEach(function (sel) {
+    var el = document.querySelector('.reveal > ' + sel);
+    if (el && slidesBox) slidesBox.appendChild(el);
+  });
   function mount(section) {
     /* from file:// Chromium paints cross-site frames as a blank white page;
        leave the box empty so its built-in code/cue stays visible */

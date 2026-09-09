@@ -216,4 +216,10 @@
 .reveal section.spotlight .seat-table .s1 .chair { stroke: #FFC800; fill: rgba(255,200,0,.12); }
 .reveal section.spotlight .seat-table .s1 .icon { stroke: #FFC800; }
 .reveal section.spotlight .seat-table .s1 .lbl { fill: #F8F8FA; }
+
+/* Deck chrome pinned in slide space (1050x700): re-parented into .slides by
+   local-script.html so it scales with the content instead of the screen. */
+.reveal .slides > .slide-logo { position: absolute; left: auto; top: auto; right: 0; bottom: 0; height: 26px; max-height: none; width: auto; z-index: 20; }
+.reveal .slides > .slide-number { position: absolute; left: auto; bottom: auto; top: 6px; right: 0; font-size: 9px; padding: 4px 6px; z-index: 20; }
+.reveal .slides > .slide-menu-button { position: absolute; right: auto; top: auto; left: 0; bottom: 0; font-size: 18px; z-index: 20; }
 </style>
