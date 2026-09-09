@@ -33,21 +33,23 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 :::
 
 ::: {.notes}
-- PRE-SHOW CHECK (before Carlos starts): deck open at http://localhost:8765 via serve.sh, not the file. Wooclap tab: logged in, "Start event" clicked, projected screen (QR + code) up. Deck slide 6 frame logged in (log in inside the frame if it asks). Slide 32 site loads. Second screen: Wooclap tab.
-- Silent, on camera. Carlos runs welcome + scripted intro (his card, anonymized clients)
-- Nod at TV2 / DEF CON mentions, nothing more
+- PRE-SHOW: deck on http://localhost:8765 (serve.sh), not file
+- Wooclap tab: logged in, Start event, QR screen up
+- Slide 6 frame logged in; slide 33 site loads
+- [SILENT] Carlos: welcome + scripted intro
+- Nod at TV2 / DEF CON, nothing more
 - Never "30 years in infosec"
 :::
 
 ## {background-image="images/klaus-cats.jpg" background-size="cover" background-position="center"}
 
 ::: {.notes}
-- 30-45s max, icebreaker tone, before anything else starts
-- Chat: "If you have black cats or dogs at home, put it in the chat."
-- Copenhagen; wife + two cats, we took in off the street, siblings, both black
-- 20 years in IT security
-- Short on the career: consultant in vulnerability management, advisory, and incident response → founder of KbhSEC → creator of Malware & Monsters
-- Bridge straight into the cold open, no "and now for today's topic"
+- [30-45s] icebreaker tone
+- [CHAT] "Black cats or dogs at home? Put it in the chat."
+- Copenhagen · wife · 2 black cats, siblings, off the street
+- 20 years IT security
+- Consultant (vuln mgmt, advisory, IR) → KbhSEC founder → M&M creator
+- Straight into cold open, no "today's topic"
 :::
 
 ## {.vcenter background-image="images/hero-december-desk.jpg" background-opacity="0.4" background-size="cover"}
@@ -55,10 +57,10 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 [December. An email from the butcher.]{.hero-line}
 
 ::: {.notes}
-- Memorized 90s, in medias res, no "back when I made a documentary"-preamble
-- Beats: municipality · cheap Christmas meat · Christmas gift-basket raffle · people click
-- The link is DEAD → they troubleshoot it, ask colleagues, try again
-- Slow down on: they troubleshoot the attacker's link FOR him
+- [MEMORIZED 90s] in medias res, no documentary preamble
+- Beats: municipality · cheap Christmas meat · gift-basket raffle · people click
+- Link DEAD → they troubleshoot, ask colleagues, retry
+- [SLOW] they troubleshoot the attacker's link FOR him
 :::
 
 ## {.vcenter background-image="images/hero-december-desk.jpg" background-opacity="0.18" background-size="cover"}
@@ -66,9 +68,10 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 [Everyone clicks. The question is what happens after.]{.hero-line style="font-size:2.4em;"}
 
 ::: {.notes}
-- Pause before advancing, let it sit 2s
-- This is the frame for the entire hour
-- It's not realistic to expect that anyone always spots a phishing attempt. Not even me. And especially not now, when AI makes it cheap to run large-scale targeted phishing.
+- [PAUSE 2s] before advancing
+- Frame for the whole hour
+- Nobody always spots phishing, not me either
+- AI makes targeted phishing cheap
 :::
 
 ## When did you last PRACTICE your incident response plan? {.vcenter}
@@ -85,12 +88,12 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 ```
 
 ::: {.notes}
-- Say the code twice, slowly: "wooclap dot com, S R C I D Y A". Leave it up a full 30s, the stream runs 20 to 60s behind you.
-- Push question 1 to their phones: arrow right in the Wooclap tab. Phones show no tally.
-- Next slide shows the chart by itself. React unscripted, ONE sentence, whatever it is.
-- ABORT: if the join page is not live, this becomes a rhetorical question: "Hands up in your own head. Most rooms land on D."
-- D is the honest answer for most rooms, say so warmly if D wins
-- Fallback if it lands oddly: "What goes wrong in an incident is rarely that people don't know enough. It's that they're certain of something wrong, and manage to act on it."
+- [SAY TWICE, SLOW] "wooclap dot com, S R C I D Y A"
+- [CLICK Wooclap arrow right] pushes Q1 to phones
+- Hold 30s: stream lags 20-60s. Phones show no tally
+- Next slide: chart appears by itself. React ONE sentence
+- ABORT (join page dead): rhetorical, "Most rooms land on D"
+- D wins → warm, it's the honest answer
 :::
 
 ## {.vcenter}
@@ -100,9 +103,9 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 ```
 
 ::: {.notes}
-- Question 1 chart, live. Code showing instead of a chart = alt-tab to the Wooclap tab.
-- D is the honest answer for most rooms, say so warmly if D wins
-- Bridge into the spine, name what just happened: "Notice what I just did. I asked what you'd SAY. The butcher's email showed what people DO."
+- Chart live. Code showing instead → alt-tab Wooclap
+- D wins → warm, honest answer
+- [BRIDGE] "Notice what I just did. I asked what you'd SAY. The butcher's email showed what people DO."
 :::
 
 ## {.vcenter .lattice}
@@ -112,11 +115,11 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 :::
 
 ::: {.notes}
-- [SLOW] Say it straight: "The result of that poll is not the point. I didn't ask to learn your answer. I asked to show you what a questionnaire gives you: what people SAY. Nothing about what they DO."
-- Verbatim: "Surveys tell you what people SAY they'd do. An exercise shows you what they DO. That's what this hour is about."
-- One observable, so the survey point is never bare: "DO is something you can time. How many minutes from the first strange call to the moment someone with a mandate is on the line."
-- Contract, what they get, not what we cover: "You'll play one round yourselves, vote on a real decision, and leave with a free guide you can run with your own team next week."
-- Callback target for the SAY ≠ DO close after Q&A, identical words
+- [SLOW] Poll result ≠ the point. Asked to SHOW what a questionnaire gives: SAY, not DO
+- [VERBATIM] "Surveys tell you what people SAY they'd do. An exercise shows you what they DO. That's what this hour is about."
+- Observable: DO is timeable. First strange call → someone with a mandate on the line, in minutes
+- Contract: play 1 round · vote a real decision · free guide for next week
+- [CALLBACK] same words close the hour after Q&A
 :::
 
 ## An exercise can also end up as SAY. {.vcenter}
@@ -128,11 +131,12 @@ Not WHETHER you practice. HOW.
 {{< include illus/bubbles.qmd >}}
 
 ::: {.notes}
-- So the question isn't whether you practice. It's whether the exercise changes what people DO.
-- A slideshow read aloud with a signature at the end is SAY with extra steps.
-- Same trap in phishing tests: the click rate is a dial. Whoever writes the test sets the difficulty, so the number measures the tester, not the staff.
-- Gotcha tests cost trust, and one click is enough anyway. Back to the butcher: the interesting part starts AFTER the click.
-- ~35s, master frame for the next ten minutes
+- Not WHETHER, but does it change what people DO
+- Slideshow + signature = SAY with extra steps
+- Phishing tests: click rate is a dial, measures the tester
+- Gotcha tests cost trust; one click is enough
+- Butcher: interesting part starts AFTER the click
+- [~35s] master frame for next 10 min
 :::
 
 ## IT is not a cost. IT is a precondition. {.vcenter}
@@ -140,9 +144,12 @@ Not WHETHER you practice. HOW.
 {{< include illus/foundation.qmd >}}
 
 ::: {.notes}
-- Verbatim: "Many organizations don't see themselves as IT companies. They see IT as a cost to be kept down, not as the precondition for everything else they do. So leadership aims for the lowest possible security. Right up until the first ransomware attack."
-- Beat of pause after "ransomware attack", then straight into compliance: the cost mindset is WHY orgs do the NIS2 minimum
-- ~45s
+- Orgs don't see themselves as IT companies
+- IT = cost to keep down, not precondition
+- Leadership aims for lowest possible security
+- [BEAT] "…right up until the first ransomware attack."
+- → cost mindset is WHY orgs do the NIS2 minimum
+- [~45s]
 :::
 
 ## NIS2 · ISO 27001: Practice is MANDATORY. The format isn't. {.vcenter}
@@ -157,18 +164,18 @@ Not WHETHER you practice. HOW.
 {{< include illus/stamp.qmd >}}
 
 ::: {.notes}
-- Compliance as diagnosis, ONCE, here, never again
+- Compliance as diagnosis, ONCE, never again
 - Chain: boring → no engagement → no learning → no point
-- Payoff, flat, unsold: people who hate exercises spend all their energy finding fault with the exercise; make it engaging and they forget to resist
-- The duty creates the obligation; the game turns the obligation into competence
+- [FLAT, unsold] exercise-haters spend energy faulting the exercise; engaging → they forget to resist
+- Duty creates obligation; game turns it into competence
 :::
 
 ## The plan only lives on paper. {.vcenter background-image="images/hero-dead-document.jpg" background-opacity="0.35" background-size="cover"}
 
 ::: {.notes}
-- Response plan from five years ago, lives in SharePoint
-- Ransomware hits, there's no SharePoint
-- "You shouldn't throw the plan out. The exercise is what gets the plan living in people's heads instead of in SharePoint."
+- Plan from 5 years ago, lives in SharePoint
+- Ransomware hits → no SharePoint
+- [VERBATIM] "You shouldn't throw the plan out. The exercise is what gets the plan living in people's heads instead of in SharePoint."
 :::
 
 ## {.vcenter}
@@ -180,13 +187,13 @@ Pulse 200. IQ&nbsp;50.
 {{< include illus/ecg.qmd >}}
 
 ::: {.notes}
-- In the middle of an incident, your pulse shoots up to 200, and your IQ crashes to 50.
-- What you've PRACTICED is all you've got.
-- That's not the moment to invent a new process from scratch.
-- It takes two things: that you've trained for it, and that you have a playbook that actually works.
-- Few words. Clear images. Not twenty dense pages.
-- It needs to be skimmable at three in the morning, when it's on fire.
-- That's why the plan needs to be PRACTICED, not read.
+- Incident: pulse 200, IQ 50
+- [SLOW] "What you've PRACTICED is all you've got."
+- Not the moment to invent a process
+- Two things: trained + playbook that works
+- Few words, clear images, not 20 pages
+- Skimmable at 03:00 when it's on fire
+- → plan PRACTICED, not read
 :::
 
 ## {.vcenter .lattice}
@@ -196,8 +203,8 @@ WHY IS THIS TRAINING DIFFERENT?
 :::
 
 ::: {.notes}
-- Breathe here, closes the whole training-theater critique section
-- Nothing to say on this slide, let the question sit 2s and advance
+- [BREATHE] closes the training-theater critique
+- [SILENT 2s] then advance
 :::
 
 ## {.vcenter}
@@ -209,11 +216,11 @@ WHY IS THIS TRAINING DIFFERENT?
 {{< include illus/instinct.qmd >}}
 
 ::: {.notes}
-- A format that can't produce instinct isn't training. It's information.
-- You don't learn security by reading about it. You learn it by making decisions under pressure. Games, stories, simulation.
-- Callback: "What you've PRACTICED is all you've got" (the Pulse 200 slide), this slide names WHY that's true
-- Plant the closer here, verbatim: "Engagement isn't decoration. It's the mechanism. A format nobody engages with teaches nothing. That's why fun matters, and I'll come back to that."
-- Bridge: "And that's why the FORMAT matters. Not gamification. Game-based learning."
+- No instinct = information, not training
+- Learn by decisions under pressure: games, stories, simulation
+- [CALLBACK] "What you've PRACTICED is all you've got" → this is WHY
+- [PLANT closer, VERBATIM] "Engagement isn't decoration. It's the mechanism. A format nobody engages with teaches nothing. That's why fun matters, and I'll come back to that."
+- [BRIDGE] FORMAT matters. Not gamification. Game-based learning
 :::
 
 ## {.vcenter}
@@ -228,19 +235,31 @@ WHY IS THIS TRAINING DIFFERENT?
 :::
 
 ::: {.notes}
-- Verbatim: "This isn't gamification: points, badges, and 'first team done gets cake'. Motivation theater. The game itself is what teaches you something."
-- No citation on the slide; Gee/Simkins stay pocketed for Q&A
-- Must land BEFORE any mechanics are shown
+- [VERBATIM] "This isn't gamification: points, badges, and 'first team done gets cake'. Motivation theater. The game itself is what teaches you something."
+- Gee / Simkins pocketed for Q&A
+- Lands BEFORE any mechanics
 :::
 
 ## You're scored on your reasoning. Not on the right answer. {.vcenter}
 
+::: {.kicker}
+MALWARE & MONSTERS · malwareandmonsters.com
+:::
+
 {{< include illus/path.qmd >}}
 
+::: {.chip-note}
+Free to use. Pay only when you charge for it.
+:::
+
 ::: {.notes}
-- The promise before any mechanics: nobody is graded on guessing the true state. You're graded on how you reasoned with what you had.
-- One clause, max. This is what makes it safe to be wrong at the table, and safe to say "I'm not sure" out loud.
-- Callback target for the live vote later
+- [POINT kicker] "This is my game. Malware & Monsters."
+- Where: malwareandmonsters.com, everything downloadable
+- License: free to run in-house · pay only if you charge for it (CC BY-NC-SA)
+- Promise before mechanics: nobody graded on guessing the truth
+- Graded on reasoning with what you had, ONE clause
+- Safe to be wrong · safe to say "I'm not sure"
+- [CALLBACK target] live vote later
 :::
 
 ## An incident has many seats {.vcenter}
@@ -248,12 +267,12 @@ WHY IS THIS TRAINING DIFFERENT?
 {{< include illus/seat-table.qmd >}}
 
 ::: {.notes}
-- The six M&M roles, one click each: Detective, Protector, Tracker, Communicator, Crisis Manager, Threat Hunter
-- Technical people overlook the soft seats (Communicator, Crisis Manager), they decide whether the organization keeps a level head
-- Non-technical welcome: a method, not a specialty
-- Many of you KNOW what needs doing; the hard part is translating that for leadership
-- Rhetorical, answer it yourself: "How many roles does your plan have? For most of you, two. IT, and whoever signs. An incident has six."
-- Straight into "Think with a head that isn't yours"
+- [CLICK ×6] Detective · Protector · Tracker · Communicator · Crisis Manager · Threat Hunter
+- Tech people overlook soft seats (Communicator, Crisis Manager) = keeping a level head
+- Non-technical welcome: method, not specialty
+- Hard part: translating for leadership
+- [RHETORICAL, self-answer] "How many roles does your plan have? For most of you, two. IT, and whoever signs. An incident has six."
+- → straight into "head that isn't yours"
 :::
 
 ## Think with a head that isn't yours {.vcenter}
@@ -266,9 +285,9 @@ WHY IS THIS TRAINING DIFFERENT?
 {{< include illus/two-heads.qmd >}}
 
 ::: {.notes}
-- Attacker clause kept light, one sentence
-- The technician plays Communicator → empathy for that seat under pressure
-- Resilience: what if the person who always takes X is out sick that day? That's why roles rotate
+- Attacker clause light, one sentence
+- Technician plays Communicator → empathy under pressure
+- Resilience: the X-person is sick → roles rotate
 :::
 
 ## If kids can play it … {.vcenter background-color="#111B2A"}
@@ -278,9 +297,9 @@ WHY IS THIS TRAINING DIFFERENT?
 :::
 
 ::: {.notes}
-- A nonprofit in Seattle trains kids on my framework, summer camp, beginner scenario
-- Reassurance: if kids can, so can your crisis team; it's just about tuning the scenario
-- Punchline IS the pivot, verbatim: "… so can your crisis team. Now we do it."
+- Seattle nonprofit, summer camp, beginner scenario, my framework
+- If kids can, so can your crisis team: tune the scenario
+- [PIVOT, VERBATIM] "…so can your crisis team. Now we do it."
 :::
 
 ## {.vcenter .spotlight}
@@ -292,11 +311,11 @@ WHY IS THIS TRAINING DIFFERENT?
 {{< include illus/seat-table-static.qmd >}}
 
 ::: {.notes}
-- Verbatim: "What follows is a SIMULATED round. I play every seat. You do nothing yet, just watch."
-- Nobody is pulled in until the vote later; say so, it lowers the guard
-- [POINT] Detective first, doubt-first d20 on the first claim
-- Watch for one thing: "how sure people sound versus what turns out to be true"
-- About five minutes, then the scenario is yours
+- [VERBATIM] "What follows is a SIMULATED round. I play every seat. You do nothing yet, just watch."
+- Nobody pulled in until the vote, say so
+- [POINT] Detective first, doubt-first d20 on first claim
+- Watch ONE thing: how sure they sound vs what turns out true
+- ~5 min, then the scenario is yours
 :::
 
 ## MALWARE & MONSTERS {.vcenter}
@@ -320,12 +339,29 @@ Analog · 3–8 players + one Incident Master
 :::
 
 ::: {.notes}
-- Three rounds, verbatim: "What are we looking at? How bad is it? Containment."
-- The IM isn't a player; the IM runs the scenario
-- [POINT] "This one is GaboonGrabber, the first malmon ever. A trojan that dresses up as a legitimate software update."
-- Malmons (~25s): malware "personified" as creatures, makes something abstract concrete
+- 3 rounds: "What are we looking at? How bad is it? Containment."
+- IM runs the scenario, isn't a player
+- [POINT] GaboonGrabber, first malmon ever, trojan posing as software update
 - Containment, NEVER "and then we fix it"
-- Forward-pointer: "…and if there are fifteen of you, there's a variant of the same game. I'll come back to that."
+:::
+
+## MALMONS {.vcenter}
+
+::: {style="width:100%; max-width:240px; margin:0 auto 0.6em;"}
+![](images/malmon-logo.png){style="width:100%; height:auto; display:block;"}
+:::
+
+::: {.feature-grid style="--fg-cols:2;"}
+- Malware with a face
+- Created by Lena Yu
+:::
+
+::: {.notes}
+- Malmons = malware as creatures
+- Lena Yu created them: malware tangible, with a face
+- Abstract → concrete; families, weaknesses, behaviour
+- Lena owns the malmon IP → why M&M costs money only when you earn money off it
+- [~25s] then into the round
 :::
 
 ## {.vcenter background-color="#05070c"}
@@ -348,7 +384,7 @@ Analog · 3–8 players + one Incident Master
 :::
 
 ::: {.notes}
-- Read as IM, in character: "You're the Communicator. It's 03:20. Monitoring has sent three alerts in 40 minutes. One user has called in about a strange screen. You know three things, and two of them are wrong. You just don't know which two."
+- [IM VOICE, VERBATIM] "You're the Communicator. It's 03:20. Monitoring has sent three alerts in 40 minutes. One user has called in about a strange screen. You know three things, and two of them are wrong. You just don't know which two."
 - Never a clean "it's ransomware" label
 :::
 
@@ -362,9 +398,11 @@ Analog · 3–8 players + one Incident Master
 {{< include illus/two-decisions.qmd >}}
 
 ::: {.notes}
-- Both real decisions, only ONE involves a die
-- Why: pulling logs is an action in the world, so it can fail: roll. Deciding whether to call is talking: free. That distinction is the next slide.
-- Character-color line (~10s, cut-first if running long): the characters are deliberately stereotyped; the intro round is where strangers stop performing competence
+- Both real decisions, only ONE has a die
+- Logs = action in the world → can fail → roll
+- Call or not = talking → free
+- → next slide is that distinction
+- [CUT FIRST if long] characters stereotyped; strangers stop performing competence
 :::
 
 ## Talking is free. Acting costs a roll. {.vcenter}
@@ -390,13 +428,13 @@ Analog · 3–8 players + one Incident Master
 ::::
 
 ::: {.notes}
-- Open with the thesis: "Talking is free. Acting costs a dice roll. And what you did beforehand loads the die."
-- Free doesn't mean irrelevant. The talking is exactly what you're scored on. The die only decides how clean the trail ends up.
-- Doubt-first: no doubt = it just succeeds, no roll
-- Bands on click: "Easy needs 5 or more, medium 10, hard 15. Ask a good question first and the IM drops it a band. That's how what you did beforehand loads the die."
-- Success example: "the log shows a certificate error and encrypted traffic to an unknown IP", cleaner, still incomplete
-- NEVER CUT this beat
-- Exit, verbatim: "That is the whole machinery. Talking, one roll, a price. Now the scenario is yours."
+- [VERBATIM] "Talking is free. Acting costs a dice roll. And what you did beforehand loads the die."
+- Free ≠ irrelevant: talking is what you're scored on; die = how clean the trail
+- Doubt-first: no doubt → succeeds, no roll
+- [CLICK bands] Easy 5+ · Medium 10+ · Hard 15+; good question → IM drops a band
+- Success example: cert error + encrypted traffic to unknown IP. Cleaner, still incomplete
+- NEVER CUT
+- [EXIT, VERBATIM] "That is the whole machinery. Talking, one roll, a price. Now the scenario is yours."
 :::
 
 ## Monday 08:40 {.vcenter}
@@ -412,7 +450,8 @@ Analog · 3–8 players + one Incident Master
 {{< include illus/clock.qmd >}}
 
 ::: {.notes}
-- 45s read, stakes language, the mayor, not the server
+- [SAY] Same incident. Five hours later. Now it's yours
+- [45s READ] stakes language: the mayor, not the server
 - Straight into the poll, no meta-talk
 :::
 
@@ -431,10 +470,11 @@ wooclap.com · SRCIDYA · 30 seconds
 {{< include illus/countdown.qmd >}}
 
 ::: {.notes}
-- Push question 2 to their phones now: arrow right in the Wooclap tab. Same code as before, say it once.
-- Verbatim: "Don't think. First instinct, one letter. The stream runs behind me, so I'll wait." Then click: the ring starts. Count 20, 10, 5 yourself.
-- Next slide shows the chart by itself.
-- ABORT: join page dead = "Pick one in your head. Hold it." and go straight to the prices.
+- [CLICK Wooclap arrow right] pushes Q2. Same code, say once
+- [VERBATIM] "Don't think. First instinct, one letter. The stream runs behind me, so I'll wait."
+- [CLICK slide] ring starts. Count 20 · 10 · 5 yourself
+- Next slide: chart by itself
+- ABORT (join dead): "Pick one in your head. Hold it." → prices
 :::
 
 ## {.vcenter}
@@ -444,17 +484,17 @@ wooclap.com · SRCIDYA · 30 seconds
 ```
 
 ::: {.notes}
-- Question 2 chart, live. Code showing instead of a chart = alt-tab to the Wooclap tab.
-- Reveal, react to the room's split in one sentence, then the price of each, these are scenario facts not session data:
-- A pulled the cable: encryption stops on that host. You keep the disk and the logs. What you lose is the live picture, so in round 2 you can't say whether they're still inside anywhere else.
-- B isolated the file server: you contained the spread, not the source. Round 2 you still don't know how they got in, and someone tells citizen services at 09:00 anyway.
-- C called leadership first: the decision now has a signature. Round 2 it's 09:25, the mayor has an opinion, and the drive has been encrypting for 45 minutes.
-- Landing: "All three are defensible. None is free. Whoever chose A has to say it out loud to whoever chose B."
-- Trap, spoken: "Nobody chose 'wait for more information'. Good. That's also a choice, and its price is the drive still encrypting while you wait."
-- Verbatim: "You don't get to avoid the loss. You get to pick which one you can defend at 09:00."
-- Landing line: "Everyone here formed an opinion in thirty seconds. At a real table you have to defend it out loud. To the citizens standing in Citizen Services at nine o'clock."
-- Callback: "And remember, you're scored on the reasoning. Not on the letter."
-- Bridge: "At a real table there is one more thing on the table before anyone acts."
+- Chart live. Code showing → alt-tab Wooclap
+- React to split, ONE sentence, then prices (scenario facts):
+- A cable: encryption stops, disk + logs kept; lose live picture, R2 can't say if they're still inside
+- B isolate: spread contained, not source; R2 no entry point, citizen services told at 09:00 anyway
+- C leadership: decision has a signature; R2 09:25, mayor has opinion, drive encrypting 45 min
+- [LANDING] "All three are defensible. None is free."
+- Trap: nobody chose "wait": also a choice, price = drive still encrypting
+- [VERBATIM] "You don't get to avoid the loss. You get to pick which one you can defend at 09:00."
+- 30 seconds, half the facts, an opinion; at a table you defend it out loud
+- [CALLBACK] scored on the reasoning, not the letter
+- [BRIDGE] one more thing on a real table before anyone acts
 :::
 
 ## THE PRESUMPTION DECK {.vcenter}
@@ -462,16 +502,15 @@ wooclap.com · SRCIDYA · 30 seconds
 ::: {.presumption-cards}
 ![](images/type-ransomware.png){.fragment .fx}
 ![](images/confidence-confident.png){.fragment .fx}
-![](images/readiness-investigating.png){.fragment .fx}
 :::
 
 ::: {.notes}
-- Opener, verbatim: "You just picked a letter in thirty seconds. At a real table you also put a card down, face down: what you think this is and how sure you are. That is the part a poll cannot do."
-- Round 1 ends: each card is placed FACE DOWN, what do I think this is, and how confident am I?
-- Cards are flipped SIMULTANEOUSLY
-- Agreement + high confidence: play continues. A split table, or one person confident and wrong: the game STOPS, what did you SEE, what did you ASSUME?
-- Say it out loud, this is the pairing: "That confidence card is the number your questionnaire is trying to measure. Here it's measured against what actually happened."
-- Then next slide. Do not talk over the flip.
+- [VERBATIM] "You just picked a letter in thirty seconds. At a real table you also put a card down, face down: what you think this is and how sure you are. That is the part a poll cannot do."
+- Round 1 ends: card FACE DOWN, what is it + how sure
+- Flip SIMULTANEOUSLY
+- Agree + confident → play on. Split, or confident + wrong → STOP: what did you SEE, what did you ASSUME
+- [SAY] confidence card = the number your questionnaire tries to measure, here against what happened
+- Next slide. Don't talk over the flip
 :::
 
 ## {.vcenter}
@@ -483,10 +522,10 @@ wooclap.com · SRCIDYA · 30 seconds
 {{< include illus/gauge.qmd >}}
 
 ::: {.notes}
-- [SILENCE 3s] after the line, nobody fills it
-- Verbatim, slow: "The worst thing that can happen is being totally confident about something that's wrong, and everyone else following along, because you seem sure."
-- Seattle callback (~15s): even the kids spent their first energy on finding WHO clicked, instead of solving the incident
-- Culture bridge: "What you should take home isn't just 'be less certain'. It's: create a space where it's safe to say 'I'm not sure' out loud, before reality forces you to."
+- [SILENCE 3s] after the line
+- [SLOW, VERBATIM] "The worst thing that can happen is being totally confident about something that's wrong, and everyone else following along, because you seem sure."
+- Seattle [~15s]: kids hunted WHO clicked instead of solving
+- [BRIDGE] not "be less certain" → make "I'm not sure" safe to say out loud, before reality forces it
 :::
 
 ## A wrong theory costs time. {.vcenter}
@@ -494,11 +533,11 @@ wooclap.com · SRCIDYA · 30 seconds
 {{< include illus/hourglass.qmd >}}
 
 ::: {.notes}
-- Setup, verbatim: "A wrong theory doesn't lose the game. It costs time."
-- Close the round with the consequence, concrete: "This table played Ransomware, Confident. It was credential theft. Round 2 they spent twenty minutes restoring backups while the attacker still had the domain admin account."
-- The table's conclusion, right or wrong, IS the working theory in round 2
-- Exactly like reality
-- Bridge: "Confidence against outcome. That is one of four things an exercise measures."
+- [VERBATIM] "A wrong theory doesn't lose the game. It costs time."
+- Consequence: table played Ransomware, Confident. It was credential theft. R2: 20 min restoring backups, attacker still had domain admin
+- → that is how you get to Monday 08:40
+- Table's conclusion IS the R2 working theory, like reality
+- [BRIDGE] "Confidence against outcome. That is one of four things an exercise measures."
 :::
 
 ## What an exercise measures. {.vcenter}
@@ -513,12 +552,12 @@ wooclap.com · SRCIDYA · 30 seconds
 {{< include illus/form.qmd >}}
 
 ::: {.notes}
-- Verbatim: "This is what an exercise measures. A questionnaire can't."
-- This is the replacement evidence, the thing you hand leadership INSTEAD of the questionnaire
-- Each one is observed, not stated: a clock, a phone log, a card on the table
-- The last one is the presumption card, they've just seen it
-- Structured debrief, 5 to 20 minutes, is where these get written down. That's the artifact.
-- Starter guide: free, malwareandmonsters.com, full CTA waits till the end
+- [VERBATIM] "This is what an exercise measures. A questionnaire can't."
+- Replacement evidence: hand leadership THIS, not the questionnaire
+- Observed, not stated: a clock, a phone log, a card
+- Last one = the presumption card, just seen
+- Debrief 5-20 min writes them down = the artifact
+- Starter guide: free, malwareandmonsters.com; full CTA at the end
 :::
 
 ## Free. No email gate. {.vcenter}
@@ -534,10 +573,10 @@ wooclap.com · SRCIDYA · 30 seconds
 :::
 
 ::: {.notes}
-- Verbatim: "Free. No email gate. You can run the first round next week."
-- 58 scenario cards across 14 malmon families
-- This starter guide is what the QR code at the end points to
-- OPTIONAL: if time and screen-share are behaving, advance to the live site (next slide, uncounted). If not, skip straight to Q&A.
+- [VERBATIM] "Free. No email gate. You can run the first round next week."
+- 58 scenario cards · 14 malmon families
+- QR at the end → this starter guide
+- OPTIONAL: screen-share behaving → next slide (live site). Else → Q&A
 :::
 
 ## The free starter guide, live {.vcenter visibility="uncounted"}
@@ -554,12 +593,12 @@ The actual site, not a mockup.
 :::
 
 ::: {.notes}
-- Popup ("New to Malware & Monsters?"): dismiss it the instant it appears, before narrating
-- [30 SEC MAX] One sentence, cursor to the nav, click straight to the starter guide, then back. No general scrolling.
-- Say: "This is the actual site. Starter guide, 3 to 8 colleagues, 90 minutes."
-- Fallback if the page is slow or dead: "Trust me, it's live. The address is on the last slide." No troubleshooting on stream.
-- OPTIONAL live tour, ~60-90s: homepage → starter guide → a scenario card. Skip if anything is flaky.
-- Focus gotcha: mouse clicks go to the SITE, use keyboard to advance slides, click the slide edge first if arrows stop responding
+- Popup "New to Malware & Monsters?" → dismiss instantly
+- [30s MAX] cursor to nav → starter guide → back. No scrolling
+- [SAY] "This is the actual site. Starter guide, 3 to 8 colleagues, 90 minutes."
+- Dead/slow: "Trust me, it's live. The address is on the last slide." No troubleshooting
+- OPTIONAL [60-90s] home → starter guide → a scenario card. Skip if flaky
+- Focus: clicks go to the SITE; keyboard advances, click slide edge first
 :::
 
 ## QUESTIONS? {.vcenter background-image="images/hero-december-desk.jpg" background-opacity="0.14" background-size="cover"}
@@ -569,14 +608,14 @@ malwareandmonsters.com
 :::
 
 ::: {.notes}
-- Carlos runs it, seeded order:
-- (1) NIS2/ISO fit → the duty already exists; this is the format that turns duty into competence
-- (2) how technical do you need to be → a method, not a specialty
-- (3) does it scale? → repeated small tables OR a large-group format (12-15 across three teams), anonymized example, never session content
-- For those caught between GRC and operations: I've also made a small card deck, the Risk Deck, that gives technically-minded security people a language for risk, business impact, and business jargon. One breath.
-- Self-answered: "How do you get started?" → free starter guide, 3-8 colleagues, 90 minutes. CTA-priming: "…and if you'd rather have a facilitated first session than build the exercise yourselves, that exists too."
-- Pocket answers: wrong guess in round 1 · key person absent (role-keyed clues) · evidence (Frontiers + Gee + Simkins) · "can it test our REAL plan?" (a different format, against your BCP)
-- Carlos cuts Q&A at 14:54 no matter what: the three closing slides plus the Monday chat ask need five minutes
+- Carlos moderates, seeded order (read chat yourself if he's silent):
+- 1 NIS2/ISO fit → duty exists; this format turns duty into competence
+- 2 how technical → method, not specialty
+- 3 scale? → repeated small tables OR large-group format (12-15, three teams), anonymized
+- GRC vs ops: Risk Deck, small card deck, risk + business language. One breath
+- Self-answered "how to start" → free guide, 3-8 colleagues, 90 min; facilitated first session exists
+- Pocket: wrong guess R1 · key person absent (role-keyed clues) · evidence (Frontiers, Gee, Simkins) · test our REAL plan? (different format, vs your BCP)
+- HARD STOP 14:54: three closing slides + chat ask need 5 min
 :::
 
 ## {.vcenter .lattice}
@@ -586,9 +625,9 @@ malwareandmonsters.com
 :::
 
 ::: {.notes}
-- [CARLOS hands back, one breath, then:]
-- Verbatim, identical to the opening: "Surveys tell you what people SAY they'd do. An exercise shows you what they DO."
-- Short pause. "You saw the difference yourselves. Right there, in the vote. Thirty seconds, half the facts, and an opinion."
+- [HANDBACK, one breath]
+- [VERBATIM, same as opening] "Surveys tell you what people SAY they'd do. An exercise shows you what they DO."
+- [PAUSE] "You saw the difference yourselves. Right there, in the vote. Thirty seconds, half the facts, and an opinion."
 :::
 
 ## MONDAY MORNING {.vcenter}
@@ -602,10 +641,11 @@ malwareandmonsters.com
 {{< include illus/stairs.qmd >}}
 
 ::: {.notes}
-- First ask: "Type 1, 2 or 3 in the chat. Which one are you doing Monday?" Glance at the chat yourself, name what you see in one sentence. Quiet chat: "Whatever you typed, that is your Monday."
-- Transfer check, verbatim: "And write one more thing: did what you just saw make you think 'WE should fix this', or 'I need to fix this'? That difference is the whole point."
-- Rung 3 = pure commitment, NO scale claim here (lives in seeded Q3)
-- Budget angle, one line on rung 2: "Run it once with the real team and leadership sees the gap themselves. That does more for next year's budget than any report."
+- [CHAT] "Type 1, 2 or 3. Which one are you doing Monday?"
+- Glance chat, name the spread, ONE sentence. Quiet: "Whatever you typed, that is your Monday."
+- [CHAT 2, VERBATIM] "Did what you just saw make you think 'WE should fix this', or 'I need to fix this'? That difference is the whole point."
+- Rung 3 = commitment only, NO scale claim
+- Rung 2 budget: leadership sees the gap themselves > any report
 :::
 
 ## {.vcenter}
@@ -621,6 +661,6 @@ malwareandmonsters.com
 :::
 
 ::: {.notes}
-- Final spoken line, then stop: "…And one last thing: fun isn't unserious. It's effective."
+- [FINAL, VERBATIM] "…And one last thing: fun isn't unserious. It's effective."
 - Slide stays up through goodbye
 :::
