@@ -132,7 +132,9 @@ Not WHETHER you practice. HOW.
 
 ::: {.notes}
 - Not WHETHER, but does it change what people DO
-- Slideshow + signature = SAY with extra steps
+- "Tabletop" covers everything: slideshow read aloud, signature at the end = SAY with extra steps
+- Same label, opposite exercise: one where people argue, decide, get it wrong, feel it
+- Difference is not the format name, it is whether anyone had to DECIDE under pressure
 - Phishing tests: click rate is a dial, measures the tester
 - Gotcha tests cost trust; one click is enough
 - Butcher: interesting part starts AFTER the click
@@ -144,11 +146,11 @@ Not WHETHER you practice. HOW.
 {{< include illus/foundation.qmd >}}
 
 ::: {.notes}
-- Orgs don't see themselves as IT companies
-- IT = cost to keep down, not precondition
-- Leadership aims for lowest possible security
+- [FRAME] Why this matters here: the exercise budget comes from how leadership sees IT
+- Orgs don't see themselves as IT companies; a municipality IS one, every service runs on it
+- IT = cost to keep down → security = lowest passable level
 - [BEAT] "…right up until the first ransomware attack."
-- → cost mindset is WHY orgs do the NIS2 minimum
+- → cost mindset is WHY exercises become a minimum compliance tick instead of training
 - [~45s]
 :::
 
@@ -164,10 +166,16 @@ Not WHETHER you practice. HOW.
 {{< include illus/stamp.qmd >}}
 
 ::: {.notes}
-- Compliance as diagnosis, ONCE, never again
+- NIS2 / ISO 27001 both DEMAND regular exercises, neither says HOW
+- Diagnosis: most exercises exist because the auditor asks, so they are built to pass the audit, not to train. Say it once, then leave compliance alone
+- [POINT boxes] the four symptoms of an audit-built exercise:
+- Don't open up: nobody admits "I don't know" in front of the boss
+- Egos clash: IT vs management vs whoever signs, everyone defends their turf
+- "Can't happen here": scenario read as fiction, nobody feels the stakes
+- Fun taboo: serious topic, so it must be boring, so nobody engages
 - Chain: boring → no engagement → no learning → no point
-- [FLAT, unsold] exercise-haters spend energy faulting the exercise; engaging → they forget to resist
-- Duty creates obligation; game turns it into competence
+- [FLAT] exercise-haters spend energy faulting the exercise; engaging → they forget to resist
+- Duty creates the obligation; the game turns it into competence
 :::
 
 ## The plan only lives on paper. {.vcenter background-image="images/hero-dead-document.jpg" background-opacity="0.35" background-size="cover"}
@@ -175,7 +183,9 @@ Not WHETHER you practice. HOW.
 ::: {.notes}
 - Plan from 5 years ago, lives in SharePoint
 - Ransomware hits → no SharePoint
-- [VERBATIM] "You shouldn't throw the plan out. The exercise is what gets the plan living in people's heads instead of in SharePoint."
+- Not anti-plan: the plan is still needed, written down, kept
+- Problem is where it lives: only in SharePoint = nobody remembers it at 03:00
+- [VERBATIM] "Keep the plan. The exercise is what moves it from SharePoint into people's heads."
 :::
 
 ## {.vcenter}
@@ -236,7 +246,6 @@ WHY IS THIS TRAINING DIFFERENT?
 
 ::: {.notes}
 - [VERBATIM] "This isn't gamification: points, badges, and 'first team done gets cake'. Motivation theater. The game itself is what teaches you something."
-- Gee / Simkins pocketed for Q&A
 - Lands BEFORE any mechanics
 :::
 
@@ -271,23 +280,25 @@ Free to use. Pay only when you charge for it.
 - Tech people overlook soft seats (Communicator, Crisis Manager) = keeping a level head
 - Non-technical welcome: method, not specialty
 - Hard part: translating for leadership
-- [RHETORICAL, self-answer] "How many roles does your plan have? For most of you, two. IT, and whoever signs. An incident has six."
+- [RHETORICAL, self-answer] "How many roles does your plan name? Often fewer than you think. An incident has at least six."
 - → straight into "head that isn't yours"
 :::
 
 ## Think with a head that isn't yours {.vcenter}
 
 ::: {.feature-grid style="--fg-cols:2;"}
-- The attacker's
-- Your colleague's
+- A seat you never sit in
+- Your colleague's view of the incident
 :::
 
 {{< include illus/two-heads.qmd >}}
 
 ::: {.notes}
-- Attacker clause light, one sentence
-- Technician plays Communicator → empathy under pressure
-- Resilience: the X-person is sick → roles rotate
+- Point: play the role you would NOT have in a real incident
+- Technician plays Communicator → feels what that seat needs from IT under pressure
+- Manager plays Tracker → learns why "just tell me if it's bad" has no answer yet
+- Result: teamwork. You understand what the others need, before the real day
+- Bonus resilience: the person who always does X is sick → someone has sat there
 :::
 
 ## If kids can play it … {.vcenter background-color="#111B2A"}
@@ -318,6 +329,26 @@ Free to use. Pay only when you charge for it.
 - ~5 min, then the scenario is yours
 :::
 
+## MALMONS {.vcenter}
+
+::: {.feature-grid style="--fg-cols:2;"}
+- Malware with a face
+- Created by Lena Yu
+:::
+
+::: {style="width:100%; max-width:300px; margin:0.4em auto 0;"}
+![](images/gaboongrabber-art.png){style="width:100%; height:auto; display:block;"}
+:::
+
+::: {.notes}
+- Malmons = malware as creatures
+- Lena Yu created them: malware tangible, with a face
+- Abstract → concrete; families, weaknesses, behaviour
+- [POINT] GaboonGrabber, first malmon ever, trojan posing as software update
+- Lena owns the malmon IP → why M&M costs money only when you earn money off it
+- [~25s] then the game itself
+:::
+
 ## MALWARE & MONSTERS {.vcenter}
 
 ::: {.kicker}
@@ -334,34 +365,15 @@ Analog · 3–8 players + one Incident Master
 - 3 · Contain
 :::
 
-::: {style="width:100%; max-width:310px; margin:0.4em auto 0;"}
-![](images/gaboongrabber-art.png){style="width:100%; height:auto; display:block;"}
+::: {style="width:100%; max-width:220px; margin:0.5em auto 0;"}
+![](images/malmon-logo.png){style="width:100%; height:auto; display:block;"}
 :::
 
 ::: {.notes}
 - 3 rounds: "What are we looking at? How bad is it? Containment."
 - IM runs the scenario, isn't a player
-- [POINT] GaboonGrabber, first malmon ever, trojan posing as software update
 - Containment, NEVER "and then we fix it"
-:::
-
-## MALMONS {.vcenter}
-
-::: {style="width:100%; max-width:240px; margin:0 auto 0.6em;"}
-![](images/malmon-logo.png){style="width:100%; height:auto; display:block;"}
-:::
-
-::: {.feature-grid style="--fg-cols:2;"}
-- Malware with a face
-- Created by Lena Yu
-:::
-
-::: {.notes}
-- Malmons = malware as creatures
-- Lena Yu created them: malware tangible, with a face
-- Abstract → concrete; families, weaknesses, behaviour
-- Lena owns the malmon IP → why M&M costs money only when you earn money off it
-- [~25s] then into the round
+- → now one simulated round
 :::
 
 ## {.vcenter background-color="#05070c"}
@@ -605,18 +617,14 @@ The actual site, not a mockup.
 
 ## QUESTIONS? {.vcenter background-image="images/hero-december-desk.jpg" background-opacity="0.14" background-size="cover"}
 
-::: {style="text-align:center; color:var(--accent); font-family:'Bebas Neue',sans-serif; font-size:1.2em;"}
-malwareandmonsters.com
-:::
+```{=html}
+<div class="contact"><div class="contact__lines"><span class="contact__site">relationsec.net</span><span class="contact__mail">klaus@relationsec.net</span><span class="contact__site">malwareandmonsters.com</span></div><div class="contact__qr"><img src="images/qr-linkedin.svg" alt="QR to linkedin.com/in/agnoletti"/><span>LinkedIn</span></div></div>
+```
 
 ::: {.notes}
-- Carlos moderates, seeded order (read chat yourself if he's silent):
-- 1 NIS2/ISO fit → duty exists; this format turns duty into competence
-- 2 how technical → method, not specialty
-- 3 scale? → repeated small tables OR large-group format (12-15, three teams), anonymized
-- GRC vs ops: Risk Deck, small card deck, risk + business language. One breath
-- Self-answered "how to start" → free guide, 3-8 colleagues, 90 min; facilitated first session exists
-- Pocket: wrong guess R1 · key person absent (role-keyed clues) · evidence (Frontiers, Gee, Simkins) · test our REAL plan? (different format, vs your BCP)
+- Carlos moderates; read the chat yourself if he is silent
+- Answer short, one idea each; park anything long for email
+- [POINT] "Questions later: that mail, that site, or scan LinkedIn"
 - HARD STOP 14:54: three closing slides + chat ask need 5 min
 :::
 
@@ -656,7 +664,7 @@ malwareandmonsters.com
 Fun isn't unserious. It's effective.
 :::
 
-<div style="background:#F8F8FA; border-radius:var(--radius); width:190px; margin:0.7em auto 0.4em; padding:8px; box-shadow:var(--shadow);"><img src="qr.svg" width="174" style="display:block;"/></div>
+<div style="background:#F8F8FA; border-radius:var(--radius); width:190px; box-sizing:border-box; margin:0.7em auto 0.4em; padding:8px; box-shadow:var(--shadow);"><img src="qr.svg" width="174" style="display:block; margin:0 auto;"/></div>
 
 ::: {style="text-align:center; color:var(--accent); font-family:'Bebas Neue',sans-serif; font-size:1.2em;"}
 malwareandmonsters.com
