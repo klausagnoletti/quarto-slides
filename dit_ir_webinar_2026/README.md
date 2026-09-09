@@ -1,6 +1,6 @@
 # Dansk IT incident-response webinar (9 Sept 2026)
 
-Reveal.js deck on the RelationSec Slide Foundation skin. Source is English, delivered live in Danish. 37 slides, two live Wooclap votes (slides 5 and 29, results on 6 and 30), one live website embed (slide 32).
+Reveal.js deck on the RelationSec Slide Foundation skin. Source is English, delivered live in Danish. 37 slides, two live Wooclap votes (slides 5 and 26, results on 6 and 27), one live website embed (slide 32).
 
 ## Render
 
@@ -50,10 +50,10 @@ The result frames (`.poll-frame`) show `wooclap.com SRCIDYA` behind a transparen
 - reveal.js fragments render hidden in headless screenshots and `#/N/F` does not reveal them. `scratchpad/shot_frag.sh` in the build session rewrote `class="fragment"` to visible in a temp copy before shooting.
 - A CSS keyframe that animates `transform` overrides an SVG `transform` attribute on the same element. Wrap the animated group in a plain positioning `<g>`.
 - SVG/img wrappers inside `.vcenter` shrink unless the wrapper has `width:100%`.
-- An SVG `<animate>` inside an `<img>` is unreachable from page script. Script-triggered SVG animation (the slide 29 countdown) must be inline SVG inside the fragment.
+- An SVG `<animate>` inside an `<img>` is unreachable from page script. Script-triggered SVG animation (the slide 26 countdown) must be inline SVG inside the fragment.
 - `.gitignore` ignores `*.png`; image assets need `git add -f`.
 - The slide 32 popup ("New to Malware & Monsters?") appears on every fresh load of the live site. Dismiss it before narrating.
 
 ## Abort lines (in the speaker notes)
 
-If the Wooclap join page is not live when slide 5 comes up, both votes become rhetorical questions. The wording is in the notes of slides 5 and 29.
+If the Wooclap join page is not live when slide 5 comes up, both votes become rhetorical questions. The wording is in the notes of slides 5 and 26.

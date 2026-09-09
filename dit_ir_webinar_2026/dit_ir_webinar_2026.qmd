@@ -291,10 +291,11 @@ WHY IS THIS TRAINING DIFFERENT?
 {{< include illus/seat-table-static.qmd >}}
 
 ::: {.notes}
-- One round narrated (Klaus plays all seats), so everyone sees the shape once
+- Verbatim: "What follows is a SIMULATED round. I play every seat. You do nothing yet, just watch."
+- Nobody is pulled in until the vote later; say so, it lowers the guard
 - [POINT] Detective first, doubt-first d20 on the first claim
-- Then the room decides live, on a new incident
-- Don't try to track every rule, watch for confidence vs evidence
+- Watch for one thing: "how sure people sound versus what turns out to be true"
+- About five minutes, then the scenario is yours
 :::
 
 ## MALWARE & MONSTERS {.vcenter}
@@ -394,49 +395,7 @@ Analog · 3–8 players + one Incident Master
 - Bands on click: "Easy needs 5 or more, medium 10, hard 15. Ask a good question first and the IM drops it a band. That's how what you did beforehand loads the die."
 - Success example: "the log shows a certificate error and encrypted traffic to an unknown IP", cleaner, still incomplete
 - NEVER CUT this beat
-:::
-
-## THE PRESUMPTION DECK {.vcenter}
-
-::: {.presumption-cards}
-![](images/type-ransomware.png){.fragment .fx}
-![](images/confidence-confident.png){.fragment .fx}
-![](images/readiness-investigating.png){.fragment .fx}
-:::
-
-::: {.notes}
-- Round 1 ends: each card is placed FACE DOWN, what do I think this is, and how confident am I?
-- Cards are flipped SIMULTANEOUSLY
-- Agreement + high confidence: play continues. A split table, or one person confident and wrong: the game STOPS, what did you SEE, what did you ASSUME?
-- Say it out loud, this is the pairing: "That confidence card is the number your questionnaire is trying to measure. Here it's measured against what actually happened."
-- Then next slide. Do not talk over the flip.
-:::
-
-## {.vcenter}
-
-::: {.card style="text-align:center; max-width:700px; margin:0 auto;"}
-[Confident. Wrong. Followed.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em;"}
-:::
-
-{{< include illus/gauge.qmd >}}
-
-::: {.notes}
-- [SILENCE 3s] after the line, nobody fills it
-- Verbatim, slow: "The worst thing that can happen is being totally confident about something that's wrong, and everyone else following along, because you seem sure."
-- Seattle callback (~15s): even the kids spent their first energy on finding WHO clicked, instead of solving the incident
-- Culture bridge: "What you should take home isn't just 'be less certain'. It's: create a space where it's safe to say 'I'm not sure' out loud, before reality forces you to."
-:::
-
-## A wrong theory costs time. {.vcenter}
-
-{{< include illus/hourglass.qmd >}}
-
-::: {.notes}
-- Setup, verbatim: "A wrong theory doesn't lose the game. It costs time."
-- Close the round with the consequence, concrete: "This table played Ransomware, Confident. It was credential theft. Round 2 they spent twenty minutes restoring backups while the attacker still had the domain admin account."
-- The table's conclusion, right or wrong, IS the working theory in round 2
-- Exactly like reality
-- Bridge: "That was one round. Now it's you."
+- Exit, verbatim: "That is the whole machinery. Talking, one roll, a price. Now the scenario is yours."
 :::
 
 ## Monday 08:40 {.vcenter}
@@ -494,6 +453,51 @@ wooclap.com · SRCIDYA · 30 seconds
 - Verbatim: "You don't get to avoid the loss. You get to pick which one you can defend at 09:00."
 - Landing line: "Everyone here formed an opinion in thirty seconds. At a real table you have to defend it out loud. To the citizens standing in Citizen Services at nine o'clock."
 - Callback: "And remember, you're scored on the reasoning. Not on the letter."
+- Bridge: "At a real table there is one more thing on the table before anyone acts."
+:::
+
+## THE PRESUMPTION DECK {.vcenter}
+
+::: {.presumption-cards}
+![](images/type-ransomware.png){.fragment .fx}
+![](images/confidence-confident.png){.fragment .fx}
+![](images/readiness-investigating.png){.fragment .fx}
+:::
+
+::: {.notes}
+- Opener, verbatim: "You just picked a letter in thirty seconds. At a real table you also put a card down, face down: what you think this is and how sure you are. That is the part a poll cannot do."
+- Round 1 ends: each card is placed FACE DOWN, what do I think this is, and how confident am I?
+- Cards are flipped SIMULTANEOUSLY
+- Agreement + high confidence: play continues. A split table, or one person confident and wrong: the game STOPS, what did you SEE, what did you ASSUME?
+- Say it out loud, this is the pairing: "That confidence card is the number your questionnaire is trying to measure. Here it's measured against what actually happened."
+- Then next slide. Do not talk over the flip.
+:::
+
+## {.vcenter}
+
+::: {.card style="text-align:center; max-width:700px; margin:0 auto;"}
+[Confident. Wrong. Followed.]{style="font-family:'Bebas Neue',sans-serif; font-size:1.5em;"}
+:::
+
+{{< include illus/gauge.qmd >}}
+
+::: {.notes}
+- [SILENCE 3s] after the line, nobody fills it
+- Verbatim, slow: "The worst thing that can happen is being totally confident about something that's wrong, and everyone else following along, because you seem sure."
+- Seattle callback (~15s): even the kids spent their first energy on finding WHO clicked, instead of solving the incident
+- Culture bridge: "What you should take home isn't just 'be less certain'. It's: create a space where it's safe to say 'I'm not sure' out loud, before reality forces you to."
+:::
+
+## A wrong theory costs time. {.vcenter}
+
+{{< include illus/hourglass.qmd >}}
+
+::: {.notes}
+- Setup, verbatim: "A wrong theory doesn't lose the game. It costs time."
+- Close the round with the consequence, concrete: "This table played Ransomware, Confident. It was credential theft. Round 2 they spent twenty minutes restoring backups while the attacker still had the domain admin account."
+- The table's conclusion, right or wrong, IS the working theory in round 2
+- Exactly like reality
+- Bridge: "Confidence against outcome. That is one of four things an exercise measures."
 :::
 
 ## What an exercise measures. {.vcenter}
