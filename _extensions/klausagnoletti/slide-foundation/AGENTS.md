@@ -66,7 +66,7 @@ Per-toolbox notes and gotchas:
   block (QR in currentColor + short URL); `{{< poll id="ID" mode="results"
   labels="A|B|C" >}}` renders one bar per label that `poll.js` fills from the
   keyless `GET api.strawpoll.com/v3/polls/ID/results` every 2 s while that slide
-  is current (one prefetch when it is next; nothing from `file://`). Bars, QR
+  is current (one prefetch when it is next; works from `file://` too). Bars, QR
   panel and labels take only tokens; widths are the one thing JS sets. Create,
   reset and close polls with `bun _extensions/klausagnoletti/slide-foundation/strawpoll.ts`
   (key from 1Password via `op read`, never in the deck). Needs `bun add qrcode`

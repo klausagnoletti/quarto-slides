@@ -4,8 +4,7 @@
    GET https://api.strawpoll.com/v3/polls/{id}/results (CORS open, no key, ever),
    only while that slide is current (2 s interval) plus one prefetch when it is
    next. Widths are the only thing set from JS; colours and motion come from
-   poll.css via the token contract. From file:// nothing is fetched: the static
-   option list stays and a muted note explains. */
+   poll.css via the token contract. Works from file:// as well as http. */
 window.addEventListener('load', function () {
   /* QR panel: keep modules dark on light whatever the skin (see poll.css).
      Colours are normalised through a canvas so oklch()/color() tokens parse too. */
@@ -108,11 +107,8 @@ window.addEventListener('load', function () {
       });
   }
 
-  if (location.protocol === 'file:') {
-    blocks.forEach(function (b) { note(b, 'Live results need the deck served over http.'); });
-    return;
-  }
-
+  /* file:// works too: StrawPoll reflects a null origin (checked 2026-09-10), so a
+     deck opened straight from disk still shows live bars. */
   var timers = new Map();
   function start(block) {
     if (timers.has(block)) return;

@@ -18,7 +18,7 @@ bash dit_ir_webinar_2026/serve.sh
 
 Then open `http://localhost:8765/dit_ir_webinar_2026.html`. Keep that terminal running for the whole webinar.
 
-Why: the live website frame (slide 33) only mounts over http, and the poll results only fetch over http. Opened as a file the deck still shows the option lists and a muted note, so nothing breaks.
+Why: only the live website frame (slide 33) needs it; Chromium paints a cross-site iframe blank from `file://`. The polls fetch fine from a file (checked 10-09-2026), so if slide 33 is cut, the deck can be opened straight from disk.
 
 ## Live polls (StrawPoll, no iframe)
 
