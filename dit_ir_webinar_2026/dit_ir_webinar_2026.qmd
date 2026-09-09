@@ -459,7 +459,7 @@ Analog · 3–8 players + one Incident Master
 
 ::: {.feature-grid style="--fg-cols:3;"}
 - A: Pull the cable
-- B: Isolate the file server, keep citizen services running
+- B: Isolate the file server
 - C: Call leadership first
 :::
 
