@@ -96,7 +96,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 ## {.vcenter}
 
 ```{=html}
-<div class="poll-frame"><iframe data-src="https://app.wooclap.com/events/SRCIDYA/questions/6aa106b94026bc4e3711b685" title="Live poll result" allowfullscreen></iframe></div>
+<div class="poll-frame live-frame" data-live-src="https://app.wooclap.com/events/SRCIDYA/questions/6aa106b94026bc4e3711b685" data-live-title="Live poll result"></div>
 ```
 
 ::: {.notes}
@@ -480,7 +480,7 @@ wooclap.com · SRCIDYA · 30 seconds
 ## {.vcenter}
 
 ```{=html}
-<div class="poll-frame"><iframe data-src="https://app.wooclap.com/events/SRCIDYA/questions/6aa1086aa3e3f5575beff39f" title="Live vote result" allowfullscreen></iframe></div>
+<div class="poll-frame live-frame" data-live-src="https://app.wooclap.com/events/SRCIDYA/questions/6aa1086aa3e3f5575beff39f" data-live-title="Live vote result"></div>
 ```
 
 ::: {.notes}
@@ -540,7 +540,7 @@ wooclap.com · SRCIDYA · 30 seconds
 ```{=html}
 <div class="browser">
 <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__url">https://malwareandmonsters.com</span></div>
-<div class="browser__body"><iframe data-src="https://malwareandmonsters.com" title="malwareandmonsters.com" style="opacity:0; transition:opacity .3s;" onload="this.style.background='#fff';this.style.opacity=1"></iframe></div>
+<div class="browser__body live-frame" data-live-src="https://malwareandmonsters.com" data-live-title="malwareandmonsters.com" data-live-fade="1"></div>
 </div>
 ```
 

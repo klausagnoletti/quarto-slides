@@ -5,8 +5,35 @@
    the slide is ever shown). Generic: any element with data-anim-start on a
    .fragment starts its child <animate>/<animateTransform> elements when that
    fragment is shown. */
+/* Live iframes (Wooclap results, the M&M site) are created at RUNTIME from
+   data-live-src. Quarto's embed-resources otherwise fetches a static iframe's
+   URL at render time and inlines the unauthenticated page as a data: URL, so
+   the frame never talks to the live service (found 09-09-2026: blank Wooclap
+   frames). Injected on the slide before it becomes current, so it has time
+   to load. */
 window.addEventListener('load', function () {
   if (typeof Reveal === 'undefined') return;
+  function mount(section) {
+    section.querySelectorAll('.live-frame:not([data-live-mounted])').forEach(function (box) {
+      var f = document.createElement('iframe');
+      f.src = box.getAttribute('data-live-src');
+      f.title = box.getAttribute('data-live-title') || '';
+      f.setAttribute('allowfullscreen', '');
+      if (box.hasAttribute('data-live-fade')) {
+        f.style.opacity = '0'; f.style.transition = 'opacity .3s';
+        f.addEventListener('load', function () { f.style.background = '#fff'; f.style.opacity = '1'; });
+      }
+      box.appendChild(f);
+      box.setAttribute('data-live-mounted', '1');
+    });
+  }
+  Reveal.on('slidechanged', function (ev) {
+    mount(ev.currentSlide);
+    var next = ev.currentSlide.nextElementSibling;
+    if (next) mount(next);
+  });
+  var cur = Reveal.getCurrentSlide();
+  if (cur) { mount(cur); if (cur.nextElementSibling) mount(cur.nextElementSibling); }
   Reveal.on('fragmentshown', function (event) {
     var el = event.fragment;
     if (!el || !el.hasAttribute) return;
