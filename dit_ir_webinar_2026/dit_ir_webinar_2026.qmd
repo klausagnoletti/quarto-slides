@@ -601,7 +601,7 @@ malwareandmonsters.com
 {{< include illus/stairs.qmd >}}
 
 ::: {.notes}
-- First ask: "Type 1, 2 or 3 in the chat. Which one are you doing Monday?" Carlos reads the spread.
+- First ask: "Type 1, 2 or 3 in the chat. Which one are you doing Monday?" Glance at the chat yourself, name what you see in one sentence. Quiet chat: "Whatever you typed, that is your Monday."
 - Transfer check, verbatim: "And write one more thing: did what you just saw make you think 'WE should fix this', or 'I need to fix this'? That difference is the whole point."
 - Rung 3 = pure commitment, NO scale claim here (lives in seeded Q3)
 - Budget angle, one line on rung 2: "Run it once with the real team and leadership sees the gap themselves. That does more for next year's budget than any report."
