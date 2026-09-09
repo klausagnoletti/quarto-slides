@@ -5,12 +5,12 @@
    the slide is ever shown). Generic: any element with data-anim-start on a
    .fragment starts its child <animate>/<animateTransform> elements when that
    fragment is shown. */
-/* Live iframes (Wooclap results, the M&M site) are created at RUNTIME from
-   data-live-src. Quarto's embed-resources otherwise fetches a static iframe's
-   URL at render time and inlines the unauthenticated page as a data: URL, so
-   the frame never talks to the live service (found 09-09-2026: blank Wooclap
-   frames). Injected on the slide before it becomes current, so it has time
-   to load. */
+/* Live iframes (the M&M site) are created at RUNTIME from data-live-src.
+   Quarto's embed-resources otherwise fetches a static iframe's URL at render
+   time and inlines the unauthenticated page as a data: URL, so the frame never
+   talks to the live service (found 09-09-2026: blank poll frames, since replaced
+   by the Slide Foundation poll toolbox). Injected on the slide before it
+   becomes current, so it has time to load. */
 window.addEventListener('load', function () {
   if (typeof Reveal === 'undefined') return;
   function mount(section) {

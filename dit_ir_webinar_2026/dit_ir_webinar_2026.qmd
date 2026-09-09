@@ -35,7 +35,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 
 ::: {.notes}
 - PRE-SHOW: deck on http://localhost:8765 (serve.sh), not file
-- Wooclap tab: logged in, Start event, QR screen up
+- Polls reset (bun _extensions/klausagnoletti/slide-foundation/strawpoll.ts reset <id>, both ids in README); deck served over http
 - Slide 6 frame logged in; slide 33 site loads
 - [SILENT] Carlos: welcome + scripted intro
 - Nod at TV2 / DEF CON, nothing more
@@ -84,27 +84,22 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 - D: Don't know
 :::
 
-```{=html}
-<div class="join"><img src="images/qr-wooclap.png" alt="QR to wooclap.com/SRCIDYA"/><div class="join__code"><span class="join__url">wooclap.com</span><span class="join__key">SRCIDYA</span></div></div>
-```
+{{< poll id="kjn1DGRJGyQ" >}}
 
 ::: {.notes}
-- [POINT] QR or the code on screen, nothing to spell out
-- [CLICK Wooclap arrow right] pushes Q1 to phones
-- Hold 30s: stream lags 20-60s. Phones show no tally
-- Next slide: chart appears by itself. React ONE sentence
-- ABORT (join page dead): rhetorical, "Most rooms land on D"
+- [POINT] Scan the QR, nothing to spell out. Poll is open the whole time
+- Phones vote the moment they scan; phones show no tally
+- Hold 30s. Next slide: bars appear by themselves. React ONE sentence
+- ABORT (strawpoll down, note under the bars says paused): rhetorical, "Most rooms land on D"
 - D wins → warm, it's the honest answer
 :::
 
 ## {.vcenter}
 
-```{=html}
-<div class="poll-frame live-frame" data-live-src="https://app.wooclap.com/events/SRCIDYA/questions/6aa106b94026bc4e3711b685" data-live-title="Live poll result"></div>
-```
+{{< poll id="kjn1DGRJGyQ" mode="results" labels="A: Under 1 year|B: 1–3 years|C: Over 3 years|D: Don't know" >}}
 
 ::: {.notes}
-- Chart live. Code showing instead → alt-tab Wooclap
+- Bars live, refresh every 2 s. Nothing moving → read the room, move on
 - D wins → warm, honest answer
 - [BRIDGE] "Notice what I just did. I asked what you'd SAY. The butcher's email showed what people DO."
 :::
@@ -478,28 +473,26 @@ Analog · 3–8 players + one Incident Master
 - C: Call leadership first
 :::
 
-::: {.chip-note .pulse-cue}
-wooclap.com · SRCIDYA · 30 seconds
-:::
+::: {style="display:flex; align-items:center; justify-content:center; gap:3em;"}
+{{< poll id="B2ZB9ej27gJ" >}}
 
 {{< include illus/countdown.qmd >}}
+:::
 
 ::: {.notes}
-- [CLICK Wooclap arrow right] pushes Q2. Phones already in
-- [VERBATIM] "Don't think. First instinct, one letter. The stream runs behind me, so I'll wait."
+- New poll, new QR: phones scan again
+- [VERBATIM] "Don't think. First instinct, one letter."
 - [CLICK slide] ring starts. Count 20 · 10 · 5 yourself
-- Next slide: chart by itself
-- ABORT (join dead): "Pick one in your head. Hold it." → prices
+- Next slide: bars by themselves
+- ABORT (strawpoll down): "Pick one in your head. Hold it." → prices
 :::
 
 ## {.vcenter}
 
-```{=html}
-<div class="poll-frame live-frame" data-live-src="https://app.wooclap.com/events/SRCIDYA/questions/6aa1086aa3e3f5575beff39f" data-live-title="Live vote result"></div>
-```
+{{< poll id="B2ZB9ej27gJ" mode="results" labels="A: Pull the cable|B: Isolate the file server|C: Call leadership first" >}}
 
 ::: {.notes}
-- Chart live. Code showing → alt-tab Wooclap
+- Bars live. Nothing moving → read the room, move on
 - React to split, ONE sentence, then prices (scenario facts):
 - A cable: encryption stops, disk + logs kept; lose live picture, R2 can't say if they're still inside
 - B isolate: spread contained, not source; R2 no entry point, citizen services told at 09:00 anyway

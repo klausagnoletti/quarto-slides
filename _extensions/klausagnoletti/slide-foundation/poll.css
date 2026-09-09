@@ -1,0 +1,66 @@
+/* Slide Foundation: live poll toolbox (StrawPoll). Token contract only:
+   --surface --ink --accent --muted --radius --edge --shadow --pad --gap
+   --motion-dur --motion-ease --weight-strong --weight-bold --weight-mid.
+   No skin-specific colours, fonts or sizes; everything scales with the slide em. */
+
+/* join block: QR + short URL */
+.reveal .poll-join {
+  display: flex; align-items: center; justify-content: center;
+  gap: calc(var(--gap) * 3); margin: 0.6em auto 0;
+}
+/* Phone cameras decode dark modules on a light panel most reliably, so the QR
+   panel is always the lighter of the two role colours. Default (no JS, dark
+   skins): modules in --surface on an --ink panel. poll.js measures the two
+   tokens at load and adds .poll-qr--light-skin when --surface is the lighter
+   one, which flips the pair. Either way the result is dark-on-light. */
+.reveal .poll-join__qr {
+  display: block; width: 6.2em; height: 6.2em; padding: 0.35em; box-sizing: border-box;
+  color: var(--surface); background: var(--ink);
+  border: var(--edge) solid var(--accent); border-radius: var(--radius); box-shadow: var(--shadow);
+  text-decoration: none;
+}
+.reveal .poll-join__qr.poll-qr--light-skin { color: var(--ink); background: var(--surface); }
+.reveal .poll-join__qr .poll-qr { display: block; width: 100%; height: 100%; }
+.reveal .poll-join__code { display: flex; flex-direction: column; line-height: 1; }
+.reveal .poll-join__url {
+  font-size: 0.7em; color: var(--muted); letter-spacing: 0.06em; margin-bottom: 0.3em;
+  font-weight: var(--weight-mid);
+}
+/* body font on purpose: poll ids are case-sensitive and many display faces are caps-only */
+.reveal .poll-join__key {
+  font-size: 1.35em; color: var(--accent); letter-spacing: 0.02em; font-weight: var(--weight-strong);
+  text-transform: none;
+}
+.reveal .poll-join--missing, .reveal .poll-qr--missing { color: var(--muted); font-size: 0.7em; }
+
+/* results block: one bar per option */
+.reveal .poll-results { width: min(100%, 26em); margin: 0.4em auto 0; }
+.reveal .poll-bars { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--gap); }
+.reveal .poll-bar {
+  display: grid; grid-template-columns: minmax(6em, 1fr) 3fr auto; align-items: center;
+  gap: var(--gap); font-weight: var(--weight-mid);
+}
+.reveal .poll-bar__label { color: var(--ink); text-align: right; font-size: 0.8em; line-height: 1.15; }
+.reveal .poll-bar__track {
+  display: block; height: 1.1em; background: var(--surface);
+  border: var(--edge) solid var(--muted); border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.reveal .poll-bar__fill {
+  display: block; height: 100%; width: 0; background: var(--accent);
+  transition: width var(--motion-dur) var(--motion-ease);
+}
+.reveal .poll-bar--lead .poll-bar__track { border-color: var(--accent); }
+.reveal .poll-bar__count {
+  min-width: 4.5em; text-align: left; font-size: 0.7em; color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.reveal .poll-bar--lead .poll-bar__count { color: var(--ink); font-weight: var(--weight-bold); }
+.reveal .poll-results__note {
+  margin: 0.5em 0 0; font-size: 0.55em; color: var(--muted); text-align: center; min-height: 1.2em;
+}
+.reveal .poll-results__note:empty { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal .poll-bar__fill { transition: none; }
+}

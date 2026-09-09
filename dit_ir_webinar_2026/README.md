@@ -1,6 +1,6 @@
 # Dansk IT incident-response webinar (9 Sept 2026)
 
-Reveal.js deck on the RelationSec Slide Foundation skin. Source is English, delivered live in Danish. 38 slides, two live Wooclap votes (slides 5 and 27, results on 6 and 28), one live website embed (slide 33, uncounted).
+Reveal.js deck on the RelationSec Slide Foundation skin. Source is English, delivered live in Danish. 38 slides, two live StrawPoll votes drawn by the deck itself (slides 5 and 27, results on 6 and 28), one live website embed (slide 33, uncounted).
 
 ## Render
 
@@ -18,32 +18,32 @@ bash dit_ir_webinar_2026/serve.sh
 
 Then open `http://localhost:8765/dit_ir_webinar_2026.html`. Keep that terminal running for the whole webinar.
 
-Why: Chromium (Vivaldi included) paints a cross-site iframe as a blank white page when the parent document is `file://`. Over `http://localhost` the same frames load. If the deck is opened as a file anyway, the script skips the live frames and the result slides show the join code instead, so nothing breaks, you just alt-tab to Wooclap.
+Why: the live website frame (slide 33) only mounts over http, and the poll results only fetch over http. Opened as a file the deck still shows the option lists and a muted note, so nothing breaks.
 
-## Wooclap setup (event code SRCIDYA)
+## Live polls (StrawPoll, no iframe)
 
-Account on the RelationSec email. Two questions of type **Poll** (Multiple choice demands a correct answer, Poll does not):
+The two votes run on the Slide Foundation poll toolbox (`{{< poll >}}` shortcode, see `_extensions/klausagnoletti/slide-foundation/AGENTS.md`). The deck fetches results itself from StrawPoll's keyless results endpoint every 2 s while a result slide is up and draws the bars in the skin. No login, no cookie, no vendor page.
 
-1. When did you last PRACTICE your incident response plan? A: Under 1 year / B: 1–3 years / C: Over 3 years / D: Don't know
-2. What do you do NOW? A: Pull the cable / B: Isolate the file server / C: Call leadership first
+| Slide | Poll id | Question |
+|---|---|---|
+| 5 / 6 | `kjn1DGRJGyQ` | When did you last PRACTICE your incident response plan? A: Under 1 year / B: 1–3 years / C: Over 3 years / D: Don't know |
+| 27 / 28 | `B2ZB9ej27gJ` | What do you do NOW? A: Pull the cable / B: Isolate the file server / C: Call leadership first |
 
-Event settings:
+Both polls are private (link/QR only), one vote per phone session, voters cannot edit. The API key lives in 1Password (`StrawPoll API`, Relations Security vault) and is only used by the CLI, never by the deck.
 
-- **Display answers automatically: ON.** With it off the result frame shows the question but the chart only appears after a manual click on the show-answers button. Participants do not see a running tally on their phones either way (checked 09-09-2026), so herding is not a concern.
+Before the talk, from the repo root:
 
-Before 14:00, in the presenting browser:
+    bun _extensions/klausagnoletti/slide-foundation/strawpoll.ts reset kjn1DGRJGyQ
+    bun _extensions/klausagnoletti/slide-foundation/strawpoll.ts reset B2ZB9ej27gJ
+    bun _extensions/klausagnoletti/slide-foundation/strawpoll.ts status kjn1DGRJGyQ
 
-1. Log in to Wooclap. Click **Start event** once; keep the projected screen (QR + code) in its own tab. Early joiners see "no vote in progress", which is normal.
-2. Open the deck over localhost and go to slide 6. The Wooclap frame shows a **login inside the frame**: log in there once. The session cookie is not shared into a cross-site frame, so the frame needs its own login. It holds for the day in the same window.
-3. Vote from your phone via the QR on slide 5, confirm the chart on slide 6, repeat for slides 27 and 28 (different question id, test it separately).
+Then serve the deck, scan the QR on slide 5 with your own phone, vote, and watch slide 6 move. Repeat for 27 and 28. The audience scans a new QR for the second question (each poll has its own link).
 
-On air: push each question to the phones with the **arrow on the right** in the Wooclap tab when the vote slide is up. The result slide then shows the chart by itself.
+To make a new poll for another deck: `strawpoll.ts create --title "Q" --options "A|B|C"` prints the id and the two shortcodes to paste. Voters who tap "Results" on their phone can see the running tally on strawpoll.com; the free tier shows StrawPoll's ads on the voting page.
 
 ## Why the live frames are created by script
 
-`local-script.html` mounts every `.live-frame` div's iframe at runtime from `data-live-src`, on the current and the next slide. A static `<iframe src=...>` in the source does not survive `embed-resources`: Quarto fetches the URL at render time and inlines the unauthenticated page as a `data:text/html` URL, so the "live" frame is a frozen logged-out snapshot and renders blank. Found the hard way on 09-09-2026; do not put live iframes back into the qmd as plain tags.
-
-The result frames (`.poll-frame`) show `wooclap.com SRCIDYA` behind a transparent iframe. When Wooclap paints, it covers the cue. When it does not, the room sees the code and the presenter alt-tabs to the Wooclap tab.
+`local-script.html` mounts the `.live-frame` div's iframe (slide 33, the M&M site) at runtime from `data-live-src`, on the current and the next slide. A static `<iframe src=...>` in the source does not survive `embed-resources`: Quarto fetches the URL at render time and inlines the unauthenticated page as a `data:text/html` URL, so the "live" frame is a frozen logged-out snapshot and renders blank. Found the hard way on 09-09-2026; do not put live iframes back into the qmd as plain tags. The polls used to be iframes too and failed on stage the same day (presenter-cookie dependency, mobile layout inside the frame); they are now API-driven, see above.
 
 ## Other traps met while building this deck
 
@@ -56,15 +56,15 @@ The result frames (`.poll-frame`) show `wooclap.com SRCIDYA` behind a transparen
 
 ## Abort lines (in the speaker notes)
 
-If the Wooclap join page is not live when slide 5 comes up, both votes become rhetorical questions. The wording is in the notes of slides 5 and 27.
+If StrawPoll is down when slide 5 comes up (the note under the bars says "paused"), both votes become rhetorical questions. The wording is in the notes of slides 5 and 27.
 
 ## PDF export (design preserved)
 
-    scripts/export-pdf.sh --drop 6,28 dit_ir_webinar_2026   # -> dit_ir_webinar_2026/dit_ir_webinar_2026.pdf
+    scripts/export-pdf.sh dit_ir_webinar_2026   # -> dit_ir_webinar_2026/dit_ir_webinar_2026.pdf
 
 Runs DeckTape against the rendered deck: one vector page per slide, text
 selectable, fonts embedded, design as presented, the uncounted live-site
-slide included. The two Wooclap result slides (PDF pages 6 and 28) are only
-the vote's join screen on paper, so they are dropped; the export is 36 pages.
-reveal's own print mode re-lays out fragments and drops the motion, so it is
-not used. Live frames show whatever loads at export time.
+slide included; 38 pages. The result slides print their option list with the
+counts as they stood at export time (DeckTape runs the deck over http, so the
+bars are live). Pass `--drop 6,28` to leave the result pages out. reveal's own
+print mode re-lays out fragments and drops the motion, so it is not used.

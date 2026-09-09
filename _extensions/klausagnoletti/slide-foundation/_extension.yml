@@ -1,13 +1,16 @@
 title: Slide Foundation
 author: Klaus Agnoletti
-version: 0.2.5
+version: 0.3.0
 contributes:
   shortcodes:
     - icon.lua
+    - poll.lua
   formats:
     revealjs:
       embed-resources: true
       include-in-header:
         - token-helper.html
+        - poll.js
       css:
         - foundation.css
+        - poll.css

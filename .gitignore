@@ -8,3 +8,6 @@
 !**/_extensions/**
 !**/*-skin.html
 !relationsec/*.html
+
+/node_modules/
+*.pdf
