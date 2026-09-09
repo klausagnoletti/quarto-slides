@@ -85,8 +85,8 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 
 ::: {.notes}
 - Say the code twice, slowly: "wooclap dot com, S R C I D Y A". Leave it up a full 30s, the stream runs 20 to 60s behind you.
-- BEFORE 14:00: logged in to Wooclap in this browser, "Start event" clicked once, the projected screen (QR + code) open in its own tab. Participants who join early see "no vote in progress", that is fine.
-- When this slide is up: push question 1 to their phones. Arrow right in the Wooclap tab (or the result slide's frame does it, whichever the test showed). Answers stay hidden: "display answers automatically" is off.
+- BEFORE 14:00: deck opened via `bash dit_ir_webinar_2026/serve.sh` at http://localhost:8765 (NOT the file, the Wooclap frames are blank from file://). Logged in to Wooclap in this browser, "Start event" clicked once, the projected screen (QR + code) open in its own tab. Early joiners see "no vote in progress", fine.
+- When this slide is up: push question 1 to their phones, arrow right in the Wooclap tab. Answers stay hidden: "display answers automatically" is off.
 - Next slide shows the result. React unscripted, ONE sentence, whatever it is.
 - ABORT: if the join page is not live, this becomes a rhetorical question: "Hands up in your own head. Most rooms land on D."
 - D is the honest answer for most rooms, say so warmly if D wins
@@ -100,7 +100,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 ```
 
 ::: {.notes}
-- Question 1 live in this frame. Reveal: click the diagram button at the top of the Wooclap question (show answers). Frame blank = alt-tab to the Wooclap tab, same button there.
+- Question 1 live in this frame. If it shows a login instead, log in inside the frame once (Wooclap's documented flow). Reveal: the diagram button at the top (show answers). Frame blank = alt-tab to the Wooclap tab, same button there.
 - D is the honest answer for most rooms, say so warmly if D wins
 - Bridge into the spine, name what just happened: "Notice what I just did. I asked what you'd SAY. The butcher's email showed what people DO."
 :::
@@ -471,7 +471,7 @@ wooclap.com · SRCIDYA · 30 seconds
 {{< include illus/countdown.qmd >}}
 
 ::: {.notes}
-- Push question 2 to their phones now: arrow right in the Wooclap tab (or the result slide's frame, per the test). Same code as before, say it once.
+- Push question 2 to their phones now: arrow right in the Wooclap tab. Same code as before, say it once.
 - Verbatim: "Don't think. First instinct, one letter. The stream runs behind me, so I'll wait." Then click: the ring starts. Count 20, 10, 5 yourself.
 - No tally during the 30s. Next slide reveals.
 - ABORT: join page dead = "Pick one in your head. Hold it." and go straight to the prices.
