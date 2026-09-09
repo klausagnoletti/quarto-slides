@@ -33,6 +33,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 :::
 
 ::: {.notes}
+- PRE-SHOW CHECK (before Carlos starts): deck open at http://localhost:8765 via serve.sh, not the file. Wooclap tab: logged in, "Start event" clicked, projected screen (QR + code) up. Deck slide 6 frame logged in (log in inside the frame if it asks). Slide 32 site loads. Second screen: Wooclap tab.
 - Silent, on camera. Carlos runs welcome + scripted intro (his card, anonymized clients)
 - Nod at TV2 / DEF CON mentions, nothing more
 - Never "30 years in infosec"
@@ -85,9 +86,8 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 
 ::: {.notes}
 - Say the code twice, slowly: "wooclap dot com, S R C I D Y A". Leave it up a full 30s, the stream runs 20 to 60s behind you.
-- BEFORE 14:00: deck opened via `bash dit_ir_webinar_2026/serve.sh` at http://localhost:8765 (NOT the file, the Wooclap frames are blank from file://). Logged in to Wooclap in this browser, "Start event" clicked once, the projected screen (QR + code) open in its own tab. Early joiners see "no vote in progress", fine.
-- When this slide is up: push question 1 to their phones, arrow right in the Wooclap tab. Phones show no tally; the chart appears on the next slide by itself ("display answers automatically" is ON).
-- Next slide shows the result. React unscripted, ONE sentence, whatever it is.
+- Push question 1 to their phones: arrow right in the Wooclap tab. Phones show no tally.
+- Next slide shows the chart by itself. React unscripted, ONE sentence, whatever it is.
 - ABORT: if the join page is not live, this becomes a rhetorical question: "Hands up in your own head. Most rooms land on D."
 - D is the honest answer for most rooms, say so warmly if D wins
 - Fallback if it lands oddly: "What goes wrong in an incident is rarely that people don't know enough. It's that they're certain of something wrong, and manage to act on it."
@@ -100,7 +100,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 ```
 
 ::: {.notes}
-- Question 1 chart, live. If it shows a login, log in inside the frame once (done in the pre-show test, holds for the day). Code showing instead of a chart = alt-tab to the Wooclap tab.
+- Question 1 chart, live. Code showing instead of a chart = alt-tab to the Wooclap tab.
 - D is the honest answer for most rooms, say so warmly if D wins
 - Bridge into the spine, name what just happened: "Notice what I just did. I asked what you'd SAY. The butcher's email showed what people DO."
 :::
@@ -473,7 +473,7 @@ wooclap.com · SRCIDYA · 30 seconds
 ::: {.notes}
 - Push question 2 to their phones now: arrow right in the Wooclap tab. Same code as before, say it once.
 - Verbatim: "Don't think. First instinct, one letter. The stream runs behind me, so I'll wait." Then click: the ring starts. Count 20, 10, 5 yourself.
-- No tally during the 30s. Next slide reveals.
+- Next slide shows the chart by itself.
 - ABORT: join page dead = "Pick one in your head. Hold it." and go straight to the prices.
 :::
 
@@ -549,13 +549,12 @@ The actual site, not a mockup.
 :::
 
 ::: {.notes}
-- [30 SEC MAX] Tab is pre-warmed. One sentence, cursor to the nav, click straight to the starter guide, then back. No general scrolling.
+- Popup ("New to Malware & Monsters?"): dismiss it the instant it appears, before narrating
+- [30 SEC MAX] One sentence, cursor to the nav, click straight to the starter guide, then back. No general scrolling.
 - Say: "This is the actual site. Starter guide, 3 to 8 colleagues, 90 minutes."
-- Fallback if the page is slow or dead: "Trust me, it's live, the link's in chat." Carlos pastes the URL. No troubleshooting on stream.
+- Fallback if the page is slow or dead: "Trust me, it's live. The address is on the last slide." No troubleshooting on stream.
 - OPTIONAL live tour, ~60-90s: homepage → starter guide → a scenario card. Skip if anything is flaky.
 - Focus gotcha: mouse clicks go to the SITE, use keyboard to advance slides, click the slide edge first if arrows stop responding
-- Site shows a first-visit welcome popup ("New to Malware & Monsters?") — dismiss it (X or "Leave me alone") the instant it appears, before narrating
-- REHEARSE this transition, including the popup dismiss
 :::
 
 ## QUESTIONS? {.vcenter background-image="images/hero-december-desk.jpg" background-opacity="0.14" background-size="cover"}
