@@ -14,6 +14,9 @@
 window.addEventListener('load', function () {
   if (typeof Reveal === 'undefined') return;
   function mount(section) {
+    /* from file:// Chromium paints cross-site frames as a blank white page;
+       leave the box empty so its built-in code/cue stays visible */
+    if (location.protocol === 'file:') return;
     section.querySelectorAll('.live-frame:not([data-live-mounted])').forEach(function (box) {
       var f = document.createElement('iframe');
       f.src = box.getAttribute('data-live-src');
