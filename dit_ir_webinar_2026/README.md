@@ -60,9 +60,11 @@ If the Wooclap join page is not live when slide 5 comes up, both votes become rh
 
 ## PDF export (design preserved)
 
-    scripts/export-pdf.sh dit_ir_webinar_2026        # -> dit_ir_webinar_2026/dit_ir_webinar_2026.pdf
+    scripts/export-pdf.sh --drop 6,28 dit_ir_webinar_2026   # -> dit_ir_webinar_2026/dit_ir_webinar_2026.pdf
 
-Runs DeckTape against the rendered deck: one vector page per slide (38, the
-uncounted live-site slide included), text selectable, fonts embedded, design
-as presented. reveal's own print mode re-lays out fragments and drops the
-motion, so it is not used. Live frames show whatever loads at export time.
+Runs DeckTape against the rendered deck: one vector page per slide, text
+selectable, fonts embedded, design as presented, the uncounted live-site
+slide included. The two Wooclap result slides (PDF pages 6 and 28) are only
+the vote's join screen on paper, so they are dropped; the export is 36 pages.
+reveal's own print mode re-lays out fragments and drops the motion, so it is
+not used. Live frames show whatever loads at export time.
