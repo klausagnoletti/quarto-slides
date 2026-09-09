@@ -113,6 +113,16 @@
 /* transparent so the fallback screenshot shows until the live page paints */
 .browser__body iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: transparent; }
 
+/* Wooclap join block (slides 5, 28) and live result frame (the slides after). */
+.join { display: flex; align-items: center; justify-content: center; gap: 40px; margin: 0.6em auto 0; }
+.join img { width: 220px; height: 220px; border-radius: var(--radius); box-shadow: var(--shadow); background: #fff; padding: 10px; box-sizing: border-box; }
+.join__code { display: flex; flex-direction: column; line-height: 1; }
+.join__url { font-family: "Source Sans 3", sans-serif; font-size: 0.7em; color: var(--muted); letter-spacing: 0.06em; margin-bottom: 0.25em; }
+.join__key { font-family: "Bebas Neue", sans-serif; font-size: 3.2em; color: var(--accent); letter-spacing: 0.08em; }
+.poll-frame { width: 960px; height: 560px; margin: 0 auto; border-radius: 10px; overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,.55); border: 1px solid #2A3A55; background: #fff; }
+.poll-frame iframe { width: 100%; height: 100%; border: 0; background: #fff; }
+
 /* Seat table (slide 16, 19): inline SVG with six chairs, lit by fragments. */
 .seat-table { width: 100%; max-width: 920px; margin: 0.2em auto 0; }
 .seat-table svg { display: block; width: 100%; height: auto; }
