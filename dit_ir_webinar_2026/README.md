@@ -60,13 +60,9 @@ If the Wooclap join page is not live when slide 5 comes up, both votes become rh
 
 ## PDF export (design preserved)
 
-reveal's own print mode (the print-pdf query) re-lays out fragments, drops the
-one-shot illustration motion and repositions the chrome, so it does not
-reproduce the deck as shown. Use the screenshot exporter instead:
+    scripts/export-pdf.sh dit_ir_webinar_2026        # -> dit_ir_webinar_2026/dit_ir_webinar_2026.pdf
 
-    bash dit_ir_webinar_2026/serve.sh &           # rendered deck on :8765
-    PUP=/path/to/node_modules/puppeteer node dit_ir_webinar_2026/export-pdf.cjs
-
-One 1920x1080 screenshot per slide from headless Chrome, every fragment
-shown, animations settled, bound into a 37-page PDF with Pillow. The live
-site and Wooclap frames show whatever loads at export time.
+Runs DeckTape against the rendered deck: one vector page per slide (38, the
+uncounted live-site slide included), text selectable, fonts embedded, design
+as presented. reveal's own print mode re-lays out fragments and drops the
+motion, so it is not used. Live frames show whatever loads at export time.

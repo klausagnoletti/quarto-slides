@@ -32,11 +32,11 @@ window.addEventListener('load', function () {
   }
   Reveal.on('slidechanged', function (ev) {
     mount(ev.currentSlide);
-    var next = ev.currentSlide.nextElementSibling;
+    var next = Reveal.getHorizontalSlides()[Reveal.getHorizontalSlides().indexOf(ev.currentSlide) + 1];
     if (next) mount(next);
   });
   var cur = Reveal.getCurrentSlide();
-  if (cur) { mount(cur); if (cur.nextElementSibling) mount(cur.nextElementSibling); }
+  if (cur) { mount(cur); var nxt = Reveal.getHorizontalSlides()[Reveal.getHorizontalSlides().indexOf(cur) + 1]; if (nxt) mount(nxt); }
   Reveal.on('fragmentshown', function (event) {
     var el = event.fragment;
     if (!el || !el.hasAttribute) return;

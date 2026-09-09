@@ -43,3 +43,9 @@ format:
   it lives on Rich Black bands and in the measure-rule device only.
 - Logo per charter: always horizontal, never stacked; yellow on dark, navy on light.
 - Verify by rendering: headless per-slide screenshots before claiming anything looks right.
+
+## PDF export
+
+`scripts/export-pdf.sh <deck-dir>` produces a design-preserving PDF of any
+deck via DeckTape (vector pages, selectable text). Do not use reveal's
+`?print-pdf` mode; it re-lays out the slides.

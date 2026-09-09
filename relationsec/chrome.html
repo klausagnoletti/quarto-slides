@@ -17,7 +17,10 @@ window.addEventListener('load', function () {
   if (!slidesBox) return;
   ['.slide-logo', '.slide-number', '.slide-menu-button'].forEach(function (sel) {
     var el = document.querySelector('.reveal > ' + sel);
-    if (el) slidesBox.appendChild(el);
+    /* insert BEFORE the first section: reveal's isLastSlide() asks whether
+       the current section has a next sibling, so appending after the last
+       section makes the deck never end (found via DeckTape 09-09-2026) */
+    if (el) slidesBox.insertBefore(el, slidesBox.firstChild);
   });
 });
 </script>
