@@ -57,3 +57,16 @@ The result frames (`.poll-frame`) show `wooclap.com SRCIDYA` behind a transparen
 ## Abort lines (in the speaker notes)
 
 If the Wooclap join page is not live when slide 5 comes up, both votes become rhetorical questions. The wording is in the notes of slides 5 and 27.
+
+## PDF export (design preserved)
+
+reveal's own print mode (the print-pdf query) re-lays out fragments, drops the
+one-shot illustration motion and repositions the chrome, so it does not
+reproduce the deck as shown. Use the screenshot exporter instead:
+
+    bash dit_ir_webinar_2026/serve.sh &           # rendered deck on :8765
+    PUP=/path/to/node_modules/puppeteer node dit_ir_webinar_2026/export-pdf.cjs
+
+One 1920x1080 screenshot per slide from headless Chrome, every fragment
+shown, animations settled, bound into a 37-page PDF with Pillow. The live
+site and Wooclap frames show whatever loads at export time.
