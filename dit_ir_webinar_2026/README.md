@@ -5,8 +5,11 @@ Reveal.js deck on the RelationSec Slide Foundation skin. Source is English, deli
 ## Render
 
 ```
+bun install          # once per checkout: the qrcode package for the poll QR codes
 quarto render dit_ir_webinar_2026/dit_ir_webinar_2026.qmd
 ```
+
+Without `bun install` the render still succeeds but the join slides show a `[QR]` stub and quarto prints a warning.
 
 Output: `_output/dit_ir_webinar_2026/dit_ir_webinar_2026.html` (self-contained, embed-resources).
 
