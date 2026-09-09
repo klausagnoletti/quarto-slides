@@ -114,6 +114,7 @@
    The frame is laid out at 1400 CSS px and scaled to 1000 so the site renders
    its DESKTOP layout, never the mobile one. */
 .browser__body iframe { position: absolute; top: 0; left: 0; width: 1400px; height: 756px; border: 0; background: transparent;
+  max-width: none; max-height: none; /* reveal's theme caps every iframe at 95%, which shrank this to 950px and flipped the site to its mobile layout */
   transform: scale(0.714286); transform-origin: 0 0; }
 /* Q&A contact block */
 .contact { display: flex; align-items: center; justify-content: center; gap: 56px; margin: 0.4em auto 0; }
