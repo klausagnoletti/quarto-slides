@@ -88,7 +88,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 ```
 
 ::: {.notes}
-- [SAY TWICE, SLOW] "wooclap dot com, S R C I D Y A"
+- [POINT] QR or the code on screen, nothing to spell out
 - [CLICK Wooclap arrow right] pushes Q1 to phones
 - Hold 30s: stream lags 20-60s. Phones show no tally
 - Next slide: chart appears by itself. React ONE sentence
@@ -386,6 +386,7 @@ Analog · 3–8 players + one Incident Master
 ::: {.notes}
 - [IM VOICE, VERBATIM] "You're the Communicator. It's 03:20. Monitoring has sent three alerts in 40 minutes. One user has called in about a strange screen. You know three things, and two of them are wrong. You just don't know which two."
 - Never a clean "it's ransomware" label
+- Plant: this night is the START of the incident they vote on later
 :::
 
 ## {.vcenter}
@@ -450,7 +451,8 @@ Analog · 3–8 players + one Incident Master
 {{< include illus/clock.qmd >}}
 
 ::: {.notes}
-- [SAY] Same incident. Five hours later. Now it's yours
+- [VERBATIM] "Same incident. Same municipality. The 03:20 alerts were the attacker getting in. Nobody kicked them out. It is now Monday 08:40, five hours later, and this is what the Communicator's phone shows."
+- Make the link explicit: night round = simulated, this morning = theirs
 - [45s READ] stakes language: the mayor, not the server
 - Straight into the poll, no meta-talk
 :::
@@ -470,7 +472,7 @@ wooclap.com · SRCIDYA · 30 seconds
 {{< include illus/countdown.qmd >}}
 
 ::: {.notes}
-- [CLICK Wooclap arrow right] pushes Q2. Same code, say once
+- [CLICK Wooclap arrow right] pushes Q2. Phones already in
 - [VERBATIM] "Don't think. First instinct, one letter. The stream runs behind me, so I'll wait."
 - [CLICK slide] ring starts. Count 20 · 10 · 5 yourself
 - Next slide: chart by itself
@@ -535,7 +537,7 @@ wooclap.com · SRCIDYA · 30 seconds
 ::: {.notes}
 - [VERBATIM] "A wrong theory doesn't lose the game. It costs time."
 - Consequence: table played Ransomware, Confident. It was credential theft. R2: 20 min restoring backups, attacker still had domain admin
-- → that is how you get to Monday 08:40
+- [VERBATIM] "Remember 03:20. Confident, ransomware. It was stolen credentials. They restored backups while the attacker kept domain admin. That is how the drive was encrypting at 08:40 when you voted. The wrong theory at night is the price you paid this morning."
 - Table's conclusion IS the R2 working theory, like reality
 - [BRIDGE] "Confidence against outcome. That is one of four things an exercise measures."
 :::
