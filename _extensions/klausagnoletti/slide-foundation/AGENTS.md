@@ -62,17 +62,31 @@ Per-toolbox notes and gotchas:
   text colour). Needs `bun add @iconify/utils @iconify-json/tabler @iconify-json/lucide`.
   Icon stroke weight is intrinsic to the set (Tabler/Lucide are 2px) and is left
   as designed; do not try to force it to `--edge`.
-- **Live poll** (StrawPoll, no iframe): `{{< poll id="ID" >}}` renders the join
-  block (QR in currentColor + short URL); `{{< poll id="ID" mode="results"
-  labels="A|B|C" >}}` renders one bar per label that `poll.js` fills from the
-  keyless `GET api.strawpoll.com/v3/polls/ID/results` every 2 s while that slide
-  is current (one prefetch when it is next; works from `file://` too). Bars, QR
-  panel and labels take only tokens; widths are the one thing JS sets. Create,
-  reset and close polls with `bun _extensions/klausagnoletti/slide-foundation/strawpoll.ts`
-  (key from 1Password via `op read`, never in the deck). Needs `bun add qrcode`
-  in the consumer repo for the render-time QR. Poll ids are case-sensitive, so
-  the key text is deliberately body font, not the heading face. Join by QR, not
-  PIN: the API returns `pin_code: null` on the free tier.
+- **Live poll** (StrawPoll, no iframe, fresh poll per talk): declare polls once in
+  the document front matter, `polls: { name: { question: "...", options: [..] } }`,
+  then `{{< poll name="name" >}}` renders the join block (QR in currentColor +
+  short URL) and `{{< poll name="name" mode="results" >}}` one bar per declared
+  option, which `poll.js` fills from the keyless
+  `GET api.strawpoll.com/v3/polls/ID/results` every 2 s while that slide is
+  current (one prefetch when it is next; works from `file://` too). Ids never go
+  in the qmd: `bun _extensions/klausagnoletti/slide-foundation/strawpoll.ts rotate <deck-dir>`
+  creates a fresh poll per declaration (key from 1Password via `op read`, never
+  in the deck) and writes `<deck>/polls.local.json`, which the shortcode reads at
+  render and which must be gitignored (the id is the join secret of a link-only
+  poll). Rotate never deletes; `prune <deck-dir> --yes` removes the previous ids
+  it recorded, `status <deck-dir>` shows ids, age and counts. `scripts/build-talk.sh
+  <deck-dir>` is rotate + render + status, the one pre-talk command; rehearse
+  before it, not after. Without a local id the render still succeeds with a
+  visible `[poll name: run rotate]` stub. In the speaker view only, the join
+  block shows a freshness badge (`fresh · 0 votes` / `STALE · n votes`, plus poll
+  age); the audience window never renders it. Bars, QR panel, badge and labels
+  take only tokens; widths are the one thing JS sets. Legacy form
+  `{{< poll id="ID" labels="A|B" >}}` still works this version. Needs `bun add
+  qrcode` in the consumer repo for the render-time QR. Poll ids are
+  case-sensitive, so the key text is deliberately body font, not the heading
+  face. Join by QR, not PIN: the API returns `pin_code: null` on the free tier.
+  Never reset from inside a deck: the full-account key would have to enter a
+  browser on a projected screen (panel ruling 2026-09-10).
 - **Mermaid**: do NOT set a baked `mermaid.theme` (e.g. `neutral`); it overrides
   the token vars. Leave mermaid theme unset.
 - **Code window**: `quarto add mcanouil/quarto-code-window` + the `code-window`

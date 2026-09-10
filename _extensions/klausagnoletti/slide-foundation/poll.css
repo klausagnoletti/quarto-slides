@@ -31,7 +31,20 @@
   font-size: 1.35em; color: var(--accent); letter-spacing: 0.02em; font-weight: var(--weight-strong);
   text-transform: none;
 }
-.reveal .poll-join--missing, .reveal .poll-qr--missing { color: var(--muted); font-size: 0.7em; }
+.reveal .poll--missing, .reveal .poll-qr--missing { color: var(--muted); font-size: 0.7em; }
+
+/* freshness badge: only ever unhidden by poll.js inside the speaker view.
+   Role colours only: fresh = accent on surface, stale = surface on ink with an
+   accent edge so it reads as an alarm on any skin without a dedicated red. */
+.reveal .poll-join__badge {
+  display: inline-block; margin-top: 0.5em; font-size: 0.45em; line-height: 1;
+  padding: 0.5em 0.8em; border-radius: var(--radius); border: var(--edge) solid var(--muted);
+  color: var(--muted); background: var(--surface); letter-spacing: 0.04em;
+  font-weight: var(--weight-bold); text-transform: none; font-variant-numeric: tabular-nums;
+}
+.reveal .poll-join__badge[hidden] { display: none; }
+.reveal .poll-badge--fresh { color: var(--accent); border-color: var(--accent); }
+.reveal .poll-badge--stale { color: var(--surface); background: var(--ink); border-color: var(--accent); }
 
 /* results block: one bar per option */
 .reveal .poll-results { width: min(100%, 26em); margin: 0.4em auto 0; }

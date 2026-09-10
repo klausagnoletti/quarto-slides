@@ -1,5 +1,14 @@
 ---
 pagetitle: "Incident Response Training — Dansk IT Webinar"
+# Live polls, declared once. Ids come from polls.local.json (gitignored), written by
+# scripts/build-talk.sh / strawpoll.ts rotate before the talk. Never put an id here.
+polls:
+  practice:
+    question: "When did you last PRACTICE your incident response plan?"
+    options: ["A: Under 1 year", "B: 1–3 years", "C: Over 3 years", "D: Don't know"]
+  action:
+    question: "What do you do NOW?"
+    options: ["A: Pull the cable", "B: Isolate the file server", "C: Call leadership first"]
 format:
   klausagnoletti/slide-foundation-revealjs:
     theme: ../relationsec/theme-dark.scss
@@ -35,7 +44,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 
 ::: {.notes}
 - PRE-SHOW: deck on http://localhost:8765 (serve.sh), not file
-- Polls reset (bun _extensions/klausagnoletti/slide-foundation/strawpoll.ts reset <id>, both ids in README); deck served over http
+- Rehearsed? Then scripts/build-talk.sh dit_ir_webinar_2026 (fresh polls + render). [BADGE GREEN? 0 VOTES] on slides 5 and 27 in speaker view
 - Slide 6 frame logged in; slide 33 site loads
 - [SILENT] Carlos: welcome + scripted intro
 - Nod at TV2 / DEF CON, nothing more
@@ -84,7 +93,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 - D: Don't know
 :::
 
-{{< poll id="kjn1DGRJGyQ" >}}
+{{< poll name="practice" >}}
 
 ::: {.notes}
 - [POINT] Scan the QR, nothing to spell out. Poll is open the whole time
@@ -96,7 +105,7 @@ Klaus Agnoletti · Dansk IT · 9 September 2026
 
 ## {.vcenter}
 
-{{< poll id="kjn1DGRJGyQ" mode="results" labels="A: Under 1 year|B: 1–3 years|C: Over 3 years|D: Don't know" >}}
+{{< poll name="practice" mode="results" >}}
 
 ::: {.notes}
 - Bars live, refresh every 2 s. Nothing moving → read the room, move on
@@ -474,7 +483,7 @@ Analog · 3–8 players + one Incident Master
 :::
 
 ::: {style="display:flex; align-items:center; justify-content:center; gap:3em;"}
-{{< poll id="B2ZB9ej27gJ" >}}
+{{< poll name="action" >}}
 
 {{< include illus/countdown.qmd >}}
 :::
@@ -489,7 +498,7 @@ Analog · 3–8 players + one Incident Master
 
 ## {.vcenter}
 
-{{< poll id="B2ZB9ej27gJ" mode="results" labels="A: Pull the cable|B: Isolate the file server|C: Call leadership first" >}}
+{{< poll name="action" mode="results" >}}
 
 ::: {.notes}
 - Bars live. Nothing moving → read the room, move on

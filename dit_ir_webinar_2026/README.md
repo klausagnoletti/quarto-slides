@@ -23,26 +23,19 @@ Then open `http://localhost:8765/dit_ir_webinar_2026.html`. Keep that terminal r
 
 Why: only the live website frame (slide 33) needs it; Chromium paints a cross-site iframe blank from `file://`. The polls fetch fine from a file (checked 10-09-2026), so if slide 33 is cut, the deck can be opened straight from disk.
 
-## Live polls (StrawPoll, no iframe)
+## Live polls (StrawPoll, no iframe, fresh poll per talk)
 
 The two votes run on the Slide Foundation poll toolbox (`{{< poll >}}` shortcode, see `_extensions/klausagnoletti/slide-foundation/AGENTS.md`). The deck fetches results itself from StrawPoll's keyless results endpoint every 2 s while a result slide is up and draws the bars in the skin. No login, no cookie, no vendor page.
 
-| Slide | Poll id | Question |
-|---|---|---|
-| 5 / 6 | `kjn1DGRJGyQ` | When did you last PRACTICE your incident response plan? A: Under 1 year / B: 1–3 years / C: Over 3 years / D: Don't know |
-| 27 / 28 | `B2ZB9ej27gJ` | What do you do NOW? A: Pull the cable / B: Isolate the file server / C: Call leadership first |
+The polls are declared once, under `polls:` in the qmd front matter (`practice` for slides 5/6, `action` for 27/28: question and options). There is no poll id anywhere in git: `polls.local.json` next to the qmd holds the current ids and is gitignored, because the id is the join secret of a link-only poll and this repo is public.
 
-Both polls are private (link/QR only), one vote per phone session, voters cannot edit. The API key lives in 1Password (`StrawPoll API`, Relations Security vault) and is only used by the CLI, never by the deck.
+Pre-talk, on the laptop you present from, after rehearsing (a rehearsal vote makes a poll stale):
 
-Before the talk, from the repo root:
+    scripts/build-talk.sh dit_ir_webinar_2026
 
-    bun _extensions/klausagnoletti/slide-foundation/strawpoll.ts reset kjn1DGRJGyQ
-    bun _extensions/klausagnoletti/slide-foundation/strawpoll.ts reset B2ZB9ej27gJ
-    bun _extensions/klausagnoletti/slide-foundation/strawpoll.ts status kjn1DGRJGyQ
+That creates a fresh poll per declaration, renders, and prints each poll with its counts; every one must read `fresh`. In the speaker view (press S) the join slides 5 and 27 carry a badge, `fresh · 0 votes` or `STALE · n votes`; the audience window never shows it. The old polls are not deleted, so a printed QR keeps working; `strawpoll.ts prune dit_ir_webinar_2026 --yes` removes them when you want them gone. `strawpoll.ts status dit_ir_webinar_2026` shows the current ids, age and counts at any time.
 
-Then serve the deck, scan the QR on slide 5 with your own phone, vote, and watch slide 6 move. Repeat for 27 and 28. The audience scans a new QR for the second question (each poll has its own link).
-
-To make a new poll for another deck: `strawpoll.ts create --title "Q" --options "A|B|C"` prints the id and the two shortcodes to paste. Voters who tap "Results" on their phone can see the running tally on strawpoll.com; the free tier shows StrawPoll's ads on the voting page.
+Polls are private (link/QR only), one vote per phone session, voters cannot edit. The API key lives in 1Password (`StrawPoll API`, Relations Security vault) and is only used by the CLI, never by the deck; a plain `quarto render` never talks to StrawPoll (without a local id file it renders a `[poll practice: run rotate]` stub). Voters who tap "Results" on their phone can see the running tally on strawpoll.com; the free tier shows StrawPoll's ads on the voting page.
 
 ## Why the live frames are created by script
 

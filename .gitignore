@@ -11,3 +11,6 @@
 
 /node_modules/
 *.pdf
+
+# poll ids written by strawpoll.ts rotate; the id is the join secret of a link-only poll
+**/polls.local.json

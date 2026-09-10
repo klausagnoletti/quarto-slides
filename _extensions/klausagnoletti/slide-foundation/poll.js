@@ -27,6 +27,56 @@ window.addEventListener('load', function () {
   var API = 'https://api.strawpoll.com/v3/polls/';
   var INTERVAL_MS = 2000;
   var PAUSED = 'Live results paused';
+
+  /* Freshness badge on join blocks, speaker view only. The speaker window runs
+     the deck in receiver iframes (?receiver), which is the only place the badge
+     is unhidden; the audience window never shows it. One keyless fetch per
+     block when it becomes current: 0 votes reads "fresh", anything else "stale"
+     with the count, plus the poll age from data-poll-created (written at render
+     from polls.local.json). A stale badge means `strawpoll.ts rotate` was not run. */
+  (function () {
+    var inSpeakerView = typeof Reveal.isSpeakerNotesWindow === 'function' ? Reveal.isSpeakerNotesWindow()
+      : /receiver/i.test(window.location.search);
+    if (!inSpeakerView) return;
+    var joins = Array.prototype.slice.call(document.querySelectorAll('.poll-join[data-poll-id]'));
+    if (!joins.length) return;
+    function ageText(created) {
+      var t = parseInt(created, 10);
+      if (!t) return '';
+      var s = Math.max(0, Math.floor(Date.now() / 1000) - t);
+      if (s < 3600) return Math.floor(s / 60) + ' min old';
+      if (s < 86400) return Math.floor(s / 3600) + ' h old';
+      return Math.floor(s / 86400) + ' d old';
+    }
+    function badge(join) {
+      var el = join.querySelector('.poll-join__badge');
+      if (!el) return;
+      var id = join.getAttribute('data-poll-id');
+      var age = ageText(join.getAttribute('data-poll-created'));
+      el.hidden = false;
+      el.className = 'poll-join__badge poll-badge--checking';
+      el.textContent = 'checking…';
+      fetch(API + encodeURIComponent(id) + '/results', { cache: 'no-store' })
+        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(function (data) {
+          var total = (data.poll_options || []).reduce(function (s, o) { return s + (o.vote_count || 0); }, 0);
+          var fresh = total === 0;
+          el.className = 'poll-join__badge ' + (fresh ? 'poll-badge--fresh' : 'poll-badge--stale');
+          el.textContent = (fresh ? 'fresh · 0 votes' : 'STALE · ' + total + (total === 1 ? ' vote' : ' votes')) + (age ? ' · ' + age : '');
+        })
+        .catch(function (err) {
+          el.className = 'poll-join__badge poll-badge--stale';
+          el.textContent = 'poll unreachable (' + (err && err.message) + ')';
+        });
+    }
+    function check(section) {
+      if (!section) return;
+      Array.prototype.forEach.call(section.querySelectorAll('.poll-join[data-poll-id]'), badge);
+    }
+    Reveal.on('slidechanged', function (ev) { check(ev.currentSlide); });
+    check(Reveal.getCurrentSlide());
+  })();
+
   var blocks = Array.prototype.slice.call(document.querySelectorAll('.poll-results[data-poll-id]'));
   if (!blocks.length) return;
 
@@ -34,7 +84,12 @@ window.addEventListener('load', function () {
     var n = block.querySelector('.poll-results__note');
     if (n) n.textContent = text || '';
   }
-  function norm(s) { return String(s || '').replace(/\s+/g, ' ').trim().toLowerCase(); }
+  /* pandoc smart-quotes the front matter ("Don't" -> "Don’t"); the poll text keeps
+     the straight quote, so quotes and dashes are folded before comparing */
+  function norm(s) {
+    return String(s || '').replace(/[‘’‚‛]/g, "'").replace(/[“”„‟]/g, '"')
+      .replace(/[–—]/g, '-').replace(/\s+/g, ' ').trim().toLowerCase();
+  }
   function pos(o) { return typeof o.position === 'number' ? o.position : 0; }
 
   function makeRow(label, i) {
