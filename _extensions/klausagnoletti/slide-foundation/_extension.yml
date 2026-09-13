@@ -1,6 +1,6 @@
 title: Slide Foundation
 author: Klaus Agnoletti
-version: 0.4.0
+version: 0.5.0
 contributes:
   shortcodes:
     - icon.lua
@@ -11,6 +11,7 @@ contributes:
       include-in-header:
         - token-helper.html
         - poll.js
+        - speaker-view.js
       css:
         - foundation.css
         - poll.css

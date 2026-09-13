@@ -1,0 +1,42 @@
+{
+  "$comment": "Speaker-notes cue vocabulary, the single source. Read by scripts/notes-lint.ts (undocumented tag = hard fail) and pointed to by SlideCraft References/SpeakerNotesCues.md. A tag is the upper-case word or words that open a bracket at the start of a notes line; what follows inside the bracket (a duration, a count, a condition after a colon, a lower-case qualifier) is not part of the name. Several tags may share one bracket separated by commas. Grammar and registers: SpeakerNotesCues.md. Add a tag here on its second use across decks.",
+  "grammar": {
+    "line": "- [TAG] cue in spoken syntax, 3 to 8 words",
+    "condition": "- [TAG: condition] fallback in about 8 words",
+    "suffix": "- [TAG 90s] duration or count as a plain suffix",
+    "verbatim": "- [VERBATIM] \"the exact sentence, sentence case, no caps inside\""
+  },
+  "core": {
+    "PAUSE": { "means": "stop talking, let it land, then advance; a duration may follow", "register": "delivery" },
+    "SLOW": { "means": "the next line is spoken slower than the rest", "register": "delivery" },
+    "POINT": { "means": "point at the slide element the cue names", "register": "stage" },
+    "CLICK": { "means": "this slide has N fragment builds; the cues that follow are one per click", "register": "stage" },
+    "VERBATIM": { "means": "quoted line said word for word; wording is the payload", "register": "text" },
+    "MEMORIZED": { "means": "scripted open or close, rehearsed from SCRIPT.md; notes carry the first spoken line and the beats", "register": "text" },
+    "ABORT": { "means": "one fallback per failure mode of an interactive element; the condition follows a colon", "register": "safety" },
+    "BRIDGE": { "means": "the one transition sentence, last bullet, only where the join is unnatural", "register": "text" }
+  },
+  "extension": {
+    "EYES UP": "do not look down at all on this slide; the room is voting, playing or answering",
+    "HARD STOP": "the clock time the talk must end; on the Q&A slide and in the slide 1 pre-show block",
+    "READ": "a figure, name or quote to be read exactly; full length, max 3 per slide",
+    "SILENT": "someone else is speaking (co-host, video); the speaker says nothing",
+    "CHAT": "ask the room to answer in the chat; the question follows in quotes",
+    "CALLBACK": "repeat an earlier line or image on purpose; name the slide it echoes",
+    "PLANT": "say something now that a later slide pays off",
+    "PIVOT": "the argument turns here; change tone",
+    "BREATHE": "a deliberate breath before a hard line",
+    "RHETORICAL": "a question the room is not expected to answer",
+    "FRAME": "why this matters to this audience, one line",
+    "WAIT ROOM": "hold until the room reacts (laugh, hands, votes) before continuing",
+    "BADGE GREEN?": "slide 1 pre-show check of the poll freshness badge in speaker view"
+  },
+  "namedSlot": {
+    "$comment": "[RONALD 30s] style: a named co-presenter and their slot, a stage direction rather than an attribution. NAME is replaced by the upper-cased co-presenter names the lint is given (--copresenters); matched against the whole bracket part.",
+    "pattern": "^(NAME)( \\d+ ?(s|min))?$"
+  },
+  "prepPrefixes": {
+    "$comment": "Lines that belong to the slide 1 pre-show block only; anywhere else they are prep leakage (hard fail). Matched at the start of the line after the bullet marker, case-sensitive, brackets optional.",
+    "list": ["PRE-SHOW", "Rehearsed", "CUT FIRST", "NEVER CUT", "BADGE GREEN?"]
+  }
+}

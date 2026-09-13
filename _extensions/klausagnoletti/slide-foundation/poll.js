@@ -7,19 +7,9 @@
    poll.css via the token contract. Works from file:// as well as http. */
 window.addEventListener('load', function () {
   /* QR panel: keep modules dark on light whatever the skin (see poll.css).
-     Colours are normalised through a canvas so oklch()/color() tokens parse too. */
+     Skin brightness comes from the shared helper in token-helper.html. */
   (function () {
-    if (!window.SlideFoundation) return;
-    var ctx = document.createElement('canvas').getContext('2d');
-    function lum(c) {
-      if (!c || !ctx) return null;
-      ctx.fillStyle = '#000'; ctx.fillStyle = c;
-      var m = /^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})/i.exec(ctx.fillStyle);
-      if (!m) { m = /rgba?\((\d+),\s*(\d+),\s*(\d+)/.exec(ctx.fillStyle); if (!m) return null; return (0.2126 * m[1] + 0.7152 * m[2] + 0.0722 * m[3]) / 255; }
-      return (0.2126 * parseInt(m[1], 16) + 0.7152 * parseInt(m[2], 16) + 0.0722 * parseInt(m[3], 16)) / 255;
-    }
-    var surface = lum(SlideFoundation.tokenColor('--surface')), ink = lum(SlideFoundation.tokenColor('--ink'));
-    if (surface === null || ink === null || surface <= ink) return;
+    if (!window.SlideFoundation || !SlideFoundation.isLightSkin()) return;
     document.querySelectorAll('.poll-join__qr').forEach(function (el) { el.classList.add('poll-qr--light-skin'); });
   })();
 
