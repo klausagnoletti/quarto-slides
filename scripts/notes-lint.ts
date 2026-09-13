@@ -28,7 +28,8 @@ type Vocab = {
   prepPrefixes: { list: string[] };
 };
 type Finding = { level: "HARD" | "advisory"; kind: string; line: number; text: string };
-type Slide = { index: number; title: string; startLine: number; body: string[]; notes: { line: number; text: string }[] };
+type Line = { line: number; text: string };
+type Slide = { index: number; title: string; startLine: number; body: Line[]; notes: Line[] };
 
 const argv = process.argv.slice(2);
 const VALUE_FLAGS = new Set(["--names", "--copresenters", "--forbid", "--prep", "--tags"]);
@@ -54,7 +55,8 @@ const names = (flag("--names") ?? "").split(",").map((s) => s.trim()).filter(Boo
 const forbidden = (flag("--forbid") ?? "HackBack").split(",").map((s) => s.trim()).filter(Boolean);
 const prepPrefixes = [...vocab.prepPrefixes.list, ...(flag("--prep") ?? "").split(",").map((s) => s.trim()).filter(Boolean)];
 const knownTags = new Set([...Object.keys(vocab.core), ...Object.keys(vocab.extension), ...prepPrefixes]);
-const copresenters = (flag("--copresenters") ?? "").split(",").map((s) => s.trim().toUpperCase()).filter(Boolean);
+const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const copresenters = (flag("--copresenters") ?? "").split(",").map((s) => s.trim().toUpperCase()).filter(Boolean).map(escapeRe);
 const namedSlot = copresenters.length ? new RegExp(vocab.namedSlot.pattern.replace("NAME", copresenters.join("|"))) : /^(?!)/;
 const asJson = argv.includes("--json");
 
@@ -74,8 +76,10 @@ function parse(src: string): Slide[] {
   }
   const slides: Slide[] = [];
   let cur: Slide | null = null;
-  let inFence = false;
+  let fence: { ch: string; len: number } | null = null; // open code fence: same char, at least as long, closes it
   let inNotes = false;
+  let divDepth = 0; // fenced divs nested inside the notes block; a bare ::: closes the innermost
+  let pendingRule = false; // a --- boundary waiting to see whether a heading names the slide
   const open = (title: string, line: number) => {
     cur = { index: slides.length, title, startLine: line, body: [], notes: [] };
     slides.push(cur);
@@ -83,20 +87,28 @@ function parse(src: string): Slide[] {
   for (; i < lines.length; i++) {
     const raw = lines[i];
     const t = raw.trim();
-    if (/^(```|~~~)/.test(t)) inFence = !inFence;
-    if (inFence) { cur?.body.push(raw); continue; }
+    const f = /^(`{3,}|~{3,})/.exec(t);
+    if (fence) {
+      if (f && f[1][0] === fence.ch && f[1].length >= fence.len) fence = null;
+      continue; // code is never slide content
+    }
+    if (f) { fence = { ch: f[1][0], len: f[1].length }; continue; }
+    if (!t && !inNotes) continue;
     const heading = /^(#{1,2})\s*(.*)$/.exec(raw);
     if (heading && !inNotes) {
       const title = heading[2].replace(/\{[^}]*\}\s*$/, "").replace(/\[([^\]]*)\]\{[^}]*\}/g, "$1").trim();
       open(title || (heading[2].match(/\.([a-z-]+)/)?.[1] ?? "untitled"), i + 1);
+      pendingRule = false;
       continue;
     }
-    if (/^---\s*$/.test(t) && !inNotes) { open("untitled", i + 1); continue; }
-    if (!cur) { if (!t) continue; open("preamble", i + 1); }
-    if (/^:{3,}\s*\{?\.?notes\}?\s*$/.test(t)) { inNotes = true; continue; }
-    if (inNotes && /^:{3,}\s*$/.test(t)) { inNotes = false; continue; }
+    if (/^---\s*$/.test(t) && !inNotes) { pendingRule = true; continue; }
+    if (pendingRule) { open("untitled", i + 1); pendingRule = false; }
+    if (!cur) open("preamble", i + 1);
+    if (!inNotes && /^:{3,}\s*\{?\.?notes\}?\s*$/.test(t)) { inNotes = true; divDepth = 0; continue; }
+    if (inNotes && /^:{3,}\s*(\{|[a-z])/.test(t)) { divDepth++; cur!.notes.push({ line: i + 1, text: raw }); continue; }
+    if (inNotes && /^:{3,}\s*$/.test(t)) { if (divDepth > 0) { divDepth--; continue; } inNotes = false; continue; }
     if (inNotes) cur!.notes.push({ line: i + 1, text: raw });
-    else cur!.body.push(raw);
+    else cur!.body.push({ line: i + 1, text: raw });
   }
   return slides;
 }
@@ -104,9 +116,11 @@ function parse(src: string): Slide[] {
 /* ---------- tag helpers ---------- */
 const bulletRe = /^\s*(?:[-*+]|\d+[.)])\s+/;
 function stripBullet(s: string): string { return s.replace(bulletRe, ""); }
+/* a cue bracket is followed by nothing, a space or punctuation; a markdown link [x](url),
+   span [x]{.c}, reference [x][y] or task box [ ] is not a cue */
 function leadingBracket(s: string): string | null {
-  const m = /^\[([^\]]+)\]/.exec(stripBullet(s).trim());
-  return m ? m[1] : null;
+  const m = /^\[([^\]]+)\](?![(\[{])/.exec(stripBullet(s).trim());
+  return m && m[1].trim() && !/^[ x]$/i.test(m[1]) ? m[1] : null;
 }
 /* Names inside one bracket: split on commas, keep the upper-case opening words of each part;
    a lower-case part ("self-answer") is a qualifier, not a tag. */
@@ -142,28 +156,30 @@ function words(s: string): number {
   return s.replace(/\[[^\]]*\]/g, " ").trim().split(/\s+/).filter(Boolean).length;
 }
 const attributionRes = names.map((n) => {
-  const esc = n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const esc = escapeRe(n);
   return new RegExp(
     "\\b" + esc + "(?:'s\\b|\\s+(?:said|says|suggested|wanted|wants|asked|noted|mentioned|thinks|prefers|proposed|idea|point|feedback))" +
     "|\\(" + esc + "\\)" +
     "|\\b(?:per|from|via|according to)\\s+" + esc + "\\b",
+    "i",
   );
 });
-const forbiddenRes = forbidden.map((w) => new RegExp(w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"));
+const forbiddenRes = forbidden.map((w) => new RegExp(escapeRe(w), "i"));
 
 /* ---------- lint ---------- */
 function lint(slide: Slide): Finding[] {
   const f: Finding[] = [];
   const notesText = slide.notes.map((n) => n.text);
-  const bodyText = slide.body.join("\n");
+  const bodyText = slide.body.map((b) => b.text).join("\n");
 
   for (const re of forbiddenRes) {
-    for (const [k, l] of [...slide.body.map((t, i) => [t, slide.startLine + i] as const), ...slide.notes.map((n) => [n.text, n.line] as const)]) {
+    for (const { text: k, line: l } of [...slide.body, ...slide.notes]) {
       if (re.test(k)) f.push({ level: "HARD", kind: "forbid", line: l, text: k.trim() });
     }
   }
   const interactive = /\{\{<\s*poll\b/.test(bodyText) || /<iframe\b/i.test(bodyText) || notesText.some((t) => /\[CHAT\b/.test(t));
-  if (interactive && !notesText.some((t) => /\[ABORT:/.test(t))) {
+  const hasAbort = slide.notes.some((n) => /^\[ABORT:\s*\S[^\]]*\]/.test(stripBullet(n.text).trim()));
+  if (interactive && !hasAbort) {
     f.push({ level: "HARD", kind: "abort", line: slide.startLine, text: "interactive element without an [ABORT: condition] line" });
   }
   let cueBullets = 0;
