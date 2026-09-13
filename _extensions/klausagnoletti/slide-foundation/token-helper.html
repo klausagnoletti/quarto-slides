@@ -23,18 +23,18 @@ window.SlideFoundation = window.SlideFoundation || (function () {
     if (!v) return 0;
     return v.indexOf('ms') > -1 ? parseFloat(v) : parseFloat(v) * 1000;
   }
-  // relative luminance 0..1 of any CSS colour, or null when it cannot be parsed.
-  // Normalised through a canvas so oklch()/color() token values parse too.
-  // One copy: poll.js (QR panel) and speaker-view.js (dark flip) both use it.
+  // WCAG relative luminance 0..1 of any CSS colour (channels linearised from sRGB),
+  // or null when it cannot be parsed. Normalised through a canvas so oklch()/color()
+  // token values parse too. One copy: poll.js (QR panel) and speaker-view.js (dark flip).
   var ctx = document.createElement('canvas').getContext('2d');
+  function lin(v) { v = v / 255; return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); }
   function luminance(c) {
     if (!c || !ctx) return null;
     ctx.fillStyle = '#000'; ctx.fillStyle = c;
-    var m = /^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})/i.exec(ctx.fillStyle);
-    if (m) return (0.2126 * parseInt(m[1], 16) + 0.7152 * parseInt(m[2], 16) + 0.0722 * parseInt(m[3], 16)) / 255;
-    m = /rgba?\((\d+),\s*(\d+),\s*(\d+)/.exec(ctx.fillStyle);
-    if (!m) return null;
-    return (0.2126 * m[1] + 0.7152 * m[2] + 0.0722 * m[3]) / 255;
+    var m = /^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})/i.exec(ctx.fillStyle), r, g, b;
+    if (m) { r = parseInt(m[1], 16); g = parseInt(m[2], 16); b = parseInt(m[3], 16); }
+    else { m = /rgba?\((\d+),\s*(\d+),\s*(\d+)/.exec(ctx.fillStyle); if (!m) return null; r = +m[1]; g = +m[2]; b = +m[3]; }
+    return 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
   }
   // true when the skin is light (surface brighter than ink); false when dark or unreadable
   function isLightSkin(el) {

@@ -131,3 +131,52 @@ only the tokens in section 2. Verify WCAG AA. To match diagram/element weight to
 your deck, tune `--edge` and the `--weight-*` tokens; the whole deck follows.
 Open-source value sources for picking accessible token values: Open Props and
 Radix Colors (use them to choose values, then assign to these role tokens).
+
+## 8. Speaker view, notes lint and notes fit (0.5.0)
+
+The reveal notes plugin opens `about:blank`, names it "reveal.js - Notes",
+writes its own template with `document.write` and fills
+`.speaker-controls-notes .value` with each slide's notes HTML. That window is
+same-origin with the deck, so `speaker-view.js` (an include-in-header script)
+dresses it from the audience window: it wraps `window.open` for a fresh S press
+and listens for the plugin's heartbeat message for the reconnect-after-reload
+path, then appends `<style id="sf-speaker-style">` once the template exists.
+
+- **Tokens only.** The popup gets `--surface --ink --accent --muted` copied
+  from the deck; a light skin is flipped (surface and ink swap, the section 1
+  mechanism) so the window is dark in a dark room. Muted is re-derived from the
+  pair after the flip; accent passes through.
+- **Notes type** 1.4em of the pane size (25.2px at the default layout, 31.5px
+  at wide/tall/notes-only), line-height 1.45, measure capped at 26em.
+- **Cue tags** are the leading `[TAG ...]` of a line; a MutationObserver wraps
+  them in `span.sf-tag` (muted, 0.82em, opacity .75) every time the notes
+  change. Idempotent, so it cannot loop.
+- **Never touches** the audience document or the receiver iframes; `poll.js`
+  keeps its speaker-only badge. `window.SlideFoundationSpeaker.off()` /
+  `.on()` inside the popup toggles the look (the fit check uses it for
+  stock-versus-styled screenshots).
+- **Skin brightness** for both `poll.js` and the speaker view comes from one
+  helper, `SlideFoundation.luminance(color)` and `.isLightSkin()` in
+  `token-helper.html`.
+
+Two build-time checks live in the consumer repo's `scripts/` and read this
+extension's files; `scripts/build-talk.sh` runs both after render and stops on
+failure:
+
+- `bun scripts/notes-lint.ts <deck> [--names a,b] [--copresenters c] [--forbid w]`
+  reads the qmd. Hard fail only on the objective safety set: prep content
+  outside slide 1, a prep-meeting name used as attribution, a tag missing from
+  `speaker-notes-tags.json` (the one copy of the vocabulary; SlideCraft's
+  reference points here), an interactive element (poll shortcode, iframe,
+  `[CHAT]`) with no `[ABORT: ...]` line, a forbidden word. Length, prose and
+  anchor findings are advisory. Add a tag to the JSON on its second use.
+- `bun scripts/notes-fit.ts <deck> [--layout default|wide|tall|notes-only] [--stock] [--screenshots dir] [--top 3] [--verbose]`
+  serves the rendered deck over http, opens the REAL speaker window in headless
+  chromium over CDP (no puppeteer), sets the layout, walks every slide and
+  compares `#speaker-controls` scrollHeight with clientHeight in a 1100x700
+  window. One line per slide; exit 1 only on overflow. The default layout gives
+  the notes about 440x290px, so a long block that fits notes-only will not fit
+  default: choose the layout on the presenting hardware and pass it. Container
+  gotchas baked in: `--disable-dev-shm-usage` (64MB /dev/shm crashes the
+  renderer), stderr drained (a full pipe freezes chromium), popup sized with
+  `Browser.setWindowBounds` (device-metrics emulation stalls the popup's layout).
