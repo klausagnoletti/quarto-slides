@@ -1,12 +1,15 @@
 /_output/
 /.quarto/
 *.html
-*.png
 **/*.quarto_ipynb
+
+# Source images are tracked. Rendered output lives only under /_output/ (ignored above);
+# a blanket *.png rule here once left a deck's hero photo out of the repo (2026-09-13).
 
 # vendored extension sources + skin head files are SOURCE, not rendered output
 !**/_extensions/**
 !**/*-skin.html
+!**/local-style.html
 !relationsec/*.html
 
 /node_modules/
