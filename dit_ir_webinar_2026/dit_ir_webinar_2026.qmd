@@ -278,7 +278,7 @@ Free to use. Pay only when you charge for it.
 
 ## An incident has many seats {.vcenter}
 
-{{< include illus/seat-table.qmd >}}
+{{< include ../shared/illus/seat-table.qmd >}}
 
 ::: {.notes}
 - [CLICK ×6] Detective · Protector · Tracker · Communicator · Crisis Manager · Threat Hunter
@@ -517,8 +517,8 @@ Analog · 3–8 players + one Incident Master
 ## THE PRESUMPTION DECK {.vcenter}
 
 ::: {.presumption-cards}
-![](images/type-ransomware.png){.fragment .fx}
-![](images/confidence-confident.png){.fragment .fx}
+![](../shared/images/mm/type-ransomware.png){.fragment .fx}
+![](../shared/images/mm/confidence-confident.png){.fragment .fx}
 :::
 
 ::: {.notes}
